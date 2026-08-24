@@ -1,7 +1,7 @@
 # Clase 2 — Descubrimiento de problemas asistido por IA
 
 **Materia:** Product Development
-**Equipo:** Felipe (+ integrantes por completar)
+**Equipo:** 4 integrantes — Felipe + [COMPLETAR nombres]
 **Fecha de trabajo:** 24 de agosto de 2026
 **Dominio investigado:** Finanzas personales de jóvenes en Argentina
 
@@ -23,7 +23,7 @@ Advertencias importantes que el equipo asume explícitamente:
 1. **Toda la evidencia de este archivo es research secundario.** Ninguna proviene de entrevistas propias. Nada aquí está validado.
 2. **Ninguna fuente fue citada sin abrirla.** Las fuentes listadas en la sección 2 fueron consultadas y su contenido verificado contra lo que la IA afirmaba.
 3. **Existe un desajuste etario documentado** entre parte de la evidencia disponible (adolescentes de 13 a 19 años) y el usuario que decidimos investigar (18 a 30 años). Está señalado en cada punto donde afecta la conclusión y es la principal limitación de este research.
-4. Las evaluaciones ICE individuales de los integrantes 2 y 3 están vacías a propósito. Una opinión individual no puede ser generada por IA sin convertirse en evidencia inventada.
+4. Las evaluaciones ICE individuales de los integrantes 2, 3 y 4 están vacías a propósito. Una opinión individual no puede ser generada por IA sin convertirse en evidencia inventada.
 
 ---
 
@@ -287,6 +287,28 @@ Recordatorio de la escala: **Ease = facilidad para acceder a usuarios y obtener 
 | C — Ahorro que no se sostiene | | | | | |
 | D — Ingresos irregulares | | | | | |
 
+### Integrante 4 — [COMPLETAR]
+
+| Problema | Impact | Confidence | Ease | ICE | Justificación |
+|---|---:|---:|---:|---:|---|
+| A — Dispersión del dinero | | | | | |
+| B — Endeudamiento y mora | | | | | |
+| C — Ahorro que no se sostiene | | | | | |
+| D — Ingresos irregulares | | | | | |
+
+### Tabla consolidada del equipo — [COMPLETAR]
+
+Llenar recién cuando estén las cuatro evaluaciones. **No promediar antes de discutir las diferencias.**
+
+| Problema | ICE Int. 1 | ICE Int. 2 | ICE Int. 3 | ICE Int. 4 | ICE IA | Dispersión (máx − mín entre humanos) |
+|---|---:|---:|---:|---:|---:|---:|
+| A — Dispersión del dinero | 1,60 | | | | 1,20 | |
+| B — Endeudamiento y mora | 2,16 | | | | 2,16 | |
+| C — Ahorro que no se sostiene | 2,88 | | | | 2,52 | |
+| D — Ingresos irregulares | 2,45 | | | | 2,94 | |
+
+> El problema con **mayor dispersión** entre los cuatro es el que más conviene discutir: una diferencia grande suele indicar que alguien está leyendo la misma evidencia de otra manera, o que hay un supuesto escondido que nadie hizo explícito.
+
 ---
 
 ## 5.b Evaluación ICE de la IA
@@ -314,7 +336,7 @@ Se le pidió a la IA que evaluara los cuatro problemas usando exclusivamente la 
 
 ## 6. Comparación de evaluaciones
 
-> Nota: esta comparación contrasta la evaluación de Felipe con la de la IA. **Debe rehacerse cuando los integrantes 2 y 3 completen sus tablas.**
+> Nota: esta comparación contrasta la evaluación de Felipe con la de la IA. **Debe rehacerse cuando los integrantes 2, 3 y 4 completen sus tablas.** Con cuatro evaluadores humanos más la IA, lo esperable es que aparezcan divergencias que esta versión todavía no captura.
 
 ### Principales coincidencias
 
@@ -580,10 +602,12 @@ Diez preguntas. Todas sobre comportamiento pasado y situaciones concretas. Ningu
 | Decisión | Definición del equipo |
 |---|---|
 | Perfil de entrevistados | 18 a 30 años con ingresos propios. **Cuota obligatoria:** al menos 1 con ingreso estable y al menos 1 con ingreso variable o informal, para poder contrastar las dos personas sintéticas. |
-| Cantidad mínima | 3 personas (idealmente 4-5 para cubrir ambos perfiles con holgura) |
+| Cantidad mínima | 3 personas según la consigna. **Siendo 4 en el equipo, nos comprometemos a 4: una entrevista por integrante.** Permite cubrir los dos perfiles por duplicado y contrastar sin depender de un solo relato por perfil. |
 | Forma de contacto | [COMPLETAR — definir el equipo: compañeros de cursada, contactos laborales, red personal] |
-| Responsable de entrevistar | [COMPLETAR] |
-| Responsable de registrar | [COMPLETAR — debe ser una persona distinta del entrevistador] |
+| Organización del equipo | Dos duplas. En cada entrevista, un integrante conduce y el otro registra; en la siguiente se invierten los roles, para que los cuatro pasen por ambas posiciones. |
+| Dupla 1 | [COMPLETAR] — entrevistas 1 y 2 |
+| Dupla 2 | [COMPLETAR] — entrevistas 3 y 4 |
+| Asignación de perfiles | Dupla 1: al menos 1 persona con ingreso estable. Dupla 2: al menos 1 persona con ingreso variable o informal. La cuarta entrevista se asigna según lo que falte cubrir. |
 | Evidencia que se recopilará | Audio con consentimiento previo, notas textuales, y reconstrucción de al menos un episodio concreto de ahorro roto por entrevistado |
 | Fecha límite | Antes de la Clase 3 |
 
@@ -595,7 +619,7 @@ El guion se pasó por una revisión con IA buscando preguntas que sugirieran la 
 
 ## Registro de entrevistas reales
 
-> **Estado: pendiente.** Esta sección se completa antes de la Clase 3. Se deja la plantilla lista para las tres entrevistas mínimas.
+> **Estado: pendiente.** Esta sección se completa antes de la Clase 3. Se dejan cuatro plantillas listas: la consigna pide un mínimo de 3, y el equipo se comprometió a 4 (una por integrante).
 
 ### Entrevista 1
 
@@ -702,6 +726,56 @@ El guion se pasó por una revisión con IA buscando preguntas que sugirieran la 
 
 -
 
+### Entrevista 4
+
+- Fecha:
+- Entrevistador/a:
+- Perfil de la persona:
+- Contexto de la conversación:
+
+**Situaciones reales relatadas**
+
+-
+
+**Comportamientos y alternativas actuales**
+
+-
+
+**Consecuencias observadas**
+
+-
+
+**Frases relevantes**
+
+-
+
+**Contradicciones con nuestra hipótesis**
+
+-
+
+**Nuevos aprendizajes**
+
+-
+
+**Cambios que haríamos a la redacción del problema**
+
+-
+
+### Síntesis de las cuatro entrevistas — [COMPLETAR]
+
+Completar después de la última entrevista, en equipo.
+
+| Pregunta | Respuesta |
+|---|---|
+| ¿Qué apareció en las 4 entrevistas? | |
+| ¿Qué apareció en una sola y no se repitió? | |
+| ¿El ahorro se rompió por gastos evitables o ineludibles? | |
+| ¿Se comportan distinto los de ingreso estable y los de ingreso variable? | |
+| ¿Apareció deuda de forma espontánea? ¿En cuántas? | |
+| ¿Qué contradijo nuestra hipótesis? | |
+
+> Si la deuda apareció espontáneamente en 3 o más entrevistas, **reabrir el Problema B como finalista**, según lo comprometido en la sección 8.
+
 ---
 
 ## 10. Revisión y entrega
@@ -713,9 +787,9 @@ El guion se pasó por una revisión con IA buscando preguntas que sugirieran la 
 - [x] Fuentes originales y verificables — 8 fuentes abiertas y verificadas, con limitaciones documentadas
 - [x] Fichas completas de los problemas finalistas — 4 fichas, sección 3
 - [x] Agrupaciones sugeridas por la IA y decisiones del equipo — sección 4, incluyendo una agrupación rechazada
-- [ ] **Evaluaciones ICE individuales — parcial.** Solo Integrante 1. Faltan 2 y 3.
+- [ ] **Evaluaciones ICE individuales — parcial.** Solo Integrante 1 de 4. Faltan 2, 3 y 4, más la tabla consolidada.
 - [x] Evaluación ICE de la IA con justificaciones — sección 5.b
-- [ ] **Comparación entre evaluaciones — parcial.** Hecha contra la IA; debe rehacerse con las tablas de los integrantes 2 y 3.
+- [ ] **Comparación entre evaluaciones — parcial.** Hecha contra la IA; debe rehacerse con las cuatro evaluaciones humanas.
 - [x] Crítica escéptica del problema finalista — sección 7, con reclasificación de D
 - [x] Decisión humana justificada — sección 8, incluyendo por qué no elegimos el de mayor ICE
 - [x] Redacción final del problema — sección 8, tres versiones
@@ -723,13 +797,14 @@ El guion se pasó por una revisión con IA buscando preguntas que sugirieran la 
 - [x] Aprendizajes del role-play — sección 9
 - [x] Guion y plan para entrevistar al menos a tres personas reales — sección 9
 - [x] Supuestos pendientes y evidencia que podría refutarlos — señalados en cada sección y sintetizados abajo
-- [ ] **Registro de al menos tres entrevistas reales — pendiente para la Clase 3**
+- [ ] **Registro de entrevistas reales — pendiente para la Clase 3.** Mínimo 3 según la consigna; el equipo se comprometió a 4.
 
 ### Estado de completitud
 
 | Pendiente | Responsable | Plazo |
 |---|---|---|
-| Evaluaciones ICE de los integrantes 2 y 3 | Integrantes 2 y 3 | Antes de rehacer la sección 6 |
+| Evaluaciones ICE individuales | Integrantes 2, 3 y 4 (por separado, sin consultarse entre sí) | Antes de rehacer la sección 6 |
+| Tabla consolidada y cálculo de dispersión | Equipo | Después de lo anterior |
 | Rehacer la comparación de la sección 6 con las tres evaluaciones | Equipo | Después de lo anterior |
 | Conseguir el informe original de Junior Achievement/CEPE para resolver la discrepancia de cifras | [COMPLETAR] | Antes de la Clase 3 |
 | Definir contactos, entrevistador y registrador | Equipo | Esta semana |
