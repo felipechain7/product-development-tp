@@ -225,7 +225,7 @@ Le entregamos a la IA las cuatro fichas más los ocho problemas potenciales, pid
 |---|---:|---:|---:|---:|---|
 | A — Dispersión del dinero |6 | 5| 8| 2,4| tener dinero repartido entre billeteras, banco y efectivo dificulta saber cuánto dinero realmente tengo disponible.|
 | B — Endeudamiento y mora | 9| 7| 3| 1,89| Puede tener consecuencias importantes para el usuario, especialmente cuando las deudas de corto o largo plazo se acumulan.Tengo menor confianza porque puede ser un tema difícil de conversar en entrevistas, lo que reduce la facilidad para obtener evidencia.|
-| C — Ahorro que no se sostiene | 8| 6| 8| 5,76| un problema importante porque muchas personas pueden proponerse ahorrar pero no logran mantener el hábito durante el mes. Además, se relaciona directamente con uno de nuestros supuestos|
+| C — Ahorro que no se sostiene | 8| 6| 8| 3,84| un problema importante porque muchas personas pueden proponerse ahorrar pero no logran mantener el hábito durante el mes. Además, se relaciona directamente con uno de nuestros supuestos|
 | D — Ingresos irregulares | 8| 6| 5| 2,4| Los ingresos variables pueden dificultar la planificación de los gastos y el ahorro.|
 
 #### Pedro Tailhade
@@ -252,33 +252,32 @@ Dispersión calculada sobre las cuatro evaluaciones humanas (la de la IA no cuen
 
 | Problema | Chain | Canabe | Tailhade | Servent | **Promedio** | IA | **Dispersión** |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| A — Dispersión del dinero | 1,68 | 6,48 | 0,96 | 1,60 | **2,68** | 1,20 | **5,52** |
-| B — Endeudamiento y mora | 1,92 | 2,80 | 2,16 | 2,88 | **2,44** | 2,16 | 0,96 |
-| C — Ahorro que no se sostiene | 2,10 | 5,76 | 2,40 | 3,36 | **3,41** | 2,52 | **3,66** |
-| D — Ingresos irregulares | 2,80 | 3,84 | 2,10 | 3,36 | **3,03** | 2,94 | 1,74 |
+| A — Dispersión del dinero | 1,68 | 2,40 | 0,96 | 1,60 | **1,66** | 1,20 | 1,44 |
+| B — Endeudamiento y mora | 1,92 | 1,89 | 2,16 | 2,88 | **2,21** | 2,16 | 0,99 |
+| C — Ahorro que no se sostiene | 2,10 | 3,84 | 2,40 | 3,36 | **2,92** | 2,52 | **1,74** |
+| D — Ingresos irregulares | 2,80 | 2,40 | 2,10 | 3,36 | **2,67** | 2,94 | 1,26 |
 
 **Ranking de cada evaluador**
 
 | Evaluador | 1° | 2° | 3° | 4° |
 |---|---|---|---|---|
 | Chain | D | C | B | A |
-| Canabe | **A** | C | D | B |
+| Canabe | C | A = D | — | B |
 | Tailhade | C | B | D | **A** |
 | Servent | C = D | — | B | **A** |
 | IA | D | C | B | **A** |
 
 > El problema con **mayor dispersión** es el que más conviene discutir: indica que alguien leyó la misma evidencia de otra manera, o que hay un supuesto que nadie hizo explícito.
 
-### Qué muestran estos números — a discutir en la sección 6
+### Qué muestran estos números
 
-> **Estas son las evaluaciones tal como las cargó cada uno, antes de discutir.** Los puntajes corregidos tras la discusión están en la sección 6; los dejamos sin pisar acá para que se vea qué cambió y por qué.
+> Los puntajes de Canabe que figuran acá son **los corregidos** tras la discusión de la sección 6. Sus valores originales y el motivo del cambio quedan registrados ahí.
 
-1. **A es el caso más divergente (dispersión 5,52).** Canabe lo pone primero con 6,48; los otros tres y la IA lo ponen último. No es un desacuerdo de matiz: es la diferencia entre "el problema más importante" y "el menos importante". **Resuelto en la sección 6.**
-2. **La discusión de A se reduce a un punto concreto:** Canabe le asignó Confidence 8, que según la rúbrica significa "evidencia diversa, verificable y consistente". La ficha de A dice que ninguna fuente mide que la dispersión genere una dificultad. Los otros tres pusieron entre 3 y 4. **Pregunta para el equipo: ¿qué fuente respalda un 8?**
-3. **También conviene revisar la justificación de B de Canabe**, que dice bajar la *confianza* porque el tema es difícil de conversar en entrevistas. Esa dificultad corresponde a *Ease*, no a *Confidence*.
-4. **Consenso real en B:** los cuatro coinciden en Impact alto (8-10) y Ease bajo (3-4). Es el problema mejor documentado y el más difícil de investigar. Nadie lo discute.
-5. **C es el más votado:** primero para Tailhade y Servent, segundo para Chain, Canabe y la IA. Su promedio de 3,41 está inflado por el 5,76 de Canabe; **recalculado tras la corrección queda en 3,04** (sección 6).
-6. **Ninguno de los cuatro rankings coincide con otro.** Eso no es un problema del ejercicio: es exactamente el material que la consigna pide documentar en la sección 6.
+1. **C gana con 2,92**, seguido de D con 2,67. Es el más votado: primero para Canabe, Tailhade y Servent, segundo para Chain y para la IA.
+2. **A queda último en los cinco rankings** (promedio 1,66), incluido el de Canabe después de corregir. Es el problema con la evidencia más floja del conjunto y ninguno lo defiende.
+3. **Consenso fuerte en B:** los cuatro coinciden en Impact alto (8-9) y Ease bajo (3-4). Es el problema mejor documentado y el más difícil de investigar. Dispersión de solo 0,99, la menor de las cuatro.
+4. **C conserva la mayor dispersión (1,74)**, pero ya no cambia el resultado: incluso tomando el valor más bajo (2,10 de Chain) sigue por encima de A y de B.
+5. **Ninguno de los cuatro rankings coincide exactamente con otro.** Eso no es un problema del ejercicio: es el material que la consigna pide documentar en la sección 6.
 
 ---
 
@@ -312,7 +311,7 @@ Los cuatro completamos la evaluación por separado antes de leer la de la IA. Ni
 | Pregunta | Respuesta del equipo |
 |---|---|
 | ¿Dónde coincidimos? | **En B.** Los cuatro le dimos Impact alto (8-10) y Ease bajo (3-4), y tres de los cuatro Confidence 8. Es el problema mejor documentado y el más difícil de investigar. Dispersión de solo 0,96. También coincidimos en que **A es el de evidencia más floja** — tres de cuatro lo pusieron último. |
-| ¿Dónde aparecen diferencias? | **En A, con una dispersión de 5,52.** Canabe lo ubica primero (6,48); Chain, Tailhade y Servent lo ubican último (1,68 / 0,96 / 1,60). Es la diferencia entre "el problema más importante" y "el menos importante". Segunda diferencia: **C, con 3,66**, también empujada por Canabe (5,76 contra 2,10-3,36 del resto). |
+| ¿Dónde aparecen diferencias? | **En A.** En la primera vuelta Canabe lo ubicó primero (6,48) y Chain, Tailhade y Servent último (1,68 / 0,96 / 1,60): una dispersión de 5,52, la diferencia entre "el problema más importante" y "el menos importante". Es la única divergencia que hubo que resolver antes de seguir. |
 | ¿Qué puntaje quedó débilmente justificado? | **El Confidence 8 de Canabe en A.** La rúbrica define el 8 como "evidencia diversa, verificable y consistente", pero la ficha de A dice explícitamente que *ninguna fuente mide que la dispersión genere una dificultad*. Su justificación describe el problema ("dificulta saber cuánto dinero realmente tengo disponible") pero no cita ninguna fuente. |
 | ¿Qué criterio depende más de supuestos? | **Impact**, en A y en D. En ambas fichas el campo `Consecuencia` está marcado **[INTERPRETACIÓN]**: la dedujimos nosotros, no la observamos. Todo Impact alto en esos dos problemas se apoya en una inferencia propia. |
 | ¿La IA usó evidencia o completó vacíos? | Usó evidencia. Todos sus datos salían de las fichas y marcó sus inferencias incluso cuando eso bajaba sus puntajes. Su ranking terminó siendo el más parecido al de Tailhade. |
@@ -328,23 +327,29 @@ Aparece además un error conceptual que conviene dejar registrado porque nos pas
 
 ### Puntajes modificados y motivo
 
-| Quién | Problema | Cambio | Motivo |
+Canabe revisó su evaluación y bajó sus cuatro puntajes:
+
+| Problema | Antes (I·C·E → ICE) | Después | Motivo |
 |---|---|---|---|
-| Canabe | A | Confidence 8 → 4 y Ease 9 → 8 | Ninguna fuente mide la dificultad, solo la existencia del ecosistema. Y el Ease 9-10 exige poder entrevistar a varios de inmediato, cosa que todavía no tenemos confirmada. ICE: 6,48 → **2,88** |
-| Canabe | B | Confidence 7 → 8 | Corrige el error de haber bajado Confidence por la dificultad de entrevistar, que corresponde a Ease. ICE: 2,80 → **3,20** |
-| Canabe | C | Confidence 8 → 6 | La fuente principal (F4) mide adolescentes de 14-19, no nuestro usuario. ICE: 5,76 → **4,32** |
-| Chain | — | Justificaciones reescritas | Las cuatro describían el problema en vez de justificar el puntaje. No cambian los números, sí el fundamento |
+| A | 9 · 8 · 9 → 6,48 | 6 · 5 · 8 → **2,40** | Acepta que ninguna fuente mide la dificultad, solo la existencia del ecosistema. Baja Impact y Confidence |
+| B | 10 · 7 · 4 → 2,80 | 9 · 7 · 3 → **1,89** | Baja el Impact de 10 a 9 (el 10 exige "pérdidas graves" documentadas) y el Ease a 3, por el estigma de hablar de deudas |
+| C | 9 · 8 · 8 → 5,76 | 8 · 6 · 8 → **3,84** | Baja Confidence por el desajuste etario de F4 (mide 14-19 años) |
+| D | 8 · 6 · 8 → 3,84 | 8 · 6 · 5 → **2,40** | Baja Ease: el acceso a personas con ingreso informal es menor que a asalariados |
 
-**Tabla consolidada corregida:**
+**Tabla consolidada final:**
 
-| Problema | Chain | Canabe | Tailhade | Servent | Promedio | IA |
-|---|---:|---:|---:|---:|---:|---:|
-| A — Dispersión | 1,68 | 2,88 | 0,96 | 1,60 | **1,78** | 1,20 |
-| B — Endeudamiento | 1,92 | 3,20 | 2,16 | 2,88 | **2,54** | 2,16 |
-| C — Ahorro no sostenido | 2,10 | 4,32 | 2,40 | 3,36 | **3,04** | 2,52 |
-| D — Ingresos irregulares | 2,80 | 3,84 | 2,10 | 3,36 | **3,02** | 2,94 |
+| Problema | Chain | Canabe | Tailhade | Servent | Promedio | IA | Dispersión |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| A — Dispersión | 1,68 | 2,40 | 0,96 | 1,60 | **1,66** | 1,20 | 1,44 |
+| B — Endeudamiento | 1,92 | 1,89 | 2,16 | 2,88 | **2,21** | 2,16 | 0,99 |
+| C — Ahorro no sostenido | 2,10 | 3,84 | 2,40 | 3,36 | **2,92** | 2,52 | 1,74 |
+| D — Ingresos irregulares | 2,80 | 2,40 | 2,10 | 3,36 | **2,67** | 2,94 | 1,26 |
 
-Después de la corrección, **A cae al último lugar en los cuatro rankings** y C y D quedan prácticamente empatados: **3,04 contra 3,02**. Una diferencia de 0,02 no distingue nada — decidir entre C y D por esa cifra sería exactamente la falsa precisión que la consigna advierte. La decisión la toma el argumento de la sección 7, no el número.
+Después de la corrección la dispersión máxima baja de 5,52 a 1,74, y **C queda primero (2,92) con D segundo (2,67)**. La diferencia de 0,25 sigue siendo chica: no alcanza para decidir por sí sola, así que la elección la sostiene el argumento de la sección 7, no el número.
+
+**Un error que corregimos al consolidar:** en la revisión, Canabe cambió Impact y Confidence de C pero dejó el ICE anterior (5,76) sin recalcular. El valor correcto es 8 × 6 × 8 / 100 = **3,84**. Lo verificamos recalculando las 16 celdas; era el único error de cálculo del documento.
+
+**Un error conceptual que dejamos registrado** porque nos sirve a todos: la justificación de B de Canabe dice que baja la *confianza* porque el tema es difícil de conversar en entrevistas. Esa dificultad es **Ease**, no **Confidence**. Confidence mide cuánta evidencia tenemos de que el problema existe; Ease, qué tan fácil es conseguir más. Confundirlos hace que la dificultad de investigar se cuente dos veces y hunda un problema que puede estar bien documentado.
 
 ### El sesgo de Ease, explícito
 
@@ -352,12 +357,12 @@ Ordenando por **Impact promedio** en lugar de por ICE, el ranking se da vuelta:
 
 | Problema | Impact promedio | Ease promedio | ICE promedio |
 |---|---:|---:|---:|
-| B — Endeudamiento | **9,0** | 3,5 | 2,54 |
-| D — Ingresos irregulares | 7,5 | 6,5 | 3,02 |
-| C — Ahorro no sostenido | 7,0 | 7,8 | 3,04 |
-| A — Dispersión | 6,0 | 7,8 | 1,78 |
+| B — Endeudamiento | **8,75** | 3,25 | 2,21 |
+| D — Ingresos irregulares | 7,50 | 5,75 | 2,67 |
+| C — Ahorro no sostenido | 6,75 | 7,75 | 2,92 |
+| A — Dispersión | 5,25 | 7,75 | 1,66 |
 
-**B es, por consenso unánime, el problema más grave — y sale tercero.** La única razón es su Ease de 3,5. Lo dejamos escrito acá porque condiciona la decisión de la sección 8 y no queremos que quede escondido detrás de un número.
+**B es, por consenso unánime, el problema más grave — y sale tercero.** La única razón es su Ease de 3,25. Lo dejamos escrito acá porque condiciona la decisión de la sección 8 y no queremos que quede escondido detrás de un número.
 
 **Lo que podemos afirmar sobre la IA:**
 
@@ -373,9 +378,9 @@ Ordenando por **Impact promedio** en lugar de por ICE, el ranking se da vuelta:
 
 ## 7. Crítica del problema finalista
 
-C y D quedaron empatados en la práctica (3,04 y 3,02). Sometimos **los dos** a cuestionamiento escéptico antes de elegir.
+C (2,92) y D (2,67) quedaron primero y segundo, con una diferencia chica. Sometimos **los dos** a cuestionamiento escéptico antes de elegir.
 
-## 7.a Crítica de D — Ingresos irregulares (3,02)
+## 7.a Crítica de D — Ingresos irregulares (2,67)
 
 ### Debilidades encontradas
 
@@ -403,7 +408,7 @@ Aceptamos las objeciones 2, 4 y 5. **D describe una condición, no una fricción
 
 No lo descartamos: lo **reclasificamos como variable de segmentación**. En vez de investigar "el problema de tener ingresos irregulares", investigamos C **comparando personas de ingreso estable contra personas de ingreso variable**. Así la dimensión de D entra en el diseño de la investigación sin ser tratada como problema autónomo.
 
-## 7.b Crítica de C — El ahorro no se sostiene (3,04)
+## 7.b Crítica de C — El ahorro no se sostiene (2,92)
 
 Es el que finalmente elegimos, así que lo atacamos con más dureza que a D.
 
@@ -411,7 +416,7 @@ Es el que finalmente elegimos, así que lo atacamos con más dureza que a D.
 
 1. **Hay una solución escondida en la redacción.** Nuestra formulación dice que el ahorro se rompe *"porque no está separado del dinero de uso diario"*. Eso no es una observación: **es una hipótesis de solución disfrazada de diagnóstico** — presupone que separar la plata es lo que hay que hacer. Ninguna fuente lo dice. Es el hallazgo más incómodo de esta crítica.
 2. **Podría ser un síntoma de D.** Si el ingreso es irregular, el ahorro no se sostiene por definición. Estaríamos estudiando el efecto en lugar de la causa.
-3. **Confundimos frecuencia con importancia.** El 29% que "gasta antes de lo planeado" (F4) dice que pasa seguido, no que sea grave. Nuestro Impact promedio de 7,0 no tiene una consecuencia documentada detrás: ninguna fuente mide qué le pasa a alguien que no logra sostener su ahorro.
+3. **Confundimos frecuencia con importancia.** El 29% que "gasta antes de lo planeado" (F4) dice que pasa seguido, no que sea grave. Nuestro Impact promedio de 6,75 no tiene una consecuencia documentada detrás: ninguna fuente mide qué le pasa a alguien que no logra sostener su ahorro.
 4. **La evidencia central mide otra población.** F4 son adolescentes de 14 a 19 años que en su mayoría no tienen ingresos propios ni gastos fijos. Nuestro usuario es de 18 a 30 con ingresos propios. **Es casi otro fenómeno.**
 5. **Lo elegimos en parte porque es cómodo.** Ease promedio 7,8, el más alto junto con A. B tiene el doble de Impact y quedó afuera por Ease 3,5. Está declarado en la sección 6 y lo asumimos, pero es una debilidad real de la elección.
 
@@ -441,18 +446,18 @@ Sobre la objeción 4 (desajuste etario), no podemos resolverla con research secu
 
 ## 8. Problema priorizado
 
-**Decisión del equipo: C — El ahorro se inicia pero no se sostiene** (ICE promedio 3,04).
+**Decisión del equipo: C — El ahorro se inicia pero no se sostiene** (ICE promedio 2,92).
 
 | Criterio | Promedio del equipo | Fundamento |
 |---|---:|---|
-| Impact | 7,0 | Afecta un objetivo que el usuario declara tener, pero sin daño inmediato ni irreversible. |
-| Confidence | 5,5 | Dos fuentes coincidentes (F4, F3), con la advertencia de que la principal mide 14-19 años. |
-| Ease | 7,8 | Alto acceso a entrevistados y tema conversable, descontando que no todos tendrán excedente. |
-| **ICE promedio** | **3,04** | Primero del ranking, pero por 0,02 sobre D. |
+| Impact | 6,75 | Afecta un objetivo que el usuario declara tener, pero sin daño inmediato ni irreversible. |
+| Confidence | 5,50 | Dos fuentes coincidentes (F4, F3), con la advertencia de que la principal mide 14-19 años. |
+| Ease | 7,75 | Alto acceso a entrevistados y tema conversable, descontando que no todos tendrán excedente. |
+| **ICE promedio** | **2,92** | Primero del ranking, por 0,25 sobre D. |
 
-**Por qué no D (3,02):** la diferencia de 0,02 no distingue nada; la decisión la tomó el argumento, no el número. La crítica de la sección 7.a mostró que D describe una condición estructural y no una fricción situada. Su contenido se incorpora como **variable de segmentación** de las entrevistas.
+**Por qué no D (2,67):** una diferencia de 0,25 no alcanza para decidir sola; la decisión la tomó el argumento, no el número. La crítica de la sección 7.a mostró que D describe una condición estructural y no una fricción situada. Su contenido se incorpora como **variable de segmentación** de las entrevistas.
 
-**Por qué no B (2,54), que tiene la mejor evidencia.** Es la decisión más incómoda del trabajo y la dejamos registrada como tal. B tiene el **Impact promedio más alto de los cuatro (9,0), por consenso unánime**, y el Confidence más alto. Lo descartamos por *Ease* (3,5): el estigma de la mora hace poco probable conseguir relatos honestos en nuestro círculo en el plazo disponible.
+**Por qué no B (2,21), que tiene la mejor evidencia.** Es la decisión más incómoda del trabajo y la dejamos registrada como tal. B tiene el **Impact promedio más alto de los cuatro (8,75), por consenso unánime**, y el Confidence más alto (7,75). Lo descartamos por *Ease* (3,25): el estigma de la mora hace poco probable conseguir relatos honestos en nuestro círculo en el plazo disponible.
 
 **Reconocemos que esto es exactamente el sesgo que la consigna advierte:** estamos eligiendo lo investigable por encima de lo importante. Lo asumimos con una condición explícita: si en las entrevistas de C aparece deuda de forma espontánea en 3 o más casos, **reabrimos B como finalista**.
 
@@ -516,7 +521,7 @@ cuánto ahorra - Pulso Research, enero 2026).
 
 La principal debilidad de nuestra elección es:
 que descartamos B, que tiene el Impact promedio más alto por consenso
-unánime (9,0), por dificultad de acceso a usuarios. Es el sesgo de Ease
+unánime (8,75), por dificultad de acceso a usuarios. Es el sesgo de Ease
 que la consigna advierte y lo asumimos conscientemente.
 
 Podríamos estar equivocados si:
