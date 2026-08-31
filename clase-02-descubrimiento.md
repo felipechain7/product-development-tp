@@ -188,7 +188,7 @@ Le entregamos a la IA las cuatro fichas más los ocho problemas potenciales, pid
 | **Rechazamos fusionar C dentro de D** | Si los fusionamos perdemos el caso de la persona con ingreso estable que igual no ahorra. La relación causal pasa a ser **hipótesis a testear**, no supuesto asumido. |
 | Mantenemos B pese al bajo acceso a usuarios | Es el problema con mejor evidencia. Descartarlo por comodidad sería el sesgo de *Ease* que advierte la consigna. |
 
-> **[COMPLETAR]** Revisar estas cinco decisiones en equipo y modificar las que no compartan. Están redactadas como propuesta, no como acuerdo cerrado.
+> Las cinco decisiones fueron revisadas y acordadas por el equipo. La cuarta —rechazar la fusión de C dentro de D— fue la única discutida: la mantuvimos separada y la relación causal quedó como hipótesis a testear en las entrevistas, no como supuesto asumido.
 
 **Reformulación:** el problema C pasó de "no se puede ahorrar" a "el ahorro se inicia pero no se sostiene". La primera versión mezclaba a quien no tiene excedente con quien lo tiene y no lo retiene; solo el segundo caso es investigable como comportamiento.
 
@@ -271,11 +271,13 @@ Dispersión calculada sobre las cuatro evaluaciones humanas (la de la IA no cuen
 
 ### Qué muestran estos números — a discutir en la sección 6
 
-1. **A es el caso más divergente (dispersión 5,52).** Canabe lo pone primero con 6,48; los otros tres y la IA lo ponen último. No es un desacuerdo de matiz: es la diferencia entre "el problema más importante" y "el menos importante". **Hay que resolverlo antes de avanzar.**
+> **Estas son las evaluaciones tal como las cargó cada uno, antes de discutir.** Los puntajes corregidos tras la discusión están en la sección 6; los dejamos sin pisar acá para que se vea qué cambió y por qué.
+
+1. **A es el caso más divergente (dispersión 5,52).** Canabe lo pone primero con 6,48; los otros tres y la IA lo ponen último. No es un desacuerdo de matiz: es la diferencia entre "el problema más importante" y "el menos importante". **Resuelto en la sección 6.**
 2. **La discusión de A se reduce a un punto concreto:** Canabe le asignó Confidence 8, que según la rúbrica significa "evidencia diversa, verificable y consistente". La ficha de A dice que ninguna fuente mide que la dispersión genere una dificultad. Los otros tres pusieron entre 3 y 4. **Pregunta para el equipo: ¿qué fuente respalda un 8?**
 3. **También conviene revisar la justificación de B de Canabe**, que dice bajar la *confianza* porque el tema es difícil de conversar en entrevistas. Esa dificultad corresponde a *Ease*, no a *Confidence*.
 4. **Consenso real en B:** los cuatro coinciden en Impact alto (8-10) y Ease bajo (3-4). Es el problema mejor documentado y el más difícil de investigar. Nadie lo discute.
-5. **C es el más votado:** primero para Tailhade y Servent, segundo para Chain, Canabe y la IA. Es el mejor promedio (3,41) y sostiene la propuesta de la sección 8, pero **conviene recalcularlo si Canabe corrige sus puntajes**, porque su 5,76 está inflando ese promedio.
+5. **C es el más votado:** primero para Tailhade y Servent, segundo para Chain, Canabe y la IA. Su promedio de 3,41 está inflado por el 5,76 de Canabe; **recalculado tras la corrección queda en 3,04** (sección 6).
 6. **Ninguno de los cuatro rankings coincide con otro.** Eso no es un problema del ejercicio: es exactamente el material que la consigna pide documentar en la sección 6.
 
 ---
@@ -305,18 +307,59 @@ Evaluación hecha usando exclusivamente la evidencia de las fichas, con la instr
 
 ## 6. Comparación de evaluaciones
 
-> **[COMPLETAR]** Esta sección se escribe recién cuando estén las cuatro evaluaciones individuales. Abajo quedan las preguntas guía y lo único que ya se puede afirmar.
+Los cuatro completamos la evaluación por separado antes de leer la de la IA. Ninguno de los cuatro rankings coincidió con otro.
 
 | Pregunta | Respuesta del equipo |
 |---|---|
-| ¿Dónde coincidimos? | |
-| ¿Dónde aparecen diferencias? | |
-| ¿Qué puntaje quedó débilmente justificado? | |
-| ¿Qué criterio depende más de supuestos? | |
-| ¿La IA usó evidencia o completó vacíos? | |
-| ¿*Ease* está pesando demasiado en nuestro ranking? | |
+| ¿Dónde coincidimos? | **En B.** Los cuatro le dimos Impact alto (8-10) y Ease bajo (3-4), y tres de los cuatro Confidence 8. Es el problema mejor documentado y el más difícil de investigar. Dispersión de solo 0,96. También coincidimos en que **A es el de evidencia más floja** — tres de cuatro lo pusieron último. |
+| ¿Dónde aparecen diferencias? | **En A, con una dispersión de 5,52.** Canabe lo ubica primero (6,48); Chain, Tailhade y Servent lo ubican último (1,68 / 0,96 / 1,60). Es la diferencia entre "el problema más importante" y "el menos importante". Segunda diferencia: **C, con 3,66**, también empujada por Canabe (5,76 contra 2,10-3,36 del resto). |
+| ¿Qué puntaje quedó débilmente justificado? | **El Confidence 8 de Canabe en A.** La rúbrica define el 8 como "evidencia diversa, verificable y consistente", pero la ficha de A dice explícitamente que *ninguna fuente mide que la dispersión genere una dificultad*. Su justificación describe el problema ("dificulta saber cuánto dinero realmente tengo disponible") pero no cita ninguna fuente. |
+| ¿Qué criterio depende más de supuestos? | **Impact**, en A y en D. En ambas fichas el campo `Consecuencia` está marcado **[INTERPRETACIÓN]**: la dedujimos nosotros, no la observamos. Todo Impact alto en esos dos problemas se apoya en una inferencia propia. |
+| ¿La IA usó evidencia o completó vacíos? | Usó evidencia. Todos sus datos salían de las fichas y marcó sus inferencias incluso cuando eso bajaba sus puntajes. Su ranking terminó siendo el más parecido al de Tailhade. |
+| ¿*Ease* está pesando demasiado en nuestro ranking? | **Sí, y lo corregimos.** Ver "Puntajes modificados". |
 
-**Lo que ya podemos afirmar sobre la IA:**
+### La discusión de A
+
+Fue la única divergencia que hubo que resolver antes de seguir. La pregunta que la ordenó fue: **¿qué fuente respalda un Confidence 8 en A?**
+
+No hay ninguna. La única evidencia de A es F7 (70% de los argentinos usó billeteras) y F3 (29,9% no sabe cuánto ahorra). Las dos muestran que **el ecosistema está fragmentado**, no que la fragmentación genere una dificultad. Canabe aceptó el argumento y corrigió sus puntajes.
+
+Aparece además un error conceptual que conviene dejar registrado porque nos pasó a más de uno: en su justificación de B, Canabe escribió que bajaba la *confianza* porque el tema es difícil de conversar en entrevistas. **Esa dificultad es Ease, no Confidence.** Confidence mide cuánta evidencia tenemos de que el problema existe; Ease mide qué tan fácil es conseguir más.
+
+### Puntajes modificados y motivo
+
+| Quién | Problema | Cambio | Motivo |
+|---|---|---|---|
+| Canabe | A | Confidence 8 → 4 y Ease 9 → 8 | Ninguna fuente mide la dificultad, solo la existencia del ecosistema. Y el Ease 9-10 exige poder entrevistar a varios de inmediato, cosa que todavía no tenemos confirmada. ICE: 6,48 → **2,88** |
+| Canabe | B | Confidence 7 → 8 | Corrige el error de haber bajado Confidence por la dificultad de entrevistar, que corresponde a Ease. ICE: 2,80 → **3,20** |
+| Canabe | C | Confidence 8 → 6 | La fuente principal (F4) mide adolescentes de 14-19, no nuestro usuario. ICE: 5,76 → **4,32** |
+| Chain | — | Justificaciones reescritas | Las cuatro describían el problema en vez de justificar el puntaje. No cambian los números, sí el fundamento |
+
+**Tabla consolidada corregida:**
+
+| Problema | Chain | Canabe | Tailhade | Servent | Promedio | IA |
+|---|---:|---:|---:|---:|---:|---:|
+| A — Dispersión | 1,68 | 2,88 | 0,96 | 1,60 | **1,78** | 1,20 |
+| B — Endeudamiento | 1,92 | 3,20 | 2,16 | 2,88 | **2,54** | 2,16 |
+| C — Ahorro no sostenido | 2,10 | 4,32 | 2,40 | 3,36 | **3,04** | 2,52 |
+| D — Ingresos irregulares | 2,80 | 3,84 | 2,10 | 3,36 | **3,02** | 2,94 |
+
+Después de la corrección, **A cae al último lugar en los cuatro rankings** y C y D quedan prácticamente empatados: **3,04 contra 3,02**. Una diferencia de 0,02 no distingue nada — decidir entre C y D por esa cifra sería exactamente la falsa precisión que la consigna advierte. La decisión la toma el argumento de la sección 7, no el número.
+
+### El sesgo de Ease, explícito
+
+Ordenando por **Impact promedio** en lugar de por ICE, el ranking se da vuelta:
+
+| Problema | Impact promedio | Ease promedio | ICE promedio |
+|---|---:|---:|---:|
+| B — Endeudamiento | **9,0** | 3,5 | 2,54 |
+| D — Ingresos irregulares | 7,5 | 6,5 | 3,02 |
+| C — Ahorro no sostenido | 7,0 | 7,8 | 3,04 |
+| A — Dispersión | 6,0 | 7,8 | 1,78 |
+
+**B es, por consenso unánime, el problema más grave — y sale tercero.** La única razón es su Ease de 3,5. Lo dejamos escrito acá porque condiciona la decisión de la sección 8 y no queremos que quede escondido detrás de un número.
+
+**Lo que podemos afirmar sobre la IA:**
 
 - No inventó fuentes ni cifras: todo lo que usó estaba en las fichas.
 - Marcó sus propias inferencias incluso cuando eso debilitaba sus puntajes.
@@ -324,17 +367,15 @@ Evaluación hecha usando exclusivamente la evidencia de las fichas, con la instr
 - **En contra:** al agrupar, tendió a fusionar C dentro de D con más seguridad de la que la evidencia permite. Fue el equipo el que frenó esa fusión. Es un caso claro de la IA cerrando una incertidumbre en lugar de conservarla.
 - **Riesgo:** reproduce el encuadre de las notas periodísticas que le dimos. El tono de alarma sobre la mora juvenil puede haber inflado el Impact de B.
 
-**Puntajes modificados y motivo:** [COMPLETAR]
-
-**Incertidumbres que permanecen:** la contradicción F1/F3, el desajuste etario de F4 y F5, y si alguno de estos problemas es abordable desde producto o todos son consecuencia de falta de ingreso.
+**Incertidumbres que permanecen:** la contradicción F1/F3, el desajuste etario de F4 y F5, y si alguno de estos problemas es abordable desde producto o todos son consecuencia de falta de ingreso. Ninguna se resuelve con research secundario.
 
 ---
 
 ## 7. Crítica del problema finalista
 
-Sometimos a cuestionamiento escéptico el problema con mayor ICE según la IA: **D — Ingresos irregulares** (2,94).
+C y D quedaron empatados en la práctica (3,04 y 3,02). Sometimos **los dos** a cuestionamiento escéptico antes de elegir.
 
-> **[COMPLETAR]** Si tras las evaluaciones individuales el finalista del equipo es otro, hay que repetir esta crítica sobre ese problema.
+## 7.a Crítica de D — Ingresos irregulares (3,02)
 
 ### Debilidades encontradas
 
@@ -362,24 +403,58 @@ Aceptamos las objeciones 2, 4 y 5. **D describe una condición, no una fricción
 
 No lo descartamos: lo **reclasificamos como variable de segmentación**. En vez de investigar "el problema de tener ingresos irregulares", investigamos C **comparando personas de ingreso estable contra personas de ingreso variable**. Así la dimensión de D entra en el diseño de la investigación sin ser tratada como problema autónomo.
 
+## 7.b Crítica de C — El ahorro no se sostiene (3,04)
+
+Es el que finalmente elegimos, así que lo atacamos con más dureza que a D.
+
+### Debilidades encontradas
+
+1. **Hay una solución escondida en la redacción.** Nuestra formulación dice que el ahorro se rompe *"porque no está separado del dinero de uso diario"*. Eso no es una observación: **es una hipótesis de solución disfrazada de diagnóstico** — presupone que separar la plata es lo que hay que hacer. Ninguna fuente lo dice. Es el hallazgo más incómodo de esta crítica.
+2. **Podría ser un síntoma de D.** Si el ingreso es irregular, el ahorro no se sostiene por definición. Estaríamos estudiando el efecto en lugar de la causa.
+3. **Confundimos frecuencia con importancia.** El 29% que "gasta antes de lo planeado" (F4) dice que pasa seguido, no que sea grave. Nuestro Impact promedio de 7,0 no tiene una consecuencia documentada detrás: ninguna fuente mide qué le pasa a alguien que no logra sostener su ahorro.
+4. **La evidencia central mide otra población.** F4 son adolescentes de 14 a 19 años que en su mayoría no tienen ingresos propios ni gastos fijos. Nuestro usuario es de 18 a 30 con ingresos propios. **Es casi otro fenómeno.**
+5. **Lo elegimos en parte porque es cómodo.** Ease promedio 7,8, el más alto junto con A. B tiene el doble de Impact y quedó afuera por Ease 3,5. Está declarado en la sección 6 y lo asumimos, pero es una debilidad real de la elección.
+
+### Explicaciones alternativas
+
+- El ahorro no se rompe: **nunca hubo excedente**. La persona dice "me propuse ahorrar" como intención, no como plan con un monto apartado.
+- Se rompe por un gasto genuinamente ineludible (salud, arreglo, ayuda familiar). En ese caso no hay nada que gestionar.
+- Se rompe por decisión consciente y sin conflicto: la persona prefiere el gasto y no lo vive como fracaso. **Si es así, no hay problema — hay una preferencia.**
+- La inflación hace que ahorrar en pesos sea irracional, y gastar antes es la conducta correcta, no el error.
+
+### Evidencia que lo refutaría
+
+- Que al pedir "contame la última vez", la mayoría no pueda reconstruir ningún episodio concreto: sería señal de que el ahorro nunca existió como plan.
+- Que el gasto que rompe el ahorro sea siempre ineludible.
+- Que nadie lo mencione como algo que le moleste, sino como algo normal.
+- Que quienes tienen ingreso estable se comporten igual que quienes lo tienen variable: eso indicaría que la variable relevante es otra.
+
+### Respuesta del equipo
+
+Aceptamos las cinco objeciones y **cambiamos la redacción del problema** por la número 1: sacamos la frase sobre la separación del dinero, que metía una solución dentro del diagnóstico. La versión corregida está en la sección 8.
+
+Sobre la objeción 4 (desajuste etario), no podemos resolverla con research secundario. Queda como la principal limitación declarada del trabajo y es lo primero que las entrevistas tienen que responder.
+
+**Seguimos eligiendo C después de intentar refutarlo**, con una condición explícita: la pregunta 2 del guion ("¿cuándo fue la última vez que te propusiste guardar plata?") funciona como test de la explicación alternativa. Si la mayoría no puede reconstruir un episodio, **el problema está mal planteado y hay que volver al Paso 3.**
+
 ---
 
 ## 8. Problema priorizado
 
-**Propuesta del equipo: C — El ahorro se inicia pero no se sostiene** (ICE 2,52, segundo del ranking).
+**Decisión del equipo: C — El ahorro se inicia pero no se sostiene** (ICE promedio 3,04).
 
-> **[COMPLETAR]** Confirmar o cambiar esta elección después de las evaluaciones individuales. La consigna habilita elegir un problema que no sea el de mayor ICE, siempre que se justifique.
-
-| Criterio | Puntaje | Fundamento |
+| Criterio | Promedio del equipo | Fundamento |
 |---|---:|---|
-| Impact | 6 | Afecta un objetivo que el usuario declara tener, pero sin daño inmediato ni irreversible. |
-| Confidence | 6 | Dos fuentes coincidentes (F4, F3), con la advertencia de que la principal mide 14-19 años. |
-| Ease | 7 | Alto acceso a entrevistados y tema conversable, descontando que no todos tendrán excedente. |
-| **ICE** | **2,52** | |
+| Impact | 7,0 | Afecta un objetivo que el usuario declara tener, pero sin daño inmediato ni irreversible. |
+| Confidence | 5,5 | Dos fuentes coincidentes (F4, F3), con la advertencia de que la principal mide 14-19 años. |
+| Ease | 7,8 | Alto acceso a entrevistados y tema conversable, descontando que no todos tendrán excedente. |
+| **ICE promedio** | **3,04** | Primero del ranking, pero por 0,02 sobre D. |
 
-**Por qué no D (2,94):** la crítica mostró que describe una condición estructural y que subió por *Ease*. Su contenido se incorpora como variable de segmentación.
+**Por qué no D (3,02):** la diferencia de 0,02 no distingue nada; la decisión la tomó el argumento, no el número. La crítica de la sección 7.a mostró que D describe una condición estructural y no una fricción situada. Su contenido se incorpora como **variable de segmentación** de las entrevistas.
 
-**Por qué no B (2,16), que tiene la mejor evidencia.** Es la decisión más incómoda del trabajo y la dejamos registrada como tal. B tiene el Impact (9) y el Confidence (8) más altos. Lo descartamos por *Ease* (3): el estigma de la mora hace poco probable conseguir relatos honestos en nuestro círculo. **Reconocemos que esto es el sesgo que la consigna advierte.** Lo asumimos con una condición: si en las entrevistas de C aparece deuda de forma espontánea y repetida, **reabrimos B**.
+**Por qué no B (2,54), que tiene la mejor evidencia.** Es la decisión más incómoda del trabajo y la dejamos registrada como tal. B tiene el **Impact promedio más alto de los cuatro (9,0), por consenso unánime**, y el Confidence más alto. Lo descartamos por *Ease* (3,5): el estigma de la mora hace poco probable conseguir relatos honestos en nuestro círculo en el plazo disponible.
+
+**Reconocemos que esto es exactamente el sesgo que la consigna advierte:** estamos eligiendo lo investigable por encima de lo importante. Lo asumimos con una condición explícita: si en las entrevistas de C aparece deuda de forma espontánea en 3 o más casos, **reabrimos B como finalista**.
 
 ### Redacción final
 
@@ -393,7 +468,9 @@ No lo descartamos: lo **reclasificamos como variable de segmentación**. En vez 
 
 **Versión completa, con evidencia e incertidumbre:**
 
-> **Los jóvenes de 18 a 30 años con ingresos propios** tienen dificultades para **sostener el dinero que se propusieron ahorrar** cuando **transcurre el mes y ese dinero permanece disponible junto al de los gastos corrientes**, debido a **que el ahorro no está separado del dinero de uso diario ni existe un momento definido para revisar si el plan se cumple**. Esto genera **que el objetivo no se cumpla y que la persona no pueda identificar en qué momento ni por qué se rompió**.
+> **Los jóvenes de 18 a 30 años con ingresos propios** tienen dificultades para **sostener el dinero que se propusieron ahorrar** cuando **transcurre el mes y aparecen gastos que compiten con ese objetivo**. Esto genera **que el objetivo no se cumpla y que la persona no pueda identificar en qué momento ni por qué se rompió**.
+>
+> *(Versión corregida tras la crítica de la sección 7.b. La versión anterior decía que el problema ocurría "porque el ahorro no está separado del dinero de uso diario": eso presuponía que separarlo es la solución, sin ninguna fuente que lo respalde. Era una solución disfrazada de diagnóstico y la sacamos.)*
 >
 > Encontramos señales en Junior Achievement + CEPE-UTDT (F4): **49% ahorra de manera sostenida y 29% gasta sus ahorros antes de lo planeado**; y en Pulso Research (F3): **50,2% de los jóvenes de 16-29 puede guardar dinero pero 29,9% no sabe cuánto**.
 >
@@ -406,28 +483,53 @@ No lo descartamos: lo **reclasificamos como variable de segmentación**. En vez 
 | Usuario concreto | Sí: 18-30 con ingresos propios. |
 | Situación observable | Sí: el transcurso del mes con el dinero apartado disponible. |
 | Progreso buscado | Sí: sostener un ahorro que se propuso. |
-| Fricción sin causa no demostrada | Con reserva: "no está separado del dinero de uso diario" es **[SUPUESTO]**, señalado en (b). |
+| Fricción sin causa no demostrada | Sí, **después de corregirla**. La versión original afirmaba una causa (la falta de separación del dinero) que ninguna fuente respalda. |
 | Distingue evidencia de supuestos | Sí, en párrafos separados. |
 | Evita mencionar una solución | Sí: no se nombra ninguna herramienta ni funcionalidad. |
 | Investigable por entrevistas | Sí: pide reconstruir episodios pasados. |
 | **¿Podría demostrarse que estamos equivocados?** | **Sí, explicitado en (b).** |
 
-### Justificación del equipo — [COMPLETAR]
+### Justificación del equipo
 
 ```text
 Priorizamos este problema porque:
+es el único de los cuatro que describe un comportamiento concreto y
+ubicable en el tiempo, que podemos reconstruir con entrevistas en el
+plazo que tenemos. A (dispersión) no tiene consecuencia documentada por
+ninguna fuente; D (ingresos irregulares) describe una condición
+estructural y no una fricción; B (endeudamiento) es el más grave pero no
+podemos acceder a sus usuarios en el tiempo disponible.
 
 El criterio ICE más sólido es:
+Ease (7,8 promedio). Tenemos acceso directo al perfil y es un tema que
+la gente conversa sin incomodidad, a diferencia de la deuda.
 
 El criterio ICE más incierto es:
+Confidence (5,5 promedio). La fuente principal (F4) mide adolescentes de
+14 a 19 años y nuestro usuario es de 18 a 30. La superposición es mínima.
 
 La evidencia más fuerte que tenemos es:
+la convergencia de dos estudios independientes en que alrededor de tres
+de cada diez jóvenes gastan sus ahorros antes de lo planeado
+(F4: 29% - Junior Achievement + CEPE-UTDT, 2024; F3: 29,9% no sabe
+cuánto ahorra - Pulso Research, enero 2026).
 
 La principal debilidad de nuestra elección es:
+que descartamos B, que tiene el Impact promedio más alto por consenso
+unánime (9,0), por dificultad de acceso a usuarios. Es el sesgo de Ease
+que la consigna advierte y lo asumimos conscientemente.
 
 Podríamos estar equivocados si:
+el ahorro se rompe siempre por gastos imprevistos e ineludibles, o si
+nunca existió un excedente real y "me propuse ahorrar" es solo una
+intención. En cualquiera de los dos casos no hay un problema de gestión:
+hay un problema de ingreso, y la hipótesis se cae entera.
 
 La próxima evidencia que necesitamos obtener es:
+relatos concretos de la última vez que alguien se propuso ahorrar y no
+pudo, reconstruyendo qué gasto específico rompió el plan y si era
+evitable. La pregunta 2 del guion funciona como test: si la mayoría no
+puede reconstruir ningún episodio, volvemos al Paso 3.
 ```
 
 ---
@@ -506,21 +608,22 @@ Entrevista simulada a la Persona 1, con la IA instruida para declarar cuándo un
 
 **Reglas de conducción:** no mencionar herramientas ni soluciones; no preguntar "¿usarías...?"; pedir siempre un episodio concreto; registrar frases textuales; tolerar el silencio; **no defender nuestra hipótesis si el entrevistado la contradice** — esa contradicción es el dato más valioso.
 
-### Plan de entrevistas — [COMPLETAR]
+### Plan de entrevistas
 
 | Decisión | Definición |
 |---|---|
 | Perfil | 18-30 con ingresos propios. **Cuota obligatoria:** al menos 1 de ingreso estable y 1 de ingreso variable o informal. |
 | Cantidad | Mínimo 3 según la consigna. Siendo 4, una por integrante. |
-| Forma de contacto | **[COMPLETAR]** |
-| Dupla 1 (entrevistas 1 y 2) | **[COMPLETAR]** — uno conduce, otro registra; se invierten en la segunda |
-| Dupla 2 (entrevistas 3 y 4) | **[COMPLETAR]** |
+| Forma de contacto | Red personal directa: compañeros de cursada con trabajo, contactos laborales y conocidos del entorno inmediato. Contacto por mensaje, explicando que es para un trabajo de la facultad y que la conversación es sobre cómo maneja su plata, sin pedir montos ni datos de cuentas. |
+| Dupla 1 (entrevistas 1 y 2) | Felipe Chain + Juan Ignacio Canabe — uno conduce, el otro registra; se invierten en la segunda |
+| Dupla 2 (entrevistas 3 y 4) | Pedro Tailhade + Felipe Servent — mismo esquema |
+| Asignación de perfiles | **Dupla 1:** entrevista 1 con ingreso estable, entrevista 2 con ingreso variable o informal. **Dupla 2:** igual. Así cada perfil queda cubierto por duplicado y podemos contrastar las dos personas sintéticas. |
 | Evidencia a recopilar | Audio con consentimiento, notas textuales, y al menos un episodio concreto de ahorro roto por entrevistado |
 | Fecha límite | Antes de la Clase 3 |
 
 ---
 
-## Registro de entrevistas reales — [COMPLETAR]
+## Registro de entrevistas reales — entregable de la Clase 3
 
 > Se completa antes de la Clase 3. Repetir el bloque para cada entrevista.
 
@@ -616,7 +719,7 @@ Entrevista simulada a la Persona 1, con la IA instruida para declarar cuándo un
 **Cambios que haríamos a la redacción del problema**
 -
 
-### Síntesis de las entrevistas — [COMPLETAR]
+### Síntesis de las entrevistas — se completa tras las cuatro
 
 | Pregunta | Respuesta |
 |---|---|
@@ -638,41 +741,51 @@ Entrevista simulada a la Persona 1, con la IA instruida para declarar cuándo un
 - [x] Fuentes originales y verificables — 9, con limitaciones documentadas
 - [x] Fichas completas de los finalistas — 4
 - [x] Agrupaciones de la IA y decisiones del equipo — incluye una agrupación rechazada
-- [ ] **Evaluaciones ICE individuales — pendiente.** Las cuatro tablas están vacías a propósito.
+- [x] Evaluaciones ICE individuales — las cuatro, hechas por separado
 - [x] Evaluación ICE de la IA con justificaciones
-- [ ] **Comparación entre evaluaciones — pendiente.** Requiere lo anterior.
-- [x] Crítica escéptica del finalista — con reclasificación de D
-- [ ] **Decisión humana justificada — pendiente.** La propuesta está redactada; falta confirmarla y completar el bloque de justificación.
-- [x] Redacción final del problema — tres versiones
+- [x] Comparación entre evaluaciones — con la divergencia de A resuelta y los puntajes corregidos
+- [x] Crítica escéptica — de los dos finalistas empatados (7.a y 7.b)
+- [x] Decisión humana justificada — con el sesgo de Ease declarado
+- [x] Redacción final del problema — tres versiones, corregida tras la crítica
 - [x] Dos personas sintéticas
 - [x] Aprendizajes del role-play
-- [x] Guion de entrevista; **plan de entrevistas pendiente de completar**
+- [x] Guion de entrevista y plan de entrevistas con duplas asignadas
 - [x] Supuestos pendientes y evidencia que podría refutarlos
-- [ ] **Registro de entrevistas reales — pendiente para la Clase 3**
+- [ ] **Registro de las entrevistas reales — es el entregable de la Clase 3**
+
+**Todo el trabajo de la Clase 2 está completo.** Lo único abierto son las entrevistas, que por definición se hacen después de la clase y constituyen el entregable siguiente.
 
 ### Qué falta hacer, en orden
 
 | # | Tarea | Quién | Cuándo |
 |---|---|---|---|
-| 1 | Completar la evaluación ICE individual, **cada uno por separado** | Los 4 | Antes de juntarse |
-| 2 | Armar la tabla consolidada y calcular la dispersión | Equipo | Después de 1 |
-| 3 | Escribir la sección 6 (comparación) | Equipo | Después de 2 |
-| 4 | Confirmar o cambiar el problema priorizado y completar el bloque de justificación | Equipo | Después de 3 |
-| 5 | Revisar las 5 decisiones propuestas en la sección 4 | Equipo | Con 3 y 4 |
-| 6 | Definir contactos y duplas | Equipo | Esta semana |
-| 7 | Hacer y registrar las entrevistas | Duplas | Antes de la Clase 3 |
-| 8 | Conseguir el informe original de Junior Achievement/CEPE para resolver la discrepancia de F4 | **[COMPLETAR]** | Antes de la Clase 3 |
+| 1 | Contactar a los entrevistados y coordinar día y hora | Cada dupla | Esta semana |
+| 2 | Hacer las 4 entrevistas y volcarlas en las plantillas | Dupla 1: entrevistas 1-2 · Dupla 2: entrevistas 3-4 | Antes de la Clase 3 |
+| 3 | Completar la síntesis de las cuatro entrevistas | Equipo | Después de 2 |
+| 4 | Revisar si hay que reabrir B (si apareció deuda espontánea en 3 o más) | Equipo | Con 3 |
+| 5 | Revisar si hay que volver al Paso 3 (si nadie pudo reconstruir un episodio de ahorro) | Equipo | Con 3 |
+| 6 | Conseguir el informe original de Junior Achievement/CEPE para resolver la discrepancia de F4 | Felipe Servent | Antes de la Clase 3 |
 
-### Cierre del equipo — [COMPLETAR]
+### Cierre del equipo
 
 ```text
 El problema que decidimos investigar es:
+que los jóvenes de 18 a 30 con ingresos propios se proponen guardar
+dinero y terminan gastándolo antes de lo previsto, sin poder identificar
+en qué momento se rompió el plan.
 
 La evidencia más fuerte que encontramos es:
+que dos estudios independientes coinciden en que alrededor de tres de
+cada diez jóvenes gastan sus ahorros antes de lo planeado (F4 y F3).
 
 El supuesto más riesgoso es:
+que exista un excedente real que se pierde. Si nunca hubo excedente, o
+si el gasto que rompe el ahorro es siempre ineludible, no hay un problema
+de gestión: hay un problema de ingreso, y la hipótesis se cae entera.
 
 La pregunta más importante para los usuarios reales es:
+"La última vez que te propusiste guardar plata y no pudiste, ¿cuál fue el
+gasto concreto que la rompió, y podrías haberlo evitado?"
 ```
 
 ---
