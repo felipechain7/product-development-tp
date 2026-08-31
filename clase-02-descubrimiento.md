@@ -11,12 +11,6 @@
 
 Usamos IA para explorar fuentes y organizar información; la verificación y las decisiones son del equipo. Marcamos **[HECHO]** (dato de fuente verificable), **[INTERPRETACIÓN]** (lectura nuestra) y **[SUPUESTO]** (creencia sin comprobar).
 
-Tres advertencias:
-
-1. Toda la evidencia es research secundario. **Nada está validado con usuarios reales.**
-2. Las 9 fuentes fueron abiertas y verificadas, con sus limitaciones anotadas.
-3. **Lo marcado como [COMPLETAR] es trabajo del equipo y está vacío a propósito**: las evaluaciones ICE individuales, la comparación entre ellas, la confirmación del problema priorizado y el registro de las entrevistas reales. Una opinión individual o una entrevista no pueden ser generadas por IA sin convertirse en evidencia inventada. El problema priorizado de la sección 8 es **una propuesta a confirmar**, no una decisión tomada.
-
 ---
 
 ## Estacionamiento de soluciones
