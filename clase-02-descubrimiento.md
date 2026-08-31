@@ -241,19 +241,19 @@ Le entregamos a la IA las cuatro fichas más los ocho problemas potenciales, pid
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A — Dispersión del dinero | | | | | |
-| B — Endeudamiento y mora | | | | | |
-| C — Ahorro que no se sostiene | | | | | |
-| D — Ingresos irregulares | | | | | |
+| A — Dispersión del dinero |5 |4 |8 |1,6 |Me parece un problema bastante fácil de investigar porque es común usar más de una billetera o cuenta. Sin embargo, todavía hay poca evidencia de que tener el dinero distribuido genere realmente una consecuencia importante para el usuario. |
+| B — Endeudamiento y mora |9 |8 |4 |2,88 |Es el problema con consecuencias más graves y también el que tiene la evidencia más concreta. La mora juvenil está claramente documentada. Le bajo Ease porque puede ser difícil encontrar personas dispuestas a hablar abiertamente sobre deudas o incumplimientos. |
+| C — Ahorro que no se sostiene |7 |6 |8 |3,36 |Considero que es un problema relevante porque afecta directamente objetivos personales y aparece respaldado por más de una fuente. Además, es relativamente fácil encontrar jóvenes que hayan intentado ahorrar y preguntarles por experiencias concretas. La confianza no es mayor porque parte de la evidencia corresponde a adolescentes. |
+| D — Ingresos irregulares |8 |7 |6 |3,36 |Tener ingresos variables puede afectar mucho la posibilidad de organizar gastos y tomar decisiones con anticipación. Hay evidencia fuerte sobre la informalidad juvenil, aunque no demuestra directamente que las personas lo vivan como un problema de planificación. El acceso a entrevistados es razonable, pero más limitado que en A o C. |
 
 ### Tabla consolidada — [COMPLETAR después de las cuatro]
 
 | Problema | Chain | Canabe | Tailhade | Servent | IA | Dispersión (máx − mín) |
 |---|---:|---:|---:|---:|---:|---:|
-| A — Dispersión del dinero |1,68 | | | | 1,20 | |
-| B — Endeudamiento y mora |1,92 | | | | 2,16 | |
-| C — Ahorro que no se sostiene |2,1 | | | | 2,52 | |
-| D — Ingresos irregulares |2,8 | | | | 2,94 | |
+| A — Dispersión del dinero |1,68 | | |1,6 | 1,20 | |
+| B — Endeudamiento y mora |1,92 | | |2,88 | 2,16 | |
+| C — Ahorro que no se sostiene |2,1 | | |3,36 | 2,52 | |
+| D — Ingresos irregulares |2,8 | | |3,36 | 2,94 | |
 
 > El problema con **mayor dispersión** es el que más conviene discutir: indica que alguien leyó la misma evidencia de otra manera, o que hay un supuesto que nadie hizo explícito.
 
