@@ -229,10 +229,10 @@ Le entregamos a la IA las cuatro fichas más los ocho problemas potenciales, pid
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A — Dispersión del dinero | | | | | |
-| B — Endeudamiento y mora | | | | | |
-| C — Ahorro que no se sostiene | | | | | |
-| D — Ingresos irregulares | | | | | |
+| A — Dispersión del dinero |9 | 8| 9| 6,48| tener dinero repartido entre billeteras, banco y efectivo dificulta saber cuánto dinero realmente tengo disponible.|
+| B — Endeudamiento y mora | 10| 7| 4| 2,80| Puede tener consecuencias importantes para el usuario, especialmente cuando las deudas de corto o largo plazo se acumulan.Tengo menor confianza porque puede ser un tema difícil de conversar en entrevistas, lo que reduce la facilidad para obtener evidencia.|
+| C — Ahorro que no se sostiene | 9| 8| 8| 5,76| un problema importante porque muchas personas pueden proponerse ahorrar pero no logran mantener el hábito durante el mes. Además, se relaciona directamente con uno de nuestros supuestos|
+| D — Ingresos irregulares | 8| 6| 8| 3,84| Los ingresos variables pueden dificultar la planificación de los gastos y el ahorro.|
 
 #### Pedro Tailhade
 
