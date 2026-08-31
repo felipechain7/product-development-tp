@@ -246,16 +246,37 @@ Le entregamos a la IA las cuatro fichas más los ocho problemas potenciales, pid
 | C — Ahorro que no se sostiene |7 |6 |8 |3,36 |Considero que es un problema relevante porque afecta directamente objetivos personales y aparece respaldado por más de una fuente. Además, es relativamente fácil encontrar jóvenes que hayan intentado ahorrar y preguntarles por experiencias concretas. La confianza no es mayor porque parte de la evidencia corresponde a adolescentes. |
 | D — Ingresos irregulares |8 |7 |6 |3,36 |Tener ingresos variables puede afectar mucho la posibilidad de organizar gastos y tomar decisiones con anticipación. Hay evidencia fuerte sobre la informalidad juvenil, aunque no demuestra directamente que las personas lo vivan como un problema de planificación. El acceso a entrevistados es razonable, pero más limitado que en A o C. |
 
-### Tabla consolidada — [COMPLETAR después de las cuatro]
+### Tabla consolidada
 
-| Problema | Chain | Canabe | Tailhade | Servent | IA | Dispersión (máx − mín) |
-|---|---:|---:|---:|---:|---:|---:|
-| A — Dispersión del dinero |1,68 | | |1,6 | 1,20 | |
-| B — Endeudamiento y mora |1,92 | | |2,88 | 2,16 | |
-| C — Ahorro que no se sostiene |2,1 | | |3,36 | 2,52 | |
-| D — Ingresos irregulares |2,8 | | |3,36 | 2,94 | |
+Dispersión calculada sobre las cuatro evaluaciones humanas (la de la IA no cuenta).
+
+| Problema | Chain | Canabe | Tailhade | Servent | **Promedio** | IA | **Dispersión** |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| A — Dispersión del dinero | 1,68 | 6,48 | 0,96 | 1,60 | **2,68** | 1,20 | **5,52** |
+| B — Endeudamiento y mora | 1,92 | 2,80 | 2,16 | 2,88 | **2,44** | 2,16 | 0,96 |
+| C — Ahorro que no se sostiene | 2,10 | 5,76 | 2,40 | 3,36 | **3,41** | 2,52 | **3,66** |
+| D — Ingresos irregulares | 2,80 | 3,84 | 2,10 | 3,36 | **3,03** | 2,94 | 1,74 |
+
+**Ranking de cada evaluador**
+
+| Evaluador | 1° | 2° | 3° | 4° |
+|---|---|---|---|---|
+| Chain | D | C | B | A |
+| Canabe | **A** | C | D | B |
+| Tailhade | C | B | D | **A** |
+| Servent | C = D | — | B | **A** |
+| IA | D | C | B | **A** |
 
 > El problema con **mayor dispersión** es el que más conviene discutir: indica que alguien leyó la misma evidencia de otra manera, o que hay un supuesto que nadie hizo explícito.
+
+### Qué muestran estos números — a discutir en la sección 6
+
+1. **A es el caso más divergente (dispersión 5,52).** Canabe lo pone primero con 6,48; los otros tres y la IA lo ponen último. No es un desacuerdo de matiz: es la diferencia entre "el problema más importante" y "el menos importante". **Hay que resolverlo antes de avanzar.**
+2. **La discusión de A se reduce a un punto concreto:** Canabe le asignó Confidence 8, que según la rúbrica significa "evidencia diversa, verificable y consistente". La ficha de A dice que ninguna fuente mide que la dispersión genere una dificultad. Los otros tres pusieron entre 3 y 4. **Pregunta para el equipo: ¿qué fuente respalda un 8?**
+3. **También conviene revisar la justificación de B de Canabe**, que dice bajar la *confianza* porque el tema es difícil de conversar en entrevistas. Esa dificultad corresponde a *Ease*, no a *Confidence*.
+4. **Consenso real en B:** los cuatro coinciden en Impact alto (8-10) y Ease bajo (3-4). Es el problema mejor documentado y el más difícil de investigar. Nadie lo discute.
+5. **C es el más votado:** primero para Tailhade y Servent, segundo para Chain, Canabe y la IA. Es el mejor promedio (3,41) y sostiene la propuesta de la sección 8, pero **conviene recalcularlo si Canabe corrige sus puntajes**, porque su 5,76 está inflando ese promedio.
+6. **Ninguno de los cuatro rankings coincide con otro.** Eso no es un problema del ejercicio: es exactamente el material que la consigna pide documentar en la sección 6.
 
 ---
 
