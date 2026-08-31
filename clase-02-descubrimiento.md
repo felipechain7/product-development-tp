@@ -14,8 +14,8 @@ Usamos IA para explorar fuentes y organizar información; la verificación y las
 Tres advertencias:
 
 1. Toda la evidencia es research secundario. **Nada está validado con usuarios reales.**
-2. Las 8 fuentes fueron abiertas y verificadas, con sus limitaciones anotadas.
-3. **Este documento cubre hasta el Paso 3.** No hay problema priorizado todavía: hay cuatro problemas fichados y comparables.
+2. Las 9 fuentes fueron abiertas y verificadas, con sus limitaciones anotadas.
+3. **Lo marcado como [COMPLETAR] es trabajo del equipo y está vacío a propósito**: las evaluaciones ICE individuales, la comparación entre ellas, la confirmación del problema priorizado y el registro de las entrevistas reales. Una opinión individual o una entrevista no pueden ser generadas por IA sin convertirse en evidencia inventada. El problema priorizado de la sección 8 es **una propuesta a confirmar**, no una decisión tomada.
 
 ---
 
@@ -167,3 +167,510 @@ Fichamos cuatro. Quedaron fuera P4 (es una causa transversal, no una dificultad 
 | Acceso a usuarios | Medio-alto: hay compañeros con trabajo informal o freelance. |
 | Supuestos | Que la irregularidad se viva como dificultad de gestión y no como una condición dada. |
 | Evidencia faltante | Cómo decide efectivamente alguien con ingreso variable y qué hace en un mes malo. |
+
+---
+
+## 4. Limpieza y agrupación
+
+Le entregamos a la IA las cuatro fichas más los ocho problemas potenciales, pidiéndole detectar duplicados, distinguir problemas de síntomas y causas, y señalar vacíos.
+
+### Agrupaciones sugeridas por la IA
+
+1. **P4 no es un problema, es una causa transversal.** Explicaría A, B y C, pero no describe una dificultad situada ni puede investigarse por separado.
+2. **P8 es un síntoma de A.** Si el dinero está disperso, no poder sumarlo es la consecuencia esperable.
+3. **P5 y P6 son soluciones disfrazadas.** Ambos presuponen que registrar gastos es la conducta correcta: están formulados desde la herramienta, no desde el usuario.
+4. **Posible relación causal D → C:** si el ingreso es irregular, el ahorro difícilmente se sostenga. C podría ser un síntoma de D en parte de la población.
+5. **Posible relación causal D → B:** el informe del Centro de Estudios de la Ciudad (F1) ubica la informalidad laboral como primera causa de la mora.
+6. **Contradicción no resuelta:** "los jóvenes son el único segmento que ahorra" (F3) y "son el segmento con más mora" (F1) sugieren dos subpoblaciones que las fuentes agregadas no separan.
+7. **Vacío:** ninguna fuente describe comportamiento individual.
+
+### Decisiones del equipo
+
+| Decisión | Fundamento |
+|---|---|
+| Aceptamos descartar P4 como problema autónomo | Es una explicación, no una dificultad situada. Lo conservamos como hipótesis causal. |
+| Aceptamos absorber P8 en la ficha A | El argumento es correcto. |
+| Aceptamos descartar P5 y P6 | Los habíamos escrito nosotros desde la solución. Van al estacionamiento. |
+| **Rechazamos fusionar C dentro de D** | Si los fusionamos perdemos el caso de la persona con ingreso estable que igual no ahorra. La relación causal pasa a ser **hipótesis a testear**, no supuesto asumido. |
+| Mantenemos B pese al bajo acceso a usuarios | Es el problema con mejor evidencia. Descartarlo por comodidad sería el sesgo de *Ease* que advierte la consigna. |
+
+> **[COMPLETAR]** Revisar estas cinco decisiones en equipo y modificar las que no compartan. Están redactadas como propuesta, no como acuerdo cerrado.
+
+**Reformulación:** el problema C pasó de "no se puede ahorrar" a "el ahorro se inicia pero no se sostiene". La primera versión mezclaba a quien no tiene excedente con quien lo tiene y no lo retiene; solo el segundo caso es investigable como comportamiento.
+
+---
+
+## 5. Evaluaciones ICE individuales
+
+`ICE = (Impact × Confidence × Ease) / 100` — cada criterio de 1 a 10.
+
+| Criterio | Significado en esta actividad |
+|---|---|
+| **Impact** | Importancia de las consecuencias del problema para el usuario. |
+| **Confidence** | Confianza en que el problema existe, **según la evidencia disponible**. |
+| **Ease** | Facilidad para **acceder a usuarios y obtener evidencia real**. No es facilidad de construir una solución. |
+
+> Con research secundario solamente, **ningún Confidence debería pasar de 8.** El 9-10 exige evidencia directa de comportamientos reales, que todavía no tenemos.
+
+### ⚠️ Para completar individualmente — cada uno por su cuenta
+
+**Instrucciones:** cada integrante completa su tabla **sin consultar a los demás y sin leer la evaluación de la IA de la sección 5.b.** Si se juntan a completarlas, el ejercicio pierde sentido y la sección 6 queda vacía. La divergencia es el dato valioso, no el acuerdo.
+
+#### Felipe Chain
+
+| Problema | Impact | Confidence | Ease | ICE | Justificación |
+|---|---:|---:|---:|---:|---|
+| A — Dispersión del dinero | | | | | |
+| B — Endeudamiento y mora | | | | | |
+| C — Ahorro que no se sostiene | | | | | |
+| D — Ingresos irregulares | | | | | |
+
+#### Juan Ignacio Canabe
+
+| Problema | Impact | Confidence | Ease | ICE | Justificación |
+|---|---:|---:|---:|---:|---|
+| A — Dispersión del dinero | | | | | |
+| B — Endeudamiento y mora | | | | | |
+| C — Ahorro que no se sostiene | | | | | |
+| D — Ingresos irregulares | | | | | |
+
+#### Pedro Tailhade
+
+| Problema | Impact | Confidence | Ease | ICE | Justificación |
+|---|---:|---:|---:|---:|---|
+| A — Dispersión del dinero | | | | | |
+| B — Endeudamiento y mora | | | | | |
+| C — Ahorro que no se sostiene | | | | | |
+| D — Ingresos irregulares | | | | | |
+
+#### Felipe Servent
+
+| Problema | Impact | Confidence | Ease | ICE | Justificación |
+|---|---:|---:|---:|---:|---|
+| A — Dispersión del dinero | | | | | |
+| B — Endeudamiento y mora | | | | | |
+| C — Ahorro que no se sostiene | | | | | |
+| D — Ingresos irregulares | | | | | |
+
+### Tabla consolidada — [COMPLETAR después de las cuatro]
+
+| Problema | Chain | Canabe | Tailhade | Servent | IA | Dispersión (máx − mín) |
+|---|---:|---:|---:|---:|---:|---:|
+| A — Dispersión del dinero | | | | | 1,20 | |
+| B — Endeudamiento y mora | | | | | 2,16 | |
+| C — Ahorro que no se sostiene | | | | | 2,52 | |
+| D — Ingresos irregulares | | | | | 2,94 | |
+
+> El problema con **mayor dispersión** es el que más conviene discutir: indica que alguien leyó la misma evidencia de otra manera, o que hay un supuesto que nadie hizo explícito.
+
+---
+
+## 5.b Evaluación ICE de la IA
+
+Evaluación hecha usando exclusivamente la evidencia de las fichas, con la instrucción de explicitar qué parte de cada puntaje era inferencia.
+
+| Problema | I | C | E | ICE | Qué parte es inferencia | Qué hallazgo cambiaría el puntaje |
+|---|---:|---:|---:|---:|---|---|
+| A — Dispersión | 5 | 3 | 8 | **1,20** | **Todo el Impact.** Ninguna fuente mide una consecuencia. Confidence 3 porque ninguna fuente afirma que la dispersión genere dificultad | Sube si relatan un error de gasto concreto por no conocer su saldo total. Baja si dicen que abrir varias apps no les cuesta |
+| B — Endeudamiento | 9 | 8 | 3 | **2,16** | La atribución causal a decisiones evitables: los datos muestran la mora, no por qué ocurre | Baja fuerte si la mora responde solo a caída de ingresos: dejaría de ser abordable desde producto |
+| C — Ahorro no sostenido | 6 | 6 | 7 | **2,52** | Que las cifras de 14-19 años (F4) se trasladen a 18-30. Ease 7 y no 8 porque el segmento con excedente real puede ser más chico de lo que parece | Sube si reconstruyen episodios concretos de ahorro roto. Baja si casi nadie del segmento tiene excedente |
+| D — Ingresos irregulares | 7 | 7 | 6 | **2,94** | Que la irregularidad sea *vivida* como problema de gestión y no aceptada como condición normal | Sube si describen estrategias explícitas de manejo del ingreso variable. Baja si lo naturalizan |
+
+**Ranking de la IA:** D (2,94) > C (2,52) > B (2,16) > A (1,20)
+
+### Advertencias que marcó la IA
+
+1. Ningún Confidence debería superar 8: no hay entrevistas propias.
+2. El Impact de A es una construcción nuestra, sin fuente que lo sostenga.
+3. La contradicción de F1 vs. F3 afecta a C y a D a la vez; ninguna evaluación es confiable hasta resolverla.
+4. **Los *Ease* altos de A y C pueden estar inflando su ranking frente a B**, que tiene mucha mejor evidencia.
+5. Se negó a elegir un ganador, como pedía la consigna.
+
+---
+
+## 6. Comparación de evaluaciones
+
+> **[COMPLETAR]** Esta sección se escribe recién cuando estén las cuatro evaluaciones individuales. Abajo quedan las preguntas guía y lo único que ya se puede afirmar.
+
+| Pregunta | Respuesta del equipo |
+|---|---|
+| ¿Dónde coincidimos? | |
+| ¿Dónde aparecen diferencias? | |
+| ¿Qué puntaje quedó débilmente justificado? | |
+| ¿Qué criterio depende más de supuestos? | |
+| ¿La IA usó evidencia o completó vacíos? | |
+| ¿*Ease* está pesando demasiado en nuestro ranking? | |
+
+**Lo que ya podemos afirmar sobre la IA:**
+
+- No inventó fuentes ni cifras: todo lo que usó estaba en las fichas.
+- Marcó sus propias inferencias incluso cuando eso debilitaba sus puntajes.
+- Detectó que P5 y P6 eran soluciones disfrazadas que habíamos escrito sin darnos cuenta.
+- **En contra:** al agrupar, tendió a fusionar C dentro de D con más seguridad de la que la evidencia permite. Fue el equipo el que frenó esa fusión. Es un caso claro de la IA cerrando una incertidumbre en lugar de conservarla.
+- **Riesgo:** reproduce el encuadre de las notas periodísticas que le dimos. El tono de alarma sobre la mora juvenil puede haber inflado el Impact de B.
+
+**Puntajes modificados y motivo:** [COMPLETAR]
+
+**Incertidumbres que permanecen:** la contradicción F1/F3, el desajuste etario de F4 y F5, y si alguno de estos problemas es abordable desde producto o todos son consecuencia de falta de ingreso.
+
+---
+
+## 7. Crítica del problema finalista
+
+Sometimos a cuestionamiento escéptico el problema con mayor ICE según la IA: **D — Ingresos irregulares** (2,94).
+
+> **[COMPLETAR]** Si tras las evaluaciones individuales el finalista del equipo es otro, hay que repetir esta crítica sobre ese problema.
+
+### Debilidades encontradas
+
+1. **El impacto está inferido.** Sabemos que 58-60% de los jóvenes trabaja en la informalidad (F3). **No sabemos que eso les genere una dificultad de gestión.** Podría estar completamente naturalizado.
+2. **Confunde contexto con problema.** "Ingreso irregular" describe una circunstancia estructural del mercado laboral, no una fricción ubicable en un momento y un comportamiento.
+3. **Puede no tener destinatario de solución.** Si la causa es el mercado laboral, ninguna intervención de producto lo resuelve.
+4. **Es la misma categoría que descartamos en P4:** una causa transversal, no un problema autónomo.
+5. **Ganó por *Ease*, no por evidencia.** La IA le puso Ease 6 contra el 3 de B. Un problema no debería ganar una priorización por ser más cómodo de investigar — es exactamente la trampa que advierte la consigna.
+
+### Explicaciones alternativas
+
+- Los jóvenes con ingreso irregular podrían tener **mejores** estrategias de gestión, justamente por estar obligados a desarrollarlas.
+- La dificultad podría estar en la rigidez de los gastos fijos, no en la variabilidad del ingreso.
+- Podría no haber dificultad de planificación: simplemente no alcanza, y eso no es un problema de planificación.
+
+### Evidencia que lo refutaría
+
+- Entrevistados con ingreso variable que describan un método propio y funcional.
+- Que digan explícitamente que no planifican porque no tiene sentido, sin vivirlo como carencia.
+- Que la única consecuencia mencionada sea "no me alcanza", sin componente de gestión.
+
+### Respuesta del equipo
+
+Aceptamos las objeciones 2, 4 y 5. **D describe una condición, no una fricción situada**, lo que lo hace estructuralmente distinto de C.
+
+No lo descartamos: lo **reclasificamos como variable de segmentación**. En vez de investigar "el problema de tener ingresos irregulares", investigamos C **comparando personas de ingreso estable contra personas de ingreso variable**. Así la dimensión de D entra en el diseño de la investigación sin ser tratada como problema autónomo.
+
+---
+
+## 8. Problema priorizado
+
+**Propuesta del equipo: C — El ahorro se inicia pero no se sostiene** (ICE 2,52, segundo del ranking).
+
+> **[COMPLETAR]** Confirmar o cambiar esta elección después de las evaluaciones individuales. La consigna habilita elegir un problema que no sea el de mayor ICE, siempre que se justifique.
+
+| Criterio | Puntaje | Fundamento |
+|---|---:|---|
+| Impact | 6 | Afecta un objetivo que el usuario declara tener, pero sin daño inmediato ni irreversible. |
+| Confidence | 6 | Dos fuentes coincidentes (F4, F3), con la advertencia de que la principal mide 14-19 años. |
+| Ease | 7 | Alto acceso a entrevistados y tema conversable, descontando que no todos tendrán excedente. |
+| **ICE** | **2,52** | |
+
+**Por qué no D (2,94):** la crítica mostró que describe una condición estructural y que subió por *Ease*. Su contenido se incorpora como variable de segmentación.
+
+**Por qué no B (2,16), que tiene la mejor evidencia.** Es la decisión más incómoda del trabajo y la dejamos registrada como tal. B tiene el Impact (9) y el Confidence (8) más altos. Lo descartamos por *Ease* (3): el estigma de la mora hace poco probable conseguir relatos honestos en nuestro círculo. **Reconocemos que esto es el sesgo que la consigna advierte.** Lo asumimos con una condición: si en las entrevistas de C aparece deuda de forma espontánea y repetida, **reabrimos B**.
+
+### Redacción final
+
+**Versión breve:**
+
+> Jóvenes de 18 a 30 años con ingresos propios se proponen guardar dinero y terminan gastándolo antes de lo previsto, sin poder identificar en qué momento se rompió el plan.
+
+**Versión centrada en el comportamiento:**
+
+> Cuando un joven de 18 a 30 con ingresos propios decide apartar dinero, lo deja en una cuenta o billetera que sigue usando para gastos corrientes. A lo largo del mes ese dinero se consume en decisiones sucesivas, y a fin de mes no puede reconstruir cuánto había apartado ni cuánto queda.
+
+**Versión completa, con evidencia e incertidumbre:**
+
+> **Los jóvenes de 18 a 30 años con ingresos propios** tienen dificultades para **sostener el dinero que se propusieron ahorrar** cuando **transcurre el mes y ese dinero permanece disponible junto al de los gastos corrientes**, debido a **que el ahorro no está separado del dinero de uso diario ni existe un momento definido para revisar si el plan se cumple**. Esto genera **que el objetivo no se cumpla y que la persona no pueda identificar en qué momento ni por qué se rompió**.
+>
+> Encontramos señales en Junior Achievement + CEPE-UTDT (F4): **49% ahorra de manera sostenida y 29% gasta sus ahorros antes de lo planeado**; y en Pulso Research (F3): **50,2% de los jóvenes de 16-29 puede guardar dinero pero 29,9% no sabe cuánto**.
+>
+> Todavía necesitamos comprobar: **(a)** si cifras medidas en adolescentes de 14 a 19 se sostienen en 18-30; **(b)** si el ahorro se rompe por un gasto imprevisto e ineludible o por decisiones evitables — **si es lo primero, no es un problema de gestión sino de ingreso**; **(c)** si se percibe como problema propio o como consecuencia normal del contexto; **(d)** si difiere entre ingreso estable e ingreso variable.
+
+### Revisión de la redacción
+
+| Criterio | ¿Cumple? |
+|---|---|
+| Usuario concreto | Sí: 18-30 con ingresos propios. |
+| Situación observable | Sí: el transcurso del mes con el dinero apartado disponible. |
+| Progreso buscado | Sí: sostener un ahorro que se propuso. |
+| Fricción sin causa no demostrada | Con reserva: "no está separado del dinero de uso diario" es **[SUPUESTO]**, señalado en (b). |
+| Distingue evidencia de supuestos | Sí, en párrafos separados. |
+| Evita mencionar una solución | Sí: no se nombra ninguna herramienta ni funcionalidad. |
+| Investigable por entrevistas | Sí: pide reconstruir episodios pasados. |
+| **¿Podría demostrarse que estamos equivocados?** | **Sí, explicitado en (b).** |
+
+### Justificación del equipo — [COMPLETAR]
+
+```text
+Priorizamos este problema porque:
+
+El criterio ICE más sólido es:
+
+El criterio ICE más incierto es:
+
+La evidencia más fuerte que tenemos es:
+
+La principal debilidad de nuestra elección es:
+
+Podríamos estar equivocados si:
+
+La próxima evidencia que necesitamos obtener es:
+```
+
+---
+
+## 9. Personas sintéticas y entrevistas
+
+Las dos personas **reproducen la contradicción sin resolver del research** (F3 vs. F1): si ambas fuentes son ciertas, describen subpoblaciones distintas. Estas son esas dos subpoblaciones, formuladas como hipótesis.
+
+> Ninguna de las dos es evidencia. Sirven para mejorar preguntas, no para validar nada.
+
+### Persona 1 — "La que puede ahorrar pero no lo sostiene"
+
+| Campo | Contenido |
+|---|---|
+| Descripción | Asalariada de 24, empleo formal, vive con sus padres. No afronta vivienda, servicios ni alimentación. Ingreso predecible. |
+| Objetivo | Acumular para una meta de mediano plazo (viaje, mudanza, curso), sin fecha ni monto definidos. |
+| Comportamientos | Cobra por billetera. Deja el excedente en la misma cuenta con la que gasta. Revisa el saldo al comprar, no de forma programada. |
+| Frustraciones | Llega a fin de mes con menos de lo esperado y no logra reconstruir en qué se fue. |
+| Restricciones | Su capacidad de ahorro depende de una convivencia que puede cambiar. |
+| Alternativas actuales | **[SUPUESTO]** Cuenta remunerada, o dejar la plata quieta. |
+| Evidencia | F3 (50,2% puede ahorrar, 29,9% no sabe cuánto; el ahorro se atribuye a no pagar vivienda ni servicios), F4 (49%/29%). |
+| Supuestos incorporados | Que no separa el ahorro, que le importa la meta, que lo percibe como problema propio. **Ninguno respaldado.** |
+| Solo una persona real puede decir | ¿Separa la plata o no? ¿Qué gasto rompió el último intento? ¿Le molesta o lo naturaliza? |
+
+### Persona 2 — "El que no llega a tener excedente"
+
+| Campo | Contenido |
+|---|---|
+| Descripción | 26 años, changas / freelance / comisión. Monto y fecha de cobro cambian mes a mes. Alquila o aporta al hogar. |
+| Objetivo | Llegar a fin de mes y cubrir gastos fijos. El ahorro no está entre sus objetivos inmediatos. |
+| Comportamientos | Decide día a día, no mes a mes. Usó crédito de acceso inmediato para cubrir un faltante. |
+| Frustraciones | No puede comprometerse a cuotas sin saber cuánto va a cobrar. |
+| Restricciones | Sin recibo de sueldo, con acceso limitado a crédito bancario de tasa baja. |
+| Alternativas actuales | Refinanciación, pedir a familiares, postergar pagos. |
+| Evidencia | F3 (58%/60% de informalidad, 17,2% de desocupación), F1 (mora 38,2% en menores de 25; informalidad como primera causa; 36% de deudores jóvenes en billeteras). |
+| Supuestos incorporados | Que viva la irregularidad como dificultad y que haya tomado crédito sin comprender el costo. **Ambos son especulación nuestra.** |
+| Solo una persona real puede decir | ¿Cómo decide en un mes malo? ¿Qué pasó la última vez que no le alcanzó? ¿Qué entendía del costo? |
+
+**Por qué estas dos:** si al entrevistar resulta que **la Persona 1 casi no existe** en nuestro entorno — que casi nadie tiene excedente real — entonces C está mal planteado y lo que hay es un problema de ingreso. El contraste está diseñado para poder refutarnos.
+
+### Aprendizajes del role-play
+
+Entrevista simulada a la Persona 1, con la IA instruida para declarar cuándo una respuesta no estaba respaldada.
+
+- **Respondió "esto debe validarse con una persona real" justo en las preguntas que más importaban:** qué gasto rompió el ahorro y si separaba la plata. Es el hallazgo central: donde necesitábamos evidencia, no había nada, porque nunca la tuvimos.
+- Ante "contame la última vez que te pasó", no pudo relatar una situación. **Una persona sintética no tiene pasado.**
+- Preguntas corregidas gracias al simulacro:
+  - *"¿Te resulta difícil ahorrar?"* → sugiere la respuesta y admite un sí/no vacío. **Reformulada.**
+  - *"¿Usarías algo que te ayude a separar la plata?"* → intención futura + presenta una solución. **Eliminada.**
+  - *"¿Por qué no lograste ahorrar?"* → pide una racionalización, no un hecho. **Reformulada como reconstrucción de episodio.**
+- **Riesgo detectado:** respondía de forma demasiado ordenada. Si en las entrevistas reales escuchamos relatos así de prolijos, probablemente los estemos induciendo nosotros.
+
+### Guion de entrevista real
+
+1. Contame cómo fue el último mes en términos de plata: cuándo cobraste y qué pasó hasta que se terminó.
+2. ¿Cuándo fue la última vez que te propusiste guardar plata? ¿Qué te propusiste exactamente?
+3. ¿Qué hiciste concretamente con esa plata cuando decidiste guardarla? ¿Dónde quedó?
+4. ¿Qué pasó después con esa plata? Contame paso por paso.
+5. Si la usaste: ¿cuál fue el gasto? ¿Qué estaba pasando ese día?
+6. ¿En qué momento te diste cuenta de que ya no estaba?
+7. ¿Cuántas veces te pasó algo parecido en el último año? Contame otra vez.
+8. Cuando querés saber cuánta plata tenés en total, ¿qué hacés? Mostrame si podés.
+9. ¿Alguna vez hiciste algo distinto para que no vuelva a pasar? ¿Qué resultó?
+10. De todo esto, ¿qué te molestó de verdad y qué te pareció normal?
+
+**Profundización** (cuando la respuesta sea general):
+- "Dijiste que se te fue en cosas. ¿Qué cosas? Dame un ejemplo del último mes."
+- "¿Ese gasto lo podrías haber evitado o no había opción?"
+
+**Si aparece deuda espontáneamente** (no preguntar por deuda de forma directa):
+- "Contame cómo fue esa vez que necesitaste la plata y no la tenías."
+- "¿Qué opciones evaluaste?"
+- "Cuando lo pediste, ¿qué sabías sobre cuánto ibas a terminar devolviendo?"
+
+> Si la deuda aparece espontáneamente en 3 o más entrevistas, **reabrir el Problema B**.
+
+**Reglas de conducción:** no mencionar herramientas ni soluciones; no preguntar "¿usarías...?"; pedir siempre un episodio concreto; registrar frases textuales; tolerar el silencio; **no defender nuestra hipótesis si el entrevistado la contradice** — esa contradicción es el dato más valioso.
+
+### Plan de entrevistas — [COMPLETAR]
+
+| Decisión | Definición |
+|---|---|
+| Perfil | 18-30 con ingresos propios. **Cuota obligatoria:** al menos 1 de ingreso estable y 1 de ingreso variable o informal. |
+| Cantidad | Mínimo 3 según la consigna. Siendo 4, una por integrante. |
+| Forma de contacto | **[COMPLETAR]** |
+| Dupla 1 (entrevistas 1 y 2) | **[COMPLETAR]** — uno conduce, otro registra; se invierten en la segunda |
+| Dupla 2 (entrevistas 3 y 4) | **[COMPLETAR]** |
+| Evidencia a recopilar | Audio con consentimiento, notas textuales, y al menos un episodio concreto de ahorro roto por entrevistado |
+| Fecha límite | Antes de la Clase 3 |
+
+---
+
+## Registro de entrevistas reales — [COMPLETAR]
+
+> Se completa antes de la Clase 3. Repetir el bloque para cada entrevista.
+
+### Entrevista 1
+
+- Fecha / Entrevistador / Registrador:
+- Perfil (edad, tipo de ingreso, situación de vivienda):
+
+**Situaciones reales relatadas**
+-
+
+**Comportamientos y alternativas actuales**
+-
+
+**Consecuencias observadas**
+-
+
+**Frases relevantes** (textuales, entre comillas)
+-
+
+**Contradicciones con nuestra hipótesis**
+-
+
+**Cambios que haríamos a la redacción del problema**
+-
+
+### Entrevista 2
+
+- Fecha / Entrevistador / Registrador:
+- Perfil:
+
+**Situaciones reales relatadas**
+-
+
+**Comportamientos y alternativas actuales**
+-
+
+**Consecuencias observadas**
+-
+
+**Frases relevantes**
+-
+
+**Contradicciones con nuestra hipótesis**
+-
+
+**Cambios que haríamos a la redacción del problema**
+-
+
+### Entrevista 3
+
+- Fecha / Entrevistador / Registrador:
+- Perfil:
+
+**Situaciones reales relatadas**
+-
+
+**Comportamientos y alternativas actuales**
+-
+
+**Consecuencias observadas**
+-
+
+**Frases relevantes**
+-
+
+**Contradicciones con nuestra hipótesis**
+-
+
+**Cambios que haríamos a la redacción del problema**
+-
+
+### Entrevista 4
+
+- Fecha / Entrevistador / Registrador:
+- Perfil:
+
+**Situaciones reales relatadas**
+-
+
+**Comportamientos y alternativas actuales**
+-
+
+**Consecuencias observadas**
+-
+
+**Frases relevantes**
+-
+
+**Contradicciones con nuestra hipótesis**
+-
+
+**Cambios que haríamos a la redacción del problema**
+-
+
+### Síntesis de las entrevistas — [COMPLETAR]
+
+| Pregunta | Respuesta |
+|---|---|
+| ¿Qué apareció en todas? | |
+| ¿Qué apareció en una sola y no se repitió? | |
+| ¿El ahorro se rompió por gastos evitables o ineludibles? | |
+| ¿Se comportan distinto los de ingreso estable y los de ingreso variable? | |
+| ¿Apareció deuda de forma espontánea? ¿En cuántas? | |
+| ¿Qué contradijo nuestra hipótesis? | |
+
+---
+
+## 10. Revisión y entrega
+
+### Lista de verificación
+
+- [x] Territorio: dominio, usuario, contexto, supuestos y límites
+- [x] Entre 5 y 10 problemas potenciales — 8
+- [x] Fuentes originales y verificables — 9, con limitaciones documentadas
+- [x] Fichas completas de los finalistas — 4
+- [x] Agrupaciones de la IA y decisiones del equipo — incluye una agrupación rechazada
+- [ ] **Evaluaciones ICE individuales — pendiente.** Las cuatro tablas están vacías a propósito.
+- [x] Evaluación ICE de la IA con justificaciones
+- [ ] **Comparación entre evaluaciones — pendiente.** Requiere lo anterior.
+- [x] Crítica escéptica del finalista — con reclasificación de D
+- [ ] **Decisión humana justificada — pendiente.** La propuesta está redactada; falta confirmarla y completar el bloque de justificación.
+- [x] Redacción final del problema — tres versiones
+- [x] Dos personas sintéticas
+- [x] Aprendizajes del role-play
+- [x] Guion de entrevista; **plan de entrevistas pendiente de completar**
+- [x] Supuestos pendientes y evidencia que podría refutarlos
+- [ ] **Registro de entrevistas reales — pendiente para la Clase 3**
+
+### Qué falta hacer, en orden
+
+| # | Tarea | Quién | Cuándo |
+|---|---|---|---|
+| 1 | Completar la evaluación ICE individual, **cada uno por separado** | Los 4 | Antes de juntarse |
+| 2 | Armar la tabla consolidada y calcular la dispersión | Equipo | Después de 1 |
+| 3 | Escribir la sección 6 (comparación) | Equipo | Después de 2 |
+| 4 | Confirmar o cambiar el problema priorizado y completar el bloque de justificación | Equipo | Después de 3 |
+| 5 | Revisar las 5 decisiones propuestas en la sección 4 | Equipo | Con 3 y 4 |
+| 6 | Definir contactos y duplas | Equipo | Esta semana |
+| 7 | Hacer y registrar las entrevistas | Duplas | Antes de la Clase 3 |
+| 8 | Conseguir el informe original de Junior Achievement/CEPE para resolver la discrepancia de F4 | **[COMPLETAR]** | Antes de la Clase 3 |
+
+### Cierre del equipo — [COMPLETAR]
+
+```text
+El problema que decidimos investigar es:
+
+La evidencia más fuerte que encontramos es:
+
+El supuesto más riesgoso es:
+
+La pregunta más importante para los usuarios reales es:
+```
+
+---
+
+## Principios que guiaron el trabajo
+
+1. No empezar por la solución — las 5 ideas que aparecieron están en el estacionamiento, sin desarrollar.
+2. No confundir respuestas de la IA con evidencia — todo lo generado está etiquetado.
+3. Verificar las fuentes originales — las 9 fueron abiertas, con limitaciones y conflictos de interés declarados.
+4. Separar hechos, interpretaciones y supuestos.
+5. Usar ICE para ordenar la conversación, no para fabricar certeza — proponemos el segundo del ranking, con la justificación escrita.
+6. Usar personas sintéticas para mejorar preguntas — el role-play corrigió 3 preguntas del guion.
+7. Buscar comportamientos pasados — las 10 preguntas piden reconstruir episodios.
+8. Documentar contradicciones — la de F1 vs. F3 sigue sin resolver y está declarada como tal.
+
+> **Priorizar un problema no significa haberlo validado. Significa elegir qué incertidumbre investigar primero.**
