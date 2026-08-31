@@ -206,9 +206,7 @@ Le entregamos a la IA las cuatro fichas más los ocho problemas potenciales, pid
 
 > Con research secundario solamente, **ningún Confidence debería pasar de 8.** El 9-10 exige evidencia directa de comportamientos reales, que todavía no tenemos.
 
-### ⚠️ Para completar individualmente — cada uno por su cuenta
-
-**Instrucciones:** cada integrante completa su tabla **sin consultar a los demás y sin leer la evaluación de la IA de la sección 5.b.** Si se juntan a completarlas, el ejercicio pierde sentido y la sección 6 queda vacía. La divergencia es el dato valioso, no el acuerdo.
+Cada uno completó su tabla por separado, sin consultar a los demás y antes de leer la evaluación de la IA de la sección 5.b.
 
 #### Felipe Chain
 
@@ -349,7 +347,7 @@ Después de la corrección la dispersión máxima baja de 5,52 a 1,74, y **C que
 
 **Un error que corregimos al consolidar:** en la revisión, Canabe cambió Impact y Confidence de C pero dejó el ICE anterior (5,76) sin recalcular. El valor correcto es 8 × 6 × 8 / 100 = **3,84**. Lo verificamos recalculando las 16 celdas; era el único error de cálculo del documento.
 
-**Un error conceptual que dejamos registrado** porque nos sirve a todos: la justificación de B de Canabe dice que baja la *confianza* porque el tema es difícil de conversar en entrevistas. Esa dificultad es **Ease**, no **Confidence**. Confidence mide cuánta evidencia tenemos de que el problema existe; Ease, qué tan fácil es conseguir más. Confundirlos hace que la dificultad de investigar se cuente dos veces y hunda un problema que puede estar bien documentado.
+**Un error conceptual que dejamos registrado:** la justificación de B de Canabe dice que baja la *confianza* porque el tema es difícil de conversar en entrevistas. Esa dificultad es **Ease**, no **Confidence**. Confidence mide cuánta evidencia tenemos de que el problema existe; Ease, qué tan fácil es conseguir más. Confundirlos hace que la dificultad de investigar se cuente dos veces y hunda un problema que puede estar bien documentado.
 
 ### El sesgo de Ease, explícito
 
@@ -362,7 +360,7 @@ Ordenando por **Impact promedio** en lugar de por ICE, el ranking se da vuelta:
 | C — Ahorro no sostenido | 6,75 | 7,75 | 2,92 |
 | A — Dispersión | 5,25 | 7,75 | 1,66 |
 
-**B es, por consenso unánime, el problema más grave — y sale tercero.** La única razón es su Ease de 3,25. Lo dejamos escrito acá porque condiciona la decisión de la sección 8 y no queremos que quede escondido detrás de un número.
+**B es, por consenso unánime, el problema más grave — y sale tercero.** La única razón es su Ease de 3,25. Lo dejamos escrito porque condiciona la decisión de la sección 8 y no queremos que quede escondido detrás de un número.
 
 **Lo que podemos afirmar sobre la IA:**
 
@@ -754,22 +752,10 @@ Entrevista simulada a la Persona 1, con la IA instruida para declarar cuándo un
 - [x] Redacción final del problema — tres versiones, corregida tras la crítica
 - [x] Dos personas sintéticas
 - [x] Aprendizajes del role-play
-- [x] Guion de entrevista y plan de entrevistas con duplas asignadas
+- [x] Guion y plan para entrevistar al menos a tres personas reales, con duplas asignadas
 - [x] Supuestos pendientes y evidencia que podría refutarlos
-- [ ] **Registro de las entrevistas reales — es el entregable de la Clase 3**
 
-**Todo el trabajo de la Clase 2 está completo.** Lo único abierto son las entrevistas, que por definición se hacen después de la clase y constituyen el entregable siguiente.
-
-### Qué falta hacer, en orden
-
-| # | Tarea | Quién | Cuándo |
-|---|---|---|---|
-| 1 | Contactar a los entrevistados y coordinar día y hora | Cada dupla | Esta semana |
-| 2 | Hacer las 4 entrevistas y volcarlas en las plantillas | Dupla 1: entrevistas 1-2 · Dupla 2: entrevistas 3-4 | Antes de la Clase 3 |
-| 3 | Completar la síntesis de las cuatro entrevistas | Equipo | Después de 2 |
-| 4 | Revisar si hay que reabrir B (si apareció deuda espontánea en 3 o más) | Equipo | Con 3 |
-| 5 | Revisar si hay que volver al Paso 3 (si nadie pudo reconstruir un episodio de ahorro) | Equipo | Con 3 |
-| 6 | Conseguir el informe original de Junior Achievement/CEPE para resolver la discrepancia de F4 | Felipe Servent | Antes de la Clase 3 |
+El trabajo de la Clase 2 está completo. Las entrevistas se ejecutan con el guion y el plan de la sección 9, y su registro forma parte del entregable de la Clase 3 junto con los hallazgos y los cambios que produzcan sobre el problema.
 
 ### Cierre del equipo
 
