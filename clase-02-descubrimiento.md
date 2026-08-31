@@ -220,10 +220,10 @@ Le entregamos a la IA las cuatro fichas más los ocho problemas potenciales, pid
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A — Dispersión del dinero | | | | | |
-| B — Endeudamiento y mora | | | | | |
-| C — Ahorro que no se sostiene | | | | | |
-| D — Ingresos irregulares | | | | | |
+| A — Dispersión del dinero |6 |4 | 7|1,68 | |
+| B — Endeudamiento y mora |8 |8 |3 |1,92 | |
+| C — Ahorro que no se sostiene |6 |5 |7 |2,1 | |
+| D — Ingresos irregulares |8 |7 |5 |2,8 | |
 
 #### Juan Ignacio Canabe
 
@@ -256,10 +256,10 @@ Le entregamos a la IA las cuatro fichas más los ocho problemas potenciales, pid
 
 | Problema | Chain | Canabe | Tailhade | Servent | IA | Dispersión (máx − mín) |
 |---|---:|---:|---:|---:|---:|---:|
-| A — Dispersión del dinero | | | | | 1,20 | |
-| B — Endeudamiento y mora | | | | | 2,16 | |
-| C — Ahorro que no se sostiene | | | | | 2,52 | |
-| D — Ingresos irregulares | | | | | 2,94 | |
+| A — Dispersión del dinero |1,68 | | | | 1,20 | |
+| B — Endeudamiento y mora |1,92 | | | | 2,16 | |
+| C — Ahorro que no se sostiene |2,1 | | | | 2,52 | |
+| D — Ingresos irregulares |2,8 | | | | 2,94 | |
 
 > El problema con **mayor dispersión** es el que más conviene discutir: indica que alguien leyó la misma evidencia de otra manera, o que hay un supuesto que nadie hizo explícito.
 
