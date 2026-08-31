@@ -220,10 +220,10 @@ Le entregamos a la IA las cuatro fichas más los ocho problemas potenciales, pid
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A — Dispersión del dinero |6 |4 | 7|1,68 | |
-| B — Endeudamiento y mora |8 |8 |3 |1,92 | |
-| C — Ahorro que no se sostiene |6 |5 |7 |2,1 | |
-| D — Ingresos irregulares |8 |7 |5 |2,8 | |
+| A — Dispersión del dinero |6 |4 | 7|1,68 |La distribución del dinero entre distintos gastos y medios de pago dificulta tener una visión clara de cuánto se gasta y cuánto queda disponible. |
+| B — Endeudamiento y mora |8 |8 |3 |1,92 |Es un problema de alto impacto para los jóvenes, ya que el endeudamiento y la mora pueden generar dificultades para afrontar futuros gastos y compromisos financieros. |
+| C — Ahorro que no se sostiene |6 |5 |7 |2,1 |Es relevante porque algunos jóvenes logran comenzar a ahorrar, pero terminan utilizando esos ahorros antes de lo previsto, dificultando el cumplimiento de sus objetivos financieros. |
+| D — Ingresos irregulares |8 |7 |5 |2,8 |La variabilidad de los ingresos dificulta organizar los gastos y planificar financieramente, especialmente cuando no se conoce con precisión cuánto dinero se recibirá cada mes. |
 
 #### Juan Ignacio Canabe
 
