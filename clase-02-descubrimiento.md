@@ -421,7 +421,7 @@ Las dos personas **reproducen la contradicción sin resolver del research** (F3 
 
 | Campo | Contenido |
 |---|---|
-| Descripción | Asalariada de 24, empleo formal, vive con sus padres. No afronta vivienda, servicios ni alimentación. Ingreso predecible. |
+| Descripción | Asalariada de 24 años, empleo formal, vive con sus padres. No afronta vivienda, servicios ni alimentación. Ingreso predecible. |
 | Objetivo | Acumular para una meta de mediano plazo (viaje, mudanza, curso), sin fecha ni monto definidos. |
 | Comportamientos | Cobra por billetera. Deja el excedente en la misma cuenta con la que gasta. Revisa el saldo al comprar, no de forma programada. |
 | Frustraciones | Llega a fin de mes con menos de lo esperado y no logra reconstruir en qué se fue. |
@@ -435,7 +435,7 @@ Las dos personas **reproducen la contradicción sin resolver del research** (F3 
 
 | Campo | Contenido |
 |---|---|
-| Descripción | 26 años, changas / freelance / comisión. Monto y fecha de cobro cambian mes a mes. Alquila o aporta al hogar. |
+| Descripción | 26 años, changas / freelance / comisión. Monto y fecha de cobro cambian mes a mes. |
 | Objetivo | Llegar a fin de mes y cubrir gastos fijos. El ahorro no está entre sus objetivos inmediatos. |
 | Comportamientos | Decide día a día, no mes a mes. Usó crédito de acceso inmediato para cubrir un faltante. |
 | Frustraciones | No puede comprometerse a cuotas sin saber cuánto va a cobrar. |
