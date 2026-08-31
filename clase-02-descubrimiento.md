@@ -232,10 +232,10 @@ Le entregamos a la IA las cuatro fichas más los ocho problemas potenciales, pid
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A — Dispersión del dinero | | | | | |
-| B — Endeudamiento y mora | | | | | |
-| C — Ahorro que no se sostiene | | | | | |
-| D — Ingresos irregulares | | | | | |
+| A — Dispersión del dinero | 4| 3| 8| 0,96|Creo que tener la plata en varias billeteras puede generar desorden y hacer más difícil saber cuánto tenés, pero no tenemos evidencia directa de que sea un problema grave. A la vez, es fácil conseguir jóvenes para entrevistarlos sobre este tema. |
+| B — Endeudamiento y mora | 9| 8| 3| 2,16|Me parece el problema más grave porque puede generar intereses, mora y dificultades para volver a acceder al crédito. También es el que tiene la evidencia más sólida, aunque sería difícil conseguir personas que quieran hablar abiertamente de sus deudas. |
+| C — Ahorro que no se sostiene | 6| 5| 8| 2,40|Creo que tiene un impacto importante porque la persona se propone ahorrar y termina sin poder cumplir ese objetivo. Hay evidencia que muestra que esto pasa, aunque una de las fuentes analiza edades distintas a las nuestras. Es un tema fácil de hablar y tenemos buen |
+| D — Ingresos irregulares | 6| 5| 7| 2,10|Creo que tener ingresos que cambian todos los meses puede dificultar bastante la organización y planificación de los gastos. Sabemos que la informalidad existe, pero no está comprobado que todos lo vivan como un problema. Tenemos bastante acceso a personas con este tipo de ingresos. |
 
 #### Felipe Servent
 
