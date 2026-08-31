@@ -11,6 +11,12 @@
 
 Usamos IA para explorar fuentes y organizar información; la verificación y las decisiones son del equipo. Marcamos **[HECHO]** (dato de fuente verificable), **[INTERPRETACIÓN]** (lectura nuestra) y **[SUPUESTO]** (creencia sin comprobar).
 
+Tres advertencias:
+
+1. Toda la evidencia es research secundario. **Nada está validado con usuarios reales.**
+2. Las 9 fuentes fueron abiertas y verificadas, con sus limitaciones anotadas.
+3. **Lo marcado como [COMPLETAR] es trabajo del equipo y está vacío a propósito**: las evaluaciones ICE individuales, la comparación entre ellas, la confirmación del problema priorizado y el registro de las entrevistas reales. Una opinión individual o una entrevista no pueden ser generadas por IA sin convertirse en evidencia inventada. El problema priorizado de la sección 8 es **una propuesta a confirmar**, no una decisión tomada.
+
 ---
 
 ## Estacionamiento de soluciones
@@ -214,10 +220,10 @@ Le entregamos a la IA las cuatro fichas más los ocho problemas potenciales, pid
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A — Dispersión del dinero |6 |4 | 7|1,68 |La distribución del dinero entre distintos gastos y medios de pago dificulta tener una visión clara de cuánto se gasta y cuánto queda disponible. |
-| B — Endeudamiento y mora |8 |8 |3 |1,92 |Es un problema de alto impacto para los jóvenes, ya que el endeudamiento y la mora pueden generar dificultades para afrontar futuros gastos y compromisos financieros. |
-| C — Ahorro que no se sostiene |6 |5 |7 |2,1 |Es relevante porque algunos jóvenes logran comenzar a ahorrar, pero terminan utilizando esos ahorros antes de lo previsto, dificultando el cumplimiento de sus objetivos financieros. |
-| D — Ingresos irregulares |8 |7 |5 |2,8 |La variabilidad de los ingresos dificulta organizar los gastos y planificar financieramente, especialmente cuando no se conoce con precisión cuánto dinero se recibirá cada mes. |
+| A — Dispersión del dinero |6 |4 | 7|1,68 | |
+| B — Endeudamiento y mora |8 |8 |3 |1,92 | |
+| C — Ahorro que no se sostiene |6 |5 |7 |2,1 | |
+| D — Ingresos irregulares |8 |7 |5 |2,8 | |
 
 #### Juan Ignacio Canabe
 
@@ -232,28 +238,28 @@ Le entregamos a la IA las cuatro fichas más los ocho problemas potenciales, pid
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A — Dispersión del dinero | | | | | |
-| B — Endeudamiento y mora | | | | | |
-| C — Ahorro que no se sostiene | | | | | |
-| D — Ingresos irregulares | | | | | |
+| A — Dispersión del dinero |4 |3|8 |0,96 |Creo que puede generar desorden, pero no tenemos evidencia de que sea un problema grave. Es fácil encontrar gente para entrevistar. |
+| B — Endeudamiento y mora |9|8|3|2,16|Tiene consecuencias graves y es el problema con más evidencia. Lo difícil es conseguir gente que quiera hablar de sus deudas. |
+| C — Ahorro que no se sostiene |6|5|8|2,40|Es un problema importante porque hace que no se cumplan objetivos de ahorro. Hay evidencia, aunque tiene algunas limitaciones, y es fácil encontrar gente para entrevistar. |
+| D — Ingresos irregulares |6|5|7|2,10|Puede complicar bastante la organización de la plata, aunque no está del todo comprobado. Tenemos bastante acceso a personas con ingresos variables. |
 
 #### Felipe Servent
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A — Dispersión del dinero |5 |4 |8 |1,6 |Me parece un problema bastante fácil de investigar porque es común usar más de una billetera o cuenta. Sin embargo, todavía hay poca evidencia de que tener el dinero distribuido genere realmente una consecuencia importante para el usuario. |
-| B — Endeudamiento y mora |9 |8 |4 |2,88 |Es el problema con consecuencias más graves y también el que tiene la evidencia más concreta. La mora juvenil está claramente documentada. Le bajo Ease porque puede ser difícil encontrar personas dispuestas a hablar abiertamente sobre deudas o incumplimientos. |
-| C — Ahorro que no se sostiene |7 |6 |8 |3,36 |Considero que es un problema relevante porque afecta directamente objetivos personales y aparece respaldado por más de una fuente. Además, es relativamente fácil encontrar jóvenes que hayan intentado ahorrar y preguntarles por experiencias concretas. La confianza no es mayor porque parte de la evidencia corresponde a adolescentes. |
-| D — Ingresos irregulares |8 |7 |6 |3,36 |Tener ingresos variables puede afectar mucho la posibilidad de organizar gastos y tomar decisiones con anticipación. Hay evidencia fuerte sobre la informalidad juvenil, aunque no demuestra directamente que las personas lo vivan como un problema de planificación. El acceso a entrevistados es razonable, pero más limitado que en A o C. |
+| A — Dispersión del dinero | | | | | |
+| B — Endeudamiento y mora | | | | | |
+| C — Ahorro que no se sostiene | | | | | |
+| D — Ingresos irregulares | | | | | |
 
 ### Tabla consolidada — [COMPLETAR después de las cuatro]
 
 | Problema | Chain | Canabe | Tailhade | Servent | IA | Dispersión (máx − mín) |
 |---|---:|---:|---:|---:|---:|---:|
-| A — Dispersión del dinero |1,68 | | |1,6 | 1,20 | |
-| B — Endeudamiento y mora |1,92 | | |2,88 | 2,16 | |
-| C — Ahorro que no se sostiene |2,1 | | |3,36 | 2,52 | |
-| D — Ingresos irregulares |2,8 | | |3,36 | 2,94 | |
+| A — Dispersión del dinero |1,68 | | | | 1,20 | |
+| B — Endeudamiento y mora |1,92 | | | | 2,16 | |
+| C — Ahorro que no se sostiene |2,1 | | | | 2,52 | |
+| D — Ingresos irregulares |2,8 | | | | 2,94 | |
 
 > El problema con **mayor dispersión** es el que más conviene discutir: indica que alguien leyó la misma evidencia de otra manera, o que hay un supuesto que nadie hizo explícito.
 
@@ -421,7 +427,7 @@ Las dos personas **reproducen la contradicción sin resolver del research** (F3 
 
 | Campo | Contenido |
 |---|---|
-| Descripción | Asalariada de 24 años, empleo formal, vive con sus padres. No afronta vivienda, servicios ni alimentación. Ingreso predecible. |
+| Descripción | Asalariada de 24, empleo formal, vive con sus padres. No afronta vivienda, servicios ni alimentación. Ingreso predecible. |
 | Objetivo | Acumular para una meta de mediano plazo (viaje, mudanza, curso), sin fecha ni monto definidos. |
 | Comportamientos | Cobra por billetera. Deja el excedente en la misma cuenta con la que gasta. Revisa el saldo al comprar, no de forma programada. |
 | Frustraciones | Llega a fin de mes con menos de lo esperado y no logra reconstruir en qué se fue. |
@@ -435,7 +441,7 @@ Las dos personas **reproducen la contradicción sin resolver del research** (F3 
 
 | Campo | Contenido |
 |---|---|
-| Descripción | 26 años, changas / freelance / comisión. Monto y fecha de cobro cambian mes a mes. |
+| Descripción | 26 años, changas / freelance / comisión. Monto y fecha de cobro cambian mes a mes. Alquila o aporta al hogar. |
 | Objetivo | Llegar a fin de mes y cubrir gastos fijos. El ahorro no está entre sus objetivos inmediatos. |
 | Comportamientos | Decide día a día, no mes a mes. Usó crédito de acceso inmediato para cubrir un faltante. |
 | Frustraciones | No puede comprometerse a cuotas sin saber cuánto va a cobrar. |
