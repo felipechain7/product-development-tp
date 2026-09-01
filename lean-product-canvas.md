@@ -20,6 +20,20 @@ En consecuencia:
 - Las dos personas del canvas son **sintéticas**, construidas a partir de esas fuentes. Generan hipótesis, no evidencia.
 - Este canvas debe rehacerse después de las entrevistas. Los cambios se registran, no se pisan.
 
+### Entrevistas simuladas
+
+Para avanzar con el canvas realizamos cuatro **entrevistas simuladas** con IA, a partir de las personas sintéticas y las fuentes secundarias: [entrevistas-simuladas.md](entrevistas-simuladas.md).
+
+**Nada de ese archivo es evidencia.** Sirvió para encontrar los límites de nuestra formulación del problema y para probar el guion. Su aporte principal al canvas es que el segmento se ordena en tres tramos y **el problema priorizado solo describe el primero**:
+
+| Tramo | Perfil | ¿Excedente? | ¿Aplica el problema? |
+|---|---|---|---|
+| 1 | Ingreso estable, sin gastos fijos de vivienda | Sí | **Sí** — es el usuario del canvas |
+| 2 | Ingreso variable con reserva funcional | Intermitente | No — usar la reserva es su función |
+| 3 | Ingreso ajustado | No | No — no hay ahorro que sostener |
+
+Los tramos 2 y 3 quedan como **segmentos de contraste**, no como usuarios objetivo.
+
 ---
 
 ## 1. Problema de negocio
