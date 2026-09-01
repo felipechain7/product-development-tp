@@ -38,7 +38,13 @@ Los tramos 2 y 3 quedan como **segmentos de contraste**, no como usuarios objeti
 
 ## 1. Problema de negocio
 
-_Pendiente._
+**Los jóvenes de 18 a 30 años con ingreso estable y excedente real** —típicamente sin gastos fijos de vivienda— se proponen guardar dinero para una meta y terminan usándolo en gastos que ellos mismos califican como evitables, sin poder reconstruir en qué momento se rompió el plan.
+
+Alrededor de 3 de cada 10 declara que le ocurre, según dos estudios independientes (F4 y F3), y casi un tercio de quienes ahorran no sabe cuánto guarda por mes (F3). Existe un segmento numeroso que declara un objetivo que no logra sostener, y ninguna de las herramientas que ya usa —el 70% de los argentinos usó billeteras virtuales en los últimos seis meses (F7)— se ocupa de ese objetivo.
+
+**[SUPUESTO]** Que el excedente exista y sea la variable que define el segmento; que el gasto que rompe el ahorro sea evitable según el propio usuario; y que las herramientas actuales no cubran esa necesidad, cosa que no verificamos con un análisis de la oferta.
+
+**Fuera del problema:** los tramos 2 y 3 identificados en el simulacro —ingreso variable con reserva funcional, e ingreso ajustado sin excedente— quedan como segmentos de contraste. Para ellos este problema no aplica.
 
 ## 2. Resultados de negocio
 
