@@ -12,15 +12,24 @@ Cuatro entrevistas realizadas con personas reales entre el 26 y el 27 de agosto 
 
 > **Nota sobre el título anterior:** una versión previa de este archivo se titulaba "Entrevistas simuladas" por un error de rotulado del equipo. Las entrevistas son reales; el título estaba mal.
 
-**Datos de campo pendientes de completar por el equipo:**
+**Datos de campo**
 
-| Dato | Estado |
-|---|---|
-| Forma de contacto de los entrevistados | **[COMPLETAR]** |
-| Medio (presencial, videollamada, teléfono) | **[COMPLETAR]** |
-| Respaldo (audio con consentimiento, notas en el momento) | **[COMPLETAR]** |
+| Entrevistado | Cómo se contactó | Quién condujo | ¿Conocía al entrevistado? |
+|---|---|---|---|
+| Martina | Prima de Juan Ignacio Canabe | Felipe Chain | No |
+| Tomás | Hermano de Pedro Tailhade | Juan Ignacio Canabe | No |
+| Sofía | Amiga de Felipe Chain | Pedro Tailhade | No |
+| Nicolás | Amigo de Felipe Servent | Felipe Servent | **Sí** |
 
-Estos tres datos no los puede completar nadie más que quienes condujeron las entrevistas.
+- **Medio:** las cuatro por videollamada.
+- **Respaldo:** notas tomadas en el momento por el registrador. **No quedó audio.**
+
+**Decisiones metodológicas y sus límites**
+
+- **Cruzamos las asignaciones a propósito.** En 3 de las 4, quien condujo la entrevista no conocía a la persona: el integrante que aportaba el contacto no era el que preguntaba. Reduce el riesgo de dar cosas por sobreentendidas o de que el entrevistado responda lo que cree que su amigo quiere escuchar.
+- **La excepción es Nicolás**, entrevistado por Felipe Servent, que es su amigo. Es el caso con mayor riesgo de sesgo de complacencia. Vale notar que fue el que más contradijo nuestra hipótesis, lo que juega en contra de ese sesgo, pero queda declarado.
+- **Muestra por conveniencia.** Los cuatro salen de la red personal del equipo. No es representativa y no permite dimensionar qué proporción de jóvenes está en cada tramo.
+- **Sin audio, las citas dependen de las notas.** Las frases entre comillas son las que el registrador anotó en el momento, no una transcripción verbatim. Reflejan lo que se dijo, pero no podemos garantizar la literalidad palabra por palabra.
 
 **Correcciones al guion aplicadas durante el trabajo de campo:** se reformularon dos preguntas que inducían la respuesta. "¿Sentiste que habías fallado en tu objetivo de ahorro?" pasó a "¿Cómo interpretaste vos haber tenido que usar esa plata?", y la equivalente en la entrevista 3. Ambas eran de sí/no y sugerían el marco de fracaso.
 

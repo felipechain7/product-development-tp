@@ -330,7 +330,7 @@ de terminar el ciclo.
 | 2 | Armar el formulario de declaración de meta y la planilla de seguimiento |
 | 3 | Ejecutar el experimento durante un ciclo completo de cobro |
 | 4 | Análisis de la oferta: qué billeteras ya ofrecen metas con bloqueo (vacío del canvas, riesgo 8) |
-| 5 | Completar los tres datos de campo de `entrevistas-reales.md` |
+| 5 | Conseguir respaldo en audio en las próximas entrevistas: las actuales dependen de notas |
 
 > **El canvas contiene hipótesis. La evidencia surge de observar y experimentar.**
 

@@ -630,7 +630,7 @@ Entrevista simulada a la Persona 1, con la IA instruida para declarar cuándo un
 
 Cuatro entrevistas realizadas el 26 y 27 de agosto de 2026 con el guion de la sección 9.
 
-> Transcripciones completas en [entrevistas-reales.md](entrevistas-reales.md). Datos de campo pendientes de completar: forma de contacto, medio y respaldo.
+> Transcripciones completas y datos de campo en [entrevistas-reales.md](entrevistas-reales.md). Las cuatro fueron por videollamada, reclutadas por red personal del equipo, y en 3 de 4 quien condujo no conocia al entrevistado. Sin respaldo en audio: las citas provienen de las notas del registrador.
 
 ### Entrevista 1 — Martina
 
@@ -840,7 +840,7 @@ Tres cambios, uno por hallazgo: se acota el usuario al tramo 1, se restringe el 
 
 **El entregable de la Clase 3 está completo:** el archivo, el registro de las cuatro entrevistas y los cambios que produjeron sobre el problema.
 
-Queda un dato de campo por completar en [entrevistas-reales.md](entrevistas-reales.md): forma de contacto, medio y respaldo de las entrevistas. Solo lo pueden completar quienes las condujeron.
+Los datos de campo y las limitaciones metodologicas estan en [entrevistas-reales.md](entrevistas-reales.md).
 
 ### Cierre del equipo
 
