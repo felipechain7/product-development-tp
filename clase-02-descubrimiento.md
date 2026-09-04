@@ -626,112 +626,193 @@ Entrevista simulada a la Persona 1, con la IA instruida para declarar cuándo un
 
 ---
 
-## Registro de entrevistas reales — entregable de la Clase 3
+## Registro de entrevistas reales
 
-> Se completa antes de la Clase 3. Repetir el bloque para cada entrevista.
+Cuatro entrevistas realizadas el 26 y 27 de agosto de 2026 con el guion de la sección 9.
 
-### Entrevista 1
+> Transcripciones completas en [entrevistas-reales.md](entrevistas-reales.md). Datos de campo pendientes de completar: forma de contacto, medio y respaldo.
 
-- Fecha / Entrevistador / Registrador:
-- Perfil (edad, tipo de ingreso, situación de vivienda):
+### Entrevista 1 — Martina
 
-**Situaciones reales relatadas**
--
-
-**Comportamientos y alternativas actuales**
--
-
-**Consecuencias observadas**
--
-
-**Frases relevantes** (textuales, entre comillas)
--
-
-**Contradicciones con nuestra hipótesis**
--
-
-**Cambios que haríamos a la redacción del problema**
--
-
-### Entrevista 2
-
-- Fecha / Entrevistador / Registrador:
-- Perfil:
+- **Fecha:** 26/08/2026 · **Entrevistador:** Felipe Chain · **Registrador:** Juan Ignacio Canabe
+- **Perfil:** 23 años, relación de dependencia con sueldo fijo, vive con sus padres.
 
 **Situaciones reales relatadas**
--
+- Se propuso guardar $200.000 para un viaje de verano. Dejó la plata en Mercado Pago, junto al dinero de uso diario: la separación fue solo mental.
+- La consumió de a poco — un regalo de cumpleaños, salidas, ropa. No hubo un único gasto grande.
+- Se dio cuenta a mitad de mes, mirando el saldo.
 
 **Comportamientos y alternativas actuales**
--
+- Separa el ahorro mentalmente, no operativamente. Usa el saldo visible como referencia de cuánto puede gastar.
+- Alternativa que sí le funcionó: comprar dólares apenas cobra. El motivo que da es la fricción, no el rendimiento.
 
 **Consecuencias observadas**
--
+- Ahorró menos de lo propuesto, sin poder identificar cuándo empezó a romperse.
+- Sin consecuencia económica grave: no se quedó sin dinero para vivir.
 
 **Frases relevantes**
--
+- "Mentalmente sabía que tenía $200.000 que no quería gastar, pero estaba junto con el resto."
+- "No fue que un día dije 'voy a sacar plata del ahorro'. Se fue mezclando."
+- "Siento que gano suficiente como para ahorrar más. Después miro el mes y digo '¿en qué gasté tanto?'. No es que no me alcanzó para vivir."
+- Sobre los dólares: "me daba más fiaca cambiarlos para gastar."
 
 **Contradicciones con nuestra hipótesis**
--
+- No todo el gasto fue impulsivo: una parte la considera necesaria. Nuestra redacción los trataba igual.
+- **Refuta la explicación alternativa que más nos preocupaba:** su ingreso alcanza. No es un problema de ingreso disfrazado.
 
 **Cambios que haríamos a la redacción del problema**
--
+- Distinguir gasto evitable de necesario.
+- Reincorporar la separación del dinero, que habíamos eliminado por considerarla una solución disfrazada.
 
-### Entrevista 3
+### Entrevista 2 — Tomás
 
-- Fecha / Entrevistador / Registrador:
-- Perfil:
+- **Fecha:** 27/08/2026 · **Entrevistador:** Juan Ignacio Canabe · **Registrador:** Felipe Chain
+- **Perfil:** 26 años, fotógrafo freelance. Monto y fecha de cobro variables. Vive solo y paga alquiler.
 
 **Situaciones reales relatadas**
--
+- Guardó $150.000 tras un mes bueno, en una billetera que usa menos. Los usó para alquiler y tarjeta cuando se le atrasó un cobro.
+- **No lo vive como fracaso:** sostiene que esa plata estaba justamente para eso.
+- Caso distinto: a principio de año usó lo juntado para comprar una cámara usada. Decisión consciente, no se arrepiente porque la usa para trabajar.
+- Una vez le pidió plata a su padre para pagar la tarjeta antes de cobrar un trabajo.
 
 **Comportamientos y alternativas actuales**
--
+- Separa en una billetera de uso infrecuente.
+- En meses malos baja salidas y prioriza alquiler, tarjeta y servicios.
+- Evaluó un préstamo por app, **vio los intereses y lo descartó**. Recurrió a un familiar.
 
 **Consecuencias observadas**
--
+- Sin consecuencia económica negativa: el mecanismo funcionó como amortiguador.
+- La consecuencia que reporta es de previsibilidad, no de ahorro.
 
 **Frases relevantes**
--
+- "Más una reserva. Si tengo que usarla para pagar el alquiler porque un cliente no me pagó, no siento que haya hecho algo mal."
+- "No saber cuándo cobro. Puedo haber trabajado un montón y tener poca plata disponible justo cuando vencen las cosas."
+- "Lo pensé, pero vi los intereses y preferí pedirle a mi viejo."
 
 **Contradicciones con nuestra hipótesis**
--
+- **Contradice el problema de frente.** Para él lo guardado es una reserva que cumplió su función; no hay ahorro roto que reparar.
+- Su problema es la previsibilidad del ingreso (problema D), que habíamos reclasificado como variable de segmentación.
+- Aparece deuda espontáneamente, pero **como riesgo evitado**: comparó el costo y eligió no endeudarse.
 
 **Cambios que haríamos a la redacción del problema**
--
+- Acotar el usuario: para ingreso variable con gastos fijos propios, "ahorro" y "reserva" son cosas distintas y nuestra redacción las confundía.
 
-### Entrevista 4
+### Entrevista 3 — Sofía
 
-- Fecha / Entrevistador / Registrador:
-- Perfil:
+- **Fecha:** 26/08/2026 · **Entrevistador:** Pedro Tailhade · **Registrador:** Felipe Servent
+- **Perfil:** 21 años, part time con ingreso mensual estable, vive con su familia.
 
 **Situaciones reales relatadas**
--
+- Se propone $100.000 por mes para cambiar el celular y **los transfiere a otra cuenta**. Este mes no los tocó.
+- El mes anterior usó parte por la rotura de una cubierta del auto: gasto que califica como inevitable.
+- El año pasado, juntando para vacaciones, compró zapatillas caras en descuento. Ese sí lo considera evitable y atrasó su objetivo.
 
 **Comportamientos y alternativas actuales**
--
+- **Separación operativa en una segunda cuenta**, con una regla explícita de visibilidad.
+- Mide cuánto lleva ahorrado mirando esa cuenta, precisamente porque casi no la usa.
 
 **Consecuencias observadas**
--
+- Cuando separa, el ahorro se sostiene: este mes no lo tocó.
+- Distingue con nitidez el gasto inevitable, que no le genera conflicto, del evitable, que sí.
 
 **Frases relevantes**
--
+- "Paso la plata a otra cuenta. Si la veo en la cuenta que uso todos los días, para mí está disponible."
+- "Como casi no la uso, sé que lo que hay ahí es lo que fui guardando."
+- "Me molesta cuando después pienso que podría no haberlo comprado."
+- Sobre las zapatillas: "Las vi con descuento y pensé que después iban a estar más caras. Me convencí de que era una oportunidad."
 
 **Contradicciones con nuestra hipótesis**
--
+- Confirma el problema, pero **matiza la consecuencia**: lo que molesta no es dejar de ahorrar, sino cambiar de prioridad por un impulso.
+- **Contradice nuestro supuesto de que la persona no sabe cuánto ahorró.** Ella lo sabe con precisión, justamente porque lo tiene separado.
 
 **Cambios que haríamos a la redacción del problema**
--
+- Distinguir gasto evitable de inevitable: solo el primero constituye el problema.
+- Quitar la idea de que no se puede reconstruir cuánto se ahorró: depende de si hay separación.
 
-### Síntesis de las entrevistas — se completa tras las cuatro
+### Entrevista 4 — Nicolás
+
+- **Fecha:** 27/08/2026 · **Entrevistador:** Felipe Servent · **Registrador:** Pedro Tailhade
+- **Perfil:** 24 años, repartos y changas, ingreso variable semana a semana. Alquila una habitación con un amigo y cubre sus propios gastos.
+
+**Situaciones reales relatadas**
+- En un mes con menos repartos priorizó alquiler y comida, y pagó solo el mínimo de la tarjeta, que incluía supermercado, nafta y unas zapatillas en cuotas.
+- Meses antes logró guardar unos $70.000 de los $100.000 que se había propuesto; los usó al mes siguiente para comida y para completar el alquiler.
+- Pidió un préstamo por una app para arreglar la moto que usa para trabajar. Sabía la cuota, no el costo total.
+
+**Comportamientos y alternativas actuales**
+- Prioriza alquiler y alimentación; posterga el resto.
+- Usa tarjeta, ayuda familiar o crédito de corto plazo para cubrir faltantes.
+- **En meses de bajos ingresos directamente no intenta ahorrar.**
+
+**Consecuencias observadas**
+- No siempre existe un excedente que pueda destinar al ahorro.
+- El crédito tomado para una urgencia se convirtió en una obligación fija en meses posteriores, con ingreso que seguía siendo variable.
+
+**Frases relevantes**
+- "Hay meses en los que directamente ni pienso en ahorrar."
+- "No es que ahorro y después me lo gasto porque quiero; muchas veces directamente no sobra."
+- "Si pasa algo, aunque sea necesario, ya me desacomoda todo."
+- "Sabía cuánto era la cuota, pero no me fijé bien cuánto terminaba pagando en total."
+
+**Contradicciones con nuestra hipótesis**
+- **Es la refutación más fuerte.** Nuestro problema presupone un excedente que se pierde; en su caso, durante varios meses ese excedente no existe.
+- Usar la reserva no es un fracaso de ahorro: es cubrir necesidades básicas.
+- Aparece el problema B espontáneamente, con costo financiero real: pago mínimo de tarjeta y préstamo por app.
+
+**Cambios que haríamos a la redacción del problema**
+- Limitar el problema a jóvenes que efectivamente generan excedente y tienen una meta.
+- Mantener a los jóvenes sin excedente como segmento de contraste: permiten detectar cuándo el problema deja de ser de gestión y pasa a ser de ingreso.
+
+### Síntesis de las cuatro entrevistas
 
 | Pregunta | Respuesta |
 |---|---|
-| ¿Qué apareció en todas? | |
-| ¿Qué apareció en una sola y no se repitió? | |
-| ¿El ahorro se rompió por gastos evitables o ineludibles? | |
-| ¿Se comportan distinto los de ingreso estable y los de ingreso variable? | |
-| ¿Apareció deuda de forma espontánea? ¿En cuántas? | |
-| ¿Qué contradijo nuestra hipótesis? | |
+| ¿Qué apareció en todas? | **Alguna forma de separar el dinero.** Martina solo mentalmente, Sofía en otra cuenta, Tomás en una billetera de uso infrecuente, Nicolás dividido entre dólares y reserva líquida. También aparece en las cuatro un objetivo de ahorro explícito con monto. |
+| ¿Qué apareció en una sola y no se repitió? | El costo financiero concreto por endeudarse (Nicolás: pago mínimo y préstamo por app sin conocer el costo total). Y la reconstrucción precisa de cuánto se lleva ahorrado (Sofía, gracias a la cuenta separada). |
+| ¿El ahorro se rompió por gastos evitables o ineludibles? | **Por los dos, y los entrevistados los distinguen sin que se lo pidamos.** Evitables: la ropa y las salidas de Martina, las zapatillas de Sofía. Ineludibles: la cubierta del auto de Sofía, el alquiler y la comida de Nicolás, el alquiler de Tomás. **Solo los evitables generan malestar.** |
+| ¿Se comportan distinto los de ingreso estable y los de ingreso variable? | **Sí, y es el hallazgo principal.** Ver el cuadro de tramos abajo. |
+| ¿Apareció deuda de forma espontánea? ¿En cuántas? | **En 2 de 4.** Tomás la evaluó y la descartó al ver los intereses; Nicolás pagó el mínimo de la tarjeta y tomó un préstamo por app. Nuestra regla exigía 3 o más para reabrir el problema B, así que **no se reabre** — pero quedó cerca, y en el tramo de ingreso ajustado la deuda pesa más que el comportamiento de ahorro. |
+| ¿Qué contradijo nuestra hipótesis? | Tres cosas, detalladas abajo. |
+
+### El segmento se ordena en tres tramos
+
+El problema que priorizamos describe solo el primero.
+
+| Tramo | Quiénes | ¿Existe excedente? | ¿Aplica el problema? |
+|---|---|---|---|
+| **1. Ingreso estable con excedente** | Martina (23, sueldo fijo, vive con padres) · Sofía (21, part time, vive con familia) | Sí | **Sí.** Es exactamente el comportamiento que describimos. |
+| **2. Ingreso variable con reserva funcional** | Tomás (26, freelance, alquila) | Intermitente | **No.** Lo guardado es una reserva y usarla es su función, no un fracaso. |
+| **3. Ingreso ajustado** | Nicolás (24, repartos y changas, alquila) | En varios meses no | **No.** No hay ahorro que sostener. |
+
+### Lo que contradijo nuestra hipótesis
+
+1. **El riesgo que habíamos anticipado se materializó.** En la sección 7.b escribimos: *"si nunca hubo excedente... no hay un problema de gestión: hay un problema de ingreso, y la hipótesis se cae entera."* Nicolás lo dice casi con esas palabras: *"no es que ahorro y después me lo gasto porque quiero; muchas veces directamente no sobra."*
+2. **Usar el dinero guardado no siempre es un fracaso.** Tomás tiene excedente, lo usa, y no hay problema: la plata cumplió su función. Nuestra redacción trataba cualquier uso del ahorro como una ruptura.
+3. **No todos pierden de vista cuánto ahorraron.** Suponíamos que la persona no puede reconstruirlo. Sofía lo sabe con precisión, y la razón es que lo tiene separado.
+
+### Lo que sí se sostiene, y se refuerza
+
+- **El excedente existe en el tramo 1 y no es un problema de ingreso.** Martina lo dice sin que se lo pregunten: *"gano suficiente como para ahorrar más... no es que no me alcanzó para vivir."* Era la explicación alternativa que más nos preocupaba y queda descartada para ese tramo.
+- **La disolución gradual es real.** Martina no puede señalar un momento de ruptura: *"se fue mezclando."*
+- **La separación del dinero vuelve a la mesa.** La habíamos sacado de la redacción por considerarla una solución disfrazada de diagnóstico, y con la evidencia de entonces fue correcto. Ahora las cuatro entrevistas la muestran como comportamiento: Martina separó solo mentalmente y el ahorro se disolvió; Sofía separa a otra cuenta y se sostiene. **[INTERPRETACIÓN]** Cuatro casos no establecen causalidad — quienes separan podrían tener más margen desde el principio — pero el patrón aparece en los cuatro.
+
+### Cambios que hacemos al problema
+
+**Redacción anterior:**
+
+> Los jóvenes de 18 a 30 años con ingresos propios se proponen guardar dinero y terminan gastándolo antes de lo previsto, sin poder identificar en qué momento se rompió el plan.
+
+**Redacción posterior a las entrevistas:**
+
+> Los jóvenes de 18 a 30 años **con ingreso estable y excedente real** se proponen guardar dinero para una meta y terminan usándolo en **gastos que ellos mismos califican como evitables**, sin poder reconstruir en qué momento se rompió el plan.
+
+Tres cambios, uno por hallazgo: se acota el usuario al tramo 1, se restringe el problema a los gastos evitables, y se agrega "para una meta" porque en las cuatro entrevistas el objetivo de ahorro tenía un destino concreto.
+
+### Lo que todavía no sabemos
+
+1. ¿La separación del dinero **causa** que el ahorro se sostenga, o quienes separan ya tenían más margen?
+2. ¿Cuán grande es el tramo 1 respecto de los otros dos? Con cuatro entrevistas no podemos dimensionarlo.
+3. ¿Qué pasa cuando el excedente se achica? ¿La persona del tramo 1 pasa al tramo 3 y el problema deja de aplicarle?
 
 ---
 
@@ -754,29 +835,38 @@ Entrevista simulada a la Persona 1, con la IA instruida para declarar cuándo un
 - [x] Aprendizajes del role-play
 - [x] Guion y plan para entrevistar al menos a tres personas reales, con duplas asignadas
 - [x] Supuestos pendientes y evidencia que podría refutarlos
+- [x] Registro de las entrevistas reales — 4 realizadas, por encima del mínimo de 3
+- [x] Hallazgos, contradicciones y cambios al problema inicial
 
-El trabajo de la Clase 2 está completo. Las entrevistas se ejecutan con el guion y el plan de la sección 9, y su registro forma parte del entregable de la Clase 3 junto con los hallazgos y los cambios que produzcan sobre el problema.
+**El entregable de la Clase 3 está completo:** el archivo, el registro de las cuatro entrevistas y los cambios que produjeron sobre el problema.
+
+Queda un dato de campo por completar en [entrevistas-reales.md](entrevistas-reales.md): forma de contacto, medio y respaldo de las entrevistas. Solo lo pueden completar quienes las condujeron.
 
 ### Cierre del equipo
 
 ```text
 El problema que decidimos investigar es:
-que los jóvenes de 18 a 30 con ingresos propios se proponen guardar
-dinero y terminan gastándolo antes de lo previsto, sin poder identificar
-en qué momento se rompió el plan.
+que los jóvenes de 18 a 30 con ingreso estable y excedente real se
+proponen guardar dinero para una meta y terminan usándolo en gastos que
+ellos mismos califican como evitables, sin poder reconstruir en qué
+momento se rompió el plan.
 
 La evidencia más fuerte que encontramos es:
-que dos estudios independientes coinciden en que alrededor de tres de
-cada diez jóvenes gastan sus ahorros antes de lo planeado (F4 y F3).
+el contraste entre Martina y Sofía. Martina separó el ahorro solo
+mentalmente, dentro de la misma cuenta con la que gasta, y se le
+disolvió sin poder señalar un momento de ruptura. Sofía lo transfiere a
+otra cuenta y este mes no lo tocó. Ambas tienen ingreso estable y
+excedente; lo que cambia es si el dinero está separado.
 
 El supuesto más riesgoso es:
-que exista un excedente real que se pierde. Si nunca hubo excedente, o
-si el gasto que rompe el ahorro es siempre ineludible, no hay un problema
-de gestión: hay un problema de ingreso, y la hipótesis se cae entera.
+que la separación del dinero sea la causa y no una consecuencia. Quienes
+separan podrían simplemente tener más margen desde el principio. Con
+cuatro entrevistas no podemos distinguirlo.
 
 La pregunta más importante para los usuarios reales es:
-"La última vez que te propusiste guardar plata y no pudiste, ¿cuál fue el
-gasto concreto que la rompió, y podrías haberlo evitado?"
+"¿Qué pasa cuando el excedente se achica? ¿Quien hoy sostiene su ahorro
+lo seguiría sosteniendo con menos margen, o el problema se convierte en
+otro?"
 ```
 
 ---

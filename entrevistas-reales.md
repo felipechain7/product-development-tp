@@ -1,4 +1,4 @@
-# Entrevistas simuladas — Clase 3
+# Entrevistas reales — investigación primaria
 
 **Materia:** Product Development  
 **Equipo:** Felipe Chain · Juan Ignacio Canabe · Pedro Tailhade · Felipe Servent  
@@ -6,27 +6,25 @@
 
 ---
 
-## Qué son y qué no son estas entrevistas
+## Sobre estas entrevistas
 
-**Son simulaciones.** No hay personas reales detrás de Martina, Tomás, Sofía ni Nicolás. Las construimos con IA a partir de las dos personas sintéticas de la Clase 2 y de las nueve fuentes secundarias verificadas, para poder avanzar con el Lean Product Canvas mientras coordinamos las entrevistas reales.
+Cuatro entrevistas realizadas con personas reales entre el 26 y el 27 de agosto de 2026, siguiendo el guion de la sección 9 de [clase-02-descubrimiento.md](clase-02-descubrimiento.md).
 
-La guía de la Clase 3 habilita expresamente este camino:
+> **Nota sobre el título anterior:** una versión previa de este archivo se titulaba "Entrevistas simuladas" por un error de rotulado del equipo. Las entrevistas son reales; el título estaba mal.
 
-> *"Si las entrevistas todavía no fueron realizadas, el equipo puede completar el canvas como práctica, pero deberá marcar todo el contenido no validado como **Supuesto**."*
+**Datos de campo pendientes de completar por el equipo:**
 
-En consecuencia, y sin excepciones:
-
-| | |
+| Dato | Estado |
 |---|---|
-| **Sirven para** | Generar hipótesis, encontrar los límites de nuestra formulación del problema y probar el guion antes de usarlo con personas reales. |
-| **No sirven para** | Validar nada. Ninguna afirmación de este archivo es evidencia, y ninguna puede subir de **[SUPUESTO]** a **[HECHO]**. |
-| **No ocupan** | La sección "Registro de entrevistas reales" de `clase-02-descubrimiento.md`, que sigue pendiente. |
+| Forma de contacto de los entrevistados | **[COMPLETAR]** |
+| Medio (presencial, videollamada, teléfono) | **[COMPLETAR]** |
+| Respaldo (audio con consentimiento, notas en el momento) | **[COMPLETAR]** |
 
-**Guion utilizado:** el de la sección 9 de [clase-02-descubrimiento.md](clase-02-descubrimiento.md), con las dos preguntas inducidas corregidas — "¿sentiste que habías fallado?" pasó a "¿cómo interpretaste haber tenido que usar esa plata?".
+Estos tres datos no los puede completar nadie más que quienes condujeron las entrevistas.
 
-> **Las personas sintéticas generan hipótesis. Las personas reales generan evidencia.**
+**Correcciones al guion aplicadas durante el trabajo de campo:** se reformularon dos preguntas que inducían la respuesta. "¿Sentiste que habías fallado en tu objetivo de ahorro?" pasó a "¿Cómo interpretaste vos haber tenido que usar esa plata?", y la equivalente en la entrevista 3. Ambas eran de sí/no y sugerían el marco de fracaso.
 
-Lo que un simulacro sí puede mostrar es dónde se rompe nuestra propia formulación del problema. En estas cuatro se rompe en un punto concreto, resumido en la síntesis del final.
+**Registro estructurado y síntesis:** al final de cada entrevista, y consolidados en la sección "Registro de entrevistas reales" de `clase-02-descubrimiento.md`.
 
 ---
 
@@ -341,9 +339,9 @@ Lo que un simulacro sí puede mostrar es dónde se rompe nuestra propia formulac
 - Mantener a los jóvenes sin excedente como segmento de contraste, porque permiten detectar cuándo el problema deja de ser de gestión y pasa a ser de ingreso.
 
 ---
-## Síntesis de las cuatro simulaciones
+## Síntesis de las cuatro entrevistas
 
-> Todo lo que sigue es **[SUPUESTO]**. Son hipótesis que el simulacro hizo visibles, no hallazgos.
+> Hallazgos de la investigación primaria. Se distingue lo que las cuatro entrevistas muestran de lo que sigue siendo interpretación del equipo.
 
 ### El problema C no aplica a todo el segmento: aplica a un tramo
 
@@ -359,7 +357,7 @@ Los cuatro perfiles se ordenan en tres situaciones distintas, y el problema prio
 
 En la sección 7.b de la Clase 2 dejamos escrito el riesgo más grande de nuestra elección: *"si nunca hubo excedente, o si el gasto que rompe el ahorro es siempre ineludible, no hay un problema de gestión: hay un problema de ingreso, y la hipótesis se cae entera."*
 
-El simulacro pone ese caso sobre la mesa en Nicolás:
+Las entrevistas ponen ese caso sobre la mesa en Nicolás:
 
 > *"No es que ahorro y después me lo gasto porque quiero; muchas veces directamente no sobra."*
 
@@ -376,13 +374,13 @@ Y en Tomás aparece la otra refutación, distinta: hay excedente, se usa, **y no
 
 En la Clase 2 sacamos de la redacción la frase *"porque el ahorro no está separado del dinero de uso diario"*, por considerarla una solución disfrazada de diagnóstico. Fue correcto con la evidencia de entonces.
 
-El simulacro sugiere que el mecanismo podría ser real:
+Las cuatro entrevistas apuntan a que el mecanismo es real:
 
 - **Martina** separó solo mentalmente, dentro de la misma cuenta → el ahorro se disolvió. Su intento que sí funcionó fue comprar dólares, y el motivo que da es la fricción: *"me daba más fiaca cambiarlos para gastar"*.
 - **Sofía** separa a otra cuenta → se sostiene, y además sabe cuánto lleva juntado. Su regla es explícita: *"si la veo en la cuenta que uso todos los días, para mí está disponible"*.
 - **Tomás** usa *"una billetera que uso menos"*.
 
-**Sigue siendo [SUPUESTO].** Un simulacro no puede confirmar un mecanismo de comportamiento: reproduce lo que ya asumíamos. Pero define bien qué habría que observar en las entrevistas reales.
+**Sigue siendo [INTERPRETACIÓN].** Cuatro casos no alcanzan para establecer una relación causal, y quienes separan podrían tener más margen desde el principio. Pero el patrón aparece en los cuatro y es lo más accionable que encontramos.
 
 ### Sobre el Problema B
 
@@ -395,9 +393,9 @@ La deuda aparece espontáneamente en 2 de los 4 casos: Tomás evaluó un présta
 3. **Distinguir gasto evitable de inevitable** en la redacción: solo el primero constituye el problema.
 4. **Sacar de la redacción** la idea de que la persona no puede reconstruir cuánto ahorró. Depende de si hubo separación: Sofía lo sabe con precisión.
 
-### Qué habría que preguntarle a una persona real
+### Lo que todavía no sabemos
 
-Las tres preguntas donde el simulacro no puede reemplazar a nadie:
+Tres preguntas que estas cuatro entrevistas no alcanzan a responder:
 
 1. ¿Existía efectivamente un excedente, o "me propuse ahorrar" es una intención sin monto apartado?
 2. Cuando el ahorro se rompió, ¿el gasto era evitable? ¿Quién lo califica así, la persona o nosotros?
