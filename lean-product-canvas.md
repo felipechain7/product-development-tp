@@ -241,6 +241,8 @@ Generamos tres alternativas digitales con enfoques distintos, no tres versiones 
 
 **Criterios definidos antes de ejecutar.** No se ajustan después para que el resultado parezca positivo.
 
+**Materiales para ejecutarlo:** formulario de reclutamiento con filtros, consentimiento, planilla de seguimiento, guiones de WhatsApp y calendario en [experimento-materiales.md](experimento-materiales.md).
+
 ---
 
 ---
@@ -288,6 +290,7 @@ Ejercicio: es marzo de 2027 y Aparte fracasó. ¿Por qué?
 - [x] El experimento prueba una hipótesis principal
 - [x] La métrica y el criterio de éxito fueron definidos antes de ejecutar
 - [x] Las limitaciones del experimento están documentadas
+- [x] Los materiales para ejecutar el experimento están construidos
 
 ### Cierre del equipo
 
@@ -326,8 +329,8 @@ de terminar el ciclo.
 
 | # | Tarea |
 |---|---|
-| 1 | Reclutar 10 participantes del tramo 1 y verificar que hoy no separen su ahorro |
-| 2 | Armar el formulario de declaración de meta y la planilla de seguimiento |
+| 1 | Cargar el formulario de reclutamiento en Google Forms y difundirlo (apuntar a 25-30 respuestas para quedarse con 10) |
+| 2 | Crear la planilla de seguimiento con las columnas definidas y asignar responsables |
 | 3 | Ejecutar el experimento durante un ciclo completo de cobro |
 | 4 | Análisis de la oferta: qué billeteras ya ofrecen metas con bloqueo (vacío del canvas, riesgo 8) |
 | 5 | Conseguir respaldo en audio en las próximas entrevistas: las actuales dependen de notas |
