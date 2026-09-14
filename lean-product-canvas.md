@@ -326,7 +326,7 @@ podemos distinguirlo.
 
 Lo más importante que necesitamos aprender es:
 si apartar con demora hace que llegue más plata a fin de mes que
-separar mentalmente, en gente con excedente que hoy no lo separa.
+separar sin demora, en gente con excedente que hoy no lo separa.
 
 El experimento que realizaremos es:
 un Wizard of Oz de 4 semanas con 10 participantes divididos en dos

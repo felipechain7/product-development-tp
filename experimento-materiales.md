@@ -38,7 +38,7 @@ Google Forms. Sirve para verificar que la persona pertenece al tramo 1, que es e
 | 7 | ¿Te propusiste guardar plata en los últimos 3 meses? | Sí / No | Incluir si Sí |
 | 8 | Nombre y WhatsApp para contactarte | Texto | — |
 
-**Por qué la 6 es la más importante.** El experimento compara separar contra no separar. Si el participante ya separa, no hay nada que medir en él. Es el filtro que más gente va a dejar afuera y el que no se puede relajar.
+**Por qué la 6 es la más importante.** Los dos grupos van a separar el dinero por primera vez durante el experimento. Si el participante ya separaba antes, trae un hábito que contamina la comparación. Es el filtro que más gente va a dejar afuera y el que no se puede relajar.
 
 **Cuántos formularios enviar:** apuntar a 25-30 respuestas para quedarse con 10. Los filtros 3, 4 y 6 son restrictivos.
 
@@ -82,7 +82,7 @@ Una hoja de cálculo, una fila por participante.
 | `fecha_cobro` | Día que declaró que cobra | Día 0 |
 | `meta` | Para qué está juntando | Día 0 |
 | `monto_propuesto` | Cuánto se propuso guardar | Día 0 |
-| `apartado_confirmado` | Sí / No — solo grupo B | Día 0 |
+| `apartado_confirmado` | Sí / No — ambos grupos | Día 0 |
 | `pedidos_retiro` | Cantidad de veces que pidió recuperar | Durante |
 | `fecha_primer_pedido` | Cuándo pidió por primera vez | Durante |
 | `monto_retirado_total` | Suma de lo que sacó | Durante |
