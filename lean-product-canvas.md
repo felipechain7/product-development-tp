@@ -172,9 +172,9 @@ Generamos tres alternativas digitales con enfoques distintos, no tres versiones 
 
 ### Hipótesis de valor
 
-**Creemos que** apartar el monto de la meta con una demora para recuperarlo hará que llegue más dinero a fin de mes que separarlo mentalmente.
+**Creemos que** apartar el monto de la meta con una demora para recuperarlo hará que llegue más dinero a fin de mes que separarlo sin demora.
 
-**Lo sabremos si** la tasa de cumplimiento (sostenido ÷ propuesto) de quienes usan el mecanismo supera de forma consistente a la de quienes solo declaran su meta.
+**Lo sabremos si** la tasa de cumplimiento (sostenido ÷ propuesto) de quienes usan el mecanismo supera de forma consistente a la de quienes separan el dinero pero pueden usarlo cuando quieran.
 
 **Estado:** **[SUPUESTO].** Es la afirmación central del canvas y no está probada. Las entrevistas muestran correlación entre separar y sostener, no causalidad.
 
@@ -207,7 +207,7 @@ Generamos tres alternativas digitales con enfoques distintos, no tres versiones 
 
 ### Pregunta prioritaria
 
-> **¿Apartar el dinero con una demora para recuperarlo hace que llegue más plata a fin de mes que separarlo mentalmente, en jóvenes con excedente que hoy no lo separan?**
+> **¿Apartar el dinero con una demora para recuperarlo hace que llegue más plata a fin de mes que separarlo sin demora, en jóvenes con excedente que hoy no lo separan?**
 
 **Por qué esta.** Es la única cuya respuesta negativa detiene el proyecto entero. Si el mecanismo no cambia el resultado, no hay producto — solo un recordatorio de algo que la gente ya sabe. Las otras tres se pueden ajustar; esta no.
 
@@ -215,7 +215,7 @@ Generamos tres alternativas digitales con enfoques distintos, no tres versiones 
 
 ## 8. Experimento mínimo
 
-- **Hipótesis que prueba:** la de valor. Apartar con demora hace que llegue más dinero a fin de mes que separar mentalmente.
+- **Hipótesis que prueba:** la de valor. Apartar con demora hace que llegue más dinero a fin de mes que separar sin demora.
 - **Objetivo:** medir si el mecanismo cambia el resultado, sin construir producto ni tocar dinero ajeno.
 - **Tipo de experimento:** Wizard of Oz con grupo de comparación.
 - **Herramientas:** WhatsApp, un formulario y una planilla. Todo gratuito.
@@ -223,8 +223,9 @@ Generamos tres alternativas digitales con enfoques distintos, no tres versiones 
 - **Duración:** 4 semanas, un ciclo de cobro completo.
 - **Tarea:**
   - **Ambos grupos** declaran al cobrar su meta y el monto que se proponen guardar.
-  - **Grupo control:** nada más. Siguen como siempre.
-  - **Grupo con mecanismo:** el equipo les pide, el día de cobro, transferir ese monto a una cuenta o instrumento separado **de su propiedad** — nosotros no tocamos su dinero en ningún momento. Si quieren usarlo, avisan por WhatsApp y el equipo confirma 24 horas después.
+  - **Ambos grupos**, el día de cobro, transfieren ese monto a una cuenta o instrumento separado **de su propiedad** — nosotros no tocamos su dinero en ningún momento.
+  - **Grupo control:** puede usar esa plata cuando quiera, sin avisar.
+  - **Grupo con mecanismo:** si quiere usarla, avisa por WhatsApp y el equipo confirma 24 horas después.
   - Al cierre, ambos grupos reportan cuánto sobrevivió.
 - **Datos necesarios:** monto propuesto y monto sobreviviente por participante. Nada más.
 - **Métrica:** tasa de cumplimiento = monto sostenido ÷ monto propuesto.
@@ -240,6 +241,18 @@ Generamos tres alternativas digitales con enfoques distintos, no tres versiones 
   - **No prueba el producto**, prueba el mecanismo. La integración financiera queda sin tocar.
 
 **Criterios definidos antes de ejecutar.** No se ajustan después para que el resultado parezca positivo.
+
+> **Cambio registrado antes de ejecutar — Clase 4, 14/09/2026.**
+>
+> **Antes:** el grupo control no separaba el dinero; solo declaraba su meta. El grupo con mecanismo separaba **y** tenía demora.
+>
+> **Problema:** los grupos diferían en dos variables a la vez. Un resultado favorable no permitía distinguir el efecto de separar del efecto de la demora. Y el análisis competitivo mostró que separar ya está resuelto a escala (Naranja X Frascos, 19 millones creados en seis meses): lo único que diferencia la propuesta es la demora.
+>
+> **Decisión del equipo:** ambos grupos separan el dinero; solo el grupo con mecanismo tiene demora. La diferencia entre grupos mide únicamente la demora. Se ajustó en consecuencia el punto de comparación de las cajas 6 y 7 ("separarlo mentalmente" → "separarlo sin demora").
+>
+> **Sin cambios:** participantes, filtros, duración, métrica, criterio de éxito (+20 puntos), criterio de fracaso (<10 puntos o 2+ abandonos) y zona gris.
+>
+> **Costo asumido:** como ambos grupos separan, es esperable una diferencia menor entre grupos, y con n = 10 aumenta la probabilidad de caer en la zona gris.
 
 **Materiales para ejecutarlo:** formulario de reclutamiento con filtros, consentimiento, planilla de seguimiento, guiones de WhatsApp y calendario en [experimento-materiales.md](experimento-materiales.md).
 
@@ -428,7 +441,7 @@ Versión condensada de las 8 cajas para pegar en un tablero visual. **El conteni
 
 ## 7. Lo más importante por aprender
 
-- ¿Apartar con demora hace que llegue más plata a fin de mes que separar mentalmente?
+- ¿Apartar con demora hace que llegue más plata a fin de mes que separar sin demora?
 - Incertidumbre 5 / Impacto 5 — la más alta en ambas
 - Es la única cuya respuesta negativa detiene el proyecto
 - Riesgo: que separar sea consecuencia de tener más margen, no causa
@@ -436,6 +449,7 @@ Versión condensada de las 8 cajas para pegar en un tablero visual. **El conteni
 ## 8. Experimento mínimo
 
 - Wizard of Oz · 4 semanas · 10 personas en 2 grupos
+- Los dos grupos separan la plata; solo uno tiene demora de 24 h
 - WhatsApp + planilla · **no tocamos dinero de nadie**
 - Métrica: sostenido ÷ propuesto
 - Éxito: +20 puntos vs. control · Fracaso: menos de 10

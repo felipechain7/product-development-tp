@@ -2,7 +2,7 @@
 
 **Equipo:** Felipe Chain · Juan Ignacio Canabe · Pedro Tailhade · Felipe Servent
 **Experimento:** Wizard of Oz · 4 semanas · 10 participantes en 2 grupos
-**Hipótesis que prueba:** apartar con demora hace que llegue más dinero a fin de mes que separarlo mentalmente
+**Hipótesis que prueba:** apartar con demora hace que llegue más dinero a fin de mes que separarlo sin demora
 **Diseño completo:** Caja 8 de [lean-product-canvas.md](lean-product-canvas.md)
 
 > Todo se opera con herramientas gratuitas: un formulario, una planilla y WhatsApp. No se construye producto.
@@ -114,9 +114,15 @@ Una hoja de cálculo, una fila por participante.
 
 ### Día de cobro — grupo A (control)
 
-> Buenísimo, anotado: $[monto] para [meta]. Nada más por ahora, seguí como venís haciendo siempre. Te escribo a fin de mes.
+> Anotado: $[monto] para [meta].
+>
+> Ahora el paso del experimento: pasá esos $[monto] a **una cuenta o billetera tuya que no uses todos los días**. Puede ser otra cuenta, otra billetera, dólares, lo que te quede cómodo. La única condición es que no sea la misma con la que gastás.
+>
+> Cuando lo hagas, avisame. Esa plata la podés usar cuando quieras, no hace falta que me avises. Te escribo a fin de mes.
 
-**Importante:** al control **no se le sugiere nada**. Ni separar, ni anotar, ni revisar. Si se le da un consejo, deja de ser control.
+**Importante:** el control recibe **exactamente la misma instrucción de separar** que el grupo B. Lo único que no tiene es la demora. No se le sugiere nada más: ni anotar, ni revisar, ni esperar antes de gastar. Si se le da un consejo extra, deja de medir solo la demora.
+
+> *Cambio registrado el 14/09/2026: en la versión anterior el control no separaba el dinero. Ver Caja 8 del canvas.*
 
 ### Día de cobro — grupo B (mecanismo)
 
