@@ -28,7 +28,7 @@ Este canvas se apoya en dos capas de evidencia, con pesos muy distintos:
 
 - Que la separación del dinero **cause** que el ahorro se sostenga, y no sea una consecuencia de tener más margen.
 - El tamaño relativo de los tres tramos.
-- Que las herramientas actuales no cubran esta necesidad — no hicimos análisis de la oferta.
+- Que ninguna otra billetera aplique demora real al retiro. Relevamos Naranja X Frascos, que separa pero deja retirar cuando el usuario quiera; no relevamos Mercado Pago, Ualá ni Personal Pay con el mismo detalle ([análisis competitivo](analisis-competitivo.md)).
 - Todo lo que este canvas afirme sobre monetización, disposición a pagar o adopción: no hay ni una sola observación al respecto.
 
 > Cada caja de este canvas contiene decisiones revisables. La evidencia surge de experimentar, no de escribir.
@@ -49,9 +49,11 @@ Los tramos 2 y 3 quedan como **segmentos de contraste**, no como usuarios objeti
 
 **Los jóvenes de 18 a 30 años con ingreso estable y excedente real** —típicamente sin gastos fijos de vivienda— se proponen guardar dinero para una meta y terminan usándolo en gastos que ellos mismos califican como evitables, sin poder reconstruir en qué momento se rompió el plan.
 
-Alrededor de 3 de cada 10 declara que le ocurre, según dos estudios independientes (F4 y F3), y casi un tercio de quienes ahorran no sabe cuánto guarda por mes (F3). Existe un segmento numeroso que declara un objetivo que no logra sostener, y ninguna de las herramientas que ya usa —el 70% de los argentinos usó billeteras virtuales en los últimos seis meses (F7)— se ocupa de ese objetivo.
+Alrededor de 3 de cada 10 declara que le ocurre, según dos estudios independientes (F4 y F3), y casi un tercio de quienes ahorran no sabe cuánto guarda por mes (F3). Existe un segmento numeroso que declara un objetivo que no logra sostener. **Separar el dinero por objetivo ya está resuelto a escala:** Naranja X ofrece "Frascos", con 19 millones creados en seis meses y uso de uno de cada tres de sus clientes. Pero Frascos permite retirar la plata cuando el usuario quiera: **ninguna herramienta relevada aplica una demora a la salida.**
 
-**[SUPUESTO]** Que el excedente exista y sea la variable que define el segmento; que el gasto que rompe el ahorro sea evitable según el propio usuario; y que las herramientas actuales no cubran esa necesidad, cosa que no verificamos con un análisis de la oferta.
+> *Corrección registrada (Clase 4, 14/09/2026). La versión anterior afirmaba que "ninguna de las herramientas que ya usa se ocupa de ese objetivo". El análisis competitivo lo refutó.*
+
+**[SUPUESTO]** Que el excedente exista y sea la variable que define el segmento; que el gasto que rompe el ahorro sea evitable según el propio usuario; y que ninguna otra billetera aplique demora real al retiro, cosa que verificamos solo para Naranja X.
 
 **Fuera del problema:** los tramos 2 y 3 identificados en las entrevistas —ingreso variable con reserva funcional, e ingreso ajustado sin excedente— quedan como segmentos de contraste. Para ellos este problema no aplica.
 
@@ -273,7 +275,7 @@ Ejercicio: es marzo de 2027 y Aparte fracasó. ¿Por qué?
 | 5 | **Nunca conseguimos la integración financiera.** Quedó como un recordatorio manual. | Que la dependencia fuera resoluble más adelante. | Ningún proveedor responde o exige requisitos regulatorios inalcanzables. | Relevar qué billeteras ofrecen API pública y bajo qué condiciones. |
 | 6 | **Nadie confió en darle acceso a su dinero a un producto de estudiantes.** | Que la confianza no fuera una barrera de entrada. | Caída en el paso de configuración, o preguntas repetidas sobre seguridad. | Fake door: landing con dos versiones, una que menciona acceso a cuentas y otra que no. Comparar conversión. |
 | 7 | **No había negocio.** Funcionaba, pero nadie pagaría y ningún tercero lo compraría. | Todo lo relativo a monetización, que este canvas no investigó. | Rechazo generalizado al plantear un precio, aun entre quienes lo usan. | Preguntar por disposición a pagar recién después de que el mecanismo demuestre valor. |
-| 8 | **Las billeteras lo incorporaron como función propia.** | Que ninguna herramienta actual se ocupe del objetivo. | Anuncios de metas de ahorro con bloqueo en las billeteras masivas. | Análisis de la oferta, que **todavía no hicimos** y es un vacío del canvas. |
+| 8 | **Las billeteras lo incorporaron como función propia.** | Que ninguna herramienta actual se ocupe del objetivo. | **Ya ocurrió:** Naranja X Frascos separa la plata por objetivo a escala. Queda abierto solo si alguna aplica demora al retiro. | Relevar Mercado Pago, Ualá y Personal Pay con el mismo detalle que Naranja X. |
 
 ### Los tres riesgos más importantes
 
@@ -345,7 +347,7 @@ de terminar el ciclo.
 | 1 | Cargar el formulario de reclutamiento en Google Forms y difundirlo (apuntar a 25-30 respuestas para quedarse con 10) |
 | 2 | Crear la planilla de seguimiento con las columnas definidas y asignar responsables |
 | 3 | Ejecutar el experimento durante un ciclo completo de cobro |
-| 4 | Análisis de la oferta: qué billeteras ya ofrecen metas con bloqueo (vacío del canvas, riesgo 8) |
+| 4 | Completar el análisis de la oferta: Naranja X ya relevada; falta Mercado Pago, Ualá y Personal Pay |
 | 5 | Conseguir respaldo en audio en las próximas entrevistas: las actuales dependen de notas |
 
 > **El canvas contiene hipótesis. La evidencia surge de observar y experimentar.**
@@ -357,7 +359,7 @@ de terminar el ciclo.
 | **Problema priorizado en Clase 2** | Los jóvenes de 18 a 30 con ingresos propios se proponen guardar dinero y terminan gastándolo antes de lo previsto (ICE promedio 2,92, primero de cuatro). **Reformulado tras las entrevistas:** ver Caja 1. |
 | **Evidencia que lo respalda** | **Primaria:** 4 entrevistas (26-27/08/2026). Martina y Sofía reconstruyen episodios concretos de ahorro roto con montos y circunstancias. **Secundaria:** F4 (Junior Achievement + CEPE-UTDT, +5.000 casos): 29% gasta sus ahorros antes de lo planeado. F3 (Pulso Research, enero 2026): 50,2% de los jóvenes de 16-29 puede guardar dinero, 29,9% no sabe cuánto. |
 | **Contradicciones encontradas** | **Resuelta la principal.** F3 mostraba a los jóvenes como el único segmento que ahorra; F1 como el de mayor mora. Las entrevistas confirman que son subpoblaciones distintas: el tramo 1 tiene excedente, el tramo 3 no. **Nueva contradicción interna:** Tomás tiene excedente, usa lo guardado y no lo vive como fracaso — usar el ahorro no siempre es un problema. |
-| **Supuestos que permanecen** | Que la separación del dinero **cause** que el ahorro se sostenga y no sea consecuencia de tener más margen. El tamaño relativo de los tres tramos. Que las herramientas actuales no cubran la necesidad (sin análisis de la oferta). Todo lo relativo a monetización. |
+| **Supuestos que permanecen** | Que la separación del dinero **cause** que el ahorro se sostenga y no sea consecuencia de tener más margen. El tamaño relativo de los tres tramos. Que ninguna billetera aplique demora al retiro (solo relevamos Naranja X). Todo lo relativo a monetización. |
 | **Cambios realizados al problema** | **Dos.** (1) En la Clase 2 sacamos la frase "porque el ahorro no está separado del dinero de uso diario" por ser una solución disfrazada de diagnóstico. (2) Tras las entrevistas: se acotó el usuario al tramo 1, se restringió a gastos **evitables**, y se agregó "para una meta". La separación del dinero vuelve, ahora como comportamiento observado y no como causa afirmada. |
 | **Usuarios entrevistados** | 4. Martina (23, sueldo fijo, vive con padres) · Tomás (26, freelance, alquila) · Sofía (21, part time, vive con familia) · Nicolás (24, repartos y changas, alquila). Cubren los tres tramos. |
 | **Comportamientos observados** | **Los cuatro separan el dinero de alguna forma.** Martina solo mentalmente, dentro de la misma cuenta → se le disolvió. Sofía a otra cuenta → se sostiene y sabe cuánto lleva. Tomás en una billetera de uso infrecuente. Nicolás dividido entre dólares intocables y reserva líquida. Los cuatro distinguen espontáneamente el gasto evitable del inevitable. |
@@ -398,7 +400,8 @@ Versión condensada de las 8 cajas para pegar en un tablero visual. **El conteni
 - Terminan usándolo en gastos que ellos mismos llaman evitables
 - No pueden reconstruir cuándo se rompió el plan
 - Evidencia: 4 entrevistas propias + 2 estudios (≈3 de cada 10)
-- **Supuesto: que las herramientas actuales no cubran esto**
+- Separar ya existe a escala: Naranja X Frascos (19 M)
+- **Supuesto: que nadie aplique demora al retirar la plata**
 
 ## 2. Resultados de negocio
 
