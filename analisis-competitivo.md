@@ -130,5 +130,68 @@ Ninguno está decidido. Son las opciones que quedan sobre la mesa.
 
 - Se apoya en fuentes periodísticas y en comunicación de las propias empresas. **No probamos Frascos ni ninguna otra herramienta.**
 - Los datos de uso de Frascos (19 millones, uno de cada tres clientes) provienen de comunicación de Naranja X: tienen interés directo en que la cifra impresione.
-- **No relevamos Mercado Pago, Ualá, Personal Pay ni Cuenta DNI** con el mismo detalle. Es posible que alguna ya tenga una función equivalente o con bloqueo real.
+- **Relevado el 05/10/2026** para Mercado Pago, Ualá y Personal Pay: ver el anexo al final. Las tres separan por objetivo y ninguna aplica demora. Cuenta DNI sigue sin relevar.
 - No hay datos de retención: 19 millones de frascos creados no dicen cuántos siguen activos ni cuántos cumplieron su objetivo. **Es la misma distinción entre uso y resultado que planteamos en la Caja 2.**
+
+---
+
+# Anexo — Relevamiento del resto del mercado
+
+**Fecha:** 05/10/2026
+**Por qué se hizo:** la Caja 1 sostiene el supuesto de que *ninguna billetera aplica una demora real al retiro*, verificado solo para Naranja X. Era el único supuesto abierto capaz de invalidar la propuesta entera.
+
+## La separación por objetivo está en las cuatro
+
+| Billetera | Función | Retiro |
+|---|---|---|
+| **Naranja X** | Frascos. Plazos de 7, 14 o 28 días con rendimiento | **Inmediato.** Se libera cuando el usuario quiera, sin penalidad |
+| **Mercado Pago** | Reservas. Aparta dinero por objetivo dentro de la cuenta, con rendimiento | **Inmediato.** La comunicación lo promociona como *"tenerlo siempre disponible"* |
+| **Ualá** | Cuenta remunerada con objetivos. Hasta 29% TNA | **Inmediato.** Sin plazos mínimos de permanencia, fondos disponibles 24 h |
+| **Personal Pay** | Metas de Ahorro. Asigna un monto del ingreso a un objetivo | **Inmediato.** Sin restricciones de tiempo |
+
+### El supuesto de la Caja 1 se sostiene
+
+**Ninguna de las cuatro aplica una demora al retiro sobre su función de objetivos.** Las cuatro compiten en lo contrario: liquidez total como argumento de venta. El hueco que Aparte quiere ocupar sigue vacío.
+
+### Pero Mercado Pago ya hace la otra mitad
+
+Reservas permite **programar el apartado mensual en una fecha específica**, pensada explícitamente para el día de cobro. Eso es, textualmente, la primera mitad de la solución seleccionada en la Caja 5: *"apartar automáticamente el monto de la meta al cobrar"*.
+
+De las dos partes de Aparte, **una ya existe y está integrada en la billetera más usada del país.** Lo único propio es la demora.
+
+## El hallazgo incómodo: la demora ya existe, en otro producto
+
+| Producto | Demora | Fuente |
+|---|---|---|
+| **Plazo fijo tradicional** | **30 días mínimo y no admite precancelación** por normativa BCRA. No se puede sacar la plata antes del vencimiento | [BBVA](https://www.bbva.com.ar/personas/preguntas-frecuentes/productos/inversiones/plazos-fijos/se-puede-dar-de-baja-un-plazo-fijo-antes-de-la-fecha-de-vencimie.html) · [BCRA](https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/61864/norma.htm) |
+| **Plazo fijo precancelable** | Mínimo 180 días, precancelable recién después de 30 | [Tu Plazo Fijo](https://www.tuplazofijo.com.ar/plazos-fijos/tipos/precancelable/) |
+
+Y lo ofrecen **las mismas apps**: Ualá tiene plazo fijo propio, Naranja X también.
+
+**Las dos lecturas, y hay que sostener las dos:**
+
+**A favor.** Nadie combina separación por objetivo con una demora calibrada. El plazo fijo es un instrumento de inversión con una demora rígida de 30 días como efecto secundario, no un mecanismo de disciplina con una demora diseñada de 24 horas. Son cosas distintas.
+
+**En contra, y es el problema serio.** La fricción **ya está disponible a un toque de distancia**, en forma mucho más fuerte que 24 horas, dentro de las apps que el segmento ya tiene instaladas. Y no la usan para esto. Eso admite tres explicaciones:
+
+1. No saben que existe o no la asocian a este uso.
+2. La conocen y la evitan: 30 días irrompibles es demasiado y 24 horas sería el punto justo.
+3. **No quieren fricción.** Eligen deliberadamente la liquidez y por eso las cuatro billeteras la promocionan como beneficio.
+
+Si la explicación es la tercera, la hipótesis de valor de Aparte está en problemas y ninguna calibración de la demora lo arregla.
+
+**Esto no estaba identificado en el pre-mortem.** El riesgo 2 anticipaba que la fricción molestara *a quien la probara*. No anticipaba que la fricción ya estuviera disponible y el segmento la estuviera esquivando.
+
+## Qué cambia en el canvas
+
+1. **Caja 1.** El supuesto *"ninguna billetera aplica demora al retiro"* queda **cerrado y confirmado** para las cuatro principales. Deja de ser supuesto.
+2. **Caja 1 y Caja 5.** Hay que agregar que **Mercado Pago Reservas ya programa el apartado en la fecha de cobro.** El diferencial de Aparte se reduce exclusivamente a la demora.
+3. **Caja 5, sustitutos.** El plazo fijo entra como sustituto con demora fuerte, gratuito y ya disponible.
+4. **Pre-mortem.** Riesgo nuevo: que el segmento esquive la fricción existiendo y siendo accesible. No es el riesgo 2.
+
+## Límites de este anexo
+
+- Es investigación de escritorio sobre comunicación de las empresas y prensa. **No probamos ninguna de las cuatro apps desde adentro.**
+- Las tasas y condiciones cambian seguido. Lo relevante acá no es la tasa sino **si hay o no demora al retiro**, que es estructural.
+- No relevamos **Cuenta DNI** ni bancos tradicionales con app.
+- No sabemos **qué proporción del tramo 1 usa plazo fijo**. Sin ese dato, las tres explicaciones de arriba quedan abiertas.
