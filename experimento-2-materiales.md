@@ -32,7 +32,7 @@ Google Forms. **Los criterios de inclusión no van en el formulario:** si la per
 
 | # | Pregunta | Tipo | Criterio |
 |---|---|---|---|
-| 1 | ¿Qué edad tenés? | Número | Incluir si 18-30 |
+| 1 | ¿Qué edad tenés? | Número | **Incluir si 18-27** |
 | 2 | ¿Tenés ingresos propios todos los meses? | Sí / No | Incluir si Sí |
 | 3 | ¿Tu ingreso mensual es más o menos el mismo, o cambia bastante? | Estable / Variable | **Incluir solo Estable** |
 | 4 | ¿Pagás alquiler o expensas con tu ingreso? | Sí / No | Incluir si No |
@@ -49,12 +49,15 @@ Google Forms. **Los criterios de inclusión no van en el formulario:** si la per
 | Filtro duro | **No separa** la plata operativamente | **No puede ver** su progreso en un solo lugar |
 | Meta en curso | No se preguntaba | **Obligatoria** |
 | Gasto en vista | No se preguntaba | **Obligatorio** |
+| Rango de edad | 18-30 | **18-27** |
 
 Las preguntas 1 a 5 son las mismas: siguen definiendo el tramo 1.
 
 **La 7 es la que no se relaja.** Si la persona ve su progreso de un vistazo, el Termómetro no le muestra nada nuevo y la sesión no mide lo que queremos medir.
 
-**Cuántos formularios enviar:** apuntar a 25-30 respuestas para quedarse con 10.
+**Cuántos formularios enviar:** con ocho filtros, de cada cuatro respuestas pasa alrededor de una. **Apuntar a 40-45 respuestas para quedarse con 10**, y mejor más: algunos de los que pasan después no contestan el WhatsApp.
+
+> **El rango de edad se acotó a 18-27 el 05/10/2026**, antes de enviar el formulario y antes de recibir una sola respuesta. La Caja 1 y el registro de la Clase 2 siguen definiendo el segmento como 18 a 30: esto es un recorte del reclutamiento, no una redefinición del problema.
 
 ---
 
