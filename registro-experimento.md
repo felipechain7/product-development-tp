@@ -113,7 +113,7 @@ Lo que sí se aprendió fuera del experimento, y que cambió el diseño:
 
 - **Clasificación: inconclusa.** No es "no respaldada" — esa categoría requiere evidencia válida que no alcance el criterio. Acá no hubo ejecución, así que no hay nada que comparar.
 - **Comparación con el criterio:** no corresponde.
-- **Decisión de iteración:** **pendiente de definición del equipo.** Hay una propuesta en evaluación, descrita abajo, que todavía no fue confirmada.
+- **Decisión de iteración:** **probar otro camino.** Se conserva el problema, el segmento y las tres necesidades de la Caja 4; cambia el mecanismo. Ver iteración 2.
 - **Próxima incertidumbre por reducir:** sin cambios respecto del punto de partida.
 
 ---
@@ -151,14 +151,17 @@ Historial completo. No se reescribe ni se borra nada.
 - **Decisión del equipo:** aplicada antes de ejecutar, registrada en la Caja 8 con fecha.
 - **Costo asumido:** como ambos grupos separan, es esperable una diferencia menor y con n = 10 aumenta la probabilidad de caer en la zona gris. Se aceptó.
 
-### Iteración 2 — propuesta en evaluación · Cambiar de mecanismo
+### Iteración 2 — 05/10/2026 · Cambiar de mecanismo: de la fricción a la información
 
-> **Esta iteración NO está decidida.** Queda registrada como propuesta para no perder el razonamiento. El equipo todavía no la confirmó.
+> **Decisión tomada por el equipo.** El experimento 1 no se ejecuta. Se reemplaza por el experimento 2, descrito en [diseno-experimento.md](diseno-experimento.md).
 
-- **Por qué se evalúa:** el instrumento exige cuatro semanas de contacto por WhatsApp sobre el dinero de cada participante. El equipo considera que la carga sobre el participante es alta. Esto no es un resultado del experimento: es una objeción al instrumento, surgida antes de ejecutarlo.
+- **Por qué se dejó de insistir:** el instrumento exige cuatro semanas de contacto por WhatsApp sobre el dinero de cada participante. El equipo considera que la carga sobre el participante es alta. Esto no es un resultado del experimento: es una objeción al instrumento, surgida antes de ejecutarlo.
 - **Con qué riesgo del pre-mortem se relaciona:** riesgo 2 — *"la fricción se sintió como perder el control de la propia plata"*, calificado en el canvas como el más probable de los tres.
 - **Qué supuesto quedaría cuestionado:** que la fricción sea un mecanismo aceptable para el usuario.
 - **Qué se conservaría:** el problema, el segmento y las tres necesidades de la Caja 4. **Cambio de nivel mecanismo, no de problema.**
 - **Alternativa propuesta:** la Alternativa A del canvas — Termómetro de meta. Mostrar el costo de un gasto en términos de la meta, en el momento de decidir. No mueve dinero, no requiere demora, se ejecuta en una sesión de 20 minutos por persona más un mensaje de seguimiento.
 - **Objeción conocida a la alternativa:** es la que tiene la evidencia más débil de las tres. El riesgo registrado es que informar no cambie conducta — Martina sabía que tenía $200.000 apartados y los gastó igual.
-- **Decisión del equipo:** **pendiente.**
+- **Qué lo destrabó:** el relevamiento competitivo del 05/10. La fricción ya existe en el mercado como plazo fijo, es gratuita, es más fuerte que la nuestra, está dentro de las apps que el segmento ya usa, y aun así no la usan para esto. Eso es más evidencia sobre la fricción que la que iban a producir diez personas en cuatro semanas.
+- **Decisión del equipo:** **tomada el 05/10/2026.** Se avanza con el Termómetro.
+- **Lo que se acotó antes de aceptarlo:** mostrar progreso de una meta ya lo hacen muchas apps de presupuesto, y el problema persiste igual. El experimento no prueba eso. Prueba algo más chico: **traducir un gasto concreto a tiempo de meta, en el momento de decidirlo.**
+- **Cómo se blindó el diseño:** la métrica principal pasa a ser la ceguera (M1), que es un hecho observable y puede matar la idea. Y se agrega grupo de control con seguimiento a los 7-10 días, para que M2 compare conducta y no intenciones.

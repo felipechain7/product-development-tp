@@ -207,3 +207,119 @@ Declaradas antes de ejecutar, no después de ver los resultados.
 - **Demora simulada.** Nada impide físicamente usar el dinero. Un bloqueo real podría dar otro resultado — en cualquier dirección.
 - **Cuatro semanas es un ciclo.** No dice nada sobre adopción sostenida.
 - **No prueba el producto.** Prueba el mecanismo. La integración financiera queda sin tocar.
+
+---
+
+# Experimento 2 — Termómetro de meta
+
+**Decidido:** 05/10/2026
+**Materiales:** [experimento-2-materiales.md](experimento-2-materiales.md)
+**Instrumento:** [termometro.html](termometro.html)
+
+> El experimento 1 queda arriba sin modificar. No se reemplaza ni se borra: el historial de iteraciones es parte del entregable. El motivo del cambio está en la iteración 2 de [registro-experimento.md](registro-experimento.md).
+
+## 1. Evidencia de partida
+
+Lo mismo que el experimento 1, más lo que se relevó el 05/10:
+
+- **Las cuatro billeteras principales separan por objetivo y ninguna aplica demora.** El hueco existe, pero Mercado Pago Reservas ya programa el apartado en la fecha de cobro: la primera mitad de la solución de la Caja 5 ya existe en el mercado.
+- **La demora sí existe, como plazo fijo** — 30 días sin precancelación por normativa BCRA, dentro de las mismas apps. **El segmento no la usa para esto.**
+- **Informar progreso está saturado.** Hay muchas apps de presupuesto que muestran cuánto se puede gastar y avisan al 25%, 50% y 75% de la meta. Y el problema persiste igual.
+
+**Lo que queda sin ocupar, y es lo único que este experimento prueba:** traducir **un gasto concreto** a **tiempo de meta**, **en el momento de decidirlo**. Las apps de presupuesto dan una cuota diaria antes, o un reporte después. La necesidad de la Caja 4 está en el medio.
+
+## 2. Contrato experimental
+
+| Campo | Definición |
+|---|---|
+| **Hipótesis** | Ver cuánto se corre la meta por un gasto concreto, en el momento de decidirlo, cambia la decisión. |
+| **Aprendizaje** | Si la información alcanza, o si el problema necesita fricción. |
+| **Participantes** | 10 del tramo 1 con meta en curso y gasto en vista, que **no** puedan ver su progreso en un solo lugar. 5 control, 5 con pantalla. |
+| **Observación** | **M1:** si puede decir cuánto lleva y en cuántos pasos. **M2:** si hizo el gasto, medido a los 7-10 días en los dos grupos. |
+| **Métrica principal (M1)** | Proporción que no puede responder sin abrir 2 o más apps. |
+| **Métrica secundaria (M2)** | Proporción que no hizo el gasto, por grupo. |
+| **Criterio M1** | ≥ 6 de 10 ciegos → el problema existe. **< 4 de 10 → la ceguera no existe y la idea se cae.** |
+| **Criterio M2** | B supera a A por ≥ 3 de 5 → la información tiene efecto. Diferencia ≤ 1 → informar no alcanza. |
+| **Duración** | Una sesión de 20 min por persona + un mensaje a los 7-10 días. |
+| **Limitación** | M2 es débil: una semana es poco y la persona se sabe observada. |
+
+**Por qué M1 es la principal.** Es lo único **observable** de la sesión: o puede decir el número o no puede. M2 depende de lo que la persona reporte después. Un experimento se diseña alrededor de lo que se puede medir sin creerle a nadie.
+
+**Y puede fallar.** Si la mayoría contesta al toque y con precisión, la mitad del problema que justifica el Termómetro no existe. Ese resultado mata la idea, y por eso el criterio sirve.
+
+## 3. Experimento elegido
+
+**Sesión observada con grupo de control.** 20 minutos por persona.
+
+| | Grupo A (control) | Grupo B (termómetro) |
+|---|---|---|
+| Se le pide decir cuánto lleva juntado | Sí | Sí |
+| Declara qué piensa hacer con un gasto en vista | Sí | Sí |
+| **Ve el cálculo en pantalla** | **No** | **Sí** |
+| Recibe el mensaje de seguimiento | Sí | Sí |
+
+**La única diferencia es la pantalla.** La diferencia entre grupos en el seguimiento mide el efecto de haber visto el número.
+
+### Alternativas descartadas
+
+| Alternativa | Por qué no |
+|---|---|
+| Preguntar antes y después a la misma persona | Deseabilidad social pura. Sabe que le mostraste algo y que esperás que le importe. |
+| Sin seguimiento, solo la sesión | Mediría intención declarada. El seguimiento es lo que la convierte en resultado. |
+| Seguir con el apartado con demora | El relevamiento mostró que la fricción ya está disponible y sin usar. |
+
+## 4. Partes reales y partes simuladas
+
+| Componente | Estado |
+|---|---|
+| La meta, los montos y el gasto en vista | **Reales**, declarados por la persona |
+| La imposibilidad de responder (M1) | **Real**, medida en el momento |
+| El cálculo de la pantalla | **Real** — aritmética sobre los números declarados |
+| La agregación de saldos | **Simulada.** El equipo carga los números a mano |
+| La app | **No existe.** Una pantalla que no se conecta a nada |
+| El resultado del gasto (M2) | **Autorreportado** en el seguimiento |
+
+**No se mueve dinero y no se piden datos de cuentas.** La regla del experimento 1 se mantiene.
+
+## 5. Alcance mínimo
+
+**Lo que se construye:** una pantalla ([termometro.html](termometro.html)), un formulario de 9 preguntas y una planilla de 18 columnas.
+
+| Afuera | Por qué |
+|---|---|
+| Agregación automática de saldos | Es la dependencia cara. Primero probamos si el número sirve. |
+| Cuentas, login, app instalable | No ayudan a medir M1 ni M2. |
+| Notificaciones en el momento de pagar | Sería el producto real. Requiere integración. |
+| Clasificación de gastos evitables/necesarios | Es subjetiva y del usuario. Otro experimento. |
+| Cualquier cosa de monetización | Sin observaciones. |
+
+## 6. Protocolo
+
+Está en [experimento-2-materiales.md](experimento-2-materiales.md): formulario con sus filtros, consentimiento, asignación alternada, guion de los 5 pasos de la sesión, mensaje de seguimiento y planilla.
+
+**Tres reglas que, si se rompen, invalidan la sesión:**
+
+1. **No revelar de qué va el estudio antes de medir M1.** Si lo sabe, prepara la respuesta.
+2. **No presentar la pantalla como solución.** "Te muestro un cálculo", no "mirá qué útil".
+3. **Preguntar el razonamiento, no el sí/no.** *"¿Qué estás pensando ahora?"*, nunca *"¿lo harías igual?"*.
+
+## 7. Decisiones humanas
+
+| Decisión | Qué se eligió | Por qué |
+|---|---|---|
+| **Cambiar de mecanismo** | De fricción a información | La fricción ya existe, es gratis, es más fuerte, y el segmento no la usa. |
+| **Qué se conserva** | Problema, segmento y las tres necesidades de la Caja 4 | La evidencia cuestionó el mecanismo, no el problema. |
+| **Acotar la afirmación** | No "mostrar progreso" sino "un gasto concreto → tiempo de meta, en el momento" | Lo primero ya lo hacen muchas apps y el problema sigue. |
+| **M1 como métrica principal** | La ceguera, no la decisión | Es lo único observable, y puede matar la idea. |
+| **Agregar grupo de control** | 5 y 5, con seguimiento a ambos | Sin control, cualquier resultado se atribuye a haber participado. |
+| **Mantener la regla del dinero** | No tocar plata ni pedir datos de cuentas | Decisión del equipo, se sostiene. |
+
+## Limitaciones del diseño
+
+Declaradas antes de ejecutar.
+
+- **n = 10 y alternancia, no aleatorización.** Señal de dirección.
+- **M2 sigue siendo débil.** Una semana es poco y la persona se sabe observada. El grupo de control acota el problema pero no lo elimina.
+- **Reclutamiento por conocidos**, igual que las entrevistas. Sesgo de muestra conocido y declarado.
+- **No prueba el producto.** Prueba si el número cambia algo, con los datos cargados a mano.
+- **No prueba adopción, recurrencia ni disposición a pagar.**
