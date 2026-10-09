@@ -2,9 +2,9 @@
 
 **Equipo:** Felipe Chain · Juan Ignacio Canabe · Pedro Tailhade · Felipe Servent
 **Diseño:** [diseno-experimento.md](diseno-experimento.md)
-**Última actualización:** 05/10/2026
+**Última actualización:** 09/10/2026
 
-> **Estado: el experimento no se ejecutó.** El diseño está cerrado y los materiales están escritos, pero no se reclutó a los participantes ni se corrió la prueba. Las secciones 4 a 8 están pendientes y lo dicen explícitamente. No se completan con estimaciones.
+> **Estado al 09/10/2026: reclutamiento cerrado, sesiones pendientes.** El experimento 1 nunca se ejecutó y se reemplazó por el experimento 2 (ver iteración 2). Del experimento 2 hay 10 participantes reclutados y asignados; no se corrió ninguna sesión. Las secciones 5 a 8 siguen pendientes y lo dicen explícitamente. No se completan con estimaciones.
 
 ---
 
@@ -71,17 +71,78 @@
 
 ## 4. Ejecución
 
-> **PENDIENTE — no se ejecutó.**
+> **Reclutamiento cerrado. Sesiones pendientes.**
+
+### Reclutamiento — 8 y 9 de octubre de 2026
+
+Formulario de Google con las 9 preguntas de [experimento-2-materiales.md](experimento-2-materiales.md). Difundido por WhatsApp e Instagram del equipo.
+
+| Dato | Valor |
+|---|---|
+| Respuestas recibidas | **35** |
+| Pasan los 8 filtros | **11** |
+| Rendimiento | 31% |
+| Reclutados | **10** |
+
+### Embudo de filtros
+
+| Filtro | Quedan | Saca |
+|---|---|---|
+| Respuestas recibidas | 35 | |
+| Edad 18-27 | 34 | −1 |
+| Ingresos propios | 33 | −1 |
+| **Ingreso estable** | 25 | **−8** |
+| No paga alquiler ni expensas | 21 | −4 |
+| Le sobra algo a fin de mes | 17 | −4 |
+| Meta en curso | 16 | −1 |
+| **No ve su progreso en un solo lugar** | 11 | **−5** |
+| Gasto en vista | 11 | 0 |
+
+**Tres observaciones del reclutamiento:**
+
+- **El recorte de edad a 18-27 costó un solo caso**, y ese además no cumplía otros dos criterios. El cambio salió gratis.
+- **El filtro del gasto en vista no descartó a nadie.** Los 11 que llegaron hasta ahí tenían uno. Puede ser que la pregunta no discrimine, o que quien junta para algo concreto siempre tenga una tentación cerca.
+- **El filtro de visibilidad descartó 5**, el segundo que más corta. Es el que define el experimento.
+
+### Asignación a los grupos
+
+**Registrada el 09/10/2026, antes de la primera sesión.** Alternancia por orden de llegada del formulario: impares al grupo A, pares al grupo B. No se mueve.
+
+| ID | Respuesta | Edad | Grupo | Responsable |
+|---|---|---|---|---|
+| P01 | #1 | 23 | A — control | Chain |
+| P02 | #4 | 24 | B — termómetro | Chain |
+| P03 | #10 | 26 | A — control | Chain |
+| P04 | #12 | 23 | B — termómetro | Canabe |
+| P05 | #15 | 18 | A — control | Canabe |
+| P06 | #16 | 19 | B — termómetro | Tailhade |
+| P07 | #21 | 22 | A — control | Tailhade |
+| P08 | #25 | 20 | B — termómetro | Tailhade |
+| P09 | #27 | 21 | A — control | Servent |
+| P10 | #29 | 20 | B — termómetro | Servent |
+
+**5 y 5.** Los datos de contacto no se publican en el repositorio; quedan solo en la planilla privada del equipo.
+
+**Pasaron 11 y el diseño preveía 10.** Se tomaron los **primeros 10 por orden de llegada**, una regla que no depende de mirar las respuestas. La respuesta #34 cumple los criterios y **no se recluta ni se guarda como reemplazo**: el protocolo establece que si alguien abandona se anota la baja y no se sustituye.
+
+**Cada responsable sigue participantes de los dos grupos.** Si una persona hiciera solo las sesiones con pantalla y otra solo las de control, una diferencia entre grupos podría venir del entrevistador. Mezclando, ese efecto se reparte.
+
+### Lo que todavía no ocurrió
 
 | Campo | Estado |
 |---|---|
-| Fecha y contexto | Sin ejecutar |
-| Participantes | **0 reclutados** de 10 previstos |
-| Tarea realizada | Ninguna |
-| Resultados obtenidos | Ninguno |
+| Sesiones realizadas | **0** de 10 |
+| Mediciones de M1 | Ninguna |
+| Mediciones de M2 | Ninguna |
 | Anomalías observadas | Ninguna |
 
-**Qué falta para cerrar esta sección:** crear el formulario, conseguir 25-30 respuestas, aplicar los filtros, quedarse con 10, registrar la asignación a los grupos antes de empezar y correr un ciclo de cobro completo.
+**Qué falta:** contactar, obtener el consentimiento, correr las 10 sesiones de 20 minutos y enviar el mensaje de seguimiento a los 7-10 días.
+
+### Advertencia sobre una lectura equivocada
+
+De los 16 que llegaron al filtro 7, **11 declararon que tienen que sumar entre cuentas**. Eso **no es M1**.
+
+Lo del formulario es una **declaración**; M1 es una **observación**: en la sesión se le pide el número y se mide si puede darlo sin consultar. Pueden no coincidir, y esa divergencia sería un dato en sí misma. Además, los 11 son justamente los que pasaron ese filtro, así que por construcción casi todos responden lo mismo: de ahí no sale ninguna tasa.
 
 ---
 
