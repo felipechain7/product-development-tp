@@ -1,0 +1,384 @@
+<title>Parciales Viejos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: hoja cuadriculada de examen; una columna de lectura, encabezado tipo parcial, correcciones en rojo marcan lo que falta hacer */
+:root{
+  --paper:#fbfcfe;
+  --grid:#e3e9f3;
+  --ink:#16203a;
+  --muted:#5b6478;
+  --pen:#1d4fd8;
+  --pen-soft:#e8eefc;
+  --red:#c8281e;
+  --red-soft:#fdecea;
+  --rule:#cfd7e6;
+  --card:#ffffff;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#121826; --grid:#1b2334; --ink:#e7ebf4; --muted:#9aa3b8;
+    --pen:#7ea2ff; --pen-soft:#1c2a4d; --red:#ff7b6e; --red-soft:#3a1d1d;
+    --rule:#2a3448; --card:#161e2e; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#121826; --grid:#1b2334; --ink:#e7ebf4; --muted:#9aa3b8;
+  --pen:#7ea2ff; --pen-soft:#1c2a4d; --red:#ff7b6e; --red-soft:#3a1d1d;
+  --rule:#2a3448; --card:#161e2e; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  background-color:var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size:22px 22px;
+  color:var(--ink);
+  font:16px/1.6 var(--f-body);
+}
+.wrap{max-width:820px;margin:0 auto;padding-inline:20px;padding-block:40px 80px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:clamp(2.2rem,6vw,3.4rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.6rem;font-weight:800}
+h3{font-size:1.1rem;font-weight:600}
+p{margin:0}
+a{color:var(--pen)}
+.mono{font-family:var(--f-mono);font-size:.82rem}
+
+/* encabezado tipo hoja de examen */
+.exam-head{
+  background:var(--card);border:1.5px solid var(--ink);
+  padding:22px 22px 18px;display:grid;gap:16px;
+}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px 20px}
+.field{display:flex;gap:8px;align-items:baseline;min-width:0}
+.field span:first-child{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);white-space:nowrap}
+.field span:last-child{flex:1;border-bottom:1px solid var(--rule);font-family:var(--f-mono);font-size:.85rem;color:var(--pen);min-width:0;overflow-wrap:anywhere}
+.lede{font-size:1.08rem;max-width:62ch}
+.note{
+  border-left:3px solid var(--red);background:var(--red-soft);
+  padding:12px 14px;font-size:.93rem;max-width:68ch;
+}
+.note b{color:var(--red)}
+
+.tag{font-family:var(--f-mono);font-size:.74rem;font-weight:500;padding:1px 6px;border-radius:3px;white-space:nowrap}
+.tag.todo{color:var(--red);background:var(--red-soft);border:1px solid var(--red)}
+.tag.sup{color:var(--pen);background:var(--pen-soft);border:1px solid var(--pen)}
+
+/* índice de clases */
+nav.idx{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:5;
+  background:var(--paper);border-bottom:1px solid var(--rule);
+  margin-top:28px;padding-block:10px;display:flex;gap:6px;overflow-x:auto;
+}
+nav.idx a{
+  font-family:var(--f-mono);font-size:.8rem;text-decoration:none;color:var(--ink);
+  border:1px solid var(--rule);background:var(--card);padding:4px 10px;border-radius:999px;white-space:nowrap;
+}
+nav.idx a:hover,nav.idx a:focus-visible{border-color:var(--pen);color:var(--pen);outline:none}
+
+section{margin-top:44px;display:grid;gap:14px}
+.sec-head{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
+.num{
+  font-family:var(--f-display);font-weight:800;font-size:1rem;color:var(--pen);
+  border:2px solid var(--pen);border-radius:50%;width:2.2rem;height:2.2rem;
+  display:inline-grid;place-items:center;flex:none;transform:translateY(-2px);
+}
+.sec-head .file{margin-left:auto;color:var(--muted)}
+
+.thesis{
+  background:var(--card);border:1.5px dashed var(--pen);padding:18px 20px;
+  display:grid;gap:8px;
+}
+.thesis p{font-size:1.05rem}
+
+.tbl{overflow-x:auto;border:1px solid var(--rule);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--rule)}
+th{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:500;background:var(--paper)}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600;white-space:nowrap}
+
+ul,ol{margin:0;padding-left:1.2rem;display:grid;gap:5px}
+.box{background:var(--card);border:1px solid var(--rule);padding:14px 16px;display:grid;gap:8px}
+.box h3{font-size:.95rem}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.two>*{min-width:0}
+blockquote{
+  margin:0;padding:14px 16px;background:var(--card);border-left:3px solid var(--pen);
+  font-size:.98rem;
+}
+
+/* checklist */
+.check{display:grid;gap:8px;background:var(--card);border:1.5px solid var(--red);padding:16px 18px}
+.check label{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.check input{accent-color:var(--red);width:18px;height:18px;margin-top:3px;flex:none}
+.check input:checked+span{text-decoration:line-through;color:var(--muted)}
+.check input:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+footer{margin-top:56px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--rule);padding-top:14px}
+@media (max-width:520px){ td:first-child{white-space:normal} .sec-head .file{margin-left:0} }
+@media (prefers-reduced-motion:reduce){ *{scroll-behavior:auto!important} }
+html{scroll-behavior:smooth}
+</style>
+
+<div class="wrap">
+
+  <header class="exam-head">
+    <div class="fields">
+      <div class="field"><span>Materia</span><span>Desarrollo de Productos</span></div>
+      <div class="field"><span>Tema</span><span>Clases 2 a 8</span></div>
+      <div class="field"><span>Equipo</span><span>&nbsp;</span></div>
+    </div>
+    <h1>Parciales Viejos</h1>
+    <p class="lede">Hoja de ruta del proyecto, clase por clase: qué entregamos, qué experimentos hacemos y cómo medimos el MVP al final.</p>
+    <p class="note"><b>Esto es un borrador, no evidencia.</b> Lo marcado <span class="tag todo">COMPLETAR</span> lo tenemos que hacer nosotros con personas reales: entrevistas, puntajes individuales y pruebas. Lo marcado <span class="tag sup">SUPUESTO</span> es una creencia sin comprobar. Las fuentes son pistas para buscar: hay que abrirlas y verificarlas antes de citarlas.</p>
+  </header>
+
+  <nav class="idx" aria-label="Clases">
+    <a href="#resumen">Resumen</a>
+    <a href="#c2">Clase 2</a>
+    <a href="#c3">Clase 3</a>
+    <a href="#c4">Clase 4</a>
+    <a href="#c5">Clase 5</a>
+    <a href="#c6">Clase 6</a>
+    <a href="#c7">Clase 7</a>
+    <a href="#c8">Clase 8</a>
+    <a href="#tareas">Tareas</a>
+  </nav>
+
+  <section id="resumen">
+    <h2>Resumen en una pantalla</h2>
+    <div class="tbl"><table>
+      <thead><tr><th>Clase</th><th>Entregable</th><th>Contenido en este proyecto</th></tr></thead>
+      <tbody>
+        <tr><td>2</td><td class="mono">clase-02-descubrimiento.md</td><td>Problema: preparar un parcial sin acceso a exámenes anteriores de esa materia y cátedra.</td></tr>
+        <tr><td>3</td><td class="mono">lean-product-canvas.md</td><td>Solución: banco de parciales anteriores por materia, cátedra y año.</td></tr>
+        <tr><td>4</td><td class="mono">registro-experimento.md</td><td>Experimento 1, <b>demanda</b>: concierge, "pedinos el parcial y te lo conseguimos".</td></tr>
+        <tr><td>5</td><td class="mono">diseno-experimento.md</td><td>Experimento 2, <b>oferta</b>: ¿los estudiantes suben sus parciales?</td></tr>
+        <tr><td>6</td><td class="mono">aprendizaje-y-mvp.md</td><td>Decisión según lo que pasó en las Clases 4 y 5.</td></tr>
+        <tr><td>7</td><td class="mono">MVP + mvp.md</td><td>Página web: elegís materia, filtrás y abrís el parcial.</td></tr>
+        <tr><td>8</td><td class="mono">pruebas-y-mejoras-mvp.md</td><td>Tarea: "encontrá un parcial de X del año pasado", medida en tiempo.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="thesis">
+      <span class="mono" style="color:var(--pen)">LA IDEA CENTRAL</span>
+      <p>Que la gente <b>quiera</b> parciales viejos es casi seguro. Lo incierto es si alguien los <b>sube</b>. Un banco sin oferta está vacío. Esa tensión entre demanda y oferta ordena los dos experimentos y le da al TP una historia interesante.</p>
+    </div>
+  </section>
+
+  <section id="c2">
+    <div class="sec-head"><span class="num">2</span><h2>Descubrimiento</h2><span class="mono file">clase-02-descubrimiento.md</span></div>
+    <div class="two">
+      <div class="box">
+        <h3>Territorio</h3>
+        <ul>
+          <li><b>Dominio:</b> preparación de exámenes en la universidad.</li>
+          <li><b>Usuario:</b> estudiantes de 19 a 23 años, de 1.º a 3.º año, de nuestra facultad.</li>
+          <li><b>Contexto:</b> las dos semanas anteriores a un parcial o final.</li>
+          <li><b>Fuera de alcance:</b> calidad de la enseñanza, copia durante el examen y apuntes de clase.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Supuestos iniciales <span class="tag sup">SUPUESTO</span></h3>
+        <ul>
+          <li>Los parciales anteriores son el material más buscado antes de un examen.</li>
+          <li>Están dispersos en Drives personales, grupos de WhatsApp, fotocopiadoras y fotos.</li>
+          <li>Quien tiene amigos en años superiores consigue más material.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Problemas potenciales para buscar evidencia</h3>
+    <div class="tbl"><table>
+      <thead><tr><th>#</th><th>Problema</th><th>Dónde buscar señales</th></tr></thead>
+      <tbody>
+        <tr><td>P1</td><td>No encuentran parciales anteriores de su materia y cátedra</td><td>Subreddits universitarios (r/UBA, r/argentina), grupos de Facebook de carreras</td></tr>
+        <tr><td>P2</td><td>Lo que encuentran es de otra cátedra o de un programa viejo</td><td>Las mismas fuentes; reseñas de Studocu</td></tr>
+        <tr><td>P3</td><td>Desigualdad de acceso: depende de conocer gente de años superiores</td><td>Investigación sobre primer año y abandono universitario</td></tr>
+        <tr><td>P4</td><td>Los parciales no traen resolución y no saben si lo hicieron bien</td><td>Foros; reseñas de Studocu y Course Hero</td></tr>
+        <tr><td>P5</td><td>Pierden tiempo buscando en lugar de estudiar</td><td><span class="tag sup">SUPUESTO</span> sin fuente todavía</td></tr>
+        <tr><td>P6</td><td>Abandono o recursada en los primeros años</td><td>Anuario estadístico de la Secretaría de Educación Superior (SIU-Araucano), notas sobre deserción</td></tr>
+      </tbody>
+    </table></div>
+    <p><b>Competidores y alternativas para relevar:</b> Studocu, Course Hero, Drives de centros de estudiantes, fotocopiadoras de la facultad, grupos de WhatsApp por materia y canales de Discord o Telegram.</p>
+
+    <div class="box">
+      <h3>ICE</h3>
+      <p>Los puntajes individuales van <span class="tag todo">COMPLETAR</span> cada uno por separado, sin mirar los de los demás. Lectura esperada: el <i>Ease</i> va a ser alto en todos, porque los usuarios somos nosotros y nuestros compañeros. El ranking se va a decidir por <i>Confidence</i>, que hoy es baja porque casi todo es foro y anécdota.</p>
+    </div>
+
+    <h3>Problema priorizado (borrador)</h3>
+    <blockquote>Los estudiantes de 1.º a 3.º año tienen dificultades para <b>conseguir parciales anteriores de la misma materia y cátedra</b> en las semanas previas a un examen, porque <b>ese material circula de forma dispersa e informal entre conocidos</b>. Esto genera <b>tiempo de búsqueda y preparación con material que no corresponde</b>. Todavía necesitamos comprobar (a) cuánto tiempo se pierde realmente, (b) si cambia según tener o no contactos en años superiores y (c) si la consecuencia es concreta (peor nota, recursada) o solo una molestia.</blockquote>
+
+    <div class="two">
+      <div class="box">
+        <h3>Persona 1: la de primer año sin contactos</h3>
+        <p>No conoce a nadie que haya cursado la materia. Depende del grupo de WhatsApp.</p>
+      </div>
+      <div class="box">
+        <h3>Persona 2: el de tercero bien conectado</h3>
+        <p>Tiene un Drive heredado y es quien <b>provee</b> material. Clave para la Clase 5, porque es la oferta.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3>Guion de entrevista</h3>
+      <ol>
+        <li>Contame cómo te preparaste para el último parcial que rendiste.</li>
+        <li>¿Conseguiste parciales de años anteriores? ¿Cómo, exactamente? ¿Quién te los pasó?</li>
+        <li>¿Cuánto tardaste en conseguirlos? ¿Qué buscaste primero?</li>
+        <li>¿Eran de tu cátedra? ¿Cómo te diste cuenta?</li>
+        <li>¿Alguna vez no conseguiste nada? ¿Qué hiciste?</li>
+        <li>¿Vos le pasaste material a alguien? ¿Cómo? ¿Por qué sí o por qué no?</li>
+        <li>¿Tenés guardados parciales tuyos? Mostrame dónde.</li>
+        <li>De todo esto, ¿qué te molestó de verdad?</li>
+      </ol>
+      <p class="mono" style="color:var(--muted)">La 6 y la 7 apuntan a la oferta. No las salteen.</p>
+      <p>Entrevistas: <span class="tag todo">COMPLETAR</span> al menos 3, con al menos 1 de primer año y 1 de tercero o más.</p>
+    </div>
+  </section>
+
+  <section id="c3">
+    <div class="sec-head"><span class="num">3</span><h2>Lean Product Canvas</h2><span class="mono file">lean-product-canvas.md</span></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Caja</th><th>Borrador</th></tr></thead>
+      <tbody>
+        <tr><td>1. Problema de negocio</td><td>Los estudiantes preparan exámenes sin el material más útil, que existe pero está disperso; el valor se pierde por falta de un lugar común. <span class="tag sup">SUPUESTO</span> hasta las entrevistas.</td></tr>
+        <tr><td>2. Resultados</td><td>Tiempo hasta conseguir un parcial (línea base pendiente de medir). Porcentaje de materias con al menos un parcial cargado. Parciales subidos por estudiantes por mes.</td></tr>
+        <tr><td>3. Usuarios y clientes</td><td><b>Consumidor:</b> estudiante antes de un examen. <b>Proveedor:</b> estudiante que ya rindió. <b>Cliente:</b> pendiente (¿centro de estudiantes, publicidad, nadie?). <b>Decisor e influenciador:</b> cátedras, que podrían objetar.</td></tr>
+        <tr><td>4. Resultado del usuario</td><td>"Cuando se acerca un parcial, quiero practicar con exámenes reales de mi cátedra, para saber qué y cómo me van a evaluar."</td></tr>
+        <tr><td>5. Soluciones</td><td><b>A. Información:</b> banco con buscador por materia, cátedra y año. <b>B. Coordinación:</b> pedidos que otro estudiante responde. <b>C. Inteligencia:</b> la IA genera ejercicios del estilo de la cátedra. Recomendada: <b>A</b>, con el pedido de B como respaldo cuando no hay resultados.</td></tr>
+        <tr><td>6. Hipótesis</td><td><b>Problema:</b> buscan parciales viejos y les cuesta encontrarlos. <b>Valor:</b> con el banco encuentran uno de su cátedra en menos de 2 minutos. <b>Comportamiento:</b> quien ya rindió sube su parcial. <b>Factibilidad:</b> se puede cargar y buscar sin datos personales.</td></tr>
+        <tr><td>7. Qué aprender primero</td><td>¿Los estudiantes que ya rindieron <b>suben</b> sus parciales sin que se los pidamos uno por uno? Sin oferta, no hay producto.</td></tr>
+        <tr><td>8. Experimento mínimo</td><td>Ver las Clases 4 y 5.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box">
+      <h3>Pre-mortem: tres riesgos</h3>
+      <ol>
+        <li>Nadie sube nada (falla la oferta).</li>
+        <li>Una cátedra pide bajar su material (derechos y relación institucional).</li>
+        <li>El centro de estudiantes ya tiene un Drive que resuelve lo mismo.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="c4">
+    <div class="sec-head"><span class="num">4</span><h2>Experimento 1: demanda</h2><span class="mono file">registro-experimento.md</span></div>
+    <div class="tbl"><table><tbody>
+      <tr><td>Hipótesis</td><td>Los estudiantes piden parciales viejos cuando se les ofrece un canal para hacerlo.</td></tr>
+      <tr><td>Instrumento</td><td>Un formulario de Google ("¿Qué parcial necesitás? Materia, cátedra, año") en 2 o 3 grupos de WhatsApp. El equipo consigue el material <b>a mano</b> y lo envía. Por eso es un concierge.</td></tr>
+      <tr><td>Métrica</td><td>Pedidos recibidos en 7 días; tiempo que tardó el equipo en conseguir cada uno.</td></tr>
+      <tr><td>Criterio</td><td><span class="tag todo">COMPLETAR</span> antes de ejecutar, por ejemplo "al menos 8 pedidos".</td></tr>
+      <tr><td>Dato extra</td><td>Cuánto tarda conseguir un parcial hoy. Es la <b>línea base</b> para la Clase 8.</td></tr>
+      <tr><td>Limitación</td><td>Mide interés, no si el parcial ayudó a aprobar.</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section id="c5">
+    <div class="sec-head"><span class="num">5</span><h2>Experimento 2: oferta</h2><span class="mono file">diseno-experimento.md</span></div>
+    <div class="tbl"><table><tbody>
+      <tr><td>Pregunta</td><td>¿Los estudiantes que ya rindieron suben sus parciales si se les pide de forma general?</td></tr>
+      <tr><td>Alternativas</td><td>(1) Formulario para subir archivos, difundido en grupos de WhatsApp. (2) Pedido directo a estudiantes de años superiores. (3) Regla de "subí uno y accedé al banco". <b>Recomendada: la 1</b>, porque es la más barata.</td></tr>
+      <tr><td>Métrica</td><td>Parciales subidos sobre personas alcanzadas, en 7 días.</td></tr>
+      <tr><td>Criterio</td><td><span class="tag todo">COMPLETAR</span> antes de ejecutar.</td></tr>
+      <tr><td>Si da cero</td><td>Diagnosticar antes de concluir: ¿lo vieron?, ¿lo entendieron?, ¿confiaron?, ¿no quisieron?</td></tr>
+      <tr><td>Privacidad</td><td>Pedir que tapen el nombre y el DNI de la hoja antes de subirla.</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section id="c6">
+    <div class="sec-head"><span class="num">6</span><h2>Aprender y decidir</h2><span class="mono file">aprendizaje-y-mvp.md</span></div>
+    <p>Lo completamos con lo que <b>realmente</b> pasó. Las reglas de decisión quedan preparadas de antemano:</p>
+    <div class="tbl"><table>
+      <thead><tr><th>Si pasó...</th><th>Decisión probable</th></tr></thead>
+      <tbody>
+        <tr><td>Demanda y oferta</td><td><b>Avanzar</b> al MVP buscador.</td></tr>
+        <tr><td>Demanda sin oferta</td><td><b>Probar otro camino</b> para la oferta: el equipo y los compañeros cargan el material inicial, o se pide a quien hace un pedido que suba algo a cambio.</td></tr>
+        <tr><td>Sin demanda</td><td><b>Arreglar la prueba</b> (canal o mensaje) antes de concluir.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box">
+      <h3>Punto de partida del MVP</h3>
+      <ul>
+        <li><b>Usuario:</b> estudiante con un parcial en las próximas 2 semanas.</li>
+        <li><b>Una sola cosa que hace:</b> encontrar un parcial anterior de su materia y cátedra.</li>
+        <li><b>Qué medimos:</b> si lo encuentra, si lo hace sin ayuda y en cuánto tiempo.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="c7">
+    <div class="sec-head"><span class="num">7</span><h2>Construir el MVP</h2><span class="mono file">mvp.md</span></div>
+    <blockquote><b>Recorrido:</b> elegir materia → filtrar por cátedra o año → abrir el parcial (PDF o imagen). Si no hay resultados: "Todavía no hay parciales de esta materia" y un botón <b>Pedilo</b>, que sigue midiendo demanda.</blockquote>
+    <div class="two">
+      <div class="box">
+        <h3>Datos y tecnología</h3>
+        <ul>
+          <li>Datos <b>reales</b>: 15 a 30 parciales de 5 a 8 materias, cargados por nosotros con permiso.</li>
+          <li>Página HTML con un listado JSON o una planilla de Google como base.</li>
+          <li>Archivos en una carpeta de Drive pública. Sin login.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Alcance</h3>
+        <ul>
+          <li><b>Funciona:</b> buscar y abrir.</li>
+          <li><b>Manual:</b> la carga del material.</li>
+          <li><b>Afuera:</b> cuentas, comentarios, puntajes, resoluciones y ejercicios con IA.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="c8">
+    <div class="sec-head"><span class="num">8</span><h2>Medir y mejorar</h2><span class="mono file">pruebas-y-mejoras-mvp.md</span></div>
+    <blockquote><b>Tarea</b> (sin decir dónde hacer clic): "Tenés el parcial de [materia] la semana que viene. Conseguí un parcial de esa materia de 2025." <b>Inicio:</b> la página abierta. <b>Fin:</b> el parcial correcto en pantalla. <b>Corte:</b> 3 minutos o abandono. <b>Ayuda:</b> cualquier indicación del equipo.</blockquote>
+    <div class="tbl"><table>
+      <thead><tr><th>Métrica</th><th>Fórmula</th><th>Criterio exploratorio</th></tr></thead>
+      <tbody>
+        <tr><td>Éxito</td><td>completaron / intentaron</td><td><span class="tag todo">COMPLETAR</span> por ejemplo 4 de 5</td></tr>
+        <tr><td>Autonomía</td><td>completaron sin ayuda / intentaron</td><td><span class="tag todo">COMPLETAR</span></td></tr>
+        <tr><td>Valor</td><td>Segundos hasta abrir el parcial correcto, comparados con la línea base de la Clase 4 o con buscarlo "como lo harían hoy" en la misma sesión</td><td><span class="tag todo">COMPLETAR</span></td></tr>
+      </tbody>
+    </table></div>
+    <p>Participantes: 3 a 5 compañeros por ronda. <b>Están dentro del segmento</b>, que es la gran ventaja de este problema. Después de la ronda 1 elegimos una sola mejora con evidencia y repetimos la tarea con participantes nuevos.</p>
+  </section>
+
+  <section id="tareas">
+    <h2>Lo que tenemos que hacer nosotros</h2>
+    <p style="color:var(--muted)">La IA no puede hacer esto sin inventar evidencia. Las tildes se guardan solo en tu navegador.</p>
+    <div class="check">
+      <label><input type="checkbox" id="t1"><span>Verificar las fuentes de la Clase 2 (abrirlas y leerlas).</span></label>
+      <label><input type="checkbox" id="t2"><span>Hacer los puntajes ICE individuales, cada uno por separado.</span></label>
+      <label><input type="checkbox" id="t3"><span>Hacer 3 entrevistas reales o más.</span></label>
+      <label><input type="checkbox" id="t4"><span>Definir los criterios de éxito antes de cada experimento.</span></label>
+      <label><input type="checkbox" id="t5"><span>Ejecutar los experimentos de las Clases 4 y 5 y registrar lo que pase.</span></label>
+      <label><input type="checkbox" id="t6"><span>Conseguir parciales reales para el MVP, con permiso.</span></label>
+      <label><input type="checkbox" id="t7"><span>Hacer las pruebas con personas de la Clase 8 (dos rondas).</span></label>
+    </div>
+  </section>
+
+  <footer>Desarrollo de Productos · AI-Native Product Development · Borrador para discutir en equipo.</footer>
+</div>
+
+<script>
+(function(){
+  var KEY='parciales-viejos-tareas';
+  var state={};
+  try{ state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ state={}; }
+  document.querySelectorAll('.check input').forEach(function(cb){
+    if(state[cb.id]) cb.checked=true;
+    cb.addEventListener('change',function(){
+      state[cb.id]=cb.checked;
+      try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){}
+    });
+  });
+})();
+</script>
