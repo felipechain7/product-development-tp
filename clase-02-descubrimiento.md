@@ -81,6 +81,7 @@ Advertencias:
 3. **Ninguna fuente mide cuánto cuesta conseguir un examen anterior.** El tiempo perdido (P1) es pura inferencia nuestra.
 4. **Lo más sólido (F1) habla de cómo conviene estudiar, no de un problema de acceso.** Respalda que practicar con exámenes es valioso, pero no que les falten exámenes.
 5. **Sin voz de usuario de nuestra facultad.** Es exactamente lo que tienen que aportar las entrevistas.
+6. **Revisión del aula virtual (observación del equipo, octubre de 2026):** de las materias que revisamos, **solo una** publica exámenes anteriores, y a veces no coinciden con el examen que finalmente se toma. **[HECHO]** observado por nosotros, sin registro sistemático: falta anotar cuántas materias revisamos y cuáles. Descarta que la cátedra ya resuelva el acceso en general, que era la principal forma de refutar A.
 
 ---
 
@@ -185,6 +186,7 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para las entrevistas porque no ti
 | Usamos D como variable de segmentación, no como problema | Igual que con el ingreso irregular en otros trabajos: es una condición que cambia la intensidad del problema, no una fricción situada. |
 | C queda como ficha, pero señalada como posible problema de hábito | Su evidencia es la más sólida, aunque habla de técnicas de estudio, no de acceso. |
 | P5 y P6 pasan al guion de entrevistas | No tienen fuente; solo los usuarios pueden decir si existen. |
+| **Reformulamos A alrededor de la dependencia de un contacto** | La fricción que nos interesa no es "no hay exámenes": es que para conseguirlos hay que contactar a alguien de años superiores, esperar que conteste, que lo busque y que lo mande. Así A absorbe a D (la red de contactos) y deja de estar redactado desde nuestra solución. |
 
 > **[COMPLETAR]** Revisar estas decisiones en equipo y cambiar las que no compartan.
 
@@ -307,46 +309,59 @@ Sometemos a crítica el de mayor ICE según la IA: **C, estudiar sin practicar c
 - Entrevistados que cuenten que practican con exámenes anteriores todo el tiempo.
 - Que el material abunde y aun así no lo usen (sería hábito, no acceso).
 
-### Respuesta del equipo (propuesta)
+### Respuesta del equipo
 
-Aceptamos las objeciones 1, 2 y 4. C aporta la mejor evidencia de **por qué importa** practicar con exámenes, pero sola no nos dice dónde está la fricción. Proponemos usarla como **respaldo del impacto** de A y B, no como problema a investigar.
+Aceptamos las objeciones 1, 2 y 4. C aporta la mejor evidencia de **por qué importa** practicar con exámenes, pero sola no nos dice dónde está la fricción. La usamos como **respaldo del impacto**, no como problema a investigar.
+
+### Crítica del finalista elegido por el equipo: A reformulado
+
+Como elegimos otro problema (sección 8), repetimos la crítica sobre él.
+
+1. **¿El impacto está demostrado?** No. Que conseguir un examen requiera contactar a alguien es una observación nuestra; cuánto tiempo cuesta, nadie lo midió.
+2. **¿Confundimos frecuencia con importancia?** Puede pasar seguido y costar poco: si el contacto responde en diez minutos, la fricción es menor.
+3. **¿Lo elegimos por el acceso fácil?** En parte sí. Lo compensamos con un Impact y un Confidence que hay que justificar en las entrevistas.
+4. **¿Esconde una solución?** Menos que antes: la redacción habla de la espera, no del banco. Pero llegamos con la idea del banco, y hay que cuidar que las entrevistas no busquen confirmarla.
+5. **Explicaciones alternativas:** los grupos de WhatsApp de cada materia ya resuelven el pedido en minutos; o lo que molesta no es esperar sino que el examen sea de otro programa (P5).
+6. **Lo refutaría:** entrevistados que consigan exámenes al instante sin depender de nadie, o que digan que esperar no les cambia nada.
 
 ---
 
 ## 8. Problema priorizado
 
-**Propuesta del equipo: B, con la fricción de A.** Preparar un examen sin saber cómo evalúa la cátedra, cuando los exámenes anteriores que lo mostrarían circulan de forma informal.
+**Decisión del equipo: A reformulado.** Para conseguir un examen anterior, el estudiante depende de contactar a alguien de años superiores y esperar a que conteste, lo busque y se lo mande.
 
-> **[COMPLETAR]** Confirmar o cambiar después de las evaluaciones individuales. La consigna permite elegir un problema que no sea el de mayor ICE, si se justifica.
+> **[COMPLETAR]** Revisar después de las evaluaciones individuales y anotar si alguien no está de acuerdo.
 
 | Criterio | Puntaje | Fundamento |
 |---|---:|---|
-| Impact | 7 | Afecta directamente aprobar, que es un objetivo crítico del usuario. F2 y F4 lo asocian a dificultad y ansiedad. |
-| Confidence | 5 | Dos fuentes (F2, F4) de otras universidades, más el respaldo indirecto de F1 sobre el valor de practicar con exámenes. |
-| Ease | 8 | Somos el segmento. |
-| **ICE** | **2,80** | |
+| Impact | 6 | Cuesta tiempo en el momento de mayor presión (antes del examen) y deja sin material a quien no tiene contactos. Sin medir todavía. |
+| Confidence | 5 | Sube respecto del ICE de la IA (4) por la revisión del aula virtual: solo una materia publica exámenes, así que el acceso depende de canales informales. Sigue sin haber una medición del costo. |
+| Ease | 9 | Somos el segmento y vivimos la situación. |
+| **ICE** | **2,70** | |
 
-**Por qué no C (2,88):** la crítica mostró que su evidencia habla de técnicas de estudio y no de una fricción ubicable. La incorporamos como argumento de impacto.
+**Por qué no C (2,88), que tiene más ICE:** la crítica mostró que su evidencia habla de técnicas de estudio y no de una fricción ubicable. La usamos como argumento de que practicar con exámenes importa.
 
-**Por qué no A sola (2,16):** está formulada desde nuestra solución. Al plantear el problema como B (el progreso) y dejar A como una fricción a comprobar, las entrevistas pueden mostrarnos que el obstáculo es otro, por ejemplo que la cátedra no da modelos o que el material existe pero es de otro programa.
+**Por qué no B (2,80):** B describe el progreso que busca el estudiante (saber cómo evalúa la cátedra), pero es amplio: abarca desde la claridad del docente hasta la ansiedad. Elegimos la fricción concreta que creemos que lo bloquea y que podemos observar y medir: el tiempo y la dependencia de otra persona para conseguir un examen.
+
+**Lo que asumimos al elegir:** que el problema es la **espera y la dependencia**, no la inexistencia del material. Si las entrevistas muestran que los exámenes se consiguen al instante (por ejemplo, en el grupo de WhatsApp de la materia), reabrimos B.
 
 ### Redacción final
 
 **Versión breve:**
 
-> Estudiantes de 1.º a 3.º año de la FCE preparan sus exámenes sin saber cómo los va a evaluar la cátedra, porque los exámenes anteriores que lo mostrarían circulan de manera informal entre conocidos.
+> Estudiantes de 1.º a 3.º año de la FCE que quieren practicar con exámenes anteriores dependen de contactar a alguien de años superiores y esperar su respuesta, justo en los días previos al examen.
 
 **Versión centrada en el comportamiento:**
 
-> Cuando se acerca un parcial, el estudiante busca cómo pregunta esa cátedra: pide exámenes anteriores en grupos de WhatsApp o a conocidos de años superiores, y estudia con lo que consigue, sea o no de su cátedra y de su programa.
+> Cuando se acerca un parcial, el estudiante le escribe a un conocido de años superiores o pregunta en un grupo. Espera que le contesten, que busquen el examen entre sus archivos y que se lo manden. Mientras tanto, estudia sin él; si no conoce a nadie, puede no conseguirlo nunca.
 
 **Versión completa, con evidencia e incertidumbre:**
 
-> **Los estudiantes de 1.º a 3.º año de la FCE de la Universidad Austral** tienen dificultades para **saber qué y cómo les van a evaluar** cuando **preparan un parcial o un final**, debido a **que los exámenes anteriores de la cátedra no están disponibles en un lugar común y circulan de forma informal entre conocidos**. Esto genera **incertidumbre al estudiar y, posiblemente, preparación con material que no corresponde**.
+> **Los estudiantes de 1.º a 3.º año de la FCE de la Universidad Austral** tienen dificultades para **practicar con exámenes anteriores de su materia** cuando **preparan un parcial o un final**, debido a **que esos exámenes solo se consiguen pidiéndoselos a estudiantes de años superiores, lo que exige contactarlos, esperar su respuesta y que los busquen**. Esto genera **tiempo perdido en los días de mayor presión y deja sin material a quien no tiene contactos**.
 >
-> Encontramos señales en una etnografía sobre parciales (F4): aprobar depende de descifrar "lo importante" para el profesor. En Medicina de la UNR (F2), 66,2 % percibe la aprobación de evaluaciones como una dificultad alta. Y la revisión de Dunlosky et al. (F1) muestra que practicar con pruebas es de las técnicas de estudio más efectivas.
+> Encontramos señales en nuestra revisión del aula virtual: solo una materia publica exámenes anteriores, y no siempre coinciden con el que se toma. La revisión de Dunlosky et al. (F1) muestra que practicar con pruebas es de las técnicas de estudio más efectivas, lo que le da valor a tener esos exámenes. Una etnografía sobre parciales (F4) muestra que los compañeros funcionan como guías para saber qué se evalúa, y en Medicina de la UNR (F2) la brecha entre esperar y lograr un buen grupo de estudio fue amplia (63,7 % contra 30 %).
 >
-> Todavía necesitamos comprobar: **(a)** si en la FCE los exámenes anteriores son realmente difíciles de conseguir o la cátedra ya los publica; **(b)** si la incertidumbre es sobre el formato de la evaluación o solo sobre el contenido; **(c)** si la dificultad cambia según tener o no contactos en años superiores; **(d)** si estudian con material de otra cátedra o de un programa viejo.
+> Todavía necesitamos comprobar: **(a)** cuánto tiempo pasa desde que piden un examen hasta que lo tienen; **(b)** si la espera les cambia algo (estudian sin el examen, o lo terminan consiguiendo tarde); **(c)** si quien no tiene contactos consigue menos material; **(d)** si quienes ya rindieron guardan sus exámenes y estarían dispuestos a compartirlos.
 
 ### Revisión de la redacción
 
@@ -354,12 +369,12 @@ Aceptamos las objeciones 1, 2 y 4. C aporta la mejor evidencia de **por qué imp
 |---|---|
 | Usuario concreto | Sí: 1.º a 3.º año de la FCE. |
 | Situación observable | Sí: la preparación de un parcial o final. |
-| Progreso buscado | Sí: saber qué y cómo evalúa la cátedra. |
-| Fricción sin causa no demostrada | Con reserva: "circulan de forma informal" es **[SUPUESTO]**, señalado en (a). |
+| Progreso buscado | Sí: practicar con exámenes anteriores de su materia. |
+| Fricción sin causa no demostrada | Con reserva: que la espera sea larga es **[SUPUESTO]**, señalado en (a). |
 | Distingue evidencia de supuestos | Sí, en párrafos separados. |
-| Evita mencionar una solución | Sí: no nombra herramientas. |
-| Investigable por entrevistas | Sí: pide reconstruir la preparación del último examen. |
-| **¿Podría demostrarse que estamos equivocados?** | **Sí:** si la cátedra ya publica modelos de examen, (a) se cae. |
+| Evita mencionar una solución | Sí: no nombra el banco ni ninguna herramienta. |
+| Investigable por entrevistas | Sí: pide reconstruir la última vez que consiguieron un examen. |
+| **¿Podría demostrarse que estamos equivocados?** | **Sí:** si consiguen exámenes al instante sin depender de nadie, (a) y (b) se caen. |
 
 ### Justificación del equipo [COMPLETAR]
 
@@ -434,7 +449,7 @@ Registrar: hipótesis nuevas, preguntas a mejorar y respuestas que piden validac
 1. Contame cómo te preparaste para el último parcial que rendiste. ¿Qué hiciste primero?
 2. ¿Sabías cómo te iban a preguntar? ¿Cómo te enteraste?
 3. ¿Conseguiste exámenes de años anteriores? ¿Cómo, exactamente? ¿Quién te los pasó?
-4. ¿Cuánto tardaste en conseguirlos? ¿Qué buscaste primero?
+4. ¿Cuánto tardaste en conseguirlos? Contame desde que lo pediste hasta que lo tuviste: ¿a quién le escribiste, cuándo te contestó, qué hiciste mientras esperabas?
 5. ¿Eran de tu cátedra y de este programa? ¿Cómo te diste cuenta?
 6. ¿Cómo los usaste? ¿Los resolviste, los leíste? ¿Cómo sabías si estaba bien?
 7. ¿Alguna vez no conseguiste nada? ¿Qué hiciste?
@@ -516,7 +531,7 @@ Registrar: hipótesis nuevas, preguntas a mejorar y respuestas que piden validac
 - [x] Evaluación ICE de la IA con justificaciones
 - [ ] **Comparación entre evaluaciones: pendiente.**
 - [x] Crítica escéptica del finalista
-- [ ] **Decisión humana justificada: pendiente** (hay una propuesta redactada)
+- [x] Decisión humana: A reformulado (dependencia de un contacto). **Falta completar el bloque de justificación**
 - [x] Redacción final del problema: tres versiones
 - [x] Dos personas sintéticas
 - [ ] **Aprendizajes del role-play: pendiente** (prompt listo)
@@ -535,7 +550,7 @@ Registrar: hipótesis nuevas, preguntas a mejorar y respuestas que piden validac
 | 5 | Role-play con una persona sintética | Dos integrantes | Antes de entrevistar |
 | 6 | Definir contactos y duplas | Equipo | Esta semana |
 | 7 | Hacer y registrar al menos 3 entrevistas | Duplas | Antes de la Clase 3 |
-| 8 | Averiguar si las cátedras de la FCE publican modelos de examen en el aula virtual | Cualquiera | Antes de entrevistar |
+| 8 | ~~Averiguar si las cátedras publican exámenes en el aula virtual~~ Hecho: solo una lo hace. Falta anotar cuántas materias se revisaron y cuáles | Quien lo revisó | Antes de entrevistar |
 
 ### Cierre del equipo [COMPLETAR]
 
