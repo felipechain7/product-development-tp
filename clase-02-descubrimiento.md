@@ -194,8 +194,8 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A+B: la fila no baja y te perdés el partido | 7 | 6 | 9 | 3,78 | Alto impacto porque afecta directamente la experiencia del usuario. Es muy fácil de implementar y la confianza es media-alta, ya que el problema es claro, aunque no está probado que la solución lo elimine del todo. |
-| C: ventas perdidas por la fila | 7 | 5 | 5 | 1,75 | El impacto es alto porque son ingresos que se pierden, pero la confianza es media porque es difícil medir cuántas ventas se pierden realmente. La facilidad es media porque requiere más cambios operativos o técnicos. |
+| A+B: la fila no baja y te perdés el partido | 7 | 6 | 9 | 3,78 | Impacto alto porque afecta directo la experiencia de quien va al partido. Confianza media-alta porque hay evidencia razonable de que el problema existe, aunque falta validarlo con datos propios. Ease alta porque es fácil encontrar gente que vivió esa situación y quiera contarla. |
+| C: ventas perdidas por la fila | 7 | 5 | 5 | 1,75 | Impacto alto porque son ingresos que se pierden. Confianza media porque hay indicios, pero poca evidencia concreta de que la fila cause ventas perdidas. Ease media porque hay que llegar a vendedores o dueños de puestos, que cuesta más contactar. |
 
 #### Juan Ignacio Canabe
 
@@ -215,8 +215,8 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A+B: la fila no baja y te perdés el partido | 8 | 5 | 10 | 4,00 | Impacto alto porque arruina la experiencia del usuario. Facilidad máxima, ya que se resuelve rápido y sin grandes cambios. La confianza es media porque no hay certeza de que elimine del todo el problema. |
-| C: ventas perdidas por la fila | 6 | 4 | 4 | 0,96 | Impacto medio porque la pérdida de ventas existe pero es difícil de cuantificar. Confianza baja por falta de datos concretos y facilidad media-baja porque requiere más cambios para implementarlo. |
+| A+B: la fila no baja y te perdés el partido | 8 | 5 | 10 | 4,00 | Impacto alto porque afecta directo la experiencia de quien va al partido. Confianza media porque hay indicios del problema, pero todavía poca evidencia propia. Ease máxima porque casi cualquiera que fue a una cancha vivió esto, así que es fácil conseguir gente para entrevistar. |
+| C: ventas perdidas por la fila | 6 | 4 | 4 | 0,96 | Impacto medio porque la pérdida de ventas es real pero indirecta. Confianza baja porque hay poca evidencia de que la fila realmente genere ventas perdidas. Ease media-baja porque hay que llegar a vendedores o dueños de puestos, que son más difíciles de contactar. |
 
 ### Tabla consolidada [COMPLETAR]
 
