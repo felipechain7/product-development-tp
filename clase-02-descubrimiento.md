@@ -2,23 +2,21 @@
 
 **Materia:** Desarrollo de Productos
 **Equipo:** Felipe Chain · Juan Ignacio Canabe · Pedro Tailhade · Felipe Servent **[CONFIRMAR]**
-**Fecha:** 9 de octubre de 2026
-**Dominio:** preparación de exámenes en la universidad
-**Contexto institucional:** Universidad Austral, Facultad de Ciencias Empresariales (FCE). Licenciatura en Negocios Digitales y carreras de la FCE con materias en común.
+**Fecha:** 14 de octubre de 2026
+**Dominio:** compra de comida y bebida en clubes de rugby durante los días de partido
 
 ---
 
 ## Nota metodológica
 
-Usamos IA para buscar fuentes y organizar información. La verificación y las decisiones son del equipo. Marcamos **[HECHO]** (dato de una fuente verificable), **[INTERPRETACIÓN]** (lectura nuestra) y **[SUPUESTO]** (creencia sin comprobar).
+Usamos IA para buscar y verificar fuentes y para organizar la información. Las decisiones son del equipo. Marcamos **[HECHO]** (dato de fuente verificable), **[INTERPRETACIÓN]** (lectura nuestra), **[SUPUESTO]** (creencia sin comprobar) y **[EXPERIENCIA DEL EQUIPO]** (lo que vivimos nosotros: vale como punto de partida, no como evidencia).
 
 Advertencias:
 
-1. Toda la evidencia es research secundario. **Nada está validado con usuarios reales todavía.**
-2. Las fuentes F1 a F7 fueron abiertas y leídas. F8 no se pudo abrir (el sitio bloqueó el acceso) y queda marcada como no verificada.
-3. **Ninguna fuente es de la Universidad Austral.** No encontramos material público sobre cómo circulan los parciales en nuestra facultad. Ese vacío lo tienen que llenar las entrevistas.
-4. **Llegamos al dominio con una idea de solución en la cabeza** (un banco de parciales). Lo declaramos acá para que el research no se limite a confirmarla. Ver el estacionamiento de soluciones y la sección 4.
-5. Lo marcado **[COMPLETAR]** es trabajo del equipo y está vacío a propósito: evaluaciones ICE individuales, comparación, confirmación del problema y entrevistas reales.
+1. **Las fuentes sobre filas en estadios son de empresas que venden soluciones para esas filas** (F3, F4) o de clubes y proveedores que las implementan (F5, F6). Las usamos como señal, no como prueba.
+2. **Ninguna fuente habla de clubes de rugby amateur.** Todo lo de estadios grandes es de otra escala (miles de personas, ligas profesionales de EE. UU.).
+3. **La evidencia más directa que tenemos es nuestra propia experiencia**, y por eso hay que validarla con entrevistas y, sobre todo, **observando la fila un sábado**.
+4. Lo marcado **[COMPLETAR]** es trabajo del equipo y está vacío a propósito.
 
 ---
 
@@ -26,24 +24,25 @@ Advertencias:
 
 | Idea | Por qué la estacionamos |
 |---|---|
-| Banco de parciales anteriores por materia, cátedra y año | Es la idea con la que llegamos. Todavía no sabemos si el problema es conseguir el material o saber qué hacer con él. |
-| Generador de ejercicios "estilo cátedra" con IA | Presupone que el problema es la falta de práctica, no la falta de acceso. |
-| Resoluciones comentadas de parciales | Presupone que el material existe y que falta la corrección. Sin evidencia. |
-| Grupo de estudio o tutoría entre pares | Ya existen versiones institucionales en otras universidades (F6). No sabemos si es lo que falta en la nuestra. |
+| Página con el menú del buffet: pedís, pagás y retirás mostrando un QR | Es la idea con la que llegamos. Todavía no sabemos si la demora está en pagar o en preparar la comida: si es la cocina, pedir antes no saca la fila, la mueve. |
+| Avisar al celular cuando el pedido está listo | Depende de lo anterior. |
+| Mostrar en el celular cuánta fila hay en el buffet | No sabemos si saber la espera cambia algo, si igual hay que hacerla. |
+| Llevar el pedido a la tribuna | Requiere personal; no es una solución digital. |
 
 ---
 
 ## 1. Territorio de investigación
 
-- **Dominio:** preparación de exámenes parciales y finales en la universidad.
-- **Usuario inicial:** estudiantes de 19 a 23 años, de 1.º a 3.º año, de la FCE de la Universidad Austral.
-- **Contexto:** las dos semanas anteriores a un parcial o final, cuando deciden qué estudiar y con qué material.
+- **Dominio:** compra de comida y bebida en el buffet de clubes de rugby los días de partido.
+- **Usuario inicial:** jóvenes de 18 a 25 años que van al club a ver partidos (amigos, familiares o parejas de jugadores, socios) y compran en el buffet.
+- **Actor secundario:** quien maneja el buffet (el club o un concesionario), porque es quien cobra y quien podría pagar por una solución.
+- **Contexto:** sábados de partido en clubes de la URBA, donde se juegan varios partidos seguidos (divisiones inferiores, intermedia, primera) y la gente compra antes, durante los entretiempos y después.
 - **Supuestos iniciales:**
-  - **[SUPUESTO]** Los exámenes anteriores son el material más buscado antes de rendir.
-  - **[SUPUESTO]** Ese material circula de forma informal: Drives personales, grupos de WhatsApp, fotos en el celular.
-  - **[SUPUESTO]** Quien conoce a estudiantes de años superiores consigue más y mejor material.
-  - **[SUPUESTO]** No saber cómo evalúa una cátedra genera más ansiedad que no saber el contenido.
-- **Fuera de alcance:** la calidad de la enseñanza, la copia durante el examen, los apuntes de clase y los resúmenes, y la salud mental en general.
+  - **[EXPERIENCIA DEL EQUIPO]** La fila del buffet está llena todo el día, porque cada partido trae su propio pico: unos van antes de que arranque, otros en el entretiempo.
+  - **[SUPUESTO]** Por hacer la fila te perdés parte de un partido o del rato con tu grupo.
+  - **[SUPUESTO]** Hay gente que ve la fila y no compra.
+  - **[SUPUESTO]** La demora está más en pagar (efectivo, vuelto, transferencias) que en preparar la comida.
+- **Fuera de alcance:** la calidad y el precio de la comida, la seguridad del club, los estadios profesionales, otros deportes (por ahora).
 
 ---
 
@@ -53,117 +52,113 @@ Advertencias:
 
 | # | Problema potencial | Usuario | Contexto | Evidencia | Fuente | Tipo | Preguntas pendientes |
 |---|---|---|---|---|---|---|---|
-| P1 | No consiguen exámenes anteriores de su materia y cátedra | Estudiantes de 1.º a 3.º año | Semanas previas al examen | Hay repositorios informales armados por estudiantes (centros de estudiantes, servidores de Discord); Studocu se basa en material subido por estudiantes | F5, F6, F7, F8 | **[HECHO]** que esos canales existen; **[INTERPRETACIÓN]** que existan porque el acceso es difícil | ¿Les cuesta conseguirlos en la Austral? ¿Por qué canal llegan hoy? |
-| P2 | No saben qué y cómo va a evaluar la cátedra | Estudiantes que rinden por primera vez una materia | Al preparar el parcial | Etnografía con estudiantes: aprobar depende de descubrir "lo importante" para el profesor. En otra universidad, 66,2 % percibe la aprobación de evaluaciones como dificultad alta | F4, F2 | **[HECHO]** en esas poblaciones; **[SUPUESTO]** que aplique a la FCE | ¿Cómo averiguan hoy qué entra y cómo se pregunta? |
-| P3 | Estudian con técnicas de baja efectividad (releer, resumir) en lugar de practicar con exámenes | Estudiantes en general | Preparación del examen | Revisión de Dunlosky et al.: la práctica con pruebas tiene utilidad alta; releer, resumir y subrayar, baja | F1 | **[HECHO]** el resultado de la revisión; **[SUPUESTO]** cómo estudian nuestros compañeros | ¿Practican con exámenes o releen? ¿Por qué? |
-| P4 | El acceso al material depende de la red de contactos | Ingresantes y quienes no tienen amigos en años superiores | Primer año | En la cohorte estudiada, 63,7 % esperaba encontrar un buen grupo de estudio y solo 30 % lo logró. Un centro de estudiantes vincula la falta de acceso a material con el abandono de materias | F2, F5 | **[HECHO]** las cifras; **[INTERPRETACIÓN]** el vínculo con el acceso a exámenes | ¿Un ingresante sin contactos consigue el mismo material? |
-| P5 | El material que circula es de otra cátedra o de un programa viejo | Quien consigue material por canales informales | Al estudiar con exámenes ajenos | Sin fuente | — | **[SUPUESTO]** | ¿Les pasó estudiar con un examen que no correspondía? |
-| P6 | Los exámenes que consiguen no tienen resolución y no saben si lo hicieron bien | Quien practica con exámenes anteriores | Al autocorregirse | Sin fuente verificada | — | **[SUPUESTO]** | ¿Cómo chequean sus respuestas? |
-| P7 | Abandono o recursada en los primeros años | Estudiantes de 1.º y 2.º año | Durante el primer año | Alrededor de 40 % abandona en primer año (dato de la SPU citado en 2016). En una cohorte de Medicina de la UNR, 34 % de quienes abandonaron señaló causas académicas, entre ellas las dificultades en los exámenes | F3, F2 | **[HECHO]**, pero de otras universidades y con un dato nacional antiguo | ¿Pasa algo parecido en la FCE? ¿Hay datos internos? |
+| P1 | La fila del buffet no baja en todo el día porque los partidos se suceden | Asistentes al club | Sábados con varios partidos seguidos | Unos 450 partidos por fin de semana entre las distintas categorías de los 91 clubes de la URBA | F1, F2 | **[HECHO]** la cantidad de partidos (dato de 2019, contenido de marca); **[EXPERIENCIA DEL EQUIPO]** la fila permanente | ¿Cuánta gente hay en la fila en cada momento? ¿Hay algún momento sin fila? |
+| P2 | Por hacer fila se pierden parte del partido o del rato con su grupo | Asistentes | Antes y durante los partidos | En una encuesta a hinchas universitarios de EE. UU., 77 % dijo haberse perdido una jugada importante por estar en la fila; la espera promedio declarada es de 15 minutos | F3 | **[HECHO]** en esa encuesta, hecha por una empresa que vende cajas automáticas y sin tamaño de muestra publicado; **[SUPUESTO]** que pase en un club de rugby | ¿Qué se perdieron la última vez? ¿Les importa o es parte de ir al club? |
+| P3 | Hay gente que ve la fila y desiste de comprar | Asistentes; pérdida para el buffet | Picos de demanda | 40 % de 3.500 hinchas de 8 países abandonó una fila de comida en el último año (2016). En la encuesta de F3, más de 85 % abandonó alguna vez una compra por la fila, y 81 % compraría más con filas más cortas | F4, F3 | **[HECHO]** en esas encuestas de proveedores; **[SUPUESTO]** que se repita en clubes | ¿Cuántos desisten en un sábado? ¿Qué hacen en cambio? |
+| P4 | La demora está en el cobro: efectivo, vuelto, transferencias | Asistentes y buffet | En la caja | La Bombonera incorporó pagos con QR, terminales móviles y autoservicio para reducir filas y demoras de pago | F5 | **[HECHO]** que un estadio grande lo encaró por el lado del pago; **[SUPUESTO]** que en los clubes el cuello de botella sea el mismo | ¿Qué tarda más, pagar o recibir la comida? |
+| P5 | La cocina no da abasto en los picos | Buffet | Entretiempos y cambios de partido | Sin fuente | — | **[SUPUESTO]** | Si es así, ¿pedir antes ayuda o solo mueve la fila? |
+| P6 | Uno hace la fila por todo el grupo con un pedido grande y demora a los demás | Asistentes | Grupos de amigos o familias | Sin fuente | — | **[SUPUESTO]** | ¿Cómo se organizan los grupos para comprar? |
 
 ### Fuentes consultadas
 
 | # | Fuente | Señal que aporta | Limitación |
 |---|---|---|---|
-| F1 | [APS Observer: "Which Study Strategies Make the Grade?" (2013)](https://www.psychologicalscience.org/observer/which-study-strategies-make-the-grade-2), sobre Dunlosky et al., *Psychological Science in the Public Interest* | De 10 técnicas de estudio, la práctica con pruebas y la práctica distribuida tienen la utilidad más alta; releer, resumir y subrayar, baja | Nota de divulgación sobre la revisión, no el paper completo. Los autores advierten que no es una solución para todos. No habla de Argentina |
-| F2 | [Brun et al. (2025). "El abandono en la carrera de Medicina de una universidad pública argentina desde la perspectiva de estudiantes", *El Cardo* 21](https://pcient.uner.edu.ar/index.php/elcardo/article/download/2054/2454/15530) | 66,2 % percibe la aprobación de evaluaciones como dificultad alta. Entre quienes abandonaron, 34 % (n=21) señaló causas académicas. Buen grupo de estudio: 63,7 % lo esperaba, 30 % lo logró | Medicina en la UNR, cohorte 2020 en pandemia. Muestra de 60 estudiantes que abandonaron. No es nuestra facultad ni nuestra carrera |
-| F3 | [Zandomeni et al. (2016). "El abandono en las etapas iniciales de los estudios superiores", *Ciencia, Docencia y Tecnología* 27(52)](https://dialnet.unirioja.es/descarga/articulo/5506725.pdf) | Cita datos de la Secretaría de Políticas Universitarias: alrededor de 40 % abandona en primer año | Dato nacional de hace casi 10 años. Estudio en Ciencias Económicas de la UNL (pública). Es contexto, no evidencia del problema |
-| F4 | [Guanuco (2019). "No entiendo la cinco: ¿qué es aprobar o desaprobar un parcial en la universidad?", IDES](https://publicaciones.ides.org.ar/sites/default/files/docs/2020/jepe-2019-guanuco.pdf) | Etnografía: los estudiantes aprueban cuando logran descifrar "lo importante" para el profesor. El parcial está cargado de incertidumbre y ansiedad, y los compañeros funcionan como guías | Trabajo Social en la UNPAZ, observación de pocas clases. Cualitativo, no generalizable |
-| F5 | [La Izquierda Diario (2016). "UBA: el CEFyL tendrá todos los apuntes digitalizados"](https://www.izquierdadiario.es/UBA-el-CEFyL-tendra-todos-los-apuntes-digitalizados) | Un centro de estudiantes digitaliza el material de todas las materias por el costo de las fotocopias, y vincula la falta de acceso con el abandono | Medio partidario, alineado con la agrupación que conduce ese centro. Habla de apuntes, no de exámenes. Es de 2016 |
-| F6 | [La Capital (2021). "Comunidades virtuales de estudio, un espacio universitario para estar cerca"](https://www.lacapital.com.ar/educacion/comunidades-virtuales-estudio-un-espacio-universitario-estar-cerca-n2677520.html) | Estudiantes de la UNR y la UTN arman comunidades en Discord para estudiar, compartir material y consultar a quienes ya cursaron | No menciona exámenes anteriores. Contexto de pandemia |
-| F7 | [Studocu: "About us" (versión Argentina)](https://www.studocu.id/es-ar/about-us) | Competidor global: el contenido lo suben estudiantes, incluidos los de años superiores | Página institucional del propio competidor. Las cifras de usuarios que circulan en otros sitios no coinciden entre sí y no las usamos |
-| F8 | [Servidor de Discord "UTN FRLP: Contenidos Académicos" (listado en top.gg)](https://top.gg/api/discord/servers/711024631363969024) | Según su descripción, estudiantes comparten apuntes, resúmenes y finales por materia | **No verificada**: el sitio bloqueó el acceso; solo vimos la descripción en el buscador |
+| F1 | [La Nación (14/3/2026). "El nuevo Top 14 de la URBA..."](https://www.lanacion.com.ar/deportes/rugby/el-nuevo-top-14-de-la-urba-y-la-clave-hay-que-estar-bien-fisicamente-para-jugar-esta-maraton-nid14032026/) | La URBA tiene 91 clubes en 2026 | No dice cuántos partidos se juegan por sábado en cada club |
+| F2 | [Agrofy News / Prensa Volkswagen (6/9/2019)](https://news.agrofy.com.ar/noticia/183990/amarok-se-vuelve-convertir-protagonista-mundo-ovalado-rugby-buenos-aires) | Más de 43.000 jugadores; unos 450 partidos por fin de semana entre todas las categorías; unos 24.000 jugadores por semana | **Contenido de marca de un sponsor**, de 2019. No informa cantidad de espectadores |
+| F3 | [Mashgin (2025). "NCAA Fan Concessions Report"](https://blog.mashgin.com/hubfs/Mashgin%202025%20NCAA%20Fan%20Concessions%20Report.pdf) | Espera promedio declarada de 15 minutos; 77 % se perdió una jugada importante; más de 85 % abandonó una compra por la fila; 81 % compraría más con filas cortas; 60 % se siente apurado al comprar | **La empresa vende cajas automáticas.** No publica tamaño de muestra ni método. Es fútbol americano universitario en EE. UU. |
+| F4 | [Fast Casual (13/7/2016), sobre el estudio de Oracle Hospitality y Turnkey Intelligence](https://www.fastcasual.com/news/sports-fans-would-embrace-mobile-food-drink-ordering-at-events/) | 3.500 hinchas de 8 países: 40 % abandonó una fila de comida en el último año; 60 % de los no estadounidenses usaría pedidos desde el asiento | Encuesta de 2016 de un proveedor de sistemas de venta. No incluye Argentina. Solo accedimos a la nota, no al informe original |
+| F5 | [Mercado (25/10/2024). Fiserv y su alianza en La Bombonera](https://mercado.com.ar/protagonistas/fiserv-presento-su-alianza-para-optimizar-la-experiencia-de-pago-en-la-bombonera) | Boca ya tenía pedido anticipado con retiro y sumó pagos con QR, autoservicio y terminales móviles para bajar filas y demoras de pago | Nota institucional sobre un proveedor. Sin datos medidos. Estadio de 50.000 personas, no un club amateur |
+| F6 | [CulturaGeek (3/10/2017). "Waitry, la app para pedir desde el celular"](https://culturageek.com.ar/waitry-app-pedidos-desde-celular/) | Competidor que funciona en Argentina: pedido y pago desde el celular, con modalidad de retiro programado. Dice lograr hasta 20 % más pedidos y 70 % más de ticket promedio | Nota de 2017, cifras declaradas por la empresa. No sabemos si sigue activa ni si la usa algún club |
 
 ### Dudas y contradicciones
 
-1. **No hay ninguna fuente de la Universidad Austral.** Todo viene de universidades públicas (UBA, UNR, UNL, UNPAZ, UTN). En una universidad privada, con cursos más chicos y otros canales, el problema podría ser menor o distinto.
-2. **Los repositorios informales existen**, y eso tiene dos lecturas. Puede querer decir que hay demanda, o que el problema ya está resuelto de forma informal. Las fuentes no permiten distinguirlo.
-3. **Ninguna fuente mide cuánto cuesta conseguir un examen anterior.** El tiempo perdido (P1) es pura inferencia nuestra.
-4. **Lo más sólido (F1) habla de cómo conviene estudiar, no de un problema de acceso.** Respalda que practicar con exámenes es valioso, pero no que les falten exámenes.
-5. **Sin voz de usuario de nuestra facultad.** Es exactamente lo que tienen que aportar las entrevistas.
-6. **Revisión del aula virtual (observación del equipo, octubre de 2026):** de las materias que revisamos, **solo una** publica exámenes anteriores, y a veces no coinciden con el examen que finalmente se toma. **[HECHO]** observado por nosotros, sin registro sistemático: falta anotar cuántas materias revisamos y cuáles. Descarta que la cátedra ya resuelva el acceso en general, que era la principal forma de refutar A.
+1. **El pedido anticipado ya existe** en estadios grandes (F5) y como producto (F6). Eso puede leerse de dos formas: que el problema es real y vale la pena resolverlo, o que si los clubes no lo adoptaron es porque algo no funciona a su escala (costo, conexión, buffet manejado por un concesionario). Ninguna fuente lo aclara.
+2. **Todas las cifras de abandono y espera vienen de proveedores** que venden la solución. Ninguna es independiente.
+3. **No sabemos dónde está el cuello de botella.** F5 sugiere que en estadios es el cobro, pero en un buffet de club puede ser la plancha. Esto define si la idea estacionada sirve o no.
+4. **No hay datos de asistencia** a los clubes: sabemos cuántos partidos y jugadores hay, no cuántos espectadores.
+5. **Temporada:** la temporada de la URBA avanza hacia su final. **[COMPLETAR]** Revisar cuántas fechas quedan para observar y experimentar.
 
 ---
 
 ## 3. Fichas de problemas
 
-Fichamos cuatro. P5 y P6 quedan como preguntas para las entrevistas porque no tienen fuente. P7 es contexto (una consecuencia posible), no un problema investigable por nosotros.
+Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrevistas porque no tienen fuente.
 
-### Ficha A: acceso a exámenes anteriores
-
-| Campo | Respuesta |
-|---|---|
-| Problema observado | No consiguen exámenes anteriores de su materia y cátedra antes de rendir. |
-| Usuario | Estudiantes de 1.º a 3.º año de la FCE. |
-| Contexto | Las dos semanas previas a un parcial o final. |
-| Progreso buscado | Practicar con exámenes reales de esa cátedra. |
-| Fricción observada | **[INTERPRETACIÓN]** El material circula de forma informal y depende de a quién conocés. |
-| Consecuencia | **[SUPUESTO]** Tiempo de búsqueda; estudiar con material que no corresponde o sin practicar. |
-| Evidencia | Existen repositorios informales armados por estudiantes; Studocu se basa en material subido por estudiantes. |
-| Fuentes | F5, F6, F7, F8 (no verificada) |
-| Frecuencia aparente | 3 fuentes verificadas, todas indirectas. Ninguna mide la dificultad. |
-| Comportamiento observable | **[SUPUESTO]** Pedir en el grupo de WhatsApp, preguntar a conocidos de años superiores, buscar en Drives. |
-| Alternativas actuales | **[SUPUESTO]** Grupos de WhatsApp, Drives heredados, aula virtual de la cátedra, Studocu. |
-| Acceso a usuarios | Muy alto: somos el segmento. |
-| Supuestos | Que conseguir el material cueste. Que la cátedra no lo publique ya. |
-| Evidencia faltante | Cuánto tardan, qué canal usan y si alguna vez no consiguieron nada. |
-
-### Ficha B: incertidumbre sobre qué y cómo se evalúa
+### Ficha A: la fila no baja en todo el día
 
 | Campo | Respuesta |
 |---|---|
-| Problema observado | Llegan al examen sin saber qué temas entran ni cómo se pregunta. |
-| Usuario | Estudiantes que rinden una materia por primera vez. |
-| Contexto | Preparación del parcial. |
-| Progreso buscado | Saber qué y cómo va a evaluar la cátedra, para estudiar lo que corresponde. |
-| Fricción observada | Lo que "es importante" para el profesor no está explícito y hay que descifrarlo. |
-| Consecuencia | Incertidumbre y ansiedad (F4); la aprobación de evaluaciones se percibe como dificultad alta (F2). |
-| Evidencia | Etnografía en la UNPAZ; encuesta en Medicina de la UNR. |
-| Fuentes | F4, F2 |
-| Frecuencia aparente | 2 fuentes, de universidades y carreras distintas a la nuestra. |
-| Comportamiento observable | Preguntar a compañeros, prestar atención a las "palabras clave" del profesor (F4). |
-| Alternativas actuales | Exámenes anteriores, consultas a la cátedra, compañeros de años superiores. |
-| Acceso a usuarios | Muy alto. |
-| Supuestos | Que la incertidumbre sea sobre el formato y no solo sobre el contenido. |
-| Evidencia faltante | Cómo averiguan hoy qué entra y si eso les resulta difícil. |
+| Problema observado | Vayas cuando vayas, hay fila en el buffet. |
+| Usuario | Jóvenes de 18 a 25 que van al club a ver partidos. |
+| Contexto | Sábado de partidos en un club de la URBA. |
+| Progreso buscado | Comer o tomar algo sin perderse el partido ni el rato con su grupo. |
+| Fricción observada | **[EXPERIENCIA DEL EQUIPO]** Como se juegan varios partidos seguidos, cada uno genera su propio pico: unos compran antes de que empiece, otros en el entretiempo. No hay un momento tranquilo. |
+| Consecuencia | **[SUPUESTO]** Tiempo perdido en la fila, partidos vistos a medias. |
+| Evidencia | Unos 450 partidos por fin de semana en 91 clubes; nuestra propia experiencia. |
+| Fuentes | F1, F2, experiencia del equipo |
+| Frecuencia aparente | Todos los sábados de temporada, según nuestra experiencia. Sin medir. |
+| Comportamiento observable | **[SUPUESTO]** Ir antes de que arranque el partido o en el entretiempo para "ganarle" a la fila. |
+| Alternativas actuales | **[SUPUESTO]** Ir antes, mandar a uno del grupo, llevar comida de afuera, no comprar. |
+| Acceso a usuarios | Alto, si nosotros o nuestros compañeros vamos a clubes. **[CONFIRMAR]** |
+| Supuestos | Que la fila se viva como un problema y no como parte del ritual de ir al club. |
+| Evidencia faltante | Cuánta gente hay y cuánto tarda cada uno, medido un sábado real. |
 
-### Ficha C: estudiar sin practicar con exámenes
-
-| Campo | Respuesta |
-|---|---|
-| Problema observado | Preparan el examen releyendo y resumiendo, sin practicar con preguntas reales. |
-| Usuario | Estudiantes en general. |
-| Contexto | La preparación del examen. |
-| Progreso buscado | Aprobar con el tiempo que tienen. |
-| Fricción observada | **[SUPUESTO]** No tienen con qué practicar o no saben que practicar rinde más. |
-| Consecuencia | **[HECHO]** en la literatura: las técnicas de baja utilidad rinden menos que la práctica con pruebas. |
-| Evidencia | Revisión de Dunlosky et al. sobre 10 técnicas. |
-| Fuentes | F1 |
-| Frecuencia aparente | 1 fuente, pero muy sólida (revisión de mucha investigación). |
-| Comportamiento observable | **[SUPUESTO]** Releer apuntes y resúmenes. |
-| Alternativas actuales | Ejercicios de la guía de la materia, exámenes anteriores. |
-| Acceso a usuarios | Muy alto. |
-| Supuestos | Que nuestros compañeros estudien así. Que la causa sea la falta de material y no la falta de hábito. |
-| Evidencia faltante | Cómo estudiaron para el último parcial, paso a paso. |
-
-### Ficha D: desigualdad de acceso según contactos
+### Ficha B: perderse el partido o el rato con el grupo
 
 | Campo | Respuesta |
 |---|---|
-| Problema observado | Quien no conoce a estudiantes de años superiores consigue menos material. |
-| Usuario | Ingresantes y estudiantes sin red en la facultad. |
-| Contexto | Primer año. |
-| Progreso buscado | Tener el mismo material que los demás. |
-| Fricción observada | **[INTERPRETACIÓN]** El material circula por relaciones personales. |
-| Consecuencia | **[INTERPRETACIÓN]** Peor preparación; en el extremo, abandono (F5 lo vincula, sin datos). |
-| Evidencia | Brecha entre esperar y lograr un buen grupo de estudio (63,7 % contra 30 %, en pandemia). |
-| Fuentes | F2, F5 |
-| Frecuencia aparente | 2 fuentes, ninguna mide el acceso a exámenes. |
-| Comportamiento observable | **[SUPUESTO]** Pedir material a desconocidos en grupos grandes. |
-| Alternativas actuales | Grupos de WhatsApp de la materia, centro de estudiantes. |
-| Acceso a usuarios | Alto, aunque cuesta encontrar a quien no tiene red. |
-| Supuestos | Que la red de contactos sea decisiva en una facultad con cursos chicos. |
-| Evidencia faltante | Comparar a un ingresante sin contactos con uno con contactos. |
+| Problema observado | Mientras hacen la fila, se pierden parte del partido. |
+| Usuario | Asistentes que van a ver un partido en particular (de un amigo, pareja, hermano). |
+| Contexto | Entretiempos y momentos cercanos al inicio de un partido. |
+| Progreso buscado | Ver el partido que les interesa. |
+| Fricción observada | La compra compite con el partido en el tiempo. |
+| Consecuencia | En una encuesta de EE. UU., 77 % se perdió una jugada importante por la fila (F3). |
+| Evidencia | F3 (proveedor, sin muestra publicada). |
+| Fuentes | F3 |
+| Frecuencia aparente | 1 fuente, de otro país y otra escala. |
+| Comportamiento observable | **[SUPUESTO]** Mirar el partido desde la fila; volver corriendo. |
+| Alternativas actuales | **[SUPUESTO]** Comprar antes de llegar, no comprar. |
+| Acceso a usuarios | Alto. |
+| Supuestos | Que perderse el partido les importe. En un club el ambiente social puede pesar más que el juego. |
+| Evidencia faltante | Qué se perdieron la última vez y si les molestó. |
+
+### Ficha C: ventas perdidas por la fila
+
+| Campo | Respuesta |
+|---|---|
+| Problema observado | Gente que quería comprar ve la fila y desiste. |
+| Usuario | Quien maneja el buffet (pierde la venta) y el asistente (se queda sin comer). |
+| Contexto | Picos de demanda. |
+| Progreso buscado | Para el buffet: vender todo lo que la gente quiere comprar. |
+| Fricción observada | La capacidad de atención en el mostrador es limitada. |
+| Consecuencia | 40 % abandonó una fila de comida en el último año (F4); más de 85 % alguna vez (F3); 81 % compraría más con filas cortas (F3). |
+| Evidencia | Dos encuestas de proveedores. |
+| Fuentes | F3, F4 |
+| Frecuencia aparente | 2 fuentes coincidentes, ambas con interés comercial. |
+| Comportamiento observable | **[SUPUESTO]** Acercarse, ver la fila y volverse. |
+| Alternativas actuales | **[SUPUESTO]** Comprar más cosas en una sola vuelta; llevar comida de casa. |
+| Acceso a usuarios | **Medio:** hay que llegar a quien maneja el buffet, que no es parte de nuestro entorno. |
+| Supuestos | Que el buffet lo perciba como plata perdida y no como "siempre fue así". |
+| Evidencia faltante | Cuánto vende el buffet en un sábado y si nota que pierde ventas. |
+
+### Ficha D: dónde está la demora (caja o cocina)
+
+| Campo | Respuesta |
+|---|---|
+| Problema observado | La fila avanza lento, pero no sabemos si por cobrar o por preparar. |
+| Usuario | Asistentes y buffet. |
+| Contexto | El mostrador en los picos. |
+| Progreso buscado | Que la fila avance rápido. |
+| Fricción observada | **[SUPUESTO]** Pagos en efectivo con vuelto, transferencias que hay que mostrar, una sola caja. |
+| Consecuencia | Fila más larga para todos. |
+| Evidencia | La Bombonera atacó el problema por el lado del pago (F5). |
+| Fuentes | F5 |
+| Frecuencia aparente | 1 fuente, de un estadio grande. |
+| Comportamiento observable | **[SUPUESTO]** La persona espera en la caja, después espera la comida. |
+| Alternativas actuales | Cobro por QR o transferencia, que ya existe en muchos lugares. |
+| Acceso a usuarios | Muy alto: se observa sin hablar con nadie. |
+| Supuestos | Que la caja sea el cuello de botella. |
+| Evidencia faltante | Cronometrar cuánto tarda cada etapa (ver planilla de observación en la sección 9). |
 
 ---
 
@@ -171,106 +166,84 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para las entrevistas porque no ti
 
 ### Agrupaciones sugeridas por la IA
 
-1. **B es el progreso; A es una de sus fricciones.** Lo que el estudiante quiere es saber qué y cómo lo van a evaluar (B). Conseguir exámenes anteriores (A) es una de las formas de lograrlo, no la única: también están la consulta a la cátedra o los compañeros.
-2. **A está formulado peligrosamente cerca de nuestra solución.** "No consiguen exámenes anteriores" ya supone que la respuesta es darles exámenes anteriores. Es el riesgo de solución disfrazada que pide revisar la consigna.
-3. **C funciona más como argumento de impacto que como problema autónomo.** Respalda que practicar con exámenes sirve (lo que le da peso a A), pero su fricción ("no saben que practicar rinde más") apunta a otro problema: el hábito de estudio.
-4. **D es una variable de segmentación de A**, no un problema separado: la dificultad de acceso podría variar según la red de contactos.
-5. **P5 y P6 son subproblemas de A y C**, sin fuente. Quedan como preguntas del guion.
-6. **Vacío central:** ninguna fuente es de nuestra facultad ni mide el costo de conseguir material.
+1. **B es la consecuencia de A** para el asistente: la fila permanente (A) hace que se pierdan el partido (B). Conviene tratarlos juntos.
+2. **C es la otra cara del mismo problema**, vista desde el buffet. Para el pitch importa mucho porque es quien podría pagar, pero tiene otro usuario.
+3. **D no es un problema del usuario, es la incógnita técnica más importante:** define si la idea estacionada sirve. No se prioriza con ICE; se responde observando.
+4. **Riesgo de solución disfrazada:** llegamos con la idea del pedido anticipado. Si la demora está en la cocina, esa idea no resuelve nada.
+5. **P5 y P6 son posibles causas**, sin fuente. Quedan para la observación.
 
 ### Decisiones del equipo (propuesta)
 
 | Decisión | Fundamento |
 |---|---|
-| Mantenemos A y B separados para el ICE | Si los fusionamos ahora, dejamos de ver que A puede ser solo una parte de B. |
-| Usamos D como variable de segmentación, no como problema | Igual que con el ingreso irregular en otros trabajos: es una condición que cambia la intensidad del problema, no una fricción situada. |
-| C queda como ficha, pero señalada como posible problema de hábito | Su evidencia es la más sólida, aunque habla de técnicas de estudio, no de acceso. |
-| P5 y P6 pasan al guion de entrevistas | No tienen fuente; solo los usuarios pueden decir si existen. |
-| **Reformulamos A alrededor de la dependencia de un contacto** | La fricción que nos interesa no es "no hay exámenes": es que para conseguirlos hay que contactar a alguien de años superiores, esperar que conteste, que lo busque y que lo mande. Así A absorbe a D (la red de contactos) y deja de estar redactado desde nuestra solución. |
+| Fusionamos A y B en un solo problema del asistente | B es la consecuencia de A. |
+| Mantenemos C separado, como el problema del cliente que paga | Es otro usuario, y lo necesitamos para la Caja 3 del canvas y para el pitch. |
+| D sale del ICE y pasa a la observación del sábado | Es una pregunta que se responde con un cronómetro, no con opiniones. |
 
-> **[COMPLETAR]** Revisar estas decisiones en equipo y cambiar las que no compartan.
+> **[COMPLETAR]** Revisar en equipo y cambiar lo que no compartan.
 
 ---
 
 ## 5. Evaluaciones ICE individuales
 
-`ICE = (Impact × Confidence × Ease) / 100`, cada criterio de 1 a 10. *Ease* es la facilidad para acceder a usuarios y obtener evidencia real, no la facilidad para construir.
+`ICE = (Impact × Confidence × Ease) / 100`, cada criterio de 1 a 10. *Ease* es la facilidad para conseguir usuarios y evidencia real, no para construir.
 
-> **Instrucciones:** cada integrante completa su tabla **sin consultar a los demás y sin leer la sección 5.b.** La divergencia es el dato valioso.
+> Cada uno completa su tabla **solo, sin mirar la de los demás ni la sección 5.b.** Sin entrevistas, la Confidence no debería pasar de 6.
 
 #### Felipe Chain
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A: acceso a exámenes anteriores | | | | | |
-| B: incertidumbre sobre la evaluación | | | | | |
-| C: estudiar sin practicar | | | | | |
-| D: desigualdad por contactos | | | | | |
+| A+B: la fila no baja y te perdés el partido | | | | | |
+| C: ventas perdidas por la fila | | | | | |
 
 #### Juan Ignacio Canabe
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A: acceso a exámenes anteriores | | | | | |
-| B: incertidumbre sobre la evaluación | | | | | |
-| C: estudiar sin practicar | | | | | |
-| D: desigualdad por contactos | | | | | |
+| A+B: la fila no baja y te perdés el partido | | | | | |
+| C: ventas perdidas por la fila | | | | | |
 
 #### Pedro Tailhade
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A: acceso a exámenes anteriores | | | | | |
-| B: incertidumbre sobre la evaluación | | | | | |
-| C: estudiar sin practicar | | | | | |
-| D: desigualdad por contactos | | | | | |
+| A+B: la fila no baja y te perdés el partido | | | | | |
+| C: ventas perdidas por la fila | | | | | |
 
 #### Felipe Servent
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A: acceso a exámenes anteriores | | | | | |
-| B: incertidumbre sobre la evaluación | | | | | |
-| C: estudiar sin practicar | | | | | |
-| D: desigualdad por contactos | | | | | |
+| A+B: la fila no baja y te perdés el partido | | | | | |
+| C: ventas perdidas por la fila | | | | | |
 
-### Tabla consolidada [COMPLETAR después de las cuatro]
+### Tabla consolidada [COMPLETAR]
 
-| Problema | Chain | Canabe | Tailhade | Servent | IA | Dispersión (máx − mín) |
+| Problema | Chain | Canabe | Tailhade | Servent | IA | Dispersión |
 |---|---:|---:|---:|---:|---:|---:|
-| A: acceso a exámenes anteriores | | | | | 2,16 | |
-| B: incertidumbre sobre la evaluación | | | | | 2,80 | |
-| C: estudiar sin practicar | | | | | 2,88 | |
-| D: desigualdad por contactos | | | | | 1,26 | |
+| A+B | | | | | 2,70 | |
+| C | | | | | 1,40 | |
 
 ---
 
 ## 5.b Evaluación ICE de la IA
 
-Hecha solo con la evidencia de las fichas, marcando qué parte de cada puntaje es inferencia.
-
-| Problema | I | C | E | ICE | Qué parte es inferencia | Qué hallazgo cambiaría el puntaje |
+| Problema | I | C | E | ICE | Qué parte es inferencia | Qué cambiaría el puntaje |
 |---|---:|---:|---:|---:|---|---|
-| A: acceso | 6 | 4 | 9 | **2,16** | El Impact entero: ninguna fuente mide que conseguir exámenes cueste. Confidence 4 porque la evidencia es la existencia de canales informales, que admite dos lecturas | Sube si relatan búsquedas largas o exámenes que no consiguieron. Baja si dicen "lo pido en el grupo y me llega en un rato" |
-| B: incertidumbre | 7 | 5 | 8 | **2,80** | Trasladar a la FCE lo observado en la UNPAZ y la UNR | Sube si describen llegar al examen sin saber cómo les iban a preguntar. Baja si la cátedra ya publica modelos de examen |
-| C: sin práctica | 6 | 6 | 8 | **2,88** | Que nuestros compañeros estudien releyendo. La revisión es sólida pero general | Sube si cuentan que estudian releyendo. Baja si ya practican con exámenes y guías |
-| D: contactos | 7 | 3 | 6 | **1,26** | Casi todo: la cifra de F2 es sobre grupos de estudio en pandemia, no sobre material | Sube si un ingresante sin contactos relata no conseguir nada. Baja si en cursos chicos todos acceden igual |
-
-**Ranking de la IA:** C (2,88) > B (2,80) > A (2,16) > D (1,26)
+| A+B: fila y partido perdido | 6 | 5 | 9 | **2,70** | Que en un club pase lo mismo que en estadios de EE. UU.; Confidence 5 porque se apoya en la experiencia del equipo más fuentes de proveedores | Sube si la observación muestra filas largas en todos los partidos. Baja si en las entrevistas la fila aparece como parte del ritual y nadie se queja |
+| C: ventas perdidas | 7 | 4 | 5 | **1,40** | Todo lo de abandono viene de encuestas de proveedores; no sabemos si el buffet lo nota | Sube si un encargado de buffet dice que pierde ventas en los picos. Ease sube si alguno de ustedes conoce al concesionario |
 
 ### Advertencias de la IA
 
-1. Ningún Confidence pasa de 6: no hay entrevistas propias ni datos de nuestra facultad.
-2. **A, el problema detrás de nuestra idea, sale tercero.** Tiene el *Ease* más alto, pero la evidencia más indirecta.
-3. La diferencia entre C y B (0,08) es menor que cualquier margen razonable de error. Son un empate.
-4. El *Ease* es alto en todos, así que el ranking se decide por Confidence, que hoy es baja en todos.
-5. La IA no elige un ganador.
+1. La evidencia externa más fuerte (F3, F4) es de empresas que venden la solución.
+2. El Ease alto de A+B depende de que ustedes vayan a clubes. Confírmenlo.
+3. **Antes de priorizar, respondan D.** Si la demora es la cocina, cambia el problema que vale la pena resolver.
+4. La IA no elige un ganador.
 
 ---
 
-## 6. Comparación de evaluaciones
-
-> **[COMPLETAR]** cuando estén las cuatro evaluaciones individuales.
+## 6. Comparación de evaluaciones [COMPLETAR]
 
 | Pregunta | Respuesta del equipo |
 |---|---|
@@ -279,102 +252,64 @@ Hecha solo con la evidencia de las fichas, marcando qué parte de cada puntaje e
 | ¿Qué puntaje quedó débilmente justificado? | |
 | ¿Qué criterio depende más de supuestos? | |
 | ¿La IA usó evidencia o completó vacíos? | |
-| ¿*Ease* está pesando demasiado en nuestro ranking? | |
-
-**Puntajes modificados y motivo:** [COMPLETAR]
+| ¿*Ease* está pesando demasiado? | |
 
 ---
 
-## 7. Crítica del problema finalista
+## 7. Crítica del problema finalista: A+B
 
-Sometemos a crítica el de mayor ICE según la IA: **C, estudiar sin practicar con exámenes** (2,88).
+### Debilidades
 
-> **[COMPLETAR]** Si el finalista del equipo es otro, repetir esta crítica sobre ese problema.
-
-### Debilidades encontradas
-
-1. **La evidencia es sólida, pero no es nuestra.** F1 dice que practicar sirve. No dice que nuestros compañeros no practiquen.
-2. **Puede ser un problema de hábito, no de acceso.** Si tienen exámenes y aun así releen, el problema es educativo, y es difícil de resolver con un producto digital dentro del curso.
-3. **Su redacción esconde una solución:** "practicar con exámenes" es en sí una técnica.
-4. **Puede ser síntoma de A:** quizás no practican porque no tienen con qué.
+1. **El impacto está inferido.** Que la fila exista lo sabemos por experiencia; que moleste lo suficiente como para cambiar de comportamiento, no.
+2. **Puede ser parte del ritual.** En un club, la fila es también un lugar de encuentro. Puede que no se viva como tiempo perdido.
+3. **La evidencia externa es de otra escala y de proveedores.**
+4. **¿Lo elegimos porque nos pasa a nosotros?** Sí, en parte. Es la experiencia del equipo; falta ver si es la de los demás.
+5. **La solución ya existe en estadios grandes.** Si los clubes no la adoptaron, hay que entender por qué.
 
 ### Explicaciones alternativas
 
-- Practican, pero con ejercicios de la guía y no con exámenes.
-- Releen porque no tienen tiempo para hacer exámenes completos.
-- La cátedra ya da modelos de examen y el problema no existe en la FCE.
+- La demora está en la cocina y pedir antes no ayuda.
+- La gente no compra más aunque la fila sea corta: compra lo mismo, solo que antes.
+- El buffet no quiere cambiar su forma de cobrar (concesionario, efectivo).
 
-### Evidencia que lo refutaría
+### Lo que lo refutaría
 
-- Entrevistados que cuenten que practican con exámenes anteriores todo el tiempo.
-- Que el material abunde y aun así no lo usen (sería hábito, no acceso).
+- Que en la observación la espera sea de pocos minutos.
+- Que los entrevistados digan que la fila no les molesta o que la aprovechan para charlar.
+- Que el buffet no quiera ninguna herramienta nueva.
 
-### Respuesta del equipo
-
-Aceptamos las objeciones 1, 2 y 4. C aporta la mejor evidencia de **por qué importa** practicar con exámenes, pero sola no nos dice dónde está la fricción. La usamos como **respaldo del impacto**, no como problema a investigar.
-
-### Crítica del finalista elegido por el equipo: A reformulado
-
-Como elegimos otro problema (sección 8), repetimos la crítica sobre él.
-
-1. **¿El impacto está demostrado?** No. Que conseguir un examen requiera contactar a alguien es una observación nuestra; cuánto tiempo cuesta, nadie lo midió.
-2. **¿Confundimos frecuencia con importancia?** Puede pasar seguido y costar poco: si el contacto responde en diez minutos, la fricción es menor.
-3. **¿Lo elegimos por el acceso fácil?** En parte sí. Lo compensamos con un Impact y un Confidence que hay que justificar en las entrevistas.
-4. **¿Esconde una solución?** Menos que antes: la redacción habla de la espera, no del banco. Pero llegamos con la idea del banco, y hay que cuidar que las entrevistas no busquen confirmarla.
-5. **Explicaciones alternativas:** los grupos de WhatsApp de cada materia ya resuelven el pedido en minutos; o lo que molesta no es esperar sino que el examen sea de otro programa (P5).
-6. **Lo refutaría:** entrevistados que consigan exámenes al instante sin depender de nadie, o que digan que esperar no les cambia nada.
+### Respuesta del equipo [COMPLETAR]
 
 ---
 
-## 8. Problema priorizado
+## 8. Problema priorizado (propuesta)
 
-**Decisión del equipo: A reformulado.** Para conseguir un examen anterior, el estudiante depende de contactar a alguien de años superiores y esperar a que conteste, lo busque y se lo mande.
-
-> **[COMPLETAR]** Revisar después de las evaluaciones individuales y anotar si alguien no está de acuerdo.
+**A+B: en los días de partido, la fila del buffet no baja y comprar significa perderse parte del partido.**
 
 | Criterio | Puntaje | Fundamento |
 |---|---:|---|
-| Impact | 6 | Cuesta tiempo en el momento de mayor presión (antes del examen) y deja sin material a quien no tiene contactos. Sin medir todavía. |
-| Confidence | 5 | Sube respecto del ICE de la IA (4) por la revisión del aula virtual: solo una materia publica exámenes, así que el acceso depende de canales informales. Sigue sin haber una medición del costo. |
-| Ease | 9 | Somos el segmento y vivimos la situación. |
+| Impact | 6 | Cuesta tiempo y partidos, todos los sábados. Sin medir. |
+| Confidence | 5 | Experiencia del equipo y encuestas de proveedores en otros países. |
+| Ease | 9 | Cualquier sábado se puede ir a un club a observar y entrevistar. |
 | **ICE** | **2,70** | |
-
-**Por qué no C (2,88), que tiene más ICE:** la crítica mostró que su evidencia habla de técnicas de estudio y no de una fricción ubicable. La usamos como argumento de que practicar con exámenes importa.
-
-**Por qué no B (2,80):** B describe el progreso que busca el estudiante (saber cómo evalúa la cátedra), pero es amplio: abarca desde la claridad del docente hasta la ansiedad. Elegimos la fricción concreta que creemos que lo bloquea y que podemos observar y medir: el tiempo y la dependencia de otra persona para conseguir un examen.
-
-**Lo que asumimos al elegir:** que el problema es la **espera y la dependencia**, no la inexistencia del material. Si las entrevistas muestran que los exámenes se consiguen al instante (por ejemplo, en el grupo de WhatsApp de la materia), reabrimos B.
 
 ### Redacción final
 
 **Versión breve:**
 
-> Estudiantes de 1.º a 3.º año de la FCE que quieren practicar con exámenes anteriores dependen de contactar a alguien de años superiores y esperar su respuesta, justo en los días previos al examen.
+> Quienes van a un club de rugby un día de partido tienen que hacer una fila larga para comprar comida en el buffet, y como se juegan varios partidos seguidos, no hay un momento del día en que la fila baje.
 
 **Versión centrada en el comportamiento:**
 
-> Cuando se acerca un parcial, el estudiante le escribe a un conocido de años superiores o pregunta en un grupo. Espera que le contesten, que busquen el examen entre sus archivos y que se lo manden. Mientras tanto, estudia sin él; si no conoce a nadie, puede no conseguirlo nunca.
+> El asistente quiere comer algo y busca el momento con menos gente: antes de que empiece un partido o en el entretiempo. Pero el resto piensa lo mismo, así que igual encuentra fila, y mientras espera se pierde parte del partido o del rato con su grupo.
 
 **Versión completa, con evidencia e incertidumbre:**
 
-> **Los estudiantes de 1.º a 3.º año de la FCE de la Universidad Austral** tienen dificultades para **practicar con exámenes anteriores de su materia** cuando **preparan un parcial o un final**, debido a **que esos exámenes solo se consiguen pidiéndoselos a estudiantes de años superiores, lo que exige contactarlos, esperar su respuesta y que los busquen**. Esto genera **tiempo perdido en los días de mayor presión y deja sin material a quien no tiene contactos**.
+> **Los jóvenes de 18 a 25 años que van a clubes de rugby de la URBA los días de partido** tienen dificultades para **comprar comida o bebida sin perderse el partido** cuando **se juegan varios partidos seguidos y cada uno genera su propio pico de demanda**, debido a **que todos eligen los mismos momentos para comprar (antes del partido o en el entretiempo) y el buffet atiende de a uno**. Esto genera **tiempo perdido en la fila y partidos vistos a medias**.
 >
-> Encontramos señales en nuestra revisión del aula virtual: solo una materia publica exámenes anteriores, y no siempre coinciden con el que se toma. La revisión de Dunlosky et al. (F1) muestra que practicar con pruebas es de las técnicas de estudio más efectivas, lo que le da valor a tener esos exámenes. Una etnografía sobre parciales (F4) muestra que los compañeros funcionan como guías para saber qué se evalúa, y en Medicina de la UNR (F2) la brecha entre esperar y lograr un buen grupo de estudio fue amplia (63,7 % contra 30 %).
+> Encontramos señales en nuestra propia experiencia como asistentes, en la escala de la actividad (unos 450 partidos por fin de semana en 91 clubes, F1 y F2) y en encuestas de estadios de otros países, donde la mayoría de los asistentes dice haberse perdido una jugada importante por la fila (F3) y haber abandonado alguna vez una compra (F3, F4).
 >
-> Todavía necesitamos comprobar: **(a)** cuánto tiempo pasa desde que piden un examen hasta que lo tienen; **(b)** si la espera les cambia algo (estudian sin el examen, o lo terminan consiguiendo tarde); **(c)** si quien no tiene contactos consigue menos material; **(d)** si quienes ya rindieron guardan sus exámenes y estarían dispuestos a compartirlos.
-
-### Revisión de la redacción
-
-| Criterio | ¿Cumple? |
-|---|---|
-| Usuario concreto | Sí: 1.º a 3.º año de la FCE. |
-| Situación observable | Sí: la preparación de un parcial o final. |
-| Progreso buscado | Sí: practicar con exámenes anteriores de su materia. |
-| Fricción sin causa no demostrada | Con reserva: que la espera sea larga es **[SUPUESTO]**, señalado en (a). |
-| Distingue evidencia de supuestos | Sí, en párrafos separados. |
-| Evita mencionar una solución | Sí: no nombra el banco ni ninguna herramienta. |
-| Investigable por entrevistas | Sí: pide reconstruir la última vez que consiguieron un examen. |
-| **¿Podría demostrarse que estamos equivocados?** | **Sí:** si consiguen exámenes al instante sin depender de nadie, (a) y (b) se caen. |
+> Todavía necesitamos comprobar: **(a)** cuánto dura realmente la espera en un club; **(b)** si la demora está en el cobro o en la cocina; **(c)** si la fila se vive como un problema o como parte del ritual; **(d)** si el buffet pierde ventas y le importa.
 
 ### Justificación del equipo [COMPLETAR]
 
@@ -396,95 +331,97 @@ La próxima evidencia que necesitamos obtener es:
 
 ---
 
-## 9. Personas sintéticas y entrevistas
+## 9. Personas sintéticas, observación y entrevistas
 
-> Ninguna de las dos es evidencia. Sirven para mejorar las preguntas.
+> Las personas sintéticas no son evidencia. Sirven para preparar las preguntas.
 
-### Persona 1: "La ingresante sin red"
-
-| Campo | Contenido |
-|---|---|
-| Descripción | Primer año de la FCE. No conoce a nadie que haya cursado sus materias. |
-| Objetivo | Aprobar el primer parcial de una materia nueva sin saber cómo pregunta la cátedra. |
-| Comportamientos | **[SUPUESTO]** Pide material en el grupo de WhatsApp del curso. Estudia releyendo apuntes. |
-| Frustraciones | **[SUPUESTO]** No sabe si lo que estudia es lo que le van a tomar. |
-| Restricciones | Sin contactos en años superiores. |
-| Alternativas actuales | **[SUPUESTO]** Grupo de WhatsApp, consulta a la cátedra, Studocu. |
-| Evidencia | F4 (descifrar "lo importante"), F2 (brecha entre esperar y lograr un grupo de estudio). |
-| Supuestos incorporados | Que no consigue exámenes y que eso le preocupa. **Ninguno respaldado.** |
-| Solo una persona real puede decir | ¿Qué hizo para su último parcial? ¿Consiguió exámenes? ¿Cómo? |
-
-### Persona 2: "El de tercero que provee"
+### Persona 1: "La que va a ver a su grupo"
 
 | Campo | Contenido |
 |---|---|
-| Descripción | Tercer año. Tiene una carpeta con exámenes de las materias que ya rindió, heredada y propia. |
-| Objetivo | Aprobar sus materias actuales; ayudar a los más chicos cuando le piden. |
-| Comportamientos | **[SUPUESTO]** Comparte material cuando se lo piden personalmente, no por iniciativa propia. |
-| Frustraciones | **[SUPUESTO]** Le piden lo mismo muchas veces. |
-| Restricciones | Tiempo. Puede no querer exponer sus notas o su nombre. |
-| Alternativas actuales | Reenviar por WhatsApp, compartir un link de Drive. |
-| Evidencia | F7 (en Studocu, estudiantes de años superiores suben material), F6 (comunidades de pares). |
-| Supuestos incorporados | Que guarda sus exámenes y que estaría dispuesto a compartirlos. **Especulación nuestra.** |
-| Solo una persona real puede decir | ¿Guarda sus exámenes? ¿Los compartió alguna vez? ¿Qué lo haría compartir o no? |
+| Descripción | 21 años. Va al club casi todos los sábados a ver jugar a amigos o a su pareja, y se queda varios partidos. |
+| Objetivo | Ver los partidos que le importan y pasar la tarde con su grupo. |
+| Comportamientos | **[SUPUESTO]** Compra una o dos veces por tarde. Elige el entretiempo o un momento previo a un partido. |
+| Frustraciones | **[SUPUESTO]** Llegar a la tribuna con el partido empezado. |
+| Restricciones | Tiene poco margen entre partido y partido. |
+| Alternativas actuales | **[SUPUESTO]** Mandar a uno del grupo con un pedido para todos; no comprar. |
+| Evidencia | F3 (jugadas perdidas por la fila), experiencia del equipo. |
+| Solo una persona real puede decir | ¿Cuánto esperó la última vez? ¿Qué se perdió? ¿Le molestó o lo toma como parte del día? |
 
-**Por qué estas dos:** la Persona 1 representa la demanda y la 2, la oferta. Si al entrevistar resulta que la Persona 1 consigue todo fácil, el problema de acceso está mal planteado. Si la Persona 2 no guarda nada, cualquier solución que dependa de que los estudiantes compartan va a tener un problema serio.
+### Persona 2: "El encargado del buffet"
 
-### Aprendizajes del role-play [COMPLETAR]
+| Campo | Contenido |
+|---|---|
+| Descripción | Maneja el buffet del club, propio o como concesión. Atiende con pocas personas en los picos. |
+| Objetivo | Vender lo más posible en el día sin desbordarse. |
+| Comportamientos | **[SUPUESTO]** Cobra y entrega en el mismo mostrador; prepara parte de la comida en el momento. |
+| Frustraciones | **[SUPUESTO]** Los picos de los entretiempos lo superan. |
+| Restricciones | Personal, espacio de cocina, conexión. |
+| Alternativas actuales | **[SUPUESTO]** Preparar comida de antemano; sumar una persona en la caja. |
+| Evidencia | F4, F3 (abandono de compras), F5 (estadios que atacan la demora de cobro). |
+| Solo una persona real puede decir | ¿Pierde ventas en los picos? ¿Qué tarda más, cobrar o preparar? ¿Pagaría por algo que lo ayude? |
 
-El paso 13 de la guía pide que un integrante entreviste a una persona sintética mientras otro registra. Prompt para hacerlo:
+**Por qué estas dos:** la Persona 1 es la usuaria del problema y la 2 es quien podría pagar. Si a la 1 no le molesta la fila, o si la 2 no pierde ventas, el problema pierde fuerza para el pitch.
 
-```text
-Representá a "la ingresante sin red" según esta ficha: [PEGAR FICHA].
-Respondé solo con la información de la ficha y de la evidencia. Si una
-respuesta requiere inventar una experiencia, un comportamiento o una
-motivación, decí: "Esto todavía debe validarse con una persona real".
-Respondé una pregunta por vez y no intentes agradar al entrevistador.
-```
+### Planilla de observación para el sábado
 
-Registrar: hipótesis nuevas, preguntas a mejorar y respuestas que piden validación real.
+La primera evidencia propia se consigue mirando, sin hablar con nadie. Dos integrantes, un cronómetro y esta tabla:
 
-### Guion de entrevista real
+| Hora | Momento (antes de partido / entretiempo / otro) | Personas en la fila | Persona n.º | Entra a la fila | Llega a la caja | Termina de pagar | Recibe la comida | ¿Efectivo, QR o transferencia? | ¿Alguien se acercó y se fue sin comprar? |
+|---|---|---:|---:|---|---|---|---|---|---|
+| | | | | | | | | | |
 
-1. Contame cómo te preparaste para el último parcial que rendiste. ¿Qué hiciste primero?
-2. ¿Sabías cómo te iban a preguntar? ¿Cómo te enteraste?
-3. ¿Conseguiste exámenes de años anteriores? ¿Cómo, exactamente? ¿Quién te los pasó?
-4. ¿Cuánto tardaste en conseguirlos? Contame desde que lo pediste hasta que lo tuviste: ¿a quién le escribiste, cuándo te contestó, qué hiciste mientras esperabas?
-5. ¿Eran de tu cátedra y de este programa? ¿Cómo te diste cuenta?
-6. ¿Cómo los usaste? ¿Los resolviste, los leíste? ¿Cómo sabías si estaba bien?
-7. ¿Alguna vez no conseguiste nada? ¿Qué hiciste?
-8. ¿Vos le pasaste material a alguien? ¿Cómo? ¿Por qué sí o por qué no?
-9. ¿Tenés guardados exámenes tuyos? Mostrame dónde.
-10. De todo esto, ¿qué te molestó de verdad y qué te parece normal?
+Con 10 a 15 personas cronometradas alcanza para responder D: **¿qué tramo es el más largo, la fila hasta la caja, el pago o la espera de la comida?**
 
-**Profundización:**
-- "Dijiste que lo pediste en el grupo. ¿Qué pasó después? ¿Cuánto tardaron en contestar?"
-- "Dijiste que no sabías qué iba a entrar. Contame qué pasó cuando viste el examen."
+### Guion de entrevista para asistentes
 
-**Reglas de conducción:** no mencionar herramientas ni soluciones; no preguntar "¿usarías...?"; pedir siempre un episodio concreto; registrar frases textuales; **no defender la hipótesis si el entrevistado la contradice.**
+1. Contame cómo fue el último sábado que fuiste al club. ¿A qué hora llegaste, qué partidos viste?
+2. ¿Compraste algo en el buffet? ¿En qué momento fuiste y por qué ese?
+3. ¿Cuánto tardaste desde que te pusiste en la fila hasta que tuviste la comida?
+4. ¿Qué pasaba en la cancha mientras tanto? ¿Te perdiste algo?
+5. ¿Alguna vez viste la fila y decidiste no comprar? ¿Qué hiciste en cambio?
+6. ¿Cómo se organizan con tu grupo para comprar?
+7. ¿Cómo pagaste? ¿Cuánto tardó esa parte?
+8. ¿Cuántas veces comprás en una tarde?
+9. De todo esto, ¿qué te molesta de verdad y qué te parece parte de ir al club?
 
-### Plan de entrevistas [COMPLETAR]
+### Guion breve para el buffet
+
+1. Contame cómo es un sábado con varios partidos para ustedes.
+2. ¿En qué momentos se les junta más gente?
+3. En esos momentos, ¿qué es lo que más tarda: cobrar o preparar?
+4. ¿Notan gente que se va sin comprar?
+5. ¿Cómo cobran hoy? ¿Qué porcentaje es efectivo, más o menos?
+6. ¿Probaron algo para que la fila avance más rápido? ¿Qué pasó?
+
+**Reglas:** no mencionar la app ni el QR; pedir siempre la última vez concreta; anotar frases textuales; si alguien propone una solución, anotarla en el estacionamiento y seguir preguntando por la situación.
+
+### Plan [COMPLETAR]
 
 | Decisión | Definición |
 |---|---|
-| Perfil | Estudiantes de la FCE de 1.º a 3.º año. **Cuota:** al menos 1 de primer año y 1 de tercero o más. Idealmente, al menos 1 de otra carrera de la FCE. |
-| Cantidad | Mínimo 3; siendo 4, una por integrante. |
-| Forma de contacto | **[COMPLETAR]** Compañeros de cursada y de otras comisiones. |
-| Dupla 1 (entrevistas 1 y 2) | **[COMPLETAR]** Uno conduce y otro registra; se invierten en la segunda. |
-| Dupla 2 (entrevistas 3 y 4) | **[COMPLETAR]** |
-| Evidencia a recopilar | Notas textuales, audio con consentimiento y al menos un episodio concreto de preparación de examen por persona. |
+| Club y fecha de observación | **[COMPLETAR]** |
+| Entrevistas a asistentes | Mínimo 3, jóvenes de 18 a 25 que vayan seguido al club. |
+| Entrevista al buffet | Al menos 1 encargado o concesionario. |
+| Duplas | **[COMPLETAR]** Uno conduce o cronometra, otro registra. |
 | Fecha límite | Antes de la Clase 3. |
 
 ---
 
-## Registro de entrevistas reales [COMPLETAR]
+## Registro de observación y entrevistas [COMPLETAR]
 
-> Repetir el bloque para cada entrevista.
+### Observación del sábado
+
+- Club, fecha, partidos que se jugaban:
+- Personas cronometradas:
+- Tramo más largo (fila / pago / espera de comida):
+- Personas que se fueron sin comprar:
+- Medios de pago observados:
 
 ### Entrevista 1
 
 - Fecha / Entrevistador / Registrador:
-- Perfil (año, carrera, si tiene contactos en años superiores):
+- Perfil:
 
 **Situaciones reales relatadas**
 -
@@ -495,62 +432,41 @@ Registrar: hipótesis nuevas, preguntas a mejorar y respuestas que piden validac
 **Consecuencias observadas**
 -
 
-**Frases relevantes** (textuales, entre comillas)
+**Frases relevantes**
 -
 
 **Contradicciones con nuestra hipótesis**
 -
 
-**Cambios que haríamos a la redacción del problema**
--
-
-### Síntesis de las entrevistas [COMPLETAR]
+### Síntesis [COMPLETAR]
 
 | Pregunta | Respuesta |
 |---|---|
-| ¿Qué apareció en todas? | |
-| ¿Qué apareció en una sola? | |
-| ¿Les cuesta conseguir exámenes anteriores o la cátedra ya los da? | |
-| ¿La incertidumbre es sobre el formato o sobre el contenido? | |
-| ¿Cambia según tener o no contactos? | |
-| ¿Guardan y comparten sus exámenes? | |
+| ¿Cuánto dura la espera? | |
+| ¿Qué tarda más: cobrar o preparar? | |
+| ¿La fila molesta o es parte del ritual? | |
+| ¿El buffet pierde ventas? | |
 | ¿Qué contradijo nuestra hipótesis? | |
 
 ---
 
 ## 10. Revisión y entrega
 
-### Lista de verificación
-
-- [x] Territorio: dominio, usuario, contexto, supuestos y límites
-- [x] Entre 5 y 10 problemas potenciales: 7
-- [x] Fuentes originales y verificables: 7 verificadas, 1 no verificada y marcada
-- [x] Fichas completas de los finalistas: 4
-- [x] Agrupaciones de la IA y decisiones del equipo (propuesta)
-- [ ] **Evaluaciones ICE individuales: pendiente.**
-- [x] Evaluación ICE de la IA con justificaciones
-- [ ] **Comparación entre evaluaciones: pendiente.**
-- [x] Crítica escéptica del finalista
-- [x] Decisión humana: A reformulado (dependencia de un contacto). **Falta completar el bloque de justificación**
-- [x] Redacción final del problema: tres versiones
+- [x] Territorio
+- [x] Entre 5 y 10 problemas potenciales: 6
+- [x] Fuentes originales y verificadas: 6, con limitaciones
+- [x] Fichas: 4
+- [x] Agrupación de la IA y decisiones propuestas
+- [ ] **ICE individuales: pendiente**
+- [x] ICE de la IA
+- [ ] **Comparación: pendiente**
+- [x] Crítica del finalista
+- [ ] **Decisión y justificación del equipo: pendiente**
+- [x] Redacción del problema: tres versiones
 - [x] Dos personas sintéticas
-- [ ] **Aprendizajes del role-play: pendiente** (prompt listo)
-- [x] Guion de entrevista; **plan de entrevistas pendiente**
-- [x] Supuestos pendientes y evidencia que podría refutarlos
-- [ ] **Registro de entrevistas reales: pendiente**
-
-### Qué falta hacer, en orden
-
-| # | Tarea | Quién | Cuándo |
-|---|---|---|---|
-| 1 | Evaluación ICE individual, **cada uno por separado** | Los 4 | Antes de juntarse |
-| 2 | Tabla consolidada y dispersión | Equipo | Después de 1 |
-| 3 | Sección 6 (comparación) | Equipo | Después de 2 |
-| 4 | Confirmar o cambiar el problema priorizado y completar la justificación | Equipo | Después de 3 |
-| 5 | Role-play con una persona sintética | Dos integrantes | Antes de entrevistar |
-| 6 | Definir contactos y duplas | Equipo | Esta semana |
-| 7 | Hacer y registrar al menos 3 entrevistas | Duplas | Antes de la Clase 3 |
-| 8 | ~~Averiguar si las cátedras publican exámenes en el aula virtual~~ Hecho: solo una lo hace. Falta anotar cuántas materias se revisaron y cuáles | Quien lo revisó | Antes de entrevistar |
+- [ ] **Role-play: pendiente**
+- [x] Guiones y planilla de observación
+- [ ] **Observación y entrevistas reales: pendiente**
 
 ### Cierre del equipo [COMPLETAR]
 
@@ -563,7 +479,3 @@ El supuesto más riesgoso es:
 
 La pregunta más importante para los usuarios reales es:
 ```
-
----
-
-> **Priorizar un problema no significa haberlo validado. Significa elegir qué incertidumbre investigar primero.**
