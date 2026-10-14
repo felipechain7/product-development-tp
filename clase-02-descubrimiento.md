@@ -76,7 +76,7 @@ Advertencias:
 2. **Todas las cifras de abandono y espera vienen de proveedores** que venden la solución. Ninguna es independiente.
 3. **No sabemos dónde está el cuello de botella.** F5 sugiere que en estadios es el cobro, pero en un buffet de club puede ser la plancha. Esto define si la idea estacionada sirve o no.
 4. **No hay datos de asistencia** a los clubes: sabemos cuántos partidos y jugadores hay, no cuántos espectadores.
-5. **Temporada:** la temporada de la URBA avanza hacia su final. **[COMPLETAR]** Revisar cuántas fechas quedan para observar y experimentar.
+5. **Temporada: es el riesgo práctico más urgente.** Las semifinales del Top 14 son el sábado 31 de octubre, la final el 7 de noviembre y las finales de las demás categorías el 14 de noviembre ([ESPN, 12/12/2025](https://espndeportes.espn.com/rugby/nota/_/id/16075247/rugby-urba-fixture-2026-finales-fechas-definidas-buenos-aires)). Quedan muy pocos sábados con todas las divisiones jugando en todos los clubes. Para los experimentos y las pruebas de las clases siguientes vamos a necesitar otros contextos parecidos (hockey, finales, eventos en clubes) o simular la situación.
 
 ---
 
@@ -243,16 +243,22 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 
 ---
 
-## 6. Comparación de evaluaciones [COMPLETAR]
+## 6. Comparación de evaluaciones
+
+> **Borrador con 3 de 4 evaluaciones.** Falta Canabe. Revisar entre todos y ajustar cuando esté su tabla.
 
 | Pregunta | Respuesta del equipo |
 |---|---|
-| ¿Dónde coincidimos? | |
-| ¿Dónde aparecen diferencias? | |
-| ¿Qué puntaje quedó débilmente justificado? | |
-| ¿Qué criterio depende más de supuestos? | |
-| ¿La IA usó evidencia o completó vacíos? | |
-| ¿*Ease* está pesando demasiado? | |
+| ¿Dónde coincidimos? | Los tres integrantes y la IA ponemos A+B primero, con bastante diferencia sobre C. En A+B, la Confidence quedó entre 5 y 6 en todos, coherente con no tener entrevistas todavía. En C, todos le damos Confidence baja (4 o 5) porque no hay forma de saber cuánta gente se va sin comprar. |
+| ¿Dónde aparecen diferencias? | En el Impact de A+B: va de 7 (Chain) a 9 (Tailhade). En el Ease de C: va de 4 (Servent) a 6 (Tailhade). La IA le puso a A+B un Impact más bajo (6) que todos nosotros. |
+| ¿Qué puntaje quedó débilmente justificado? | El Impact 9 de A+B (Tailhade) lo llama "el dolor principal del hincha", pero todavía no medimos cuánto se espera. El Ease 10 de A+B (Servent) supone que cualquiera que vivió la fila va a querer contarla. |
+| ¿Qué criterio depende más de supuestos? | El Impact. En A+B se apoya en nuestra experiencia, sin la espera medida; en C, en encuestas de proveedores de otros países. |
+| ¿La IA usó evidencia o completó vacíos? | Usó las fuentes de las fichas y marcó que las más fuertes son de empresas que venden la solución. Fue más conservadora en el Impact porque no tiene nuestra experiencia de ir al club. Señaló una incógnita que no habíamos visto: si la demora es de la caja o de la cocina. |
+| ¿*Ease* está pesando demasiado? | No en el ranking: aunque A+B tuviera Ease 6, seguiría primero (por ejemplo, con los puntajes de Tailhade daría 9 × 6 × 6 / 100 = 3,24, contra 1,68 de C). Gana por Impact. |
+
+**Puntajes modificados y motivo:** Chain y Servent justificaron al principio el *Ease* como facilidad para implementar la solución y la *Confidence* como seguridad de que la solución funcione. Al revisar la rúbrica lo corregimos: *Ease* es la facilidad para llegar a usuarios y *Confidence*, la evidencia de que el problema existe. Los números no cambiaron; sí las justificaciones.
+
+**Dispersión parcial (sin Canabe):** A+B: 4,86 − 3,78 = 1,08. C: 1,75 − 0,96 = 0,79.
 
 ---
 
