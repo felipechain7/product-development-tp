@@ -194,8 +194,8 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A+B: la fila no baja y te perdés el partido | | | | | |
-| C: ventas perdidas por la fila | | | | | |
+| A+B: la fila no baja y te perdés el partido | 7 | 6 | 9 | 3,78 | Alto impacto porque afecta directamente la experiencia del usuario. Es muy fácil de implementar y la confianza es media-alta, ya que el problema es claro, aunque no está probado que la solución lo elimine del todo. |
+| C: ventas perdidas por la fila | 7 | 5 | 5 | 1,75 | El impacto es alto porque son ingresos que se pierden, pero la confianza es media porque es difícil medir cuántas ventas se pierden realmente. La facilidad es media porque requiere más cambios operativos o técnicos. |
 
 #### Juan Ignacio Canabe
 
@@ -208,22 +208,22 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A+B: la fila no baja y te perdés el partido | | | | | |
-| C: ventas perdidas por la fila | | | | | |
+| A+B: la fila no baja y te perdés el partido | 9 | 6 | 9 | 4,86 | Es el dolor principal del hincha: cualquiera que va a comer hace la fila y se pierde parte del partido o del tercer tiempo. Se ve en cualquier club un sábado, pero como todavía no hicimos entrevistas no subimos la confianza a más de 6. Es muy fácil conseguir gente para entrevistar porque alcanza con ir al club y hablar con los que están en la fila. |
+| C: ventas perdidas por la fila | 7 | 4 | 6 | 1,68 | Afecta los ingresos del club, que pierde ventas cuando la gente ve la fila y decide no comprar. La confianza es baja porque es difícil tener evidencia de cuánta gente se va sin comprar, ya que no queda registro. Es más difícil de indagar porque hay que hablar con los encargados del buffet o del club, que son pocos, y no con cualquier hincha. |
 
 #### Felipe Servent
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A+B: la fila no baja y te perdés el partido | | | | | |
-| C: ventas perdidas por la fila | | | | | |
+| A+B: la fila no baja y te perdés el partido | 8 | 5 | 10 | 4,00 | Impacto alto porque arruina la experiencia del usuario. Facilidad máxima, ya que se resuelve rápido y sin grandes cambios. La confianza es media porque no hay certeza de que elimine del todo el problema. |
+| C: ventas perdidas por la fila | 6 | 4 | 4 | 0,96 | Impacto medio porque la pérdida de ventas existe pero es difícil de cuantificar. Confianza baja por falta de datos concretos y facilidad media-baja porque requiere más cambios para implementarlo. |
 
 ### Tabla consolidada [COMPLETAR]
 
 | Problema | Chain | Canabe | Tailhade | Servent | IA | Dispersión |
 |---|---:|---:|---:|---:|---:|---:|
-| A+B | | | | | 2,70 | |
-| C | | | | | 1,40 | |
+| A+B | 3,78 | | 4,86 | 4,00 | 2,70 | |
+| C | 1,75 | | 1,68 | 0,96 | 1,40 | |
 
 ---
 
