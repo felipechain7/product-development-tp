@@ -11,10 +11,17 @@ Los jóvenes que van a clubes de rugby de la URBA los días de partido tienen di
 Lo sabemos por la experiencia del equipo y por encuestas en estadios de otros países, donde la mayoría dice haberse perdido una jugada por la fila y haber abandonado alguna vez una compra (F3, F4 de la Clase 2). Todavía necesitamos comprobar cuánto dura la espera, si la demora está en la caja o en la cocina y cuántas ventas pierde el buffet. **[SUPUESTO]** hasta las entrevistas.
 
 ## 2. Resultados de negocio
-_Pendiente._
+
+- Aumentar las ventas del buffet en la hora pico de un sábado de partido de [pendiente de medir] a [pendiente de definir] en la temporada 2027.
+- Reducir la cantidad de personas que ven la fila y se van sin comprar de [pendiente de medir] a [pendiente de definir] por sábado.
+
+**[SUPUESTO]** Las líneas de base se toman el 17/10 (entrevista al buffet del SIC y observación). Los objetivos se fijan después, con esos datos.
 
 ## 3. Usuarios y clientes
-_Pendiente._
+
+- **Usuarios:** jóvenes de 18 a 25 que van a clubes de rugby de la URBA los días de partido.
+- **Clientes (pagan):** el buffet del club. Primeros candidatos: SIC y Alumni.
+- **Decisor:** el concesionario del buffet o, si el buffet es propio, el club. **[PENDIENTE]** se confirma en la entrevista al buffet del SIC el 17/10.
 
 ## 4. Necesidades y resultados del usuario
 _Pendiente._
