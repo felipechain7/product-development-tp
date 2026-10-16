@@ -50,7 +50,27 @@ Alternativas generadas:
 - **Estado:** idea no validada.
 
 ## 6. Hipótesis principales
-_Pendiente._
+
+Los umbrales se fijaron antes de probar y no se cambian después.
+
+### Hipótesis de problema
+
+Creemos que los jóvenes que van a SIC y Alumni se pierden parte del partido o dejan de comprar por la fila del buffet.
+Lo sabremos si al menos 4 de 6 entrevistados el 17/10 cuentan que les pasó en su última visita.
+
+### Hipótesis de valor
+
+Creemos que pedir y pagar desde el celular y retirar con QR acorta la espera en el pico.
+Lo sabremos si, en un sábado de prueba, el retiro tarda menos de 3 minutos desde que llegan al mostrador, contra lo que tarda la fila normal en el mismo horario.
+
+### Hipótesis de comportamiento
+
+Creemos que los jóvenes van a pedir por la web en vez de hacer la fila.
+Lo sabremos si en un sábado de prueba hay al menos 20 pedidos por la web.
+
+### Hipótesis de factibilidad
+
+No se incluye: la solución usa herramientas que ya existen (formularios web y Mercado Pago), así que no hay una incertidumbre tecnológica crítica.
 
 ## 7. Lo más importante por aprender
 _Pendiente._
