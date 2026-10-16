@@ -98,7 +98,7 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 | Fuentes | F1, F2, experiencia del equipo |
 | Frecuencia aparente | Todos los sábados de temporada, según nuestra experiencia. Sin medir. |
 | Comportamiento observable | **[SUPUESTO]** Ir antes de que arranque el partido o en el entretiempo para "ganarle" a la fila. |
-| Alternativas actuales | **[EXPERIENCIA DEL EQUIPO]** Comprar en los locales de comida rápida que hay al lado de algunos clubes y comerlo viendo el partido. **[SUPUESTO]** Ir antes, mandar a uno del grupo, no comprar. |
+| Alternativas actuales | **[EXPERIENCIA DEL EQUIPO]** En los clubes que tienen un local de comida rápida cerca (por ejemplo, un McDonald's o un Burger King), comprar ahí para llevar y comerlo viendo el partido. No pasa en todos los clubes. **[SUPUESTO]** Ir antes, mandar a uno del grupo, no comprar. |
 | Acceso a usuarios | Alto: nosotros y nuestros compañeros vamos a clubes. |
 | Supuestos | Que la fila se viva como un problema y no como parte del ritual de ir al club. |
 | Evidencia faltante | Cuánta gente hay y cuánto tarda cada uno, medido un sábado real. |
@@ -132,11 +132,11 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 | Progreso buscado | Para el buffet: vender todo lo que la gente quiere comprar. |
 | Fricción observada | La capacidad de atención en el mostrador es limitada. |
 | Consecuencia | 40 % abandonó una fila de comida en el último año (F4); más de 85 % alguna vez (F3); 81 % compraría más con filas cortas (F3). |
-| Evidencia | Dos encuestas de proveedores. **[EXPERIENCIA DEL EQUIPO]** Algunos integrantes vimos gente acercarse al buffet, ver la fila e irse sin comprar, y en clubes con locales de comida rápida al lado, gente que pide ahí para llevar y lo come viendo el partido. |
+| Evidencia | Dos encuestas de proveedores. **[EXPERIENCIA DEL EQUIPO]** Algunos integrantes vimos gente acercarse al buffet, ver la fila e irse sin comprar, y, en los clubes que tienen un McDonald's o un Burger King cerca, gente que pide ahí para llevar y lo come viendo el partido. No pasa en todos los clubes. |
 | Fuentes | F3, F4 |
 | Frecuencia aparente | 2 fuentes coincidentes, ambas con interés comercial. |
 | Comportamiento observable | **[SUPUESTO]** Acercarse, ver la fila y volverse. |
-| Alternativas actuales | **[EXPERIENCIA DEL EQUIPO]** Comprar en el local de comida rápida de al lado: la venta no se pierde, se la lleva otro. **[SUPUESTO]** Comprar más cosas en una sola vuelta; llevar comida de casa. |
+| Alternativas actuales | **[EXPERIENCIA DEL EQUIPO]** En los clubes con un local de comida rápida cerca, comprar ahí: la venta no se pierde, se la lleva otro. **[SUPUESTO]** Comprar más cosas en una sola vuelta; llevar comida de casa. |
 | Acceso a usuarios | **Medio:** hay que llegar a quien maneja el buffet, que no es parte de nuestro entorno. |
 | Supuestos | Que el buffet lo perciba como plata perdida y no como "siempre fue así". |
 | Evidencia faltante | Cuánto vende el buffet en un sábado y si nota que pierde ventas. |
@@ -249,7 +249,7 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 | Pregunta | Respuesta del equipo |
 |---|---|
 | ¿Dónde coincidimos? | Los cuatro integrantes y la IA ponemos A+B primero, con bastante diferencia sobre C. En A+B, el Impact quedó alto en todos (de 7 a 9). |
-| ¿Dónde aparecen diferencias? | Antes de discutir, la mayor dispersión estaba en C (1,56): Canabe le dio Confidence 6 y Ease 6, Servent 4 y 4. Al conversarlo, la diferencia se explicó por **experiencia del equipo**: algunos vimos gente acercarse al buffet, ver la fila e irse sin comprar, y en clubes con locales de comida rápida al lado, gente que compra ahí para llevar y lo come viendo el partido. Eso sugiere que la venta no siempre se pierde: a veces se la lleva un competidor. Justifica algo más de confianza que la de las encuestas de otros países, pero no es una medición. En A+B, el Ease va de 7 (Canabe) a 10 (Servent) y el Impact de 7 (Chain) a 9 (Tailhade). La IA le puso a A+B un Impact más bajo (6) que todos nosotros. |
+| ¿Dónde aparecen diferencias? | Antes de discutir, la mayor dispersión estaba en C (1,56): Canabe le dio Confidence 6 y Ease 6, Servent 4 y 4. Al conversarlo, la diferencia se explicó por **experiencia del equipo**: algunos vimos gente acercarse al buffet, ver la fila e irse sin comprar, y, en los clubes que tienen un McDonald's o un Burger King cerca, gente que compra ahí para llevar y lo come viendo el partido. Eso sugiere que la venta no siempre se pierde: en esos clubes, a veces se la lleva un competidor. Justifica algo más de confianza que la de las encuestas de otros países, pero no es una medición. En A+B, el Ease va de 7 (Canabe) a 10 (Servent) y el Impact de 7 (Chain) a 9 (Tailhade). La IA le puso a A+B un Impact más bajo (6) que todos nosotros. |
 | ¿Qué puntaje quedó débilmente justificado? | La Confidence 7 de A+B y 6 de C (Canabe): la rúbrica reserva el 7 para "evidencia diversa, verificable y consistente", y todavía no hicimos entrevistas; además, su justificación explica el Impact pero no la Confidence ni el Ease. Lo corregimos (ver puntajes modificados). El Impact 9 de A+B (Tailhade) lo llama "el dolor principal del hincha", pero todavía no medimos cuánto se espera. El Ease 10 de A+B (Servent) supone que cualquiera que vivió la fila va a querer contarla. |
 | ¿Qué criterio depende más de supuestos? | El Impact. En A+B se apoya en nuestra experiencia, sin la espera medida; en C, en encuestas de proveedores de otros países. |
 | ¿La IA usó evidencia o completó vacíos? | Usó las fuentes de las fichas y marcó que las más fuertes son de empresas que venden la solución. Fue más conservadora en el Impact porque no tiene nuestra experiencia de ir al club. Señaló una incógnita que no habíamos visto: si la demora es de la caja o de la cocina. |
@@ -287,7 +287,7 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 
 **Sí, seguimos eligiendo A+B.** Aceptamos que el impacto todavía está inferido (debilidad 1), que la evidencia externa es de otra escala y de proveedores (3) y que lo elegimos en parte porque nos pasa a nosotros (4).
 
-**No compartimos la debilidad 2** (que la fila sea parte del ritual). La gente va al club a ver los partidos: quiere pedir rápido y volver a la cancha, no quedarse charlando en la fila. Lo respalda una señal de comportamiento que vimos: en clubes que tienen locales de comida rápida al lado, hay gente que prefiere comprar ahí para llevar y comerlo viendo el partido. Si la fila fuera parte del ritual, no se irían a comprar a otro lado. Igual lo vamos a confirmar en las entrevistas (pregunta 5: qué les molesta de verdad y qué les parece parte de venir al club).
+**No compartimos la debilidad 2** (que la fila sea parte del ritual). La gente va al club a ver los partidos: quiere pedir rápido y volver a la cancha, no quedarse charlando en la fila. Lo respalda una señal de comportamiento que vimos: en los clubes que tienen un local de comida rápida cerca (como un McDonald's o un Burger King), hay gente que prefiere comprar ahí para llevar y comerlo viendo el partido. Si la fila fuera parte del ritual, no se irían a comprar a otro lado. Igual lo vamos a confirmar en las entrevistas (pregunta 5: qué les molesta de verdad y qué les parece parte de venir al club).
 
 Que el pedido anticipado ya exista en estadios grandes (debilidad 5) lo tomamos como una señal de que el problema es real y como una pregunta para el buffet: por qué no se usa en los clubes.
 
@@ -326,13 +326,13 @@ Antes de avanzar, el sábado vamos a medir cuánto dura la espera y si la demora
 
 ### Justificación del equipo
 
-**Priorizamos este problema porque:** es la fricción que vivimos todos los sábados de partido y afecta justo a lo que la gente va a hacer al club, que es ver los partidos. Los cuatro integrantes y la IA lo pusimos primero. Además tiene un segundo lado, el del buffet, que pierde ventas y compite con los locales de comida de al lado: eso nos da un posible cliente que pagaría por resolverlo.
+**Priorizamos este problema porque:** es la fricción que vivimos todos los sábados de partido y afecta justo a lo que la gente va a hacer al club, que es ver los partidos. Los cuatro integrantes y la IA lo pusimos primero. Además tiene un segundo lado, el del buffet, que pierde ventas y, en algunos clubes, compite con locales de comida rápida cercanos: eso nos da un posible cliente que pagaría por resolverlo.
 
 **El criterio ICE más sólido es:** el *Ease*. Alcanza con ir a un club un sábado para observar la fila y hablar con la gente que está ahí.
 
 **El criterio ICE más incierto es:** el *Impact*. No medimos cuánto dura la espera ni cuánto del partido se pierde; lo sabemos por experiencia propia.
 
-**La evidencia más fuerte que tenemos es:** lo que vimos en los clubes: gente que prefiere comprar en el local de comida rápida de al lado para comerlo viendo el partido, y gente que ve la fila y no compra. Lo sostiene la escala de la actividad: 91 clubes y unos 450 partidos por fin de semana en la URBA.
+**La evidencia más fuerte que tenemos es:** lo que vimos en los clubes: gente que ve la fila y no compra y, en los clubes con un McDonald's o un Burger King cerca, gente que prefiere comprar ahí para comerlo viendo el partido. Lo sostiene la escala de la actividad: 91 clubes y unos 450 partidos por fin de semana en la URBA.
 
 **La principal debilidad de nuestra elección es:** la evidencia externa viene de empresas que venden soluciones para filas y de estadios mucho más grandes, y todavía no sabemos si la demora está en la caja o en la cocina.
 
@@ -407,15 +407,19 @@ Con 10 a 15 personas cronometradas alcanza para responder D: **¿qué tramo es e
 
 **Reglas:** no mencionar la app ni el QR; pedir siempre la última vez concreta; anotar frases textuales; si alguien propone una solución, anotarla en el estacionamiento y seguir preguntando por la situación.
 
-### Plan [COMPLETAR]
+### Plan
 
 | Decisión | Definición |
 |---|---|
-| Club y fecha de observación | **[COMPLETAR]** |
-| Entrevistas a asistentes | Mínimo 3, jóvenes de 18 a 25 que vayan seguido al club. |
-| Entrevista al buffet | Al menos 1 encargado o concesionario. |
-| Duplas | **[COMPLETAR]** Uno conduce o cronometra, otro registra. |
+| Clubes | San Isidro Club (SIC) y Alumni. El equipo se divide: una dupla en cada club. |
+| Fecha y horario | Sábado 17 de octubre, al mediodía. |
+| Observación | En cada club, uno observa la fila del buffet con la planilla mientras el otro entrevista. |
+| Entrevistas a asistentes | Entre 4 y 6 en total, jóvenes de 18 a 25 que vayan seguido al club, repartidas entre los dos clubes. |
+| Entrevista al buffet | Un empleado del buffet del SIC. |
+| Duplas | **[COMPLETAR]** Quiénes van al SIC y quiénes a Alumni. |
 | Fecha límite | Antes de la Clase 3. |
+
+> **Contexto útil:** los partidos del Top 14 arrancan a las 15:30 (F1), así que al mediodía se juegan divisiones previas y puede haber menos gente que a la tarde. Si pueden, quédense hasta que empiece el partido de primera para ver el pico más grande. **[COMPLETAR]** Revisar en el fixture si SIC y Alumni juegan de local ese sábado: si juegan de visitante, va a haber mucha menos gente en su club.
 
 ---
 
