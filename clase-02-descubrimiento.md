@@ -295,16 +295,16 @@ Antes de avanzar, el sábado vamos a medir cuánto dura la espera y si la demora
 
 ---
 
-## 8. Problema priorizado (propuesta)
+## 8. Problema priorizado
 
 **A+B: en los días de partido, la fila del buffet no baja y comprar significa perderse parte del partido.**
 
-| Criterio | Puntaje | Fundamento |
-|---|---:|---|
-| Impact | 6 | Cuesta tiempo y partidos, todos los sábados. Sin medir. |
-| Confidence | 5 | Experiencia del equipo y encuestas de proveedores en otros países. |
-| Ease | 9 | Cualquier sábado se puede ir a un club a observar y entrevistar. |
-| **ICE** | **2,70** | |
+| Criterio | Promedio del equipo | IA | Fundamento |
+|---|---:|---:|---|
+| Impact | 8,0 | 6 | Cuesta tiempo y partidos, todos los sábados, que es justo a lo que la gente va al club. Sin medir todavía. |
+| Confidence | 5,75 | 5 | Experiencia del equipo (incluida la gente que compra en locales cercanos) y encuestas de proveedores en otros países. |
+| Ease | 8,75 | 9 | Cualquier sábado se puede ir a un club a observar y entrevistar. |
+| **ICE** | **4,03** | **2,70** | Promedio de cada criterio entre los cuatro integrantes. El promedio de los cuatro ICE individuales da 4,00. |
 
 ### Redacción final
 
@@ -324,23 +324,21 @@ Antes de avanzar, el sábado vamos a medir cuánto dura la espera y si la demora
 >
 > Todavía necesitamos comprobar: **(a)** cuánto dura realmente la espera en un club; **(b)** si la demora está en el cobro o en la cocina; **(c)** si la fila se vive como un problema o como parte del ritual; **(d)** si el buffet pierde ventas y le importa.
 
-### Justificación del equipo [COMPLETAR]
+### Justificación del equipo
 
-```text
-Priorizamos este problema porque:
+**Priorizamos este problema porque:** es la fricción que vivimos todos los sábados de partido y afecta justo a lo que la gente va a hacer al club, que es ver los partidos. Los cuatro integrantes y la IA lo pusimos primero. Además tiene un segundo lado, el del buffet, que pierde ventas y compite con los locales de comida de al lado: eso nos da un posible cliente que pagaría por resolverlo.
 
-El criterio ICE más sólido es:
+**El criterio ICE más sólido es:** el *Ease*. Alcanza con ir a un club un sábado para observar la fila y hablar con la gente que está ahí.
 
-El criterio ICE más incierto es:
+**El criterio ICE más incierto es:** el *Impact*. No medimos cuánto dura la espera ni cuánto del partido se pierde; lo sabemos por experiencia propia.
 
-La evidencia más fuerte que tenemos es:
+**La evidencia más fuerte que tenemos es:** lo que vimos en los clubes: gente que prefiere comprar en el local de comida rápida de al lado para comerlo viendo el partido, y gente que ve la fila y no compra. Lo sostiene la escala de la actividad: 91 clubes y unos 450 partidos por fin de semana en la URBA.
 
-La principal debilidad de nuestra elección es:
+**La principal debilidad de nuestra elección es:** la evidencia externa viene de empresas que venden soluciones para filas y de estadios mucho más grandes, y todavía no sabemos si la demora está en la caja o en la cocina.
 
-Podríamos estar equivocados si:
+**Podríamos estar equivocados si:** al observar, la espera resulta corta; si la demora está en la cocina, porque entonces pedir antes no saca la fila sino que la mueve; o si los entrevistados dicen que la fila no les molesta.
 
-La próxima evidencia que necesitamos obtener es:
-```
+**La próxima evidencia que necesitamos obtener es:** la observación del sábado 17 de octubre (cuánto tarda cada tramo y cuántos se van sin comprar), entre 4 y 6 entrevistas a asistentes y 1 o 2 al encargado del buffet.
 
 ---
 
