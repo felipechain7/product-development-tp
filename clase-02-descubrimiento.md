@@ -258,8 +258,6 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 | ¿La IA usó evidencia o completó vacíos? | Usó las fuentes de las fichas y marcó que las más fuertes son de empresas que venden la solución. Fue más conservadora en el Impact porque no tiene nuestra experiencia de ir al club. Señaló una incógnita que no habíamos visto: si la demora es de la caja o de la cocina. |
 | ¿*Ease* está pesando demasiado? | No en el ranking: aunque A+B tuviera Ease 6, seguiría primero (por ejemplo, con los puntajes de Tailhade daría 9 × 6 × 6 / 100 = 3,24, contra 1,68 de C). Gana por Impact. |
 
-**Puntajes modificados y motivo:** Chain y Servent justificaron al principio el *Ease* como facilidad para implementar la solución y la *Confidence* como seguridad de que la solución funcione. Al revisar la rúbrica lo corregimos: *Ease* es la facilidad para llegar a usuarios y *Confidence*, la evidencia de que el problema existe. Los números no cambiaron; sí las justificaciones.
-
 **Dispersión final:** A+B: 4,86 − 3,78 = 1,08. C: 2,52 − 0,96 = 1,56. **[COMPLETAR]** Discutir la Confidence de C: ¿qué evidencia tenemos hoy de que el buffet pierde ventas?
 
 ---
