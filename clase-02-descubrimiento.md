@@ -416,10 +416,10 @@ Con 10 a 15 personas cronometradas alcanza para responder D: **¿qué tramo es e
 | Observación | En cada club, uno observa la fila del buffet con la planilla mientras el otro entrevista. |
 | Entrevistas a asistentes | Entre 4 y 6 en total, jóvenes de 18 a 25 que vayan seguido al club, repartidas entre los dos clubes. |
 | Entrevista al buffet | Un empleado del buffet del SIC. |
-| Duplas | **[COMPLETAR]** Quiénes van al SIC y quiénes a Alumni. |
+| Duplas | **SIC:** Chain y Servent (incluye la entrevista al buffet). **Alumni:** Canabe y Tailhade. |
 | Fecha límite | Antes de la Clase 3. |
 
-> **Contexto útil:** los partidos del Top 14 arrancan a las 15:30 (F1), así que al mediodía se juegan divisiones previas y puede haber menos gente que a la tarde. Si pueden, quédense hasta que empiece el partido de primera para ver el pico más grande. **[COMPLETAR]** Revisar en el fixture si SIC y Alumni juegan de local ese sábado: si juegan de visitante, va a haber mucha menos gente en su club.
+> **Contexto útil:** los partidos del Top 14 arrancan a las 15:30 (F1), así que al mediodía se juegan divisiones previas y puede haber menos gente que a la tarde. Si pueden, quédense hasta que empiece el partido de primera para ver el pico más grande. Los dos clubes juegan de local ese sábado.
 
 ---
 
