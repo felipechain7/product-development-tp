@@ -97,4 +97,19 @@ Riesgos considerados y no elegidos: falta de confianza en pagar antes y fin de t
 El riesgo 1 coincide con la hipótesis priorizada (Valor), así que la Caja 7 se mantiene.
 
 ## 8. Experimento mínimo
-_Pendiente._
+
+- **Hipótesis que prueba:** Valor (pedir y pagar desde el celular y retirar con número acorta la espera en el pico).
+- **Objetivo:** responder la pregunta de la Caja 7: si la demora está en el cobro y pagar antes realmente acorta la espera.
+- **Tipo de experimento:** concierge digital.
+- **Herramienta:** Google Forms con el menú, link de pago de Mercado Pago, WhatsApp para pasarle cada pedido al buffet y Google Sheets para registrar los horarios.
+- **Participantes:** jóvenes que van al SIC ese sábado, el buffet del SIC y los cuatro integrantes del equipo.
+- **Duración:** un sábado al mediodía, durante los partidos. Fecha: 24/10 o 31/10. **[PENDIENTE]** confirmar con el buffet en la entrevista del 17/10.
+- **Tarea:** el joven abre el link (difundido por los grupos de WhatsApp e Instagram del club y por el equipo), pide y paga. El equipo le pasa el pedido al buffet y le asigna un número. El joven va al mostrador, dice su número y retira.
+- **Datos necesarios:** hora del pedido, hora de llegada al mostrador y hora de entrega de cada pedido. Para comparar: el tiempo de la fila normal en el mismo horario, tomado a cinco personas.
+- **Métrica:** minutos entre que el joven llega al mostrador y recibe la comida, comparados con los minutos de la fila normal. Métrica secundaria: cantidad de pedidos por la web (umbral de 20 de la hipótesis de comportamiento).
+- **Criterio de éxito:** el retiro tarda en promedio menos de 3 minutos y menos que la fila normal en el mismo horario.
+- **Criterio de fracaso:** el retiro tarda 3 minutos o más, o lo mismo que la fila normal. Eso indicaría que la demora está en la cocina.
+- **Aprendizaje esperado:** si la demora del buffet está en el cobro o en la cocina, y si el buffet puede preparar pedidos web en paralelo con la fila.
+- **Limitaciones:** un solo club y un solo sábado. El equipo hace a mano lo que haría el sistema. Con pocos pedidos, la cocina no se exige como con el producto real. El buffet podría priorizar los pedidos de la prueba. Depende del permiso del buffet. Si no lo da, el respaldo es una simulación con los datos de las entrevistas (datos simulados: prueban la lógica, no el desempeño real).
+
+Experimento posterior (no es el principal): fake door digital por Instagram y WhatsApp del club, para la hipótesis de comportamiento.
