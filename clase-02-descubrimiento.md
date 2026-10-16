@@ -287,7 +287,7 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 
 **Sí, seguimos eligiendo A+B.** Aceptamos que el impacto todavía está inferido (debilidad 1), que la evidencia externa es de otra escala y de proveedores (3) y que lo elegimos en parte porque nos pasa a nosotros (4).
 
-Lo que nos hace sostenerlo es una señal de comportamiento: en clubes que tienen locales de comida rápida al lado, hay gente que prefiere comprar ahí para llevar y comerlo viendo el partido. Si la fila fuera solo parte del ritual (debilidad 2), no se irían a comprar a otro lado.
+**No compartimos la debilidad 2** (que la fila sea parte del ritual). La gente va al club a ver los partidos: quiere pedir rápido y volver a la cancha, no quedarse charlando en la fila. Lo respalda una señal de comportamiento que vimos: en clubes que tienen locales de comida rápida al lado, hay gente que prefiere comprar ahí para llevar y comerlo viendo el partido. Si la fila fuera parte del ritual, no se irían a comprar a otro lado. Igual lo vamos a confirmar en las entrevistas (pregunta 5: qué les molesta de verdad y qué les parece parte de venir al club).
 
 Que el pedido anticipado ya exista en estadios grandes (debilidad 5) lo tomamos como una señal de que el problema es real y como una pregunta para el buffet: por qué no se usa en los clubes.
 
