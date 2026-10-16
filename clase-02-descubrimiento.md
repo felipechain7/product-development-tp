@@ -132,7 +132,7 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 | Progreso buscado | Para el buffet: vender todo lo que la gente quiere comprar. |
 | Fricción observada | La capacidad de atención en el mostrador es limitada. |
 | Consecuencia | 40 % abandonó una fila de comida en el último año (F4); más de 85 % alguna vez (F3); 81 % compraría más con filas cortas (F3). |
-| Evidencia | Dos encuestas de proveedores. |
+| Evidencia | Dos encuestas de proveedores. **[EXPERIENCIA DEL EQUIPO]** Algunos integrantes vimos gente acercarse al buffet, ver la fila e irse sin comprar. |
 | Fuentes | F3, F4 |
 | Frecuencia aparente | 2 fuentes coincidentes, ambas con interés comercial. |
 | Comportamiento observable | **[SUPUESTO]** Acercarse, ver la fila y volverse. |
@@ -201,8 +201,8 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A+B: la fila no baja y te perdés el partido | 8 | 7 | 7 | 3,92 | La espera en las filas hace que los clientes pierdan tiempo del partido y puede empeorar su experiencia en el club. |
-| C: ventas perdidas por la fila | 7 | 6 | 6 | 2,52 | Algunos clientes pueden desistir de comprar al ver la fila, lo que representa una posible pérdida de ventas para el buffet. |
+| A+B: la fila no baja y te perdés el partido | 8 | 6 | 7 | 3,36 | La espera en las filas hace que los clientes pierdan tiempo del partido y puede empeorar su experiencia en el club. *(Confidence corregida de 7 a 6 en la comparación; ICE original 3,92.)* |
+| C: ventas perdidas por la fila | 7 | 5 | 6 | 2,10 | Algunos clientes pueden desistir de comprar al ver la fila, lo que representa una posible pérdida de ventas para el buffet. *(Confidence corregida de 6 a 5 en la comparación; ICE original 2,52.)* |
 
 #### Pedro Tailhade
 
@@ -222,10 +222,10 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 
 | Problema | Chain | Canabe | Tailhade | Servent | Promedio del equipo | IA | Dispersión del equipo (máx − mín) |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| A+B | 3,78 | 3,92 | 4,86 | 4,00 | 4,14 | 2,70 | 1,08 |
-| C | 1,75 | 2,52 | 1,68 | 0,96 | 1,73 | 1,40 | **1,56** |
+| A+B | 3,78 | 3,36 | 4,86 | 4,00 | 4,00 | 2,70 | **1,50** |
+| C | 1,75 | 2,10 | 1,68 | 0,96 | 1,62 | 1,40 | 1,14 |
 
-> **C es el problema con mayor dispersión**: es el que más conviene discutir. La diferencia viene sobre todo de la Confidence (de 4 a 6) y del Ease (de 4 a 6).
+> Puntajes después de la comparación (sección 6). Antes de corregir la Confidence de Canabe, C era el de mayor dispersión (1,56); después, lo es A+B (1,50), por la diferencia de Impact entre Canabe y Chain (7-8) y Tailhade (9).
 
 ---
 
@@ -247,18 +247,18 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 
 ## 6. Comparación de evaluaciones
 
-> **Borrador con las 4 evaluaciones.** Revisar entre todos y ajustar lo que no compartan.
-
 | Pregunta | Respuesta del equipo |
 |---|---|
 | ¿Dónde coincidimos? | Los cuatro integrantes y la IA ponemos A+B primero, con bastante diferencia sobre C. En A+B, el Impact quedó alto en todos (de 7 a 9). |
-| ¿Dónde aparecen diferencias? | La mayor dispersión está en C (1,56): Canabe le dio Confidence 6 y Ease 6, mientras Servent le dio 4 y 4. En A+B, la Confidence va de 5 (Servent) a 7 (Canabe) y el Ease de 7 (Canabe) a 10 (Servent). La IA le puso a A+B un Impact más bajo (6) que todos nosotros. |
-| ¿Qué puntaje quedó débilmente justificado? | La Confidence 7 de A+B y 6 de C (Canabe): la rúbrica reserva el 7 para "evidencia diversa, verificable y consistente", y todavía no hicimos entrevistas; además, su justificación explica el Impact pero no la Confidence ni el Ease. El Impact 9 de A+B (Tailhade) lo llama "el dolor principal del hincha", pero todavía no medimos cuánto se espera. El Ease 10 de A+B (Servent) supone que cualquiera que vivió la fila va a querer contarla. |
+| ¿Dónde aparecen diferencias? | Antes de discutir, la mayor dispersión estaba en C (1,56): Canabe le dio Confidence 6 y Ease 6, Servent 4 y 4. Al conversarlo, la diferencia se explicó por **experiencia del equipo**: algunos vimos gente acercarse al buffet, ver la fila e irse sin comprar. Eso justifica algo más de confianza que la de las encuestas de otros países, pero no es una medición. En A+B, el Ease va de 7 (Canabe) a 10 (Servent) y el Impact de 7 (Chain) a 9 (Tailhade). La IA le puso a A+B un Impact más bajo (6) que todos nosotros. |
+| ¿Qué puntaje quedó débilmente justificado? | La Confidence 7 de A+B y 6 de C (Canabe): la rúbrica reserva el 7 para "evidencia diversa, verificable y consistente", y todavía no hicimos entrevistas; además, su justificación explica el Impact pero no la Confidence ni el Ease. Lo corregimos (ver puntajes modificados). El Impact 9 de A+B (Tailhade) lo llama "el dolor principal del hincha", pero todavía no medimos cuánto se espera. El Ease 10 de A+B (Servent) supone que cualquiera que vivió la fila va a querer contarla. |
 | ¿Qué criterio depende más de supuestos? | El Impact. En A+B se apoya en nuestra experiencia, sin la espera medida; en C, en encuestas de proveedores de otros países. |
 | ¿La IA usó evidencia o completó vacíos? | Usó las fuentes de las fichas y marcó que las más fuertes son de empresas que venden la solución. Fue más conservadora en el Impact porque no tiene nuestra experiencia de ir al club. Señaló una incógnita que no habíamos visto: si la demora es de la caja o de la cocina. |
 | ¿*Ease* está pesando demasiado? | No en el ranking: aunque A+B tuviera Ease 6, seguiría primero (por ejemplo, con los puntajes de Tailhade daría 9 × 6 × 6 / 100 = 3,24, contra 1,68 de C). Gana por Impact. |
 
-**Dispersión final:** A+B: 4,86 − 3,78 = 1,08. C: 2,52 − 0,96 = 1,56. **[COMPLETAR]** Discutir la Confidence de C: ¿qué evidencia tenemos hoy de que el buffet pierde ventas?
+**Puntajes modificados y motivo:** Canabe bajó su Confidence: A+B de 7 a 6 y C de 6 a 5. La rúbrica reserva el 7 para evidencia diversa y verificable, y todavía no hicimos entrevistas. Su ICE pasó de 3,92 a 3,36 (A+B) y de 2,52 a 2,10 (C).
+
+**Incertidumbres que permanecen:** si la espera es tan larga como la recordamos (la medimos el sábado), si la demora es de la caja o de la cocina, y cuánta gente se va sin comprar. Lo que vimos de gente que se va es experiencia nuestra; el sábado hay que contarlo en la observación.
 
 ---
 
