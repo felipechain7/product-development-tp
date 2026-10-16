@@ -201,8 +201,8 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
-| A+B: la fila no baja y te perdés el partido | | | | | |
-| C: ventas perdidas por la fila | | | | | |
+| A+B: la fila no baja y te perdés el partido | 8 | 7 | 7 | 3,92 | La espera en las filas hace que los clientes pierdan tiempo del partido y puede empeorar su experiencia en el club. |
+| C: ventas perdidas por la fila | 7 | 6 | 6 | 2,52 | Algunos clientes pueden desistir de comprar al ver la fila, lo que representa una posible pérdida de ventas para el buffet. |
 
 #### Pedro Tailhade
 
@@ -218,12 +218,14 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 | A+B: la fila no baja y te perdés el partido | 8 | 5 | 10 | 4,00 | Impacto alto porque afecta directo la experiencia de quien va al partido. Confianza media porque hay indicios del problema, pero todavía poca evidencia propia. Ease máxima porque casi cualquiera que fue a una cancha vivió esto, así que es fácil conseguir gente para entrevistar. |
 | C: ventas perdidas por la fila | 6 | 4 | 4 | 0,96 | Impacto medio porque la pérdida de ventas es real pero indirecta. Confianza baja porque hay poca evidencia de que la fila realmente genere ventas perdidas. Ease media-baja porque hay que llegar a vendedores o dueños de puestos, que son más difíciles de contactar. |
 
-### Tabla consolidada [COMPLETAR]
+### Tabla consolidada
 
-| Problema | Chain | Canabe | Tailhade | Servent | IA | Dispersión |
-|---|---:|---:|---:|---:|---:|---:|
-| A+B | 3,78 | | 4,86 | 4,00 | 2,70 | |
-| C | 1,75 | | 1,68 | 0,96 | 1,40 | |
+| Problema | Chain | Canabe | Tailhade | Servent | Promedio del equipo | IA | Dispersión del equipo (máx − mín) |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| A+B | 3,78 | 3,92 | 4,86 | 4,00 | 4,14 | 2,70 | 1,08 |
+| C | 1,75 | 2,52 | 1,68 | 0,96 | 1,73 | 1,40 | **1,56** |
+
+> **C es el problema con mayor dispersión**: es el que más conviene discutir. La diferencia viene sobre todo de la Confidence (de 4 a 6) y del Ease (de 4 a 6).
 
 ---
 
@@ -245,20 +247,20 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 
 ## 6. Comparación de evaluaciones
 
-> **Borrador con 3 de 4 evaluaciones.** Falta Canabe. Revisar entre todos y ajustar cuando esté su tabla.
+> **Borrador con las 4 evaluaciones.** Revisar entre todos y ajustar lo que no compartan.
 
 | Pregunta | Respuesta del equipo |
 |---|---|
-| ¿Dónde coincidimos? | Los tres integrantes y la IA ponemos A+B primero, con bastante diferencia sobre C. En A+B, la Confidence quedó entre 5 y 6 en todos, coherente con no tener entrevistas todavía. En C, todos le damos Confidence baja (4 o 5) porque no hay forma de saber cuánta gente se va sin comprar. |
-| ¿Dónde aparecen diferencias? | En el Impact de A+B: va de 7 (Chain) a 9 (Tailhade). En el Ease de C: va de 4 (Servent) a 6 (Tailhade). La IA le puso a A+B un Impact más bajo (6) que todos nosotros. |
-| ¿Qué puntaje quedó débilmente justificado? | El Impact 9 de A+B (Tailhade) lo llama "el dolor principal del hincha", pero todavía no medimos cuánto se espera. El Ease 10 de A+B (Servent) supone que cualquiera que vivió la fila va a querer contarla. |
+| ¿Dónde coincidimos? | Los cuatro integrantes y la IA ponemos A+B primero, con bastante diferencia sobre C. En A+B, el Impact quedó alto en todos (de 7 a 9). |
+| ¿Dónde aparecen diferencias? | La mayor dispersión está en C (1,56): Canabe le dio Confidence 6 y Ease 6, mientras Servent le dio 4 y 4. En A+B, la Confidence va de 5 (Servent) a 7 (Canabe) y el Ease de 7 (Canabe) a 10 (Servent). La IA le puso a A+B un Impact más bajo (6) que todos nosotros. |
+| ¿Qué puntaje quedó débilmente justificado? | La Confidence 7 de A+B y 6 de C (Canabe): la rúbrica reserva el 7 para "evidencia diversa, verificable y consistente", y todavía no hicimos entrevistas; además, su justificación explica el Impact pero no la Confidence ni el Ease. El Impact 9 de A+B (Tailhade) lo llama "el dolor principal del hincha", pero todavía no medimos cuánto se espera. El Ease 10 de A+B (Servent) supone que cualquiera que vivió la fila va a querer contarla. |
 | ¿Qué criterio depende más de supuestos? | El Impact. En A+B se apoya en nuestra experiencia, sin la espera medida; en C, en encuestas de proveedores de otros países. |
 | ¿La IA usó evidencia o completó vacíos? | Usó las fuentes de las fichas y marcó que las más fuertes son de empresas que venden la solución. Fue más conservadora en el Impact porque no tiene nuestra experiencia de ir al club. Señaló una incógnita que no habíamos visto: si la demora es de la caja o de la cocina. |
 | ¿*Ease* está pesando demasiado? | No en el ranking: aunque A+B tuviera Ease 6, seguiría primero (por ejemplo, con los puntajes de Tailhade daría 9 × 6 × 6 / 100 = 3,24, contra 1,68 de C). Gana por Impact. |
 
 **Puntajes modificados y motivo:** Chain y Servent justificaron al principio el *Ease* como facilidad para implementar la solución y la *Confidence* como seguridad de que la solución funcione. Al revisar la rúbrica lo corregimos: *Ease* es la facilidad para llegar a usuarios y *Confidence*, la evidencia de que el problema existe. Los números no cambiaron; sí las justificaciones.
 
-**Dispersión parcial (sin Canabe):** A+B: 4,86 − 3,78 = 1,08. C: 1,75 − 0,96 = 0,79.
+**Dispersión final:** A+B: 4,86 − 3,78 = 1,08. C: 2,52 − 0,96 = 1,56. **[COMPLETAR]** Discutir la Confidence de C: ¿qué evidencia tenemos hoy de que el buffet pierde ventas?
 
 ---
 
