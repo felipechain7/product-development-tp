@@ -1,7 +1,7 @@
 # Clase 2: descubrimiento de problemas asistido por IA
 
 **Materia:** Desarrollo de Productos
-**Equipo:** Felipe Chain · Juan Ignacio Canabe · Pedro Tailhade · Felipe Servent **[CONFIRMAR]**
+**Equipo:** Felipe Chain · Juan Ignacio Canabbe · Pedro Tailhade · Felipe Servent
 **Fecha:** 14 de octubre de 2026
 **Dominio:** compra de comida y bebida en clubes de rugby durante los días de partido
 
@@ -98,8 +98,8 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 | Fuentes | F1, F2, experiencia del equipo |
 | Frecuencia aparente | Todos los sábados de temporada, según nuestra experiencia. Sin medir. |
 | Comportamiento observable | **[SUPUESTO]** Ir antes de que arranque el partido o en el entretiempo para "ganarle" a la fila. |
-| Alternativas actuales | **[SUPUESTO]** Ir antes, mandar a uno del grupo, llevar comida de afuera, no comprar. |
-| Acceso a usuarios | Alto, si nosotros o nuestros compañeros vamos a clubes. **[CONFIRMAR]** |
+| Alternativas actuales | **[EXPERIENCIA DEL EQUIPO]** Comprar en los locales de comida rápida que hay al lado de algunos clubes y comerlo viendo el partido. **[SUPUESTO]** Ir antes, mandar a uno del grupo, no comprar. |
+| Acceso a usuarios | Alto: nosotros y nuestros compañeros vamos a clubes. |
 | Supuestos | Que la fila se viva como un problema y no como parte del ritual de ir al club. |
 | Evidencia faltante | Cuánta gente hay y cuánto tarda cada uno, medido un sábado real. |
 
@@ -132,11 +132,11 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 | Progreso buscado | Para el buffet: vender todo lo que la gente quiere comprar. |
 | Fricción observada | La capacidad de atención en el mostrador es limitada. |
 | Consecuencia | 40 % abandonó una fila de comida en el último año (F4); más de 85 % alguna vez (F3); 81 % compraría más con filas cortas (F3). |
-| Evidencia | Dos encuestas de proveedores. **[EXPERIENCIA DEL EQUIPO]** Algunos integrantes vimos gente acercarse al buffet, ver la fila e irse sin comprar. |
+| Evidencia | Dos encuestas de proveedores. **[EXPERIENCIA DEL EQUIPO]** Algunos integrantes vimos gente acercarse al buffet, ver la fila e irse sin comprar, y en clubes con locales de comida rápida al lado, gente que pide ahí para llevar y lo come viendo el partido. |
 | Fuentes | F3, F4 |
 | Frecuencia aparente | 2 fuentes coincidentes, ambas con interés comercial. |
 | Comportamiento observable | **[SUPUESTO]** Acercarse, ver la fila y volverse. |
-| Alternativas actuales | **[SUPUESTO]** Comprar más cosas en una sola vuelta; llevar comida de casa. |
+| Alternativas actuales | **[EXPERIENCIA DEL EQUIPO]** Comprar en el local de comida rápida de al lado: la venta no se pierde, se la lleva otro. **[SUPUESTO]** Comprar más cosas en una sola vuelta; llevar comida de casa. |
 | Acceso a usuarios | **Medio:** hay que llegar a quien maneja el buffet, que no es parte de nuestro entorno. |
 | Supuestos | Que el buffet lo perciba como plata perdida y no como "siempre fue así". |
 | Evidencia faltante | Cuánto vende el buffet en un sábado y si nota que pierde ventas. |
@@ -178,7 +178,6 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 |---|---|
 | Fusionamos A y B en un solo problema del asistente | B es la consecuencia de A. |
 | Mantenemos C separado, como el problema del cliente que paga | Es otro usuario, y lo necesitamos para la Caja 3 del canvas y para el pitch. |
-| D sale del ICE y pasa a la observación del sábado | Es una pregunta que se responde con un cronómetro, no con opiniones. |
 
 > **[COMPLETAR]** Revisar en equipo y cambiar lo que no compartan.
 
@@ -197,7 +196,7 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 | A+B: la fila no baja y te perdés el partido | 7 | 6 | 9 | 3,78 | Impacto alto porque afecta directo la experiencia de quien va al partido. Confianza media-alta porque hay evidencia razonable de que el problema existe, aunque falta validarlo con datos propios. Ease alta porque es fácil encontrar gente que vivió esa situación y quiera contarla. |
 | C: ventas perdidas por la fila | 7 | 5 | 5 | 1,75 | Impacto alto porque son ingresos que se pierden. Confianza media porque hay indicios, pero poca evidencia concreta de que la fila cause ventas perdidas. Ease media porque hay que llegar a vendedores o dueños de puestos, que cuesta más contactar. |
 
-#### Juan Ignacio Canabe
+#### Juan Ignacio Canabbe
 
 | Problema | Impact | Confidence | Ease | ICE | Justificación |
 |---|---:|---:|---:|---:|---|
@@ -220,12 +219,12 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 
 ### Tabla consolidada
 
-| Problema | Chain | Canabe | Tailhade | Servent | Promedio del equipo | IA | Dispersión del equipo (máx − mín) |
+| Problema | Chain | Canabbe | Tailhade | Servent | Promedio del equipo | IA | Dispersión del equipo (máx − mín) |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | A+B | 3,78 | 3,36 | 4,86 | 4,00 | 4,00 | 2,70 | **1,50** |
 | C | 1,75 | 2,10 | 1,68 | 0,96 | 1,62 | 1,40 | 1,14 |
 
-> Puntajes después de la comparación (sección 6). Antes de corregir la Confidence de Canabe, C era el de mayor dispersión (1,56); después, lo es A+B (1,50), por la diferencia de Impact entre Canabe y Chain (7-8) y Tailhade (9).
+> Puntajes después de la comparación (sección 6). Antes de corregir la Confidence de Canabbe, C era el de mayor dispersión (1,56); después, lo es A+B (1,50), por la diferencia de Impact entre Canabbe y Chain (7-8) y Tailhade (9).
 
 ---
 
@@ -250,13 +249,13 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 | Pregunta | Respuesta del equipo |
 |---|---|
 | ¿Dónde coincidimos? | Los cuatro integrantes y la IA ponemos A+B primero, con bastante diferencia sobre C. En A+B, el Impact quedó alto en todos (de 7 a 9). |
-| ¿Dónde aparecen diferencias? | Antes de discutir, la mayor dispersión estaba en C (1,56): Canabe le dio Confidence 6 y Ease 6, Servent 4 y 4. Al conversarlo, la diferencia se explicó por **experiencia del equipo**: algunos vimos gente acercarse al buffet, ver la fila e irse sin comprar. Eso justifica algo más de confianza que la de las encuestas de otros países, pero no es una medición. En A+B, el Ease va de 7 (Canabe) a 10 (Servent) y el Impact de 7 (Chain) a 9 (Tailhade). La IA le puso a A+B un Impact más bajo (6) que todos nosotros. |
-| ¿Qué puntaje quedó débilmente justificado? | La Confidence 7 de A+B y 6 de C (Canabe): la rúbrica reserva el 7 para "evidencia diversa, verificable y consistente", y todavía no hicimos entrevistas; además, su justificación explica el Impact pero no la Confidence ni el Ease. Lo corregimos (ver puntajes modificados). El Impact 9 de A+B (Tailhade) lo llama "el dolor principal del hincha", pero todavía no medimos cuánto se espera. El Ease 10 de A+B (Servent) supone que cualquiera que vivió la fila va a querer contarla. |
+| ¿Dónde aparecen diferencias? | Antes de discutir, la mayor dispersión estaba en C (1,56): Canabbe le dio Confidence 6 y Ease 6, Servent 4 y 4. Al conversarlo, la diferencia se explicó por **experiencia del equipo**: algunos vimos gente acercarse al buffet, ver la fila e irse sin comprar, y en clubes con locales de comida rápida al lado, gente que compra ahí para llevar y lo come viendo el partido. Eso sugiere que la venta no siempre se pierde: a veces se la lleva un competidor. Justifica algo más de confianza que la de las encuestas de otros países, pero no es una medición. En A+B, el Ease va de 7 (Canabbe) a 10 (Servent) y el Impact de 7 (Chain) a 9 (Tailhade). La IA le puso a A+B un Impact más bajo (6) que todos nosotros. |
+| ¿Qué puntaje quedó débilmente justificado? | La Confidence 7 de A+B y 6 de C (Canabbe): la rúbrica reserva el 7 para "evidencia diversa, verificable y consistente", y todavía no hicimos entrevistas; además, su justificación explica el Impact pero no la Confidence ni el Ease. Lo corregimos (ver puntajes modificados). El Impact 9 de A+B (Tailhade) lo llama "el dolor principal del hincha", pero todavía no medimos cuánto se espera. El Ease 10 de A+B (Servent) supone que cualquiera que vivió la fila va a querer contarla. |
 | ¿Qué criterio depende más de supuestos? | El Impact. En A+B se apoya en nuestra experiencia, sin la espera medida; en C, en encuestas de proveedores de otros países. |
 | ¿La IA usó evidencia o completó vacíos? | Usó las fuentes de las fichas y marcó que las más fuertes son de empresas que venden la solución. Fue más conservadora en el Impact porque no tiene nuestra experiencia de ir al club. Señaló una incógnita que no habíamos visto: si la demora es de la caja o de la cocina. |
 | ¿*Ease* está pesando demasiado? | No en el ranking: aunque A+B tuviera Ease 6, seguiría primero (por ejemplo, con los puntajes de Tailhade daría 9 × 6 × 6 / 100 = 3,24, contra 1,68 de C). Gana por Impact. |
 
-**Puntajes modificados y motivo:** Canabe bajó su Confidence: A+B de 7 a 6 y C de 6 a 5. La rúbrica reserva el 7 para evidencia diversa y verificable, y todavía no hicimos entrevistas. Su ICE pasó de 3,92 a 3,36 (A+B) y de 2,52 a 2,10 (C).
+**Puntajes modificados y motivo:** Canabbe bajó su Confidence: A+B de 7 a 6 y C de 6 a 5. La rúbrica reserva el 7 para evidencia diversa y verificable, y todavía no hicimos entrevistas. Su ICE pasó de 3,92 a 3,36 (A+B) y de 2,52 a 2,10 (C).
 
 **Incertidumbres que permanecen:** si la espera es tan larga como la recordamos (la medimos el sábado), si la demora es de la caja o de la cocina, y cuánta gente se va sin comprar. Lo que vimos de gente que se va es experiencia nuestra; el sábado hay que contarlo en la observación.
 
@@ -284,7 +283,15 @@ Fichamos cuatro. P5 y P6 quedan como preguntas para la observación y las entrev
 - Que los entrevistados digan que la fila no les molesta o que la aprovechan para charlar.
 - Que el buffet no quiera ninguna herramienta nueva.
 
-### Respuesta del equipo [COMPLETAR]
+### Respuesta del equipo
+
+**Sí, seguimos eligiendo A+B.** Aceptamos que el impacto todavía está inferido (debilidad 1), que la evidencia externa es de otra escala y de proveedores (3) y que lo elegimos en parte porque nos pasa a nosotros (4).
+
+Lo que nos hace sostenerlo es una señal de comportamiento: en clubes que tienen locales de comida rápida al lado, hay gente que prefiere comprar ahí para llevar y comerlo viendo el partido. Si la fila fuera solo parte del ritual (debilidad 2), no se irían a comprar a otro lado.
+
+Que el pedido anticipado ya exista en estadios grandes (debilidad 5) lo tomamos como una señal de que el problema es real y como una pregunta para el buffet: por qué no se usa en los clubes.
+
+Antes de avanzar, el sábado vamos a medir cuánto dura la espera y si la demora está en la caja o en la cocina. Si la espera es corta o los entrevistados dicen que no les molesta, revisamos el problema.
 
 ---
 
