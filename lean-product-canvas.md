@@ -82,5 +82,19 @@ No se incluye: la solución usa herramientas que ya existen (formularios web y M
 
 **Pregunta prioritaria:** ¿La demora del buffet está en el cobro, de modo que pagar antes por el celular realmente acorta la espera?
 
+## Pre-mortem
+
+Imaginamos que dentro de seis meses la propuesta fracasó. Estos son los tres riesgos que elegimos:
+
+| # | Causa del fracaso | Supuesto que falló | Señal temprana | Cómo investigarlo |
+|---|---|---|---|---|
+| 1 | La demora era la cocina: la fila se mudó al mostrador de retiro | Valor | El 17/10 la gente espera más después de pagar que antes | Pregunta 2 de las entrevistas y observación de la fila |
+| 2 | El buffet no lo adopta o no paga | Modelo de negocio | El empleado del SIC dice que vende todo igual o no muestra interés | Pedirle permiso para un sábado de prueba |
+| 3 | Los chicos no lo usan: prefieren la fila con amigos o pagar en efectivo | Comportamiento | En las entrevistas, la mayoría dice que paga en efectivo | Contar los pedidos en el sábado de prueba |
+
+Riesgos considerados y no elegidos: falta de confianza en pagar antes y fin de temporada (finales el 14/11) sin sábados para probar.
+
+El riesgo 1 coincide con la hipótesis priorizada (Valor), así que la Caja 7 se mantiene.
+
 ## 8. Experimento mínimo
 _Pendiente._
