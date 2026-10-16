@@ -73,7 +73,14 @@ Lo sabremos si en un sábado de prueba hay al menos 20 pedidos por la web.
 No se incluye: la solución usa herramientas que ya existen (formularios web y Mercado Pago), así que no hay una incertidumbre tecnológica crítica.
 
 ## 7. Lo más importante por aprender
-_Pendiente._
+
+| Hipótesis | Incertidumbre 1–5 | Impacto 1–5 | Prioridad | Justificación |
+|---|---:|---:|---:|---|
+| Problema | 2 | 5 | 10 | Experiencia del equipo y encuestas en estadios (F3, F4). Se mide igual en las entrevistas del 17/10. |
+| Valor | 5 | 5 | 25 | No sabemos si la demora está en la caja o en la cocina. Si es la cocina, pagar antes no acorta la espera y la propuesta se cae. |
+| Comportamiento | 4 | 4 | 16 | No sabemos si los chicos cambian la fila por el celular, pero si la espera baja es más probable que lo usen. |
+
+**Pregunta prioritaria:** ¿La demora del buffet está en el cobro, de modo que pagar antes por el celular realmente acorta la espera?
 
 ## 8. Experimento mínimo
 _Pendiente._
