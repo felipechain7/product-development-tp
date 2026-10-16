@@ -40,7 +40,7 @@ Alternativas generadas:
 
 ### Pedí y retirá
 
-- **Propuesta:** el joven pide y paga desde el celular y retira mostrando un QR o un número. El buffet ve los pedidos en orden en un panel.
+- **Propuesta:** el joven escanea un QR en el club y se abre una página con todos los productos del buffet cargados. Ahí pide y paga, y después retira con un número. El buffet ve los pedidos en orden en un panel.
 - **Valor para el usuario:** no hace la fila para pagar y vuelve rápido al partido.
 - **Tecnología central:** web con el menú, pago online (Mercado Pago) y cola de pedidos.
 - **Datos necesarios:** menú, precios y stock del buffet.
@@ -101,10 +101,10 @@ El riesgo 1 coincide con la hipótesis priorizada (Valor), así que la Caja 7 se
 - **Hipótesis que prueba:** Valor (pedir y pagar desde el celular y retirar con número acorta la espera en el pico).
 - **Objetivo:** responder la pregunta de la Caja 7: si la demora está en el cobro y pagar antes realmente acorta la espera.
 - **Tipo de experimento:** concierge digital.
-- **Herramienta:** Google Forms con el menú, link de pago de Mercado Pago, WhatsApp para pasarle cada pedido al buffet y Google Sheets para registrar los horarios.
+- **Herramienta:** una página armada gratis (Google Forms con fotos y precios, o Glide) con todos los productos cargados, para que se parezca a la página final; link de pago de Mercado Pago; WhatsApp para pasarle cada pedido al buffet y Google Sheets para registrar los horarios. La página final, con panel para el buffet, es el MVP de las próximas clases.
 - **Participantes:** jóvenes que van al SIC ese sábado, el buffet del SIC y los cuatro integrantes del equipo.
 - **Duración:** un sábado al mediodía, durante los partidos. Fecha: 24/10 o 31/10. **[PENDIENTE]** confirmar con el buffet en la entrevista del 17/10.
-- **Tarea:** el joven abre el link (difundido por los grupos de WhatsApp e Instagram del club y por el equipo), pide y paga. El equipo le pasa el pedido al buffet y le asigna un número. El joven va al mostrador, dice su número y retira.
+- **Tarea:** el joven escanea un QR en el club (también se difunde el link por los grupos de WhatsApp e Instagram) y se abre una página con todos los productos del buffet, sus precios y el pago por Mercado Pago. Pide y paga ahí. El equipo le pasa el pedido al buffet y le asigna un número; el joven va al mostrador, dice su número y retira.
 - **Datos necesarios:** hora del pedido, hora de llegada al mostrador y hora de entrega de cada pedido. Para comparar: el tiempo de la fila normal en el mismo horario, tomado a cinco personas.
 - **Métrica:** minutos entre que el joven llega al mostrador y recibe la comida, comparados con los minutos de la fila normal. Métrica secundaria: cantidad de pedidos por la web (umbral de 20 de la hipótesis de comportamiento).
 - **Criterio de éxito:** el retiro tarda en promedio menos de 3 minutos y menos que la fila normal en el mismo horario.
