@@ -24,10 +24,30 @@ Lo sabemos por la experiencia del equipo y por encuestas en estadios de otros pa
 - **Decisor:** el concesionario del buffet o, si el buffet es propio, el club. **[PENDIENTE]** se confirma en la entrevista al buffet del SIC el 17/10.
 
 ## 4. Necesidades y resultados del usuario
-_Pendiente._
+
+- **Joven que va al club:** cuando me da hambre entre partido y partido, quiero conseguir comida rápido, para no perderme el partido que vine a ver.
+- **Buffet:** cuando se junta gente en el cambio de partido, quiero atender más rápido, para no perder ventas.
+
+**[SUPUESTO]** Sale de la experiencia del equipo; se contrasta con las entrevistas del 17/10.
 
 ## 5. Ideas de solución
-_Pendiente._
+
+Alternativas generadas:
+
+1. **Fila en vivo** (información o decisión): ver la espera actual del buffet y el mejor momento para ir según el fixture. Descartada: no acorta la fila, solo la reparte.
+2. **Pedí y retirá** (coordinación o transacción). **Seleccionada.**
+3. **Turnos de retiro con predicción** (automatización o inteligencia): reservar una franja para retirar y anticipar la demanda con el fixture y las ventas anteriores. Descartada: más compleja y sin datos de ventas para predecir al arrancar.
+
+### Pedí y retirá
+
+- **Propuesta:** el joven pide y paga desde el celular y retira mostrando un QR o un número. El buffet ve los pedidos en orden en un panel.
+- **Valor para el usuario:** no hace la fila para pagar y vuelve rápido al partido.
+- **Tecnología central:** web con el menú, pago online (Mercado Pago) y cola de pedidos.
+- **Datos necesarios:** menú, precios y stock del buffet.
+- **Riesgo principal:** si la demora está en la cocina y no en la caja, la espera no baja.
+- **Prototipo inicial:** Google Forms con link de pago de Mercado Pago, o una app en Glide.
+- **Dependencias:** que el buffet acepte recibir los pedidos y tenga un lugar para entregarlos (dependencia física secundaria); señal de celular en el club.
+- **Estado:** idea no validada.
 
 ## 6. Hipótesis principales
 _Pendiente._
