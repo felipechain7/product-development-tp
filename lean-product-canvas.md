@@ -101,7 +101,7 @@ Riesgos considerados y no elegidos: falta de confianza en pagar antes y fin de t
 
 **Estado después del 17/10:**
 - Riesgo 1: la señal temprana no apareció; todos dicen que después de pagar la comida sale rápido. Baja.
-- Riesgo 2: sigue abierto. La empleada del SIC contó que nunca probaron nada para acelerar la fila, pero no se le preguntó si aceptarían una prueba ni si pagarían, y probablemente no es quien decide.
+- Riesgo 2: bajó en parte. El buffet del SIC aceptó hacer la prueba, pero todavía no sabemos si pagaría por el servicio.
 - Riesgo 3: sigue abierto. El buffet cobra en efectivo o con posnet con QR, sin datos de proporción. Es el riesgo de la hipótesis que ahora es prioritaria (Comportamiento).
 
 ## 8. Experimento mínimo
@@ -111,11 +111,11 @@ Riesgos considerados y no elegidos: falta de confianza en pagar antes y fin de t
 - **Tipo de experimento:** concierge digital.
 - **Herramienta:** una página armada gratis (Google Forms con fotos y precios, o Glide) con todos los productos cargados, para que se parezca a la página final; link de pago de Mercado Pago; WhatsApp para pasarle cada pedido al buffet y Google Sheets para registrar los horarios. La página final, con panel para el buffet, es el MVP de las próximas clases.
 - **Participantes:** quienes van al SIC ese sábado, el buffet del SIC y los cuatro integrantes del equipo.
-- **Duración:** un sábado al mediodía, durante los partidos. Fecha: 24/10 o 31/10. **[PENDIENTE]** pedir permiso al encargado o dueño del buffet; el 17/10 no se preguntó.
+- **Duración:** un sábado al mediodía, durante los partidos. Fecha: 24/10 o 31/10 **[PENDIENTE: confirmar fecha]**. El buffet del SIC ya aceptó hacer la prueba.
 - **Tarea:** la persona escanea un QR en el club (también se difunde el link por los grupos de WhatsApp e Instagram) y se abre una página con todos los productos del buffet, sus precios y el pago por Mercado Pago. Pide y paga ahí. El equipo le pasa el pedido al buffet y le asigna un número; la persona va al mostrador, dice su número y retira.
 - **Datos necesarios:** cantidad de pedidos por la web, hora del pedido, hora de llegada al mostrador y hora de entrega de cada pedido. Para comparar: el tiempo de la fila normal en el mismo horario, tomado a cinco personas.
 - **Métrica principal:** cantidad de pedidos por la web en el sábado. **Métrica secundaria:** minutos entre que la persona llega al mostrador y recibe la comida, comparados con la fila normal.
 - **Criterio de éxito:** al menos 20 pedidos por la web. Secundario: el retiro tarda en promedio menos de 3 minutos y menos que la fila normal.
 - **Criterio de fracaso:** menos de 20 pedidos por la web. Secundario: el retiro tarda 3 minutos o más, o lo mismo que la fila normal.
 - **Aprendizaje esperado:** si la gente cambia la fila por el celular y, si lo hace, si el retiro realmente es más rápido.
-- **Limitaciones:** un solo club y un solo sábado. El equipo hace a mano lo que haría el sistema. Con pocos pedidos, la cocina no se exige como con el producto real. El buffet podría priorizar los pedidos de la prueba. Depende del permiso del buffet. Si no lo da, el respaldo es un fake door digital por Instagram y WhatsApp del club: mide si la gente intenta pedir, pero no el retiro.
+- **Limitaciones:** un solo club y un solo sábado. El equipo hace a mano lo que haría el sistema. Con pocos pedidos, la cocina no se exige como con el producto real. El buffet podría priorizar los pedidos de la prueba. Si la prueba no se puede hacer (por ejemplo, si el buffet se echa atrás), el respaldo es un fake door digital por Instagram y WhatsApp del club: mide si la gente intenta pedir, pero no el retiro.

@@ -455,7 +455,9 @@ No se cronometró la fila. Los tiempos que siguen son **declarados** por los ent
 
 **Contradicciones con nuestra hipótesis**
 - Dice "un poco de todo": la demora no es solo el cobro.
-- No se preguntó si el buffet es del club o una concesión, ni si aceptarían una prueba.
+- No se preguntó si el buffet es del club o una concesión.
+
+**Dato agregado por el equipo (no figura en la transcripción):** el buffet del SIC aceptó que se haga la prueba de pedidos por el celular un sábado.
 
 ### Entrevista 2: persona 1
 
