@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedí sin fila · Buffet</title>
+<style>
+  :root {
+    --bg: #f6f5f1;
+    --card: #ffffff;
+    --ink: #1d1d1b;
+    --muted: #6b6a66;
+    --line: #e3e1da;
+    --accent: #0f5c3a;
+    --accent-ink: #ffffff;
+    --warn-bg: #fff4d6;
+    --warn-ink: #6b4e00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151514;
+      --card: #20201e;
+      --ink: #f1f0ec;
+      --muted: #a5a39c;
+      --line: #34332f;
+      --accent: #3fae7a;
+      --accent-ink: #0d1a13;
+      --warn-bg: #3a3112;
+      --warn-ink: #f3dc93;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 520px; margin: 0 auto; padding: 16px 16px 120px; }
+  h1 { font-size: 1.5rem; margin: 8px 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 16px; }
+  .aviso {
+    background: var(--warn-bg); color: var(--warn-ink);
+    border-radius: 10px; padding: 10px 12px; margin-bottom: 16px; font-size: .9rem;
+  }
+  .item {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 12px; margin-bottom: 10px;
+  }
+  .item .nombre { font-weight: 600; }
+  .item .precio { color: var(--muted); font-size: .95rem; }
+  .cant { display: flex; align-items: center; gap: 10px; }
+  .cant button {
+    width: 40px; height: 40px; border-radius: 50%;
+    border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+    font-size: 1.3rem; line-height: 1; cursor: pointer;
+  }
+  .cant span { min-width: 1.5em; text-align: center; font-weight: 600; }
+  label { display: block; font-weight: 600; margin: 18px 0 6px; }
+  input[type=text] {
+    width: 100%; padding: 12px; font-size: 1rem;
+    border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--ink);
+  }
+  .barra {
+    position: fixed; left: 0; right: 0; bottom: 0;
+    background: var(--card); border-top: 1px solid var(--line);
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  }
+  .barra .dentro { max-width: 520px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
+  .total { flex: 1; }
+  .total small { display: block; color: var(--muted); }
+  .total strong { font-size: 1.3rem; }
+  .btn {
+    border: 0; border-radius: 12px; padding: 14px 18px; font-size: 1rem; font-weight: 700;
+    background: var(--accent); color: var(--accent-ink); cursor: pointer;
+  }
+  .btn:disabled { opacity: .4; cursor: not-allowed; }
+  .btn.sec { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+  .monto { font-size: 2rem; font-weight: 800; margin: 4px 0 8px; }
+  .alias { display: flex; gap: 8px; align-items: center; }
+  .alias code { flex: 1; font-size: 1.1rem; padding: 10px; border-radius: 8px; background: var(--bg); overflow-wrap: anywhere; }
+  ol { padding-left: 1.2em; margin: 8px 0 0; }
+  .resumen { margin: 0; padding-left: 1.1em; color: var(--muted); }
+  .codigo { font-size: 2.4rem; font-weight: 800; letter-spacing: .06em; }
+  .pie { color: var(--muted); font-size: .8rem; margin-top: 24px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+
+  <!-- Pantalla 1: menú -->
+  <section id="p-menu">
+    <h1>Pedí sin hacer la fila</h1>
+    <p class="sub">Elegí, pagá con Mercado Pago y retirá en el buffet diciendo tu nombre.</p>
+    <div id="aviso-ejemplo" class="aviso" hidden>Menú de ejemplo: todavía no está cargado el menú real del buffet.</div>
+    <div id="lista"></div>
+    <label for="nombre">Tu nombre o apodo</label>
+    <input id="nombre" type="text" maxlength="30" autocomplete="off" placeholder="Para entregarte el pedido">
+    <p class="pie">Prueba de estudiantes de la Universidad Austral. Solo te pedimos un nombre o apodo para entregarte el pedido; los datos se usan de forma anónima para un trabajo de la facultad.</p>
+  </section>
+
+  <!-- Pantalla 2: pago -->
+  <section id="p-pago" hidden>
+    <h1>Pagá tu pedido</h1>
+    <div class="panel">
+      <div>Total a transferir</div>
+      <div class="monto" id="monto"></div>
+      <ul class="resumen" id="resumen"></ul>
+    </div>
+    <div class="panel">
+      <div style="margin-bottom:8px">Alias de Mercado Pago</div>
+      <div class="alias"><code id="alias"></code><button class="btn sec" id="copiar" type="button">Copiar</button></div>
+      <ol>
+        <li>Abrí Mercado Pago o tu banco.</li>
+        <li>Transferí el total exacto a ese alias.</li>
+        <li>Volvé acá y tocá "Ya pagué".</li>
+      </ol>
+    </div>
+    <button class="btn sec" id="volver" type="button">Cambiar el pedido</button>
+  </section>
+
+  <!-- Pantalla 3: listo -->
+  <section id="p-listo" hidden>
+    <h1>¡Listo, <span id="listo-nombre"></span>!</h1>
+    <div class="panel">
+      <div>Tu código de pedido</div>
+      <div class="codigo" id="listo-codigo"></div>
+      <p style="margin:8px 0 0">Andá al mostrador del buffet, decí tu nombre y este código, y mostrá el comprobante de Mercado Pago.</p>
+    </div>
+    <p class="pie">Si algo falla, acercate al mostrador: hay estudiantes del equipo ayudando.</p>
+  </section>
+
+</main>
+
+<div class="barra" id="barra">
+  <div class="dentro">
+    <div class="total"><small>Total</small><strong id="total">$0</strong></div>
+    <button class="btn" id="accion" type="button" disabled>Ir a pagar</button>
+  </div>
+</div>
+
+<script>
+/* ===================== CONFIGURACIÓN =====================
+   Lo único que hay que tocar antes del sábado.            */
+
+// Menú real del buffet. Mientras MENU_ES_EJEMPLO sea true, la página muestra un aviso.
+const MENU_ES_EJEMPLO = true;
+const MENU = [
+  { id: "ej1", nombre: "Producto de ejemplo 1", precio: 1000 },
+  { id: "ej2", nombre: "Producto de ejemplo 2", precio: 1500 },
+  { id: "ej3", nombre: "Bebida de ejemplo",     precio: 800 },
+];
+
+// Alias de Mercado Pago que recibe los pagos.
+const ALIAS = "[ALIAS PENDIENTE]";
+
+// Google Form que funciona como planilla. Si FORM_URL queda vacío, no se registra nada (modo prueba).
+const FORM_URL = "";            // https://docs.google.com/forms/d/e/XXXX/formResponse
+const CAMPOS = {                // entry.NNNN de cada pregunta del formulario
+  evento: "", codigo: "", nombre: "", pedido: "", total: "",
+};
+/* ========================================================= */
+
+const pesos = n => "$" + n.toLocaleString("es-AR");
+const cant = Object.fromEntries(MENU.map(p => [p.id, 0]));
+let pantalla = "menu";
+let codigo = "";
+
+function registrar(datos) {
+  if (!FORM_URL) { console.log("[modo prueba] no se registra:", datos); return Promise.resolve(); }
+  const body = new URLSearchParams();
+  for (const [k, v] of Object.entries(datos)) if (CAMPOS[k]) body.append(CAMPOS[k], v);
+  return fetch(FORM_URL, { method: "POST", mode: "no-cors", body }).catch(() => {});
+}
+
+function total() { return MENU.reduce((s, p) => s + p.precio * cant[p.id], 0); }
+function detalle() { return MENU.filter(p => cant[p.id] > 0).map(p => `${cant[p.id]} x ${p.nombre}`); }
+
+function dibujarMenu() {
+  const lista = document.getElementById("lista");
+  lista.innerHTML = "";
+  for (const p of MENU) {
+    const fila = document.createElement("div");
+    fila.className = "item";
+    fila.innerHTML = `<div><div class="nombre"></div><div class="precio">${pesos(p.precio)}</div></div>
+      <div class="cant"><button type="button" aria-label="Quitar">−</button><span>${cant[p.id]}</span><button type="button" aria-label="Agregar">+</button></div>`;
+    fila.querySelector(".nombre").textContent = p.nombre;
+    const [menos, mas] = fila.querySelectorAll("button");
+    menos.onclick = () => { cant[p.id] = Math.max(0, cant[p.id] - 1); actualizar(); };
+    mas.onclick = () => { cant[p.id] = Math.min(9, cant[p.id] + 1); actualizar(); };
+    lista.appendChild(fila);
+  }
+}
+
+function actualizar() {
+  dibujarMenu();
+  document.getElementById("total").textContent = pesos(total());
+  const nombre = document.getElementById("nombre").value.trim();
+  const accion = document.getElementById("accion");
+  if (pantalla === "menu") {
+    accion.textContent = "Ir a pagar";
+    accion.disabled = total() === 0 || nombre === "";
+  }
+}
+
+function mostrar(nombre) {
+  pantalla = nombre;
+  for (const id of ["menu", "pago", "listo"]) document.getElementById("p-" + id).hidden = id !== nombre;
+  document.getElementById("barra").hidden = nombre === "listo";
+  const accion = document.getElementById("accion");
+  if (nombre === "pago") { accion.textContent = "Ya pagué"; accion.disabled = false; }
+  if (nombre === "menu") actualizar();
+  window.scrollTo(0, 0);
+}
+
+document.getElementById("nombre").addEventListener("input", actualizar);
+document.getElementById("volver").onclick = () => mostrar("menu");
+document.getElementById("copiar").onclick = async () => {
+  try { await navigator.clipboard.writeText(ALIAS); document.getElementById("copiar").textContent = "Copiado"; } catch (e) {}
+};
+
+document.getElementById("accion").onclick = async () => {
+  if (pantalla === "menu") {
+    document.getElementById("monto").textContent = pesos(total());
+    document.getElementById("alias").textContent = ALIAS;
+    const ul = document.getElementById("resumen");
+    ul.innerHTML = "";
+    for (const linea of detalle()) { const li = document.createElement("li"); li.textContent = linea; ul.appendChild(li); }
+    registrar({ evento: "ir_a_pagar", total: total(), pedido: detalle().join(", ") });
+    mostrar("pago");
+  } else if (pantalla === "pago") {
+    const accion = document.getElementById("accion");
+    accion.disabled = true;
+    codigo = String(Math.floor(100 + Math.random() * 900));
+    const nombre = document.getElementById("nombre").value.trim();
+    await registrar({ evento: "pedido", codigo, nombre, pedido: detalle().join(", "), total: total() });
+    document.getElementById("listo-nombre").textContent = nombre;
+    document.getElementById("listo-codigo").textContent = codigo;
+    mostrar("listo");
+  }
+};
+
+document.getElementById("aviso-ejemplo").hidden = !MENU_ES_EJEMPLO;
+registrar({ evento: "visita" });
+actualizar();
+</script>
+</body>
+</html>

@@ -30,18 +30,20 @@ Los criterios se fijaron en la Clase 3 y no se cambian después de ver los resul
 ## Alcance mínimo (aprobado por el equipo)
 
 **Imprescindible (se construye):**
-- Página de pedidos con menú y precios (Google Forms). Pide solo nombre y pedido.
+- Página de pedidos simple (`experimento/index.html`) con menú y precios, que suma el total sola. Pide solo nombre y pedido, y al final da un código de pedido de 3 dígitos. Se publica gratis con GitHub Pages.
+  - *Cambio decidido por el equipo el 18/10:* se reemplazó Google Forms porque no calcula el total; sumar a mano agregaba fricción que podía ensuciar la medición de comportamiento.
 - Pago real por Mercado Pago, al alias de la cuenta que defina el equipo.
 - QR que abre la página y el mismo link para los grupos de WhatsApp del club.
-- Planilla de registro en Google Sheets conectada al formulario: hora del pedido automática; llegada al mostrador y entrega las completa el equipo.
+- Planilla de registro en Google Sheets: la página manda cada evento a un formulario de Google oculto (hora automática). Llegada al mostrador y entrega las completa el equipo.
+- Embudo de diagnóstico (no cambia el criterio): visitas a la página, "ir a pagar" y pedidos confirmados. Sirve para distinguir si faltó exposición o interés si hay pocos pedidos.
 - Hoja para cronometrar la fila normal (5 personas).
 
 **Simulado (lo hace el equipo a mano):**
 - Panel del buffet: el equipo le pasa cada pedido por WhatsApp.
-- Número de pedido: el número de fila de la planilla.
+- Número de pedido: lo genera la página (código de 3 dígitos); el equipo lo usa para encontrar el pedido.
 - Control de que el pago llegó.
 
-**Fuera de alcance (sería MVP):** cuentas de usuario, app, diseño propio, stock en tiempo real, cobro integrado con Mercado Pago, varios clubes, historial de pedidos.
+**Fuera de alcance (sería MVP):** cuentas de usuario, app, diseño trabajado, stock en tiempo real, cobro integrado con Mercado Pago, varios clubes, historial de pedidos.
 
 **Listo para el piloto cuando:** un integrante hace un pedido de prueba completo que aparece en la planilla, lo paga y lo puede retirar.
 

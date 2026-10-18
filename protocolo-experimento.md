@@ -46,24 +46,25 @@ Son cuatro roles para cuatro integrantes. **[ASIGNAR]** quién hace cada uno.
 
 **[PENDIENTE]** quién tiene acceso a los grupos de WhatsApp del club.
 
-**Texto al inicio del formulario**
+**Texto al pie de la página**
 
 > Pedí acá y retirá en el buffet sin hacer la fila. Es una prueba de estudiantes de la Universidad Austral: solo te pedimos un nombre o apodo para entregarte el pedido, y los datos se usan de forma anónima para un trabajo de la facultad.
 
-**Mensaje al terminar el pedido**
+**Mensaje al terminar el pedido** (ya está en la página)
 
-> ¡Listo! Recibimos tu pedido. Andá al mostrador del buffet, decí tu nombre y mostrá el comprobante de Mercado Pago.
+> ¡Listo, [nombre]! Tu código de pedido es [código]. Andá al mostrador del buffet, decí tu nombre y este código, y mostrá el comprobante de Mercado Pago.
 
 ## Planilla de registro
 
-Las primeras columnas las completa sola el formulario. Las demás las completa el equipo.
+Las primeras columnas las completa sola la página. Las demás las completa el equipo, solo en las filas con evento "pedido".
 
 | Columna | Quién la completa |
 |---|---|
-| Marca temporal (hora del pedido) | Formulario |
-| Nombre o apodo | Formulario |
-| Pedido | Formulario |
-| N.º de pedido | Rol 1 (número de fila) |
+| Marca temporal (hora del evento) | Página (automático) |
+| Evento (visita / ir_a_pagar / pedido) | Página (automático) |
+| Código de pedido | Página (automático) |
+| Nombre o apodo | Página (automático) |
+| Pedido y total | Página (automático) |
 | ¿Pago recibido? (sí / no) | Rol 1 |
 | Hora en que se pasó al buffet | Rol 1 |
 | Hora de llegada al mostrador | Rol 2 |
