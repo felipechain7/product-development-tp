@@ -111,7 +111,7 @@ Riesgos considerados y no elegidos: falta de confianza en pagar antes y fin de t
 - **Tipo de experimento:** concierge digital.
 - **Herramienta:** una página armada gratis (Google Forms con fotos y precios, o Glide) con todos los productos cargados, para que se parezca a la página final; link de pago de Mercado Pago; WhatsApp para pasarle cada pedido al buffet y Google Sheets para registrar los horarios. La página final, con panel para el buffet, es el MVP de las próximas clases.
 - **Participantes:** quienes van al SIC ese sábado, el buffet del SIC y los cuatro integrantes del equipo.
-- **Duración:** un sábado al mediodía, durante los partidos. Fecha: 24/10 o 31/10 **[PENDIENTE: confirmar fecha]**. El buffet del SIC ya aceptó hacer la prueba.
+- **Duración:** un sábado al mediodía, durante los partidos. Fecha: sábado 24 de octubre de 2026. El buffet del SIC ya aceptó hacer la prueba.
 - **Tarea:** la persona escanea un QR en el club (también se difunde el link por los grupos de WhatsApp e Instagram) y se abre una página con todos los productos del buffet, sus precios y el pago por Mercado Pago. Pide y paga ahí. El equipo le pasa el pedido al buffet y le asigna un número; la persona va al mostrador, dice su número y retira.
 - **Datos necesarios:** cantidad de pedidos por la web, hora del pedido, hora de llegada al mostrador y hora de entrega de cada pedido. Para comparar: el tiempo de la fila normal en el mismo horario, tomado a cinco personas.
 - **Métrica principal:** cantidad de pedidos por la web en el sábado. **Métrica secundaria:** minutos entre que la persona llega al mostrador y recibe la comida, comparados con la fila normal.
