@@ -423,45 +423,103 @@ Con 10 a 15 personas cronometradas alcanza para responder D: **¿qué tramo es e
 
 ---
 
-## Registro de observación y entrevistas [COMPLETAR]
+## Registro de observación y entrevistas
+
+Fuente: transcripciones del sábado 17 de octubre de 2026 (`entrevistas.pdf`). Se usaron los guiones reducidos: 5 preguntas al buffet y 5 a asistentes.
+
+> **[CONFIRMAR]** El registro no dice en qué club se hizo cada entrevista. Se asignan según el plan de duplas: las de "F" en el SIC y las de "P" y "J" en Alumni. Tampoco dice qué Felipe entrevistó (Chain o Servent), ni las edades.
 
 ### Observación del sábado
 
-- Club, fecha, partidos que se jugaban:
-- Personas cronometradas:
-- Tramo más largo (fila / pago / espera de comida):
-- Personas que se fueron sin comprar:
-- Medios de pago observados:
+No se cronometró la fila. Los tiempos que siguen son **declarados** por los entrevistados, no medidos.
 
-### Entrevista 1
+### Entrevista 1: empleada del buffet
 
-- Fecha / Entrevistador / Registrador:
-- Perfil:
+- Club: SIC [CONFIRMAR] / Entrevistador: F.
+- Perfil: empleada del buffet.
 
 **Situaciones reales relatadas**
--
+- Los picos son en los entretiempos y apenas terminan los partidos, "porque nadie se quiere perder los partidos".
 
 **Comportamientos y alternativas actuales**
--
+- Cobran en efectivo o con posnet que acepta QR. No dio proporciones.
+- Algunas cosas ya están "casi listas o listas" antes del pico.
+- Nunca probaron nada para acelerar la fila: "siempre nos manejamos de la misma manera".
 
 **Consecuencias observadas**
--
+- Cuando la fila del bar es larga, hay gente que sale a ver la parrilla de afuera y otros se van al McDonald's de al lado.
 
 **Frases relevantes**
--
+- "Es un poco de todo, pero creo que se tarda más en cobrar porque se hace mucha fila."
+- "Como está McDonald's acá al lado, algunos se van ahí."
 
 **Contradicciones con nuestra hipótesis**
--
+- Dice "un poco de todo": la demora no es solo el cobro.
+- No se preguntó si el buffet es del club o una concesión, ni si aceptarían una prueba.
 
-### Síntesis [COMPLETAR]
+### Entrevista 2: persona 1
+
+- Club: SIC [CONFIRMAR] / Entrevistador: F.
+- Perfil: socio y jugador.
+- **Situación:** compra al terminar de jugar, justo cuando arranca otro partido, porque hay menos gente.
+- **Espera:** "tarda bastante", sin poder decir cuánto. Lo que más tarda es pagar; la comida sale rápido.
+- **Consecuencia:** se estaba perdiendo el arranque del partido siguiente.
+- **Frase:** "Me jode perderme algo del partido, pero sé que si vengo más tirando al entretiempo va a venir más gente."
+- **Contradicción:** lo considera normal, "pasa en la mayoría de los clubes", y lo maneja eligiendo cuándo ir.
+
+### Entrevista 3: persona 2
+
+- Club: Alumni [CONFIRMAR] / Entrevistador: P.
+- Perfil: socio mayor que va a ver a su hijo y se queda toda la tarde.
+- **Situación:** compró café y algo para comer antes del partido, "porque después se llena".
+- **Espera:** unos 10 minutos. Lo que más tarda es pagar; la comida sale rápido.
+- **Consecuencia:** se perdió una parte del partido, pero no le preocupa porque se queda toda la tarde. "Si estuviera jugando mi hijo, me daría mucha más bronca."
+- **Frase:** "Mientras la atención sea buena, no me molesta tanto esperar un poco."
+- **Contradicción:** está fuera del rango de 18 a 25 y tolera la espera como parte del día en el club.
+
+### Entrevista 4: persona 3
+
+- Club: Alumni [CONFIRMAR] / Entrevistador: J.
+- Perfil: visitante que va cada tanto a ver a amigos que juegan.
+- **Situación:** fue en el entretiempo a comprar hamburguesa y gaseosa.
+- **Espera:** "bastante"; dice que una compra simple le termina llevando 20 minutos. Lo que más tarda es que lo atiendan para pagar.
+- **Consecuencia:** calculaba perderse los primeros 10 a 15 minutos del segundo tiempo.
+- **Frase:** "Tendría que haber una forma más rápida de comprar."
+- **Contradicción:** no sabe si siempre es así o si justo ese día había mucha gente.
+
+### Entrevista 5: persona 4
+
+- Club: Alumni [CONFIRMAR] / Entrevistador: J.
+- Perfil: jugador lesionado que va a ver a sus compañeros.
+- **Situación:** compró antes del partido para no perderse tanto, porque entre partido y partido "se llena de jugadores y gente que viene a mirar".
+- **Espera:** unos 12 minutos. Lo que más tarda es pagar; después te dan las cosas rápido.
+- **Consecuencia:** se perdió un poco del partido.
+- **Frase:** "Si atendieran un poco más rápido, estaría buenísimo."
+- **Contradicción:** entiende que con varios partidos es normal que haya fila.
+
+### Entrevista 6: persona 5
+
+- Club: SIC [CONFIRMAR] / Entrevistador: F.
+- Perfil: padre de un jugador que va solo al partido de su hijo y se va.
+- **Situación:** llegó con tiempo y compró café y tostado antes del partido.
+- **Espera:** unos 20 minutos o un poco más. Lo que más tardó fue pagar: "la fila avanzaba re lento". El tostado salió rápido.
+- **Consecuencia:** se perdió los primeros minutos del partido de su hijo.
+- **Frase:** "20 minutos me parece un montón para un café y un tostado."
+- **Contradicción:** está fuera del rango de 18 a 25.
+
+> **Pregunta no realizada:** la 4 ("¿Alguna vez viste la fila y decidiste no comprar?") no se le hizo a ningún asistente. La pérdida de ventas solo tiene el testimonio del buffet.
+
+### Síntesis
 
 | Pregunta | Respuesta |
 |---|---|
-| ¿Cuánto dura la espera? | |
-| ¿Qué tarda más: cobrar o preparar? | |
-| ¿La fila molesta o es parte del ritual? | |
-| ¿El buffet pierde ventas? | |
-| ¿Qué contradijo nuestra hipótesis? | |
+| ¿Cuánto dura la espera? | Declarada entre 10 y 20 minutos o más (10, 12, ~20, 20+; uno no supo decir). No se cronometró. |
+| ¿Qué tarda más: cobrar o preparar? | Los 5 asistentes dicen que pagar; la comida sale rápido. El buffet dice "un poco de todo", pero más el cobro, y tiene cosas preparadas de antemano. Apunta al cobro, con evidencia declarada. |
+| ¿La fila molesta o es parte del ritual? | Las dos cosas. Los 5 aceptan algo de fila como normal en el club, pero a los 5 les molesta esperar 10 a 20 minutos y perderse parte del partido. Lo que molesta no es la fila: es la espera larga que les come el partido. |
+| ¿El buffet pierde ventas? | Según el buffet, sí: hay gente que ve la fila y se va a la parrilla de afuera o al McDonald's de al lado. No hay cifras y no se les preguntó a los asistentes. |
+| ¿Qué contradijo nuestra hipótesis? | Dos de los cinco entrevistados son padres o socios mayores, fuera del rango de 18 a 25, y el padre que va solo al partido de su hijo es el más molesto. Además, varios evitan la fila eligiendo cuándo ir (antes del partido o cuando arranca otro), aunque igual se pierden parte. |
+
+**Hipótesis de problema (Lean Canvas, Caja 6):** el umbral era que al menos 4 de 6 entrevistados contaran que se perdieron parte del partido o dejaron de comprar. Se hicieron 5 entrevistas y los 5 contaron que se perdieron parte de un partido. **Se cumple**, con la salvedad de que 2 de los 5 están fuera del segmento de 18 a 25.
 
 ---
 
@@ -472,16 +530,17 @@ Con 10 a 15 personas cronometradas alcanza para responder D: **¿qué tramo es e
 - [x] Fuentes originales y verificadas: 6, con limitaciones
 - [x] Fichas: 4
 - [x] Agrupación de la IA y decisiones propuestas
-- [ ] **ICE individuales: pendiente**
+- [x] ICE individuales
 - [x] ICE de la IA
-- [ ] **Comparación: pendiente**
+- [x] Comparación
 - [x] Crítica del finalista
-- [ ] **Decisión y justificación del equipo: pendiente**
+- [x] Decisión y justificación del equipo
 - [x] Redacción del problema: tres versiones
 - [x] Dos personas sintéticas
 - [ ] **Role-play: pendiente**
 - [x] Guiones y planilla de observación
-- [ ] **Observación y entrevistas reales: pendiente**
+- [x] Entrevistas reales: 5 asistentes y el buffet (17/10)
+- [ ] **Observación cronometrada: no se hizo; los tiempos son declarados**
 
 ### Cierre del equipo [COMPLETAR]
 
