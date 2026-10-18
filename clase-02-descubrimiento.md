@@ -427,7 +427,7 @@ Con 10 a 15 personas cronometradas alcanza para responder D: **¿qué tramo es e
 
 Fuente: transcripciones del sábado 17 de octubre de 2026 (`entrevistas.pdf`). Se usaron los guiones reducidos: 5 preguntas al buffet y 5 a asistentes.
 
-> **[CONFIRMAR]** El registro no dice en qué club se hizo cada entrevista. Se asignan según el plan de duplas: las de "F" en el SIC y las de "P" y "J" en Alumni. Tampoco dice qué Felipe entrevistó (Chain o Servent), ni las edades.
+> Clubes confirmados por el equipo: las entrevistas de "F" (Felipe) fueron en el SIC y las de "P" (Pedro Tailhade) y "J" (Juan Ignacio Canabe) en Alumni. Edades: las personas 1, 3 y 4 tienen entre 20 y 25 años; las personas 2 y 5 son mayores.
 
 ### Observación del sábado
 
@@ -435,7 +435,7 @@ No se cronometró la fila. Los tiempos que siguen son **declarados** por los ent
 
 ### Entrevista 1: empleada del buffet
 
-- Club: SIC [CONFIRMAR] / Entrevistador: F.
+- Club: SIC / Entrevistador: F.
 - Perfil: empleada del buffet.
 
 **Situaciones reales relatadas**
@@ -459,8 +459,8 @@ No se cronometró la fila. Los tiempos que siguen son **declarados** por los ent
 
 ### Entrevista 2: persona 1
 
-- Club: SIC [CONFIRMAR] / Entrevistador: F.
-- Perfil: socio y jugador.
+- Club: SIC / Entrevistador: F.
+- Perfil: socio y jugador, entre 20 y 25 años.
 - **Situación:** compra al terminar de jugar, justo cuando arranca otro partido, porque hay menos gente.
 - **Espera:** "tarda bastante", sin poder decir cuánto. Lo que más tarda es pagar; la comida sale rápido.
 - **Consecuencia:** se estaba perdiendo el arranque del partido siguiente.
@@ -469,7 +469,7 @@ No se cronometró la fila. Los tiempos que siguen son **declarados** por los ent
 
 ### Entrevista 3: persona 2
 
-- Club: Alumni [CONFIRMAR] / Entrevistador: P.
+- Club: Alumni / Entrevistador: P.
 - Perfil: socio mayor que va a ver a su hijo y se queda toda la tarde.
 - **Situación:** compró café y algo para comer antes del partido, "porque después se llena".
 - **Espera:** unos 10 minutos. Lo que más tarda es pagar; la comida sale rápido.
@@ -479,8 +479,8 @@ No se cronometró la fila. Los tiempos que siguen son **declarados** por los ent
 
 ### Entrevista 4: persona 3
 
-- Club: Alumni [CONFIRMAR] / Entrevistador: J.
-- Perfil: visitante que va cada tanto a ver a amigos que juegan.
+- Club: Alumni / Entrevistador: J.
+- Perfil: visitante que va cada tanto a ver a amigos que juegan, entre 20 y 25 años.
 - **Situación:** fue en el entretiempo a comprar hamburguesa y gaseosa.
 - **Espera:** "bastante"; dice que una compra simple le termina llevando 20 minutos. Lo que más tarda es que lo atiendan para pagar.
 - **Consecuencia:** calculaba perderse los primeros 10 a 15 minutos del segundo tiempo.
@@ -489,8 +489,8 @@ No se cronometró la fila. Los tiempos que siguen son **declarados** por los ent
 
 ### Entrevista 5: persona 4
 
-- Club: Alumni [CONFIRMAR] / Entrevistador: J.
-- Perfil: jugador lesionado que va a ver a sus compañeros.
+- Club: Alumni / Entrevistador: J.
+- Perfil: jugador lesionado que va a ver a sus compañeros, entre 20 y 25 años.
 - **Situación:** compró antes del partido para no perderse tanto, porque entre partido y partido "se llena de jugadores y gente que viene a mirar".
 - **Espera:** unos 12 minutos. Lo que más tarda es pagar; después te dan las cosas rápido.
 - **Consecuencia:** se perdió un poco del partido.
@@ -499,7 +499,7 @@ No se cronometró la fila. Los tiempos que siguen son **declarados** por los ent
 
 ### Entrevista 6: persona 5
 
-- Club: SIC [CONFIRMAR] / Entrevistador: F.
+- Club: SIC / Entrevistador: F.
 - Perfil: padre de un jugador que va solo al partido de su hijo y se va.
 - **Situación:** llegó con tiempo y compró café y tostado antes del partido.
 - **Espera:** unos 20 minutos o un poco más. Lo que más tardó fue pagar: "la fila avanzaba re lento". El tostado salió rápido.
@@ -519,7 +519,7 @@ No se cronometró la fila. Los tiempos que siguen son **declarados** por los ent
 | ¿El buffet pierde ventas? | Según el buffet, sí: hay gente que ve la fila y se va a la parrilla de afuera o al McDonald's de al lado. No hay cifras y no se les preguntó a los asistentes. |
 | ¿Qué contradijo nuestra hipótesis? | Dos de los cinco entrevistados son padres o socios mayores, fuera del rango de 18 a 25, y el padre que va solo al partido de su hijo es el más molesto. Además, varios evitan la fila eligiendo cuándo ir (antes del partido o cuando arranca otro), aunque igual se pierden parte. |
 
-**Hipótesis de problema (Lean Canvas, Caja 6):** el umbral era que al menos 4 de 6 entrevistados contaran que se perdieron parte del partido o dejaron de comprar. Se hicieron 5 entrevistas y los 5 contaron que se perdieron parte de un partido. **Se cumple**, con la salvedad de que 2 de los 5 están fuera del segmento de 18 a 25.
+**Hipótesis de problema (Lean Canvas, Caja 6):** el umbral era que al menos 4 de 6 entrevistados contaran que se perdieron parte del partido o dejaron de comprar. Se hicieron 5 entrevistas y los 5 contaron que se perdieron parte de un partido. **Se cumple.** Dentro del segmento de 18 a 25 son 3 de 3; los otros 2 son padres o socios mayores.
 
 ---
 
