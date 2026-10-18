@@ -8,7 +8,9 @@
 
 Los jóvenes que van a clubes de rugby de la URBA los días de partido tienen dificultades para comprar comida en el buffet sin perderse parte del partido, porque la fila no baja en todo el día: se juegan varios partidos seguidos y cada uno genera su propio pico. Esto también le genera al buffet ventas perdidas: hay gente que ve la fila y no compra y, en los clubes con un local de comida rápida cerca, compra afuera.
 
-Lo sabemos por la experiencia del equipo y por encuestas en estadios de otros países, donde la mayoría dice haberse perdido una jugada por la fila y haber abandonado alguna vez una compra (F3, F4 de la Clase 2). Todavía necesitamos comprobar cuánto dura la espera, si la demora está en la caja o en la cocina y cuántas ventas pierde el buffet. **[SUPUESTO]** hasta las entrevistas.
+Lo sabemos por la experiencia del equipo, por encuestas en estadios de otros países (F3, F4) y por las entrevistas del 17/10 en SIC y Alumni. Los 5 asistentes entrevistados se perdieron parte de un partido por la fila; contaron esperas de 10 a 20 minutos y coincidieron en que lo que más tarda es pagar. La empleada del buffet del SIC contó que hay gente que ve la fila y se va a la parrilla de afuera o al McDonald's de al lado.
+
+**Estado:** el problema se confirmó en entrevistas. Falta medir la espera, porque los tiempos son declarados y no cronometrados, y cuántas ventas pierde el buffet.
 
 ## 2. Resultados de negocio
 
@@ -20,6 +22,7 @@ Lo sabemos por la experiencia del equipo y por encuestas en estadios de otros pa
 ## 3. Usuarios y clientes
 
 - **Usuarios:** jóvenes de 18 a 25 que van a clubes de rugby de la URBA los días de partido.
+- **Segmento a validar:** padres y socios mayores que van a ver a sus hijos. En las entrevistas del 17/10, los dos padres entrevistados también se perdieron parte de un partido, y el que va solo al partido de su hijo fue el más molesto. Son 2 entrevistas: no alcanza para afirmar nada todavía.
 - **Clientes (pagan):** el buffet del club. Primeros candidatos: SIC y Alumni.
 - **Decisor:** el concesionario del buffet o, si el buffet es propio, el club. **[PENDIENTE]** se confirma en la entrevista al buffet del SIC el 17/10.
 
