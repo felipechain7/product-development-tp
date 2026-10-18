@@ -1,0 +1,88 @@
+# Protocolo del sábado 24/10: pedidos por el celular en el buffet del SIC
+
+> Instrumento de la Clase 4. Contrato y alcance en `diseno-experimento.md`. Este archivo dice qué hace cada uno el día de la prueba.
+
+## Roles
+
+Son cuatro roles para cuatro integrantes. **[ASIGNAR]** quién hace cada uno.
+
+| Rol | Quién | Qué hace |
+|---|---|---|
+| 1. Pedidos | [ASIGNAR] | Mira la planilla en el celular. Por cada pedido nuevo: controla que el pago llegó a Mercado Pago, se lo pasa al buffet por WhatsApp y marca la hora en que lo pasó. |
+| 2. Mostrador | [ASIGNAR] | Está al lado del mostrador de retiro. Anota la hora en que llega cada persona que pidió por la web y la hora en que recibe la comida. |
+| 3. Fila normal | [ASIGNAR] | Cronometra a 5 personas de la fila normal en el mismo horario: hora en que entran a la fila y hora en que reciben la comida. Anota cuánta gente hay en la fila cada 30 minutos. |
+| 4. Difusión y observación | [ASIGNAR] | Pega los QR antes de empezar y manda el mensaje a los grupos. Después observa y anota: gente que mira el QR y no pide, preguntas, quejas, problemas para pagar. |
+
+## Qué no hacer
+
+- **No convencer a la gente uno por uno.** El QR y el mensaje tienen que funcionar solos. Si alguien pregunta, se responde la duda y nada más. Cada vez que alguien del equipo explique cómo funciona, se anota (cuenta como anomalía).
+- No pedirles a amigos o conocidos que pidan para llegar a 20. Si un conocido pide por su cuenta, se registra igual, pero con la marca "conocido".
+- No cambiar el criterio de 20 pedidos durante el día.
+- No anotar datos personales: solo el nombre o apodo que pusieron en el formulario.
+
+## Cronograma
+
+| Cuándo | Qué |
+|---|---|
+| Viernes 23/10 | **Piloto:** uno del equipo hace un pedido de prueba completo (formulario, pago, aparece en la planilla). Se corrige solo lo que impida ejecutar. |
+| Sábado, antes del primer partido del mediodía | Llegar, hablar con el buffet, pegar los QR en la fila, las mesas y la tribuna. Mandar el mensaje a los grupos de WhatsApp del club. |
+| Durante los partidos del mediodía | Ejecución. Cada rol registra en la planilla. |
+| Al terminar el último partido del mediodía | Cierre: sacar los QR, contar pedidos pagados, sacar captura de la planilla. |
+
+## Textos
+
+**Cartel con el QR**
+
+> **¿Hambre? Pedí sin hacer la fila.**
+> Escaneá, elegí, pagá con Mercado Pago y retirá en el buffet diciendo tu nombre.
+> *Prueba de estudiantes de la Universidad Austral. Solo por hoy.*
+
+**Mensaje para los grupos de WhatsApp del club**
+
+> Hoy en el buffet del SIC probamos pedir y pagar desde el celular para no hacer la fila 🍔
+> Entrá acá: [LINK]
+> Elegís, pagás con Mercado Pago y retirás en el mostrador diciendo tu nombre.
+> Es una prueba de un trabajo de la facu, solo por hoy.
+
+**[PENDIENTE]** quién tiene acceso a los grupos de WhatsApp del club.
+
+**Texto al inicio del formulario**
+
+> Pedí acá y retirá en el buffet sin hacer la fila. Es una prueba de estudiantes de la Universidad Austral: solo te pedimos un nombre o apodo para entregarte el pedido, y los datos se usan de forma anónima para un trabajo de la facultad.
+
+**Mensaje al terminar el pedido**
+
+> ¡Listo! Recibimos tu pedido. Andá al mostrador del buffet, decí tu nombre y mostrá el comprobante de Mercado Pago.
+
+## Planilla de registro
+
+Las primeras columnas las completa sola el formulario. Las demás las completa el equipo.
+
+| Columna | Quién la completa |
+|---|---|
+| Marca temporal (hora del pedido) | Formulario |
+| Nombre o apodo | Formulario |
+| Pedido | Formulario |
+| N.º de pedido | Rol 1 (número de fila) |
+| ¿Pago recibido? (sí / no) | Rol 1 |
+| Hora en que se pasó al buffet | Rol 1 |
+| Hora de llegada al mostrador | Rol 2 |
+| Hora de entrega | Rol 2 |
+| ¿Conocido del equipo? (sí / no) | Rol 1 o 2 |
+| Observaciones | Cualquiera |
+
+**Hoja aparte: fila normal (Rol 3)**
+
+| Persona | Hora en que entra a la fila | Hora en que recibe la comida | Minutos | ¿Pagó en efectivo o con QR? |
+|---|---|---|---|---|
+| 1 | | | | |
+| 2 | | | | |
+| 3 | | | | |
+| 4 | | | | |
+| 5 | | | | |
+
+**Hoja aparte: observaciones (Rol 4)**
+
+| Hora | Qué pasó | Tipo (miró y no pidió / pregunta / queja / problema de pago / explicación del equipo / otro) |
+|---|---|---|
+| | | |
