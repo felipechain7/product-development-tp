@@ -119,3 +119,17 @@ Riesgos considerados y no elegidos: falta de confianza en pagar antes y fin de t
 - **Criterio de fracaso:** menos de 20 pedidos por la web. Secundario: el retiro tarda 3 minutos o más, o lo mismo que la fila normal.
 - **Aprendizaje esperado:** si la gente cambia la fila por el celular y, si lo hace, si el retiro realmente es más rápido.
 - **Limitaciones:** un solo club y un solo sábado. El equipo hace a mano lo que haría el sistema. Con pocos pedidos, la cocina no se exige como con el producto real. El buffet podría priorizar los pedidos de la prueba. Si la prueba no se puede hacer (por ejemplo, si el buffet se echa atrás), el respaldo es un fake door digital por Instagram y WhatsApp del club: mide si la gente intenta pedir, pero no el retiro.
+
+## Cierre del equipo
+
+**La solución digital que decidimos explorar es:** "Pedí y retirá". La persona escanea un QR en el club, se abre una página con todos los productos del buffet, pide y paga ahí, y retira con un número.
+
+**La evidencia más fuerte que la respalda es:** los 5 asistentes y el buffet dicen que lo lento es pagar y que la comida sale rápido. Sacar el cobro de la fila ataca justo el tramo que más tarda.
+
+**El supuesto más riesgoso es:** que la gente cambie la fila por el celular.
+
+**Lo más importante que necesitamos aprender es:** ¿los que van al club van a pedir y pagar por el celular en vez de hacer la fila?
+
+**El experimento que realizaremos es:** un concierge digital en el SIC el sábado 24/10 al mediodía. QR, página con los productos, pago por Mercado Pago, el equipo le pasa el pedido al buffet por WhatsApp y la persona retira con un número. Éxito: 20 pedidos o más.
+
+**Abandonaremos o cambiaremos la propuesta si:** hay menos de 20 pedidos por la web, porque la gente prefiere la fila. También si el retiro tarda lo mismo que la fila normal, porque entonces la demora no era el cobro.

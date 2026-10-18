@@ -544,14 +544,12 @@ No se cronometró la fila. Los tiempos que siguen son **declarados** por los ent
 - [x] Entrevistas reales: 5 asistentes y el buffet (17/10)
 - [ ] **Observación cronometrada: no se hizo; los tiempos son declarados**
 
-### Cierre del equipo [COMPLETAR]
+### Cierre del equipo
 
-```text
-El problema que decidimos investigar es:
+**El problema que decidimos investigar es:** los jóvenes que van a clubes de rugby de la URBA los días de partido se pierden parte del partido por la fila del buffet, que no baja en todo el día porque hay partidos seguidos. Eso también le hace perder ventas al buffet.
 
-La evidencia más fuerte que encontramos es:
+**La evidencia más fuerte que encontramos es:** las entrevistas del 17/10 en SIC y Alumni. Los 5 asistentes se perdieron parte de un partido, contaron esperas de 10 a 20 minutos y coincidieron en que lo que más tarda es pagar. La empleada del buffet del SIC confirmó que hay gente que se va al McDonald's de al lado.
 
-El supuesto más riesgoso es:
+**El supuesto más riesgoso es:** que la espera y las ventas perdidas sean tan grandes como dicen. Los tiempos son declarados, no medidos, y el buffet no dio cifras.
 
-La pregunta más importante para los usuarios reales es:
-```
+**La pregunta más importante para los usuarios reales es:** ¿pedirían y pagarían por el celular en vez de hacer la fila?
