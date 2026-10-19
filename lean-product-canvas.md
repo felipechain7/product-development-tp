@@ -64,12 +64,12 @@ Lo sabremos si al menos 4 de 6 entrevistados el 17/10 cuentan que les pasó en s
 ### Hipótesis de valor
 
 Creemos que pedir y pagar desde el celular y retirar con QR acorta la espera en el pico.
-Lo sabremos si, en un sábado de prueba, el retiro tarda menos de 3 minutos desde que llegan al mostrador, contra lo que tarda la fila normal en el mismo horario.
+Lo sabremos si, en el día de prueba, el retiro tarda menos de 3 minutos desde que llegan al mostrador, contra lo que tarda la fila normal en el mismo horario.
 
 ### Hipótesis de comportamiento
 
 Creemos que los jóvenes van a pedir por la web en vez de hacer la fila.
-Lo sabremos si en un sábado de prueba hay al menos 20 pedidos por la web.
+Lo sabremos si en el día de prueba hay al menos 20 pedidos por la web.
 
 ### Hipótesis de factibilidad
 
@@ -110,15 +110,15 @@ Riesgos considerados y no elegidos: falta de confianza en pagar antes y fin de t
 - **Objetivo:** responder la pregunta de la Caja 7: si la gente usa la página en vez de la fila.
 - **Tipo de experimento:** concierge digital.
 - **Herramienta:** una página armada gratis (Google Forms con fotos y precios, o Glide) con todos los productos cargados, para que se parezca a la página final; link de pago de Mercado Pago; WhatsApp para pasarle cada pedido al buffet y Google Sheets para registrar los horarios. La página final, con panel para el buffet, es el MVP de las próximas clases.
-- **Participantes:** quienes van al SIC ese sábado, el buffet del SIC y los cuatro integrantes del equipo.
-- **Duración:** un sábado al mediodía, durante los partidos. Fecha: sábado 24 de octubre de 2026. El buffet del SIC ya aceptó hacer la prueba.
+- **Participantes:** quienes van al SIC ese día, el buffet del SIC y los cuatro integrantes del equipo.
+- **Duración:** un día de partidos. Fecha: jueves 22 de octubre de 2026, con 4 partidos (el equipo la pasó del sábado 24/10 al jueves el 19/10, antes de la prueba). El buffet del SIC ya aceptó hacer la prueba. [CONFIRMAR con el buffet que acepta el jueves y el horario de los partidos]
 - **Tarea:** la persona escanea un QR en el club (también se difunde el link por los grupos de WhatsApp e Instagram) y se abre una página con todos los productos del buffet, sus precios y el pago por Mercado Pago. Pide y paga ahí. El equipo le pasa el pedido al buffet y le asigna un número; la persona va al mostrador, dice su número y retira.
 - **Datos necesarios:** cantidad de pedidos por la web, hora del pedido, hora de llegada al mostrador y hora de entrega de cada pedido. Para comparar: el tiempo de la fila normal en el mismo horario, tomado a cinco personas.
-- **Métrica principal:** cantidad de pedidos por la web en el sábado. **Métrica secundaria:** minutos entre que la persona llega al mostrador y recibe la comida, comparados con la fila normal.
+- **Métrica principal:** cantidad de pedidos por la web en el día de la prueba. **Métrica secundaria:** minutos entre que la persona llega al mostrador y recibe la comida, comparados con la fila normal.
 - **Criterio de éxito:** al menos 20 pedidos por la web. Secundario: el retiro tarda en promedio menos de 3 minutos y menos que la fila normal.
 - **Criterio de fracaso:** menos de 20 pedidos por la web. Secundario: el retiro tarda 3 minutos o más, o lo mismo que la fila normal.
 - **Aprendizaje esperado:** si la gente cambia la fila por el celular y, si lo hace, si el retiro realmente es más rápido.
-- **Limitaciones:** un solo club y un solo sábado. El equipo hace a mano lo que haría el sistema. Con pocos pedidos, la cocina no se exige como con el producto real. El buffet podría priorizar los pedidos de la prueba. Si la prueba no se puede hacer (por ejemplo, si el buffet se echa atrás), el respaldo es un fake door digital por Instagram y WhatsApp del club: mide si la gente intenta pedir, pero no el retiro.
+- **Limitaciones:** un solo club y un solo día. El equipo hace a mano lo que haría el sistema. Con pocos pedidos, la cocina no se exige como con el producto real. El buffet podría priorizar los pedidos de la prueba. Si la prueba no se puede hacer (por ejemplo, si el buffet se echa atrás), el respaldo es un fake door digital por Instagram y WhatsApp del club: mide si la gente intenta pedir, pero no el retiro.
 
 ## Cierre del equipo
 
@@ -130,6 +130,6 @@ Riesgos considerados y no elegidos: falta de confianza en pagar antes y fin de t
 
 **Lo más importante que necesitamos aprender es:** ¿los que van al club van a pedir y pagar por el celular en vez de hacer la fila?
 
-**El experimento que realizaremos es:** un concierge digital en el SIC el sábado 24/10 al mediodía. QR, página con los productos, pago por Mercado Pago, el equipo le pasa el pedido al buffet por WhatsApp y la persona retira con un número. Éxito: 20 pedidos o más.
+**El experimento que realizaremos es:** un concierge digital en el SIC el jueves 22/10, durante los 4 partidos. QR, página con los productos, pago por Mercado Pago, el equipo le pasa el pedido al buffet por WhatsApp y la persona retira con un número. Éxito: 20 pedidos o más.
 
 **Abandonaremos o cambiaremos la propuesta si:** hay menos de 20 pedidos por la web, porque la gente prefiere la fila. También si el retiro tarda lo mismo que la fila normal, porque entonces la demora no era el cobro.

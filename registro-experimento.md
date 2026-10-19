@@ -1,12 +1,12 @@
 # Registro del experimento: pedidos por el celular en el buffet del SIC
 
-> Entregable de la Clase 4. Las secciones 1 a 3 se completaron antes de ejecutar. Las secciones 4 a 8 se completan con los resultados reales del sábado 24/10; no se llenan con supuestos.
+> Entregable de la Clase 4. Las secciones 1 a 3 se completaron antes de ejecutar. Las secciones 4 a 8 se completan con los resultados reales del jueves 22/10 (la prueba se pasó del sábado 24/10 al jueves por decisión del equipo del 19/10); no se llenan con supuestos.
 
 ## 1. Punto de partida
 
 - **Hipótesis priorizada:** Comportamiento: los que van al club van a pedir por la web en vez de hacer la fila.
 - **Pregunta de aprendizaje:** ¿Los que van al club van a pedir y pagar por el celular en vez de hacer la fila?
-- **Experimento mínimo:** concierge digital en el buffet del SIC, sábado 24/10 al mediodía.
+- **Experimento mínimo:** concierge digital en el buffet del SIC, jueves 22/10, durante los 4 partidos del día.
 - **Métrica:** cantidad de pedidos pagados por la web. Secundaria: minutos de retiro contra la fila normal.
 - **Criterio de éxito:** 20 pedidos o más. Secundario: retiro de menos de 3 minutos y menor que la fila normal.
 
@@ -14,14 +14,14 @@
 
 - **Evidencia disponible:** entrevistas del 17/10 (5 asistentes y el buffet del SIC). Los 5 se perdieron parte de un partido, declararon esperas de 10 a 20 minutos y dicen que lo lento es pagar. Sin evidencia sobre pedidos por el celular.
 - **Incertidumbre pendiente:** si la gente cambia la fila por el celular.
-- **Inversión autorizada:** una tarde de armado, $0 en herramientas, los cuatro integrantes el sábado.
+- **Inversión autorizada:** una tarde de armado, $0 en herramientas, los cuatro integrantes el jueves.
 
 ## 3. Instrumento construido por la IA
 
 - **Tipo de instrumento:** concierge digital.
 - **Enlace o archivo:** página de pedidos en https://felipechain7.github.io/product-development-tp/experimento/ (código en `experimento/index.html`, publicada con GitHub Pages el 19/10). QR y cartel para imprimir en `experimento/cartel.html` y `experimento/qr.png`. Registro en el formulario de Google "Registro experimento buffet SIC", vinculado a la planilla "Registro experimento buffet SIC (respuestas)" en el Drive de Felipe. Protocolo en `protocolo-experimento.md`.
 - **Qué incluye:** página de pedidos con el menú real del SIC y total automático, pago por Mercado Pago al alias `felipechain` (cuenta de Felipe Chain; al cierre se le transfiere al buffet), código de pedido de 3 dígitos, embudo (visita, ir a pagar, pedido), QR, planilla de registro, hoja de cronometraje de la fila normal y hoja de observaciones.
-- **Prueba técnica (19/10):** un pedido de prueba con nombre "PRUEBA" (código 394) llegó a la planilla con sus tres eventos. No es evidencia: hay que borrar esas filas antes del sábado.
+- **Prueba técnica (19/10):** un pedido de prueba con nombre "PRUEBA" (código 394) llegó a la planilla con sus tres eventos. No es evidencia: hay que borrar esas filas antes del jueves.
 - **Qué quedó fuera:** cuentas de usuario, app, diseño propio, stock en tiempo real, cobro integrado, varios clubes, historial de pedidos.
 
 ## 4. Ejecución

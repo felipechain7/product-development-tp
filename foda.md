@@ -11,7 +11,7 @@
 
 ## Debilidades
 
-- Todavía no hay evidencia de que la gente pida por el celular; eso se prueba el sábado 24/10.
+- Todavía no hay evidencia de que la gente pida por el celular; eso se prueba el jueves 22/10.
 - No sabemos si el buffet pagaría por el servicio ni cuánto.
 - Si la cocina es lenta, el retiro no mejora.
 - En la prueba la operación es manual (los pedidos se pasan por WhatsApp), así no escala.

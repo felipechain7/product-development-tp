@@ -1,4 +1,6 @@
-# Protocolo del sábado 24/10: pedidos por el celular en el buffet del SIC
+# Protocolo del jueves 22/10: pedidos por el celular en el buffet del SIC
+
+> *Cambio decidido por el equipo el 19/10, antes de la prueba:* la ejecución pasa del sábado 24/10 al jueves 22/10, que tiene 4 partidos. El criterio de 20 pedidos no cambia. [CONFIRMAR con el buffet que acepta el jueves y el horario de los partidos]
 
 > Instrumento de la Clase 4. Contrato y alcance en `diseno-experimento.md`. Este archivo dice qué hace cada uno el día de la prueba.
 
@@ -24,9 +26,9 @@ Son cuatro roles. Asignados por el equipo el 19/10.
 
 | Cuándo | Qué |
 |---|---|
-| Viernes 23/10 | **Piloto:** uno del equipo hace un pedido de prueba completo (formulario, pago, aparece en la planilla). Se corrige solo lo que impida ejecutar. |
-| Viernes 23/10, después del piloto | Borrar de la planilla todas las filas de prueba (nombre "PRUEBA" o del equipo), así el sábado se cuenta desde cero. |
-| Sábado, antes del primer partido del mediodía | Llegar, hablar con el buffet, pegar los QR en la fila, las mesas y la tribuna. Mandar el mensaje a los grupos de WhatsApp del club. |
+| Miércoles 21/10 | **Piloto:** uno del equipo hace un pedido de prueba completo (formulario, pago, aparece en la planilla). Se corrige solo lo que impida ejecutar. |
+| Miércoles 21/10, después del piloto | Borrar de la planilla todas las filas de prueba (nombre "PRUEBA" o del equipo), así el jueves se cuenta desde cero. |
+| Jueves 22/10, antes del primer partido | Llegar, hablar con el buffet, pegar los QR en la fila, las mesas y la tribuna. Mandar el mensaje a los grupos de WhatsApp del club. |
 | Durante los partidos del mediodía | Ejecución. Cada rol registra en la planilla. |
 | Al terminar el último partido del mediodía | Cierre: sacar los QR, contar pedidos pagados, sacar captura de la planilla. Felipe Chain le transfiere al buffet el total cobrado en `felipechain`, cruzado con la planilla, y guarda el comprobante. |
 

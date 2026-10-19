@@ -1,11 +1,11 @@
 # Aprendizaje y MVP: pedidos por el celular en el buffet de clubes de rugby
 
-> Clase 5. Fuente: `diseno-experimento.md` y `registro-experimento.md`. La sección 1 fue confirmada por el equipo el 19/10, antes de ejecutar la prueba. Las secciones 2 a 5 se completan con los resultados reales del sábado 24/10.
+> Clase 5. Fuente: `diseno-experimento.md` y `registro-experimento.md`. La sección 1 fue confirmada por el equipo el 19/10, antes de ejecutar la prueba. Las secciones 2 a 5 se completan con los resultados reales del jueves 22/10 (la prueba se pasó del sábado 24/10 al jueves por decisión del equipo del 19/10).
 
 ## 1. Experimento
 
 - **Querían comprobar:** si los que van al club van a pedir y pagar por el celular en vez de hacer la fila (hipótesis de Comportamiento).
-- **El criterio de éxito era:** 20 pedidos pagados por la web o más en el mediodía del sábado; menos de 20 es fracaso. Secundario: que el retiro tarde menos de 3 minutos y menos que la fila normal.
+- **El criterio de éxito era:** 20 pedidos pagados por la web o más en el día de la prueba; menos de 20 es fracaso. Secundario: que el retiro tarde menos de 3 minutos y menos que la fila normal.
 - **Construyeron o probaron:** concierge digital en el buffet del SIC. Página con el menú real y total automático, pago por Mercado Pago al alias `felipechain` con código de pedido, planilla que registra visitas, "ir a pagar" y pedidos, cartel con QR y mensaje para los grupos de WhatsApp. El equipo le pasa los pedidos al buffet a mano.
 - **El resultado registrado fue:** todavía no hay. Solo la prueba técnica del 19/10 (un pedido "PRUEBA" que llegó a la planilla), que demuestra que la página funciona, no que la gente la use.
 
@@ -18,7 +18,7 @@
 
 ## 2. Resultado
 
-[COMPLETAR después del 24/10]
+[COMPLETAR después del 22/10]
 
 | Qué pasó | Cómo lo sabemos |
 |---|---|
