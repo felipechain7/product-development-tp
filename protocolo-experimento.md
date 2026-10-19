@@ -4,14 +4,14 @@
 
 ## Roles
 
-Son cuatro roles para cuatro integrantes. **[ASIGNAR]** quién hace cada uno.
+Son cuatro roles. Asignados por el equipo el 19/10.
 
 | Rol | Quién | Qué hace |
 |---|---|---|
-| 1. Pedidos | [ASIGNAR] | Mira la planilla en el celular. Por cada pedido nuevo se lo pasa al buffet por WhatsApp (nombre, código y detalle) y marca la hora en que lo pasó. |
-| 2. Mostrador | [ASIGNAR] | Está al lado del mostrador de retiro. Mira el comprobante de Mercado Pago de cada persona que pidió por la web (alias `bar.del.sic` y monto) y anota la hora en que llega y la hora en que recibe la comida. |
-| 3. Fila normal | [ASIGNAR] | Cronometra a 5 personas de la fila normal en el mismo horario: hora en que entran a la fila y hora en que reciben la comida. Anota cuánta gente hay en la fila cada 30 minutos. |
-| 4. Difusión y observación | [ASIGNAR] | Pega los QR antes de empezar y manda el mensaje a los grupos. Después observa y anota: gente que mira el QR y no pide, preguntas, quejas, problemas para pagar. |
+| 1. Pedidos | Felipe | Mira la planilla en el celular. Por cada pedido nuevo se lo pasa al buffet por WhatsApp (nombre, código y detalle) y marca la hora en que lo pasó. |
+| 2. Mostrador | Pedro | Está al lado del mostrador de retiro. Mira el comprobante de Mercado Pago de cada persona que pidió por la web (alias `bar.del.sic` y monto) y anota la hora en que llega y la hora en que recibe la comida. |
+| 3. Fila normal | Juan | Cronometra a 5 personas de la fila normal en el mismo horario: hora en que entran a la fila y hora en que reciben la comida. Anota cuánta gente hay en la fila cada 30 minutos. |
+| 4. Difusión y observación | Felipe | Pega los QR antes de empezar y manda el mensaje a los grupos. Después observa y anota: gente que mira el QR y no pide, preguntas, quejas, problemas para pagar. |
 
 ## Qué no hacer
 
