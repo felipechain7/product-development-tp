@@ -34,9 +34,15 @@ Son cuatro roles. Asignados por el equipo el 19/10.
 
 **Cartel con el QR**
 
-> **¿Hambre? Pedí sin hacer la fila.**
-> Escaneá, elegí, pagá con Mercado Pago y retirá en el buffet diciendo tu nombre.
-> *Prueba de estudiantes de la Universidad Austral. Solo por hoy.*
+> ¿Hambre entre partido y partido?
+> **PEDÍ SIN PERDERTE EL PARTIDO**
+> Pedís y pagás desde el celu. Retirás en el buffet sin hacer la fila.
+> [QR] **ESCANEÁ Y PEDÍ**
+> 1. Escaneá: se abre el menú con precios. 2. Pagá: con Mercado Pago, desde donde estés. 3. Retirá: decí tu nombre y tu código en el buffet.
+> Sándwiches · Choripán · Hamburguesas · Wraps · Tostados · Empanadas · Bebidas
+> *Prueba de estudiantes de la Universidad Austral · Solo por hoy*
+>
+> Versión para imprimir en `experimento/cartel.html` (rediseñada el 19/10 para que sea más llamativa; mismo QR y mismo link). Imprimir en color.
 
 **Mensaje para los grupos de WhatsApp del club**
 
