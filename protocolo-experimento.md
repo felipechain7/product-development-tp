@@ -27,7 +27,7 @@ Son cuatro roles para cuatro integrantes. **[ASIGNAR]** quién hace cada uno.
 | Viernes 23/10 | **Piloto:** uno del equipo hace un pedido de prueba completo (formulario, pago, aparece en la planilla). Se corrige solo lo que impida ejecutar. |
 | Sábado, antes del primer partido del mediodía | Llegar, hablar con el buffet, pegar los QR en la fila, las mesas y la tribuna. Mandar el mensaje a los grupos de WhatsApp del club. |
 | Durante los partidos del mediodía | Ejecución. Cada rol registra en la planilla. |
-| Al terminar el último partido del mediodía | Cierre: sacar los QR, contar pedidos pagados, sacar captura de la planilla. |
+| Al terminar el último partido del mediodía | Cierre: sacar los QR, contar pedidos pagados, sacar captura de la planilla. Transferirle al buffet el total cobrado en el alias `felipechain` y guardar el comprobante. |
 
 ## Textos
 
