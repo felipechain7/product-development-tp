@@ -20,7 +20,7 @@
 
 - **Tipo de instrumento:** concierge digital.
 - **Enlace o archivo:** página de pedidos en https://felipechain7.github.io/product-development-tp/experimento/ (código en `experimento/index.html`, publicada con GitHub Pages el 19/10). QR y cartel para imprimir en `experimento/cartel.html` y `experimento/qr.png`. Registro en el formulario de Google "Registro experimento buffet SIC", vinculado a la planilla "Registro experimento buffet SIC (respuestas)" en el Drive de Felipe. Protocolo en `protocolo-experimento.md`.
-- **Qué incluye:** página de pedidos con el menú real del SIC y total automático, pago por Mercado Pago al alias `bar.del.sic` (cuenta del buffet), código de pedido de 3 dígitos, embudo (visita, ir a pagar, pedido), QR, planilla de registro, hoja de cronometraje de la fila normal y hoja de observaciones.
+- **Qué incluye:** página de pedidos con el menú real del SIC y total automático, pago por Mercado Pago al alias `felipechain` (cuenta de Felipe Chain; al cierre se le transfiere al buffet), código de pedido de 3 dígitos, embudo (visita, ir a pagar, pedido), QR, planilla de registro, hoja de cronometraje de la fila normal y hoja de observaciones.
 - **Prueba técnica (19/10):** un pedido de prueba con nombre "PRUEBA" (código 394) llegó a la planilla con sus tres eventos. No es evidencia: hay que borrar esas filas antes del sábado.
 - **Qué quedó fuera:** cuentas de usuario, app, diseño propio, stock en tiempo real, cobro integrado, varios clubes, historial de pedidos.
 

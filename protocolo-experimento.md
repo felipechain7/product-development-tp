@@ -9,7 +9,7 @@ Son cuatro roles. Asignados por el equipo el 19/10.
 | Rol | Quién | Qué hace |
 |---|---|---|
 | 1. Pedidos | Felipe Servent | Mira la planilla en el celular. Por cada pedido nuevo se lo pasa al buffet por WhatsApp (nombre, código y detalle) y marca la hora en que lo pasó. |
-| 2. Mostrador | Pedro | Está al lado del mostrador de retiro. Mira el comprobante de Mercado Pago de cada persona que pidió por la web (alias `bar.del.sic` y monto) y anota la hora en que llega y la hora en que recibe la comida. |
+| 2. Mostrador | Pedro | Está al lado del mostrador de retiro. Mira el comprobante de Mercado Pago de cada persona que pidió por la web (alias `felipechain` y monto) y anota la hora en que llega y la hora en que recibe la comida. |
 | 3. Fila normal | Juan | Cronometra a 5 personas de la fila normal en el mismo horario: hora en que entran a la fila y hora en que reciben la comida. Anota cuánta gente hay en la fila cada 30 minutos. |
 | 4. Difusión y observación | Felipe Chain | Pega los QR antes de empezar y manda el mensaje a los grupos. Después observa y anota: gente que mira el QR y no pide, preguntas, quejas, problemas para pagar. |
 
@@ -28,7 +28,7 @@ Son cuatro roles. Asignados por el equipo el 19/10.
 | Viernes 23/10, después del piloto | Borrar de la planilla todas las filas de prueba (nombre "PRUEBA" o del equipo), así el sábado se cuenta desde cero. |
 | Sábado, antes del primer partido del mediodía | Llegar, hablar con el buffet, pegar los QR en la fila, las mesas y la tribuna. Mandar el mensaje a los grupos de WhatsApp del club. |
 | Durante los partidos del mediodía | Ejecución. Cada rol registra en la planilla. |
-| Al terminar el último partido del mediodía | Cierre: sacar los QR, contar pedidos pagados, sacar captura de la planilla. Pedirle al buffet el total recibido en `bar.del.sic` durante la prueba, para cruzarlo con la planilla. |
+| Al terminar el último partido del mediodía | Cierre: sacar los QR, contar pedidos pagados, sacar captura de la planilla. Felipe Chain le transfiere al buffet el total cobrado en `felipechain`, cruzado con la planilla, y guarda el comprobante. |
 
 ## Textos
 

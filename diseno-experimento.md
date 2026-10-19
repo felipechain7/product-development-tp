@@ -54,4 +54,4 @@ Solo se pide un nombre o apodo para entregar el pedido. No se piden teléfono, m
 ## Pendientes para construir
 
 - [x] Menú del buffet con precios (cargado el 19/10). Combo: bebida por $2.000 más; una por cada plato y una sola con las empanadas, pidas las que pidas.
-- [x] Cuenta de Mercado Pago que recibe los pagos: alias `bar.del.sic`, la del buffet (19/10). La plata va directo al buffet; el pago se controla con el comprobante en el mostrador.
+- [x] Cuenta de Mercado Pago que recibe los pagos: alias `felipechain`, la cuenta de Felipe Chain (decisión final del 19/10). El pago se controla con el comprobante en el mostrador y al cierre se le transfiere al buffet el total cobrado.
