@@ -41,7 +41,7 @@ Son cuatro roles para cuatro integrantes. **[ASIGNAR]** quién hace cada uno.
 **Mensaje para los grupos de WhatsApp del club**
 
 > Hoy en el buffet del SIC probamos pedir y pagar desde el celular para no hacer la fila 🍔
-> Entrá acá: [LINK]
+> Entrá acá: https://felipechain7.github.io/product-development-tp/experimento/
 > Elegís, pagás con Mercado Pago y retirás en el mostrador diciendo tu nombre.
 > Es una prueba de un trabajo de la facu, solo por hoy.
 
