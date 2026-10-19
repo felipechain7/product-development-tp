@@ -63,34 +63,14 @@ Son cuatro roles. Asignados por el equipo el 19/10.
 
 ## Planilla de registro
 
-Las primeras columnas las completa sola la página. Las demás las completa el equipo, solo en las filas con evento "pedido".
+Planilla "Registro experimento buffet SIC (respuestas)" en el Drive de Felipe Chain. Hay que compartirla con el resto del equipo. Tiene cinco pestañas:
 
-| Columna | Quién la completa |
-|---|---|
-| Marca temporal (hora del evento) | Página (automático) |
-| Evento (visita / ir_a_pagar / pedido) | Página (automático) |
-| Código de pedido | Página (automático) |
-| Nombre o apodo | Página (automático) |
-| Pedido y total | Página (automático) |
-| ¿Mostró comprobante? (sí / no) | Rol 2 |
-| Hora en que se pasó al buffet | Rol 1 |
-| Hora de llegada al mostrador | Rol 2 |
-| Hora de entrega | Rol 2 |
-| ¿Conocido del equipo? (sí / no) | Rol 1 o 2 |
-| Observaciones | Cualquiera |
-
-**Hoja aparte: fila normal (Rol 3)**
-
-| Persona | Hora en que entra a la fila | Hora en que recibe la comida | Minutos | ¿Pagó en efectivo o con QR? |
-|---|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
-
-**Hoja aparte: observaciones (Rol 4)**
-
-| Hora | Qué pasó | Tipo (miró y no pidió / pregunta / queja / problema de pago / explicación del equipo / otro) |
+| Pestaña | Quién la completa | Qué tiene |
 |---|---|---|
-| | | |
+| Respuestas de formulario 1 | La página (automático). **No tocar.** | Hora, evento (visita / ir_a_pagar / pedido), código, nombre, pedido, total y sesión (identificador anónimo que une los eventos de una misma persona). |
+| Pedidos equipo | Rol 1 (Felipe Servent) y Rol 2 (Pedro) | Una fila por pedido: código, ¿mostró comprobante? (sí/no), hora en que se pasó al buffet, hora de llegada al mostrador, hora de entrega, ¿conocido del equipo? (sí/no) y observaciones. Los minutos de retiro se calculan solos. |
+| Fila normal | Rol 3 (Juan) | Las 5 personas: hora en que entra a la fila, hora en que recibe la comida y si pagó en efectivo o con QR. Los minutos se calculan solos. Al costado, el conteo de gente en la fila cada 30 minutos. |
+| Observaciones | Rol 4 (Felipe Chain) | Hora, qué pasó y tipo (miró y no pidió / pregunta / queja / problema de pago / explicación del equipo / otro). |
+| Resumen | Nadie (automático) | Pedidos registrados y pagados, comparación con el criterio de 20, monto, embudo, tiempo de retiro contra la fila normal y tiempo para pedir con el celu. |
+
+Las horas se cargan con el formato `12:40:10` (con segundos). Para "sí" alcanza con escribir "si" o "sí".
