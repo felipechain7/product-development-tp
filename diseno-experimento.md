@@ -9,7 +9,7 @@
 | Hipótesis | Comportamiento: los que van al club van a pedir por la web en vez de hacer la fila. |
 | Pregunta de aprendizaje | ¿Los que van al club van a pedir y pagar por el celular en vez de hacer la fila? |
 | Tipo | Concierge digital. |
-| Lugar y fecha | Buffet del SIC, jueves 22 de octubre de 2026, durante los 4 partidos del día. *Cambio decidido por el equipo el 19/10, antes de la prueba (antes era el sábado 24/10).* [CONFIRMAR con el buffet que acepta el jueves y el horario de los partidos] |
+| Lugar y fecha | Buffet del SIC, jueves 22 de octubre de 2026, durante los 4 partidos del día. *Cambio decidido por el equipo el 19/10, antes de la prueba (antes era el sábado 24/10).* El buffet aceptó el jueves. |
 | Participantes | Quienes estén en el SIC ese jueves (jóvenes de 18 a 25 como segmento principal). |
 | Acción observable | Hacer un pedido en la página y pagarlo por Mercado Pago. |
 | Métrica principal | Cantidad de pedidos pagados por la web en el día de la prueba. |
