@@ -8,8 +8,8 @@ Son cuatro roles para cuatro integrantes. **[ASIGNAR]** quién hace cada uno.
 
 | Rol | Quién | Qué hace |
 |---|---|---|
-| 1. Pedidos | [ASIGNAR] | Mira la planilla en el celular. Por cada pedido nuevo: controla que el pago llegó a Mercado Pago, se lo pasa al buffet por WhatsApp y marca la hora en que lo pasó. |
-| 2. Mostrador | [ASIGNAR] | Está al lado del mostrador de retiro. Anota la hora en que llega cada persona que pidió por la web y la hora en que recibe la comida. |
+| 1. Pedidos | [ASIGNAR] | Mira la planilla en el celular. Por cada pedido nuevo se lo pasa al buffet por WhatsApp (nombre, código y detalle) y marca la hora en que lo pasó. |
+| 2. Mostrador | [ASIGNAR] | Está al lado del mostrador de retiro. Mira el comprobante de Mercado Pago de cada persona que pidió por la web (alias `bar.del.sic` y monto) y anota la hora en que llega y la hora en que recibe la comida. |
 | 3. Fila normal | [ASIGNAR] | Cronometra a 5 personas de la fila normal en el mismo horario: hora en que entran a la fila y hora en que reciben la comida. Anota cuánta gente hay en la fila cada 30 minutos. |
 | 4. Difusión y observación | [ASIGNAR] | Pega los QR antes de empezar y manda el mensaje a los grupos. Después observa y anota: gente que mira el QR y no pide, preguntas, quejas, problemas para pagar. |
 
@@ -28,7 +28,7 @@ Son cuatro roles para cuatro integrantes. **[ASIGNAR]** quién hace cada uno.
 | Viernes 23/10, después del piloto | Borrar de la planilla todas las filas de prueba (nombre "PRUEBA" o del equipo), así el sábado se cuenta desde cero. |
 | Sábado, antes del primer partido del mediodía | Llegar, hablar con el buffet, pegar los QR en la fila, las mesas y la tribuna. Mandar el mensaje a los grupos de WhatsApp del club. |
 | Durante los partidos del mediodía | Ejecución. Cada rol registra en la planilla. |
-| Al terminar el último partido del mediodía | Cierre: sacar los QR, contar pedidos pagados, sacar captura de la planilla. Transferirle al buffet el total cobrado en el alias `felipechain` y guardar el comprobante. |
+| Al terminar el último partido del mediodía | Cierre: sacar los QR, contar pedidos pagados, sacar captura de la planilla. Pedirle al buffet el total recibido en `bar.del.sic` durante la prueba, para cruzarlo con la planilla. |
 
 ## Textos
 
@@ -66,7 +66,7 @@ Las primeras columnas las completa sola la página. Las demás las completa el e
 | Código de pedido | Página (automático) |
 | Nombre o apodo | Página (automático) |
 | Pedido y total | Página (automático) |
-| ¿Pago recibido? (sí / no) | Rol 1 |
+| ¿Mostró comprobante? (sí / no) | Rol 2 |
 | Hora en que se pasó al buffet | Rol 1 |
 | Hora de llegada al mostrador | Rol 2 |
 | Hora de entrega | Rol 2 |
