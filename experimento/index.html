@@ -177,7 +177,7 @@ const ALIAS = "felipechain";
 const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeKECZhCWq1n8xIw5zJGhkP6CcH2pe4h5OL7VdPyRvujNXLgA/formResponse";
 const CAMPOS = {                // entry.NNNN de cada pregunta del formulario
   evento: "entry.2128000704", codigo: "entry.1880239531", nombre: "entry.904220084",
-  pedido: "entry.1302390514", total: "entry.1726162834",
+  pedido: "entry.1302390514", total: "entry.1726162834", sesion: "entry.1618898780",
 };
 /* ========================================================= */
 
@@ -185,10 +185,13 @@ const pesos = n => "$" + n.toLocaleString("es-AR");
 const cant = Object.fromEntries(MENU.map(p => [p.id, 0]));
 let pantalla = "menu";
 let codigo = "";
+// Identificador anónimo de esta visita: une visita, ir a pagar y pedido de la misma persona.
+const sesion = Math.random().toString(36).slice(2, 8);
 
 function registrar(datos) {
   if (!FORM_URL) { console.log("[modo prueba] no se registra:", datos); return Promise.resolve(); }
   const body = new URLSearchParams();
+  datos = { ...datos, sesion };
   for (const [k, v] of Object.entries(datos)) if (CAMPOS[k]) body.append(CAMPOS[k], v);
   return fetch(FORM_URL, { method: "POST", mode: "no-cors", body }).catch(() => {});
 }
