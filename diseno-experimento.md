@@ -53,5 +53,5 @@ Solo se pide un nombre o apodo para entregar el pedido. No se piden teléfono, m
 
 ## Pendientes para construir
 
-- [ ] Menú del buffet con precios.
+- [x] Menú del buffet con precios (cargado el 19/10). [CONFIRMAR] precio del tostado y a qué platos aplica el combo.
 - [ ] Cuenta de Mercado Pago que recibe los pagos.
