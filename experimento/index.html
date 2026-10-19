@@ -149,7 +149,8 @@
    Lo único que hay que tocar antes del sábado.            */
 
 // Menú real del buffet del SIC (pasado por el equipo el 19/10). Mientras MENU_ES_EJEMPLO sea true, la página muestra un aviso.
-// plato: true  -> habilita una bebida en combo por cada unidad.
+// plato: true    -> habilita una bebida en combo por cada unidad.
+// empanada: true -> todas las empanadas juntas habilitan una sola bebida en combo.
 // combo: true  -> no se puede pedir más que la cantidad de platos.
 const MENU_ES_EJEMPLO = false;
 const MENU = [
@@ -162,10 +163,10 @@ const MENU = [
   { id: "wrap_atun",  nombre: "Wrap de atún",                 precio: 18000, plato: true },
   { id: "wrap_bond",  nombre: "Wrap de bondiola",             precio: 18000, plato: true },
   { id: "tostado",    nombre: "Tostado",                      precio: 12000, plato: true },
-  { id: "emp_carne",  nombre: "Empanada de carne",            precio: 4000 },
-  { id: "emp_jyq",    nombre: "Empanada de jamón y queso",    precio: 4000 },
+  { id: "emp_carne",  nombre: "Empanada de carne",            precio: 4000, empanada: true },
+  { id: "emp_jyq",    nombre: "Empanada de jamón y queso",    precio: 4000, empanada: true },
   { id: "bebida",     nombre: "Bebida",                       precio: 4000 },
-  { id: "combo",      nombre: "Bebida en combo",              precio: 2000, combo: true, nota: "Una por cada plato (no empanadas)" },
+  { id: "combo",      nombre: "Bebida en combo",              precio: 2000, combo: true, nota: "Una por cada plato y una con las empanadas" },
 ];
 
 // Alias de Mercado Pago que recibe los pagos.
@@ -190,7 +191,11 @@ function registrar(datos) {
   return fetch(FORM_URL, { method: "POST", mode: "no-cors", body }).catch(() => {});
 }
 
-function platos() { return MENU.filter(p => p.plato).reduce((s, p) => s + cant[p.id], 0); }
+function platos() {
+  const sueltos = MENU.filter(p => p.plato).reduce((s, p) => s + cant[p.id], 0);
+  const hayEmpanadas = MENU.some(p => p.empanada && cant[p.id] > 0);
+  return sueltos + (hayEmpanadas ? 1 : 0);
+}
 function maximo(p) { return p.combo ? Math.min(9, platos()) : 9; }
 function ajustarCombos() { for (const p of MENU) if (p.combo) cant[p.id] = Math.min(cant[p.id], platos()); }
 function total() { return MENU.reduce((s, p) => s + p.precio * cant[p.id], 0); }
