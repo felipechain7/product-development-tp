@@ -40,8 +40,10 @@
 
 ## 5. Punto de partida del MVP
 
-- Usuario: [COMPLETAR]
-- Situación: [COMPLETAR]
-- Valor que queremos entregar: [COMPLETAR]
-- Una sola cosa que el MVP debe permitir hacer: [COMPLETAR]
-- Qué vamos a medir cuando lo use una persona: [COMPLETAR]
+- Usuario: el buffet del SIC, que recibe y prepara los pedidos. Del otro lado, quien va al club y pide desde la cancha.
+- Situación: un día de partidos, en los picos (entretiempos y finales), cuando la fila no baja.
+- Valor que queremos entregar: que la gente pida y pague sin dejar de mirar el partido, y que el buffet atienda esos pedidos sin que el equipo esté ahí pasándoselos por WhatsApp.
+- Una sola cosa que el MVP debe permitir hacer: que cada pedido pagado desde la página aparezca solo en una pantalla del buffet y que el buffet lo marque como listo, para que la persona vea en su celular cuándo ir a retirarlo.
+- Qué vamos a medir cuando lo use una persona: cuántos pedidos se hacen sin que intervenga el equipo; el tiempo del pedido a "listo" y de "listo" al retiro; y si el buffet lo sigue usando otro día por su cuenta.
+
+> "Listo" sale del dato del 22/10: la gente llegaba unos 5 minutos después del pedido sin saber si ya estaba. El pago se sigue controlando con el comprobante; el cobro integrado con Mercado Pago queda fuera del MVP.
