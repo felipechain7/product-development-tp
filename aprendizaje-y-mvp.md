@@ -47,3 +47,5 @@
 - Qué vamos a medir cuando lo use una persona: cuántos pedidos se hacen sin que intervenga el equipo; el tiempo del pedido a "listo" y de "listo" al retiro; y si el buffet lo sigue usando otro día por su cuenta.
 
 > "Listo" sale del dato del 22/10: la gente llegaba unos 5 minutos después del pedido sin saber si ya estaba. El pago se sigue controlando con el comprobante; el cobro integrado con Mercado Pago queda fuera del MVP.
+>
+> *Cambio decidido por el equipo el 25/10, después de la primera versión:* se sumó el cobro integrado con Mercado Pago (Checkout Pro, cuenta de Felipe Chain) para que el pedido llegue al buffet solo si está pagado y no haga falta mostrar comprobante. Detalle en `mvp.md`.
