@@ -2,155 +2,197 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#060a14">
 <title>Pedí sin fila · Buffet SIC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+  /* Tema nocturno: fondo azul casi negro, superficies azul marino y acento azul eléctrico. */
   :root {
-    --bg: #f6f5f1;
-    --card: #ffffff;
-    --ink: #1d1d1b;
-    --muted: #6b6a66;
-    --line: #e3e1da;
-    --accent: #0f5c3a;
-    --accent-ink: #ffffff;
-    --warn-bg: #fff4d6;
-    --warn-ink: #6b4e00;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #151514;
-      --card: #20201e;
-      --ink: #f1f0ec;
-      --muted: #a5a39c;
-      --line: #34332f;
-      --accent: #3fae7a;
-      --accent-ink: #0d1a13;
-      --warn-bg: #3a3112;
-      --warn-ink: #f3dc93;
-    }
+    --fondo: #060a14;
+    --superficie: #0f1830;
+    --superficie-2: #15213f;
+    --azul: #3b82f6;
+    --azul-vivo: #60a5fa;
+    --celeste: #93c5fd;
+    --azul-suave: rgba(59, 130, 246, .14);
+    --tinta: #e9effc;
+    --gris: #93a3c3;
+    --linea: #22314f;
+    --input: #0a1224;
+    --alerta: #fca5a5;
+    --alerta-bg: rgba(239, 68, 68, .14);
+    --sombra: 0 1px 0 rgba(255,255,255,.03) inset, 0 6px 18px rgba(0,0,0,.35);
+    --display: "Anton", Impact, "Arial Narrow", sans-serif;
+    --texto: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color-scheme: dark;
   }
   * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  main { max-width: 520px; margin: 0 auto; padding: 16px 16px 120px; }
-  h1 { font-size: 1.5rem; margin: 8px 0 4px; }
-  .sub { color: var(--muted); margin: 0 0 16px; }
-  .aviso {
-    background: var(--warn-bg); color: var(--warn-ink);
-    border-radius: 10px; padding: 10px 12px; margin-bottom: 16px; font-size: .9rem;
-  }
-  .item {
-    display: flex; align-items: center; justify-content: space-between; gap: 12px;
-    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
-    padding: 12px; margin-bottom: 10px;
-  }
-  .item .nombre { font-weight: 600; }
-  .item .precio { color: var(--muted); font-size: .95rem; }
-  .cant { display: flex; align-items: center; gap: 10px; }
-  .cant button {
-    width: 40px; height: 40px; border-radius: 50%;
-    border: 1px solid var(--line); background: var(--bg); color: var(--ink);
-    font-size: 1.3rem; line-height: 1; cursor: pointer;
-  }
-  .cant button:disabled { opacity: .35; cursor: not-allowed; }
-  .cant span { min-width: 1.5em; text-align: center; font-weight: 600; }
-  .item .nota { font-size: .8rem; }
-  label { display: block; font-weight: 600; margin: 18px 0 6px; }
-  input[type=text] {
-    width: 100%; padding: 12px; font-size: 1rem;
-    border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--ink);
-  }
-  .barra {
-    position: fixed; left: 0; right: 0; bottom: 0;
-    background: var(--card); border-top: 1px solid var(--line);
-    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
-  }
-  .barra .dentro { max-width: 520px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
-  .total { flex: 1; }
-  .total small { display: block; color: var(--muted); }
-  .total strong { font-size: 1.3rem; }
-  .btn {
-    border: 0; border-radius: 12px; padding: 14px 18px; font-size: 1rem; font-weight: 700;
-    background: var(--accent); color: var(--accent-ink); cursor: pointer;
-  }
-  .btn:disabled { opacity: .4; cursor: not-allowed; }
-  .btn.sec { background: transparent; color: var(--ink); border: 1px solid var(--line); }
-  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
-  .monto { font-size: 2rem; font-weight: 800; margin: 4px 0 8px; }
-  .alias { display: flex; gap: 8px; align-items: center; }
-  .alias code { flex: 1; font-size: 1.1rem; padding: 10px; border-radius: 8px; background: var(--bg); overflow-wrap: anywhere; }
-  ol { padding-left: 1.2em; margin: 8px 0 0; }
-  .resumen { margin: 0; padding-left: 1.1em; color: var(--muted); }
-  .codigo { font-size: 2.4rem; font-weight: 800; letter-spacing: .06em; }
-  .pie { color: var(--muted); font-size: .8rem; margin-top: 24px; }
+  html, body { margin: 0; }
+  body { background: var(--fondo); color: var(--tinta); font: 16px/1.45 var(--texto); -webkit-tap-highlight-color: transparent; }
+  .gutter { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .ancho { max-width: 560px; margin: 0 auto; }
   [hidden] { display: none !important; }
-  .estado { display: inline-block; font-weight: 800; padding: 8px 14px; border-radius: 99px; margin: 6px 0 2px; font-size: 1.05rem; }
-  .estado.nuevo { background: var(--warn-bg); color: var(--warn-ink); }
-  .estado.listo { background: var(--accent); color: var(--accent-ink); }
-  .estado.entregado { background: var(--bg); color: var(--muted); border: 1px solid var(--line); }
-  .error { background: var(--warn-bg); color: var(--warn-ink); border-radius: 10px; padding: 10px 12px; margin: 12px 0; }
-  .detalle-ped { color: var(--muted); margin: 6px 0 0; }
+  button { font: inherit; cursor: pointer; }
+  button:focus-visible, input:focus-visible { outline: 3px solid var(--azul-vivo); outline-offset: 2px; }
+
+  /* Encabezado */
+  .tapa { background: radial-gradient(120% 140% at 85% 0%, #1e3a8a 0%, #0c1733 55%, var(--fondo) 100%); color: var(--tinta); position: relative; overflow: hidden; border-bottom: 1px solid var(--linea); }
+  .tapa::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(180deg, transparent 0 56px, rgba(147,197,253,.06) 56px 58px); pointer-events: none; }
+  .tapa .ancho { position: relative; padding-top: calc(18px + env(safe-area-inset-top, 0px)); padding-bottom: 24px; }
+  .marca { display: inline-block; background: var(--azul); color: #fff; font-weight: 800; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; padding: 4px 10px; border-radius: 99px; transform: rotate(-2deg); }
+  .tapa h1 { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: clamp(2.1rem, 9vw, 2.9rem); line-height: .98; letter-spacing: .01em; margin: 12px 0 8px; }
+  .tapa h1 span { color: var(--azul-vivo); }
+  .tapa p { margin: 0; color: var(--gris); font-weight: 500; }
+
+  /* Menú */
+  main { padding-bottom: 130px; }
+  .cats { position: sticky; top: 0; z-index: 3; background: rgba(6,10,20,.92); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--linea); }
+  .cats .ancho { display: flex; gap: 8px; overflow-x: auto; padding-top: 10px; padding-bottom: 10px; scrollbar-width: none; }
+  .cats .ancho::-webkit-scrollbar { display: none; }
+  .cats a { flex: none; text-decoration: none; color: var(--celeste); background: var(--superficie); border: 1px solid var(--linea); font-weight: 700; font-size: .9rem; padding: 7px 14px; border-radius: 99px; }
+  .cat { scroll-margin-top: 64px; padding-top: 20px; }
+  .cat h2 { font-family: var(--display); font-weight: 400; text-transform: uppercase; letter-spacing: .03em; font-size: 1.45rem; color: var(--celeste); margin: 0 0 10px; }
+  .items { display: grid; gap: 10px; }
+  .item { display: flex; align-items: center; gap: 12px; background: var(--superficie); border: 2px solid transparent; border-radius: 16px; padding: 14px; box-shadow: var(--sombra); transition: border-color .15s, background .15s; }
+  .item.elegido { border-color: var(--azul); background: var(--superficie-2); }
+  .item .info { flex: 1; min-width: 0; }
+  .item .nombre { font-weight: 700; font-size: 1.02rem; }
+  .item .precio { font-weight: 800; color: var(--azul-vivo); margin-top: 2px; }
+  .item .nota { color: var(--gris); font-size: .82rem; margin-top: 2px; }
+  .cant { display: flex; align-items: center; gap: 8px; }
+  .cant span { min-width: 1.4em; text-align: center; font-weight: 800; font-size: 1.1rem; font-variant-numeric: tabular-nums; }
+  .cant button { width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--linea); background: transparent; color: var(--tinta); font-size: 1.35rem; line-height: 1; display: grid; place-items: center; }
+  .cant button.mas { background: var(--azul); border-color: var(--azul); color: #fff; font-weight: 800; }
+  .cant button:disabled { opacity: .3; cursor: not-allowed; }
+  .cant .menos[data-cero] { visibility: hidden; }
+
+  .nombre-box { margin-top: 24px; background: var(--superficie); border-radius: 16px; padding: 16px; box-shadow: var(--sombra); }
+  .nombre-box label { display: block; font-weight: 800; margin-bottom: 8px; }
+  .nombre-box input { width: 100%; font: inherit; font-size: 1.05rem; padding: 13px 14px; border: 2px solid var(--linea); border-radius: 12px; background: var(--input); color: var(--tinta); }
+  .nombre-box input::placeholder { color: #5f6f8f; }
+  .nombre-box input:focus { border-color: var(--azul); outline: none; }
+  .nombre-box small { display: block; color: var(--gris); margin-top: 8px; }
+  .pie { color: var(--gris); font-size: .8rem; text-align: center; margin: 22px 0 0; }
+
+  /* Barra inferior */
+  .barra { position: fixed; left: 0; right: 0; bottom: 0; z-index: 4; background: rgba(15,24,48,.96); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-top: 1px solid var(--linea); color: var(--tinta); padding-top: 12px; padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)); box-shadow: 0 -8px 24px rgba(0,0,0,.45); }
+  .barra .ancho { display: flex; align-items: center; gap: 12px; }
+  .barra .tot { flex: 1; min-width: 0; }
+  .barra .tot small { display: block; color: var(--gris); font-size: .8rem; }
+  .barra .tot strong { font-size: 1.35rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .barra .hint { font-size: .78rem; color: var(--celeste); }
+  .cta { border: 0; border-radius: 14px; padding: 15px 20px; background: linear-gradient(180deg, var(--azul-vivo), var(--azul)); color: #fff; font-family: var(--display); font-size: 1.15rem; letter-spacing: .04em; text-transform: uppercase; box-shadow: 0 6px 18px rgba(59,130,246,.35); }
+  .cta:disabled { opacity: .4; cursor: not-allowed; box-shadow: none; }
+
+  /* Pago */
+  .pantalla { padding-top: 22px; }
+  .titulo { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: 2rem; line-height: 1; color: var(--tinta); margin: 0 0 14px; }
+  .tarjeta { background: var(--superficie); border-radius: 18px; padding: 18px; box-shadow: var(--sombra); margin-bottom: 12px; }
+  .monto { font-family: var(--display); font-size: 3rem; line-height: 1; color: var(--azul-vivo); margin: 6px 0 10px; font-variant-numeric: tabular-nums; }
+  .resumen { margin: 0; padding-left: 1.1em; color: var(--gris); }
+  .etiqueta { font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--gris); }
+  .alias { display: flex; gap: 8px; align-items: center; margin-top: 8px; }
+  .alias code { flex: 1; min-width: 0; font-size: 1.3rem; font-weight: 800; padding: 12px 14px; border-radius: 12px; background: var(--azul-suave); color: var(--celeste); border: 2px dashed var(--azul); overflow-wrap: anywhere; }
+  .btn-sec { border: 2px solid var(--azul); background: transparent; color: var(--celeste); font-weight: 800; border-radius: 12px; padding: 12px 16px; }
+  .pasos-pago { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 10px; }
+  .pasos-pago li { display: flex; gap: 12px; align-items: center; }
+  .pasos-pago b { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--azul); color: #fff; display: grid; place-items: center; font-family: var(--display); font-weight: 400; }
+  .volver { background: none; border: 0; color: var(--celeste); font-weight: 700; text-decoration: underline; padding: 8px 0; }
+  .error { background: var(--alerta-bg); color: var(--alerta); border-radius: 12px; padding: 12px 14px; margin: 12px 0; font-weight: 600; }
+
+  /* Seguimiento */
+  .seguimiento { text-align: center; }
+  .seguimiento .tarjeta { padding: 26px 18px; }
+  .codigo { font-family: var(--display); font-size: 5rem; line-height: 1; letter-spacing: .06em; color: var(--azul-vivo); margin: 4px 0 12px; font-variant-numeric: tabular-nums; }
+  .estado { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; padding: 10px 18px; border-radius: 99px; font-size: 1.05rem; }
+  .estado::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: currentColor; }
+  .estado.nuevo { background: var(--azul-suave); color: var(--celeste); }
+  .estado.nuevo::before { animation: latido 1.4s ease-in-out infinite; }
+  .estado.listo { background: #fff; color: #1e3a8a; }
+  .estado.entregado { background: var(--superficie-2); color: var(--gris); }
+  @keyframes latido { 50% { opacity: .25; } }
+  .estado-texto { margin: 14px auto 0; max-width: 34ch; font-weight: 500; }
+  .detalle-ped { color: var(--gris); font-size: .9rem; margin: 10px 0 0; }
+  body.listo .seguimiento .tarjeta { background: linear-gradient(160deg, #2563eb, #1e3a8a); color: #fff; box-shadow: 0 10px 30px rgba(37,99,235,.45); }
+  body.listo .seguimiento .codigo { color: #fff; }
+  body.listo .seguimiento .etiqueta, body.listo .detalle-ped { color: rgba(255,255,255,.8); }
+  .otro { margin-top: 6px; }
+  @media (prefers-reduced-motion: reduce) { .estado.nuevo::before { animation: none; } .item { transition: none; } }
 </style>
 </head>
 <body>
-<main>
 
+<header class="tapa gutter">
+  <div class="ancho">
+    <span class="marca">Buffet SIC</span>
+    <h1>Pedí sin perderte <span>el partido</span></h1>
+    <p>Elegí, pagá con Mercado Pago y te avisamos acá cuando esté listo.</p>
+  </div>
+</header>
+
+<main>
   <!-- Pantalla 1: menú -->
   <section id="p-menu">
-    <h1>Pedí sin perderte el partido</h1>
-    <p class="sub">Elegí, pagá con Mercado Pago y te avisamos acá cuando esté listo para retirar.</p>
-    <div id="lista"></div>
-    <label for="nombre">Tu nombre o apodo</label>
-    <input id="nombre" type="text" maxlength="30" autocomplete="off" placeholder="Para entregarte el pedido">
-    <p class="pie">Solo te pedimos un nombre o apodo para entregarte el pedido. Proyecto de estudiantes de la Universidad Austral.</p>
+    <nav class="cats gutter" aria-label="Categorías"><div class="ancho" id="cats"></div></nav>
+    <div class="gutter"><div class="ancho">
+      <div id="lista"></div>
+      <div class="nombre-box">
+        <label for="nombre">¿A nombre de quién?</label>
+        <input id="nombre" type="text" maxlength="30" autocomplete="given-name" placeholder="Tu nombre o apodo">
+        <small>Lo usamos solo para entregarte el pedido.</small>
+      </div>
+      <p class="pie">Proyecto de estudiantes de la Universidad Austral.</p>
+    </div></div>
   </section>
 
   <!-- Pantalla 2: pago -->
-  <section id="p-pago" hidden>
-    <h1>Pagá tu pedido</h1>
-    <div class="panel">
-      <div>Total a transferir</div>
-      <div class="monto" id="monto"></div>
-      <ul class="resumen" id="resumen"></ul>
+  <section id="p-pago" class="pantalla gutter" hidden>
+    <div class="ancho">
+      <h2 class="titulo">Pagá tu pedido</h2>
+      <div class="tarjeta">
+        <div class="etiqueta">Total a transferir</div>
+        <div class="monto" id="monto"></div>
+        <ul class="resumen" id="resumen"></ul>
+      </div>
+      <div class="tarjeta">
+        <div class="etiqueta">Alias de Mercado Pago</div>
+        <div class="alias"><code id="alias"></code><button class="btn-sec" id="copiar" type="button">Copiar</button></div>
+        <ol class="pasos-pago">
+          <li><b>1</b><span>Abrí Mercado Pago o tu banco.</span></li>
+          <li><b>2</b><span>Transferí el total exacto a ese alias.</span></li>
+          <li><b>3</b><span>Volvé acá y tocá <strong>Ya pagué</strong>.</span></li>
+        </ol>
+      </div>
+      <div id="error-pago" class="error" hidden></div>
+      <button class="volver" id="volver" type="button">← Cambiar el pedido</button>
     </div>
-    <div class="panel">
-      <div style="margin-bottom:8px">Alias de Mercado Pago</div>
-      <div class="alias"><code id="alias"></code><button class="btn sec" id="copiar" type="button">Copiar</button></div>
-      <ol>
-        <li>Abrí Mercado Pago o tu banco.</li>
-        <li>Transferí el total exacto a ese alias.</li>
-        <li>Volvé acá y tocá "Ya pagué".</li>
-      </ol>
-    </div>
-    <div id="error-pago" class="error" hidden></div>
-    <button class="btn sec" id="volver" type="button">Cambiar el pedido</button>
   </section>
 
-  <!-- Pantalla 3: seguimiento del pedido -->
-  <section id="p-estado" hidden>
-    <h1 id="estado-titulo"></h1>
-    <div class="panel">
-      <div>Tu código de pedido</div>
-      <div class="codigo" id="estado-codigo"></div>
-      <div id="estado-pill" class="estado"></div>
-      <p id="estado-texto" style="margin:8px 0 0"></p>
-      <p id="estado-detalle" class="detalle-ped"></p>
+  <!-- Pantalla 3: seguimiento -->
+  <section id="p-estado" class="pantalla seguimiento gutter" hidden>
+    <div class="ancho">
+      <h2 class="titulo" id="estado-titulo"></h2>
+      <div class="tarjeta">
+        <div class="etiqueta">Tu código de pedido</div>
+        <div class="codigo" id="estado-codigo"></div>
+        <div id="estado-pill" class="estado"></div>
+        <p id="estado-texto" class="estado-texto"></p>
+        <p id="estado-detalle" class="detalle-ped"></p>
+      </div>
+      <div id="error-estado" class="error" hidden>Sin conexión. Reintentamos solos en unos segundos.</div>
+      <button class="cta otro" id="otro" type="button" hidden>Hacer otro pedido</button>
+      <p class="pie">Dejá esta página abierta: se actualiza sola.</p>
     </div>
-    <div id="error-estado" class="error" hidden>Sin conexión. Reintentamos solos en unos segundos.</div>
-    <button class="btn sec" id="otro" type="button" hidden>Hacer otro pedido</button>
-    <p class="pie">Dejá esta página abierta: se actualiza sola.</p>
   </section>
-
 </main>
 
-<div class="barra" id="barra">
-  <div class="dentro">
-    <div class="total"><small>Total</small><strong id="total">$0</strong></div>
-    <button class="btn" id="accion" type="button" disabled>Ir a pagar</button>
+<div class="barra gutter" id="barra">
+  <div class="ancho">
+    <div class="tot"><small id="tot-label">Tu pedido</small><strong id="total">$0</strong><div class="hint" id="hint"></div></div>
+    <button class="cta" id="accion" type="button" disabled>Ir a pagar</button>
   </div>
 </div>
 
@@ -168,20 +210,21 @@ const ALIAS = "felipechain";
 // plato: true    -> habilita una bebida en combo por cada unidad.
 // empanada: true -> todas las empanadas juntas habilitan una sola bebida en combo.
 // combo: true    -> no se puede pedir más que la cantidad de platos.
+const CATEGORIAS = ["Sándwiches", "Hamburguesas", "Wraps", "Empanadas", "Bebidas"];
 const MENU = [
-  { id: "bondiola",   nombre: "Sándwich de bondiola",         precio: 17000, plato: true },
-  { id: "bife",       nombre: "Sándwich de bife de chorizo",  precio: 19000, plato: true },
-  { id: "choripan",   nombre: "Choripán",                     precio: 10000, plato: true },
-  { id: "hamb",       nombre: "Hamburguesa con queso",        precio: 8000,  plato: true },
-  { id: "hamb_papas", nombre: "Hamburguesa con queso y papas", precio: 10500, plato: true },
-  { id: "wrap_pollo", nombre: "Wrap de pollo",                precio: 18000, plato: true },
-  { id: "wrap_atun",  nombre: "Wrap de atún",                 precio: 18000, plato: true },
-  { id: "wrap_bond",  nombre: "Wrap de bondiola",             precio: 18000, plato: true },
-  { id: "tostado",    nombre: "Tostado",                      precio: 12000, plato: true },
-  { id: "emp_carne",  nombre: "Empanada de carne",            precio: 4000, empanada: true },
-  { id: "emp_jyq",    nombre: "Empanada de jamón y queso",    precio: 4000, empanada: true },
-  { id: "bebida",     nombre: "Bebida",                       precio: 4000 },
-  { id: "combo",      nombre: "Bebida en combo",              precio: 2000, combo: true, nota: "Una por cada plato y una con las empanadas" },
+  { id: "bondiola",   cat: "Sándwiches",   nombre: "Sándwich de bondiola",           precio: 17000, plato: true },
+  { id: "bife",       cat: "Sándwiches",   nombre: "Sándwich de bife de chorizo",    precio: 19000, plato: true },
+  { id: "choripan",   cat: "Sándwiches",   nombre: "Choripán",                       precio: 10000, plato: true },
+  { id: "tostado",    cat: "Sándwiches",   nombre: "Tostado",                        precio: 12000, plato: true },
+  { id: "hamb",       cat: "Hamburguesas", nombre: "Hamburguesa con queso",          precio: 8000,  plato: true },
+  { id: "hamb_papas", cat: "Hamburguesas", nombre: "Hamburguesa con queso y papas",  precio: 10500, plato: true },
+  { id: "wrap_pollo", cat: "Wraps",        nombre: "Wrap de pollo",                  precio: 18000, plato: true },
+  { id: "wrap_atun",  cat: "Wraps",        nombre: "Wrap de atún",                   precio: 18000, plato: true },
+  { id: "wrap_bond",  cat: "Wraps",        nombre: "Wrap de bondiola",               precio: 18000, plato: true },
+  { id: "emp_carne",  cat: "Empanadas",    nombre: "Empanada de carne",              precio: 4000, empanada: true },
+  { id: "emp_jyq",    cat: "Empanadas",    nombre: "Empanada de jamón y queso",      precio: 4000, empanada: true },
+  { id: "bebida",     cat: "Bebidas",      nombre: "Bebida",                         precio: 4000 },
+  { id: "combo",      cat: "Bebidas",      nombre: "Bebida en combo",                precio: 2000, combo: true, nota: "Una por cada plato y una con las empanadas" },
 ];
 /* ========================================================= */
 
@@ -214,35 +257,58 @@ function platos() {
 function maximo(p) { return p.combo ? Math.min(9, platos()) : 9; }
 function ajustarCombos() { for (const p of MENU) if (p.combo) cant[p.id] = Math.min(cant[p.id], platos()); }
 function total() { return MENU.reduce((s, p) => s + p.precio * cant[p.id], 0); }
+function unidades() { return MENU.reduce((s, p) => s + cant[p.id], 0); }
 function detalle() { return MENU.filter(p => cant[p.id] > 0).map(p => `${cant[p.id]} x ${p.nombre}`); }
+const slug = c => "cat-" + c.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
-function dibujarMenu() {
+function armarMenu() {
+  const cats = document.getElementById("cats");
   const lista = document.getElementById("lista");
-  lista.innerHTML = "";
-  for (const p of MENU) {
-    const fila = document.createElement("div");
-    fila.className = "item";
-    const precio = p.combo ? "+" + pesos(p.precio) : pesos(p.precio);
-    fila.innerHTML = `<div><div class="nombre"></div><div class="precio">${precio}</div><div class="precio nota"></div></div>
-      <div class="cant"><button type="button" aria-label="Quitar">−</button><span>${cant[p.id]}</span><button type="button" aria-label="Agregar">+</button></div>`;
-    fila.querySelector(".nombre").textContent = p.nombre;
-    fila.querySelector(".nota").textContent = p.nota || "";
-    const [menos, mas] = fila.querySelectorAll("button");
-    mas.disabled = cant[p.id] >= maximo(p);
-    menos.onclick = () => { cant[p.id] = Math.max(0, cant[p.id] - 1); ajustarCombos(); actualizar(); };
-    mas.onclick = () => { cant[p.id] = Math.min(maximo(p), cant[p.id] + 1); actualizar(); };
-    lista.appendChild(fila);
+  for (const c of CATEGORIAS) {
+    const a = document.createElement("a");
+    a.href = "#" + slug(c); a.textContent = c;
+    cats.appendChild(a);
+    const sec = document.createElement("section");
+    sec.className = "cat"; sec.id = slug(c);
+    sec.innerHTML = `<h2></h2><div class="items"></div>`;
+    sec.querySelector("h2").textContent = c;
+    const items = sec.querySelector(".items");
+    for (const p of MENU.filter(x => x.cat === c)) {
+      const fila = document.createElement("div");
+      fila.className = "item"; fila.dataset.id = p.id;
+      fila.innerHTML = `<div class="info"><div class="nombre"></div><div class="precio"></div><div class="nota"></div></div>
+        <div class="cant"><button type="button" class="menos" aria-label="Quitar">−</button><span>0</span><button type="button" class="mas" aria-label="Agregar">+</button></div>`;
+      fila.querySelector(".nombre").textContent = p.nombre;
+      fila.querySelector(".precio").textContent = p.combo ? "+" + pesos(p.precio) : pesos(p.precio);
+      const nota = fila.querySelector(".nota");
+      if (p.nota) nota.textContent = p.nota; else nota.remove();
+      fila.querySelector(".menos").onclick = () => { cant[p.id] = Math.max(0, cant[p.id] - 1); ajustarCombos(); actualizar(); };
+      fila.querySelector(".mas").onclick = () => { cant[p.id] = Math.min(maximo(p), cant[p.id] + 1); actualizar(); };
+      items.appendChild(fila);
+    }
+    lista.appendChild(sec);
   }
 }
 
 function actualizar() {
-  dibujarMenu();
+  for (const p of MENU) {
+    const fila = document.querySelector(`.item[data-id="${p.id}"]`);
+    if (!fila) continue;
+    fila.querySelector(".cant span").textContent = cant[p.id];
+    fila.classList.toggle("elegido", cant[p.id] > 0);
+    const menos = fila.querySelector(".menos");
+    if (cant[p.id] === 0) menos.setAttribute("data-cero", ""); else menos.removeAttribute("data-cero");
+    fila.querySelector(".mas").disabled = cant[p.id] >= maximo(p);
+  }
   document.getElementById("total").textContent = pesos(total());
-  const nombre = document.getElementById("nombre").value.trim();
-  const accion = document.getElementById("accion");
+  const n = unidades();
+  document.getElementById("tot-label").textContent = n ? `${n} ${n === 1 ? "producto" : "productos"}` : "Tu pedido";
   if (pantalla === "menu") {
+    const nombre = document.getElementById("nombre").value.trim();
+    const accion = document.getElementById("accion");
     accion.textContent = "Ir a pagar";
     accion.disabled = total() === 0 || nombre === "";
+    document.getElementById("hint").textContent = total() > 0 && nombre === "" ? "Falta tu nombre (abajo del menú)" : "";
   }
 }
 
@@ -250,15 +316,16 @@ function mostrar(nombre) {
   pantalla = nombre;
   for (const id of ["menu", "pago", "estado"]) document.getElementById("p-" + id).hidden = id !== nombre;
   document.getElementById("barra").hidden = nombre === "estado";
+  document.querySelector(".tapa").hidden = nombre !== "menu";
   const accion = document.getElementById("accion");
-  if (nombre === "pago") { accion.textContent = "Ya pagué"; accion.disabled = false; }
+  if (nombre === "pago") { accion.textContent = "Ya pagué"; accion.disabled = false; document.getElementById("hint").textContent = ""; }
   if (nombre === "menu") actualizar();
   window.scrollTo(0, 0);
 }
 
 const TEXTOS = {
-  nuevo:     { pill: "En preparación", titulo: n => `¡Gracias, ${n}!`, texto: "El buffet ya tiene tu pedido. Te avisamos acá cuando esté listo: no hace falta que vayas antes." },
-  listo:     { pill: "¡Listo! Andá a retirar", titulo: n => `¡${n}, tu pedido está listo!`, texto: "Andá al mostrador del buffet, decí tu nombre y este código, y mostrá el comprobante de Mercado Pago." },
+  nuevo:     { pill: "En preparación", titulo: n => `¡Gracias, ${n}!`, texto: "El buffet ya tiene tu pedido. Te avisamos acá cuando esté listo: seguí mirando el partido." },
+  listo:     { pill: "¡Listo! Andá a retirar", titulo: n => `¡${n}, está listo!`, texto: "Andá al mostrador, decí tu nombre y este código, y mostrá el comprobante de Mercado Pago." },
   entregado: { pill: "Entregado", titulo: n => `¡Que lo disfrutes, ${n}!`, texto: "Tu pedido ya fue entregado." },
 };
 
@@ -272,6 +339,7 @@ function pintarEstado(p) {
   document.getElementById("estado-texto").textContent = t.texto;
   document.getElementById("estado-detalle").textContent = p.detalle ? `${p.detalle} · ${pesos(p.total)}` : "";
   document.getElementById("otro").hidden = p.estado !== "entregado";
+  document.body.classList.toggle("listo", p.estado === "listo");
   document.title = p.estado === "listo" ? "¡Listo para retirar! · Buffet SIC" : "Pedí sin fila · Buffet SIC";
 }
 
@@ -307,9 +375,9 @@ function seguir(datos) {
 document.addEventListener("visibilitychange", () => { if (!document.hidden) consultar(); });
 document.getElementById("nombre").addEventListener("input", actualizar);
 document.getElementById("volver").onclick = () => mostrar("menu");
-document.getElementById("otro").onclick = () => { seguimiento = null; for (const k in cant) cant[k] = 0; mostrar("menu"); };
-document.getElementById("copiar").onclick = async () => {
-  try { await navigator.clipboard.writeText(ALIAS); document.getElementById("copiar").textContent = "Copiado"; } catch (e) {}
+document.getElementById("otro").onclick = () => { seguimiento = null; document.body.classList.remove("listo"); for (const k in cant) cant[k] = 0; mostrar("menu"); };
+document.getElementById("copiar").onclick = async (e) => {
+  try { await navigator.clipboard.writeText(ALIAS); e.target.textContent = "¡Copiado!"; } catch (err) {}
 };
 
 document.getElementById("accion").onclick = async () => {
@@ -338,6 +406,7 @@ document.getElementById("accion").onclick = async () => {
   }
 };
 
+armarMenu();
 // Si la persona recarga la página, retoma el pedido que estaba siguiendo.
 (function () {
   let guardado = null;

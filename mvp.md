@@ -29,7 +29,8 @@
   - La base guardó las tres horas (0,7 min a "listo" y 0,3 min a "entregado").
   - Un PIN incorrecto se rechaza, un nombre vacío da error, un código que no existe no devuelve datos y la tabla no se puede leer directo.
   - El pedido de prueba se borró después.
-- **Devolución concreta que dimos a la IA:** [PENDIENTE: primera devolución del equipo después de probarlo]
-- **Cambio realizado y resultado de la nueva prueba:** [PENDIENTE]
-- **Próximo ajuste:** [PENDIENTE]
+- **Prueba del equipo (25/10):** el equipo probó el recorrido completo (pedido, panel, listo y entregado) y funcionó; quedó un pedido de esa prueba en la base (código 733).
+- **Devolución concreta que dimos a la IA:** "Funciona todo perfecto; quiero cambiar la estética de la página donde pide el usuario", y después: "tonos más azules, con fondo azul oscuro o negro".
+- **Cambio realizado y resultado de la nueva prueba:** se rediseñó solo la página de quien pide: fondo azul casi negro, acentos azules, títulos tipo estadio, menú agrupado por categorías (Sándwiches, Hamburguesas, Wraps, Empanadas, Bebidas) con accesos arriba, producto elegido resaltado, aviso "Falta tu nombre" en la barra y pantalla de "Listo" en azul. La lógica, la base y el panel del buffet no cambiaron. Nueva prueba técnica (IA): un pedido llegó a la base (858), al pasarlo a "listo" la pantalla cambió sola; después se borró. [PENDIENTE: que el equipo confirme cómo se ve en su celular]
+- **Próximo ajuste:** [PENDIENTE: siguiente devolución del equipo o del buffet]
 - **Prueba con el buffet y con gente del club:** [PENDIENTE: registrar en `pruebas-y-mejoras-mvp.md`]
