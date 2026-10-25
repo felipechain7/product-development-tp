@@ -7,7 +7,7 @@
 - **Querían comprobar:** si los que van al club van a pedir y pagar por el celular en vez de hacer la fila (hipótesis de Comportamiento).
 - **El criterio de éxito era:** 20 pedidos pagados por la web o más en el día de la prueba; menos de 20 es fracaso. Secundario: que el retiro tarde menos de 3 minutos y menos que la fila normal.
 - **Construyeron o probaron:** concierge digital en el buffet del SIC. Página con el menú real y total automático, pago por Mercado Pago al alias `felipechain` con código de pedido, planilla que registra visitas, "ir a pagar" y pedidos, cartel con QR y mensaje para los grupos de WhatsApp. El equipo le pasa los pedidos al buffet a mano.
-- **El resultado registrado fue:** el jueves 22/10, 32 pedidos pagados por la web (20 sin contar conocidos del equipo) y un retiro promedio de 1,9 minutos contra 8,6 de la fila normal. Detalle en `registro-experimento.md`.
+- **El resultado registrado fue:** el jueves 22/10, 32 pedidos pagados por la web (20 sin contar conocidos del equipo) y un retiro promedio de 2,4 minutos contra 8,6 de la fila normal. Detalle en `registro-experimento.md`, secciones 4 a 8.
 
 **Chequeo rápido**
 
@@ -20,17 +20,17 @@
 
 | Qué pasó | Cómo lo sabemos |
 |---|---|
-| 32 personas pidieron y pagaron por el celular (20 sin contar conocidos del equipo) | Eventos "pedido" que registró la página y comprobantes controlados en el mostrador |
-| 32 de las 37 personas que abrieron la página terminaron pidiendo, en unos 2 minutos | Sesiones registradas por la página |
-| El retiro tardó 1,9 minutos en promedio; la fila normal, 8,6 (5 personas) | Horas anotadas en papel por el equipo y pasadas a la planilla, sin segundos |
+| 32 personas pidieron y pagaron por el celular entre las 19:41 y las 21:55 ($602.000); 12 eran conocidas del equipo | Planilla: eventos "pedido" y pestaña "Pedidos equipo" (comprobante y marca de conocido) |
+| De 37 personas que abrieron la página, 33 tocaron "Ir a pagar" y 32 confirmaron | Planilla: sesiones únicas por evento |
+| El retiro en el mostrador tardó 2,4 min en promedio; la fila normal, 8,6 min (5 personas) | "Pedidos equipo" y "Fila normal" |
 
-- Resultado frente al criterio: se alcanzó. Principal: 32 contra 20 (20 sin conocidos, justo el umbral). Secundario: 1,9 minutos, menos de 3 y menos que la fila normal.
-- Algo que salió distinto de lo esperado: casi todos los que abrieron la página pidieron; la fila normal fue más corta (8,6 min) que lo que se declaró en las entrevistas (10 a 20 min); un 37 % de los pedidos fueron de conocidos.
+- Resultado frente al criterio: se alcanzó. 32 pedidos contra 20 (20 justos sin conocidos). El criterio secundario también se alcanzó en promedio.
+- Algo que salió distinto de lo esperado: desde que confirman el pedido hasta tener la comida pasan 8,0 minutos en promedio, casi lo mismo que la fila. La diferencia es que ese tiempo no lo pasan parados en la fila: según el equipo, piden desde la cancha y después caminan al buffet.
 
 ## 3. Aprendizaje
 
-- Aprendimos que: en el SIC, un jueves con 4 partidos, la gente pide y paga por el celular en vez de hacer la fila, y retira más rápido que en la fila normal.
-- Todavía no sabemos si: el buffet pagaría por el servicio, y si el resultado se repite un sábado al mediodía, con más gente y menos conocidos.
+- Aprendimos que: la gente del SIC pide y paga por el celular en vez de hacer la fila cuando tiene un QR a mano, y casi todos los que abren la página terminan pidiendo. El valor es esperar mirando el partido, no recibir la comida antes.
+- Todavía no sabemos si: el buffet pagaría por esto, y si funciona igual un sábado con la fila larga y sin conocidos del equipo.
 
 ## 4. Decisión
 
