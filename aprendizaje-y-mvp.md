@@ -34,9 +34,9 @@
 
 ## 4. Decisión
 
-- Elegimos: [COMPLETAR: seguir probando / arreglar la prueba / probar otro camino / avanzar]
-- Porque: [COMPLETAR]
-- Próximo paso: [COMPLETAR]
+- Elegimos: avanzar (decisión del equipo, 25/10).
+- Porque: el criterio se alcanzó (32 pedidos contra 20, y 20 sin contar conocidos), casi todos los que abrieron la página pidieron (32 de 37) y el retiro fue más corto que la fila normal. Repetir la misma prueba no enseñaría algo nuevo sobre el comportamiento.
+- Próximo paso: construir un MVP que saque la parte manual del equipo, para que pueda usarse varios días sin nosotros. Queda abierto si el buffet pagaría y cómo funciona un sábado con la fila larga.
 
 ## 5. Punto de partida del MVP
 

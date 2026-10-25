@@ -92,8 +92,8 @@
 
 - **Respaldada, no respaldada o inconclusa:** respaldada por esta prueba (hipótesis de Comportamiento, en el SIC, un jueves a la noche).
 - **Comparación con el criterio:** principal: 32 pedidos contra 20, se alcanzó (20 sin conocidos). Secundario: retiro promedio de 2,4 min, menos de 3 y menos que la fila normal (8,6), se alcanzó en promedio.
-- **Decisión de iteración:** [DECIDIR EN CLASE 5: seguir probando / arreglar la prueba / probar otro camino / avanzar]
-- **Justificación:** [COMPLETAR con la decisión del equipo]
+- **Decisión de iteración:** avanzar al MVP (decisión del equipo del 25/10, Clase 5).
+- **Justificación:** se alcanzó el criterio principal (también sin conocidos) y el secundario; el mecanismo funcionó sin errores técnicos. Ver `aprendizaje-y-mvp.md`, sección 4.
 - **Próxima incertidumbre por reducir:** si el buffet pagaría por el servicio (hipótesis de modelo de negocio), y si la mejora se sostiene un sábado con la fila larga.
 
 ## 8. Nueva posición en la curva de la verdad
