@@ -91,3 +91,22 @@ revoke all on function public.crear_pedido(text, text, integer), public.estado_p
   public.panel_pedidos(text), public.marcar_estado(text, bigint, text) from public;
 grant execute on function public.crear_pedido(text, text, integer), public.estado_pedido(uuid),
   public.panel_pedidos(text), public.marcar_estado(text, bigint, text) to anon, authenticated;
+
+-- ============================================================
+-- Pago con Mercado Pago (Checkout Pro), agregado el 25/10.
+-- El pedido se crea como 'pendiente_pago' desde la función crear-pago (mvp/funciones)
+-- y pasa a 'nuevo' cuando la función mp-webhook confirma el pago con la API de Mercado Pago.
+-- ============================================================
+
+alter table public.pedidos drop constraint pedidos_estado_check;
+alter table public.pedidos add constraint pedidos_estado_check check (estado in ('pendiente_pago', 'nuevo', 'listo', 'entregado'));
+alter table public.pedidos add column pagado_at timestamptz, add column mp_payment_id text, add column mp_preference_id text;
+
+-- reservar_pedido(p_nombre, p_detalle, p_total): igual que crear_pedido pero con estado 'pendiente_pago'.
+-- confirmar_pago(p_id, p_payment_id): pasa el pedido a 'nuevo' y guarda la hora y el id del pago.
+-- guardar_preferencia(p_id, p_preference_id): guarda el id de la preferencia de Mercado Pago.
+-- Las tres solo las puede ejecutar service_role (las funciones del servidor).
+-- crear_pedido ya no se puede ejecutar desde la página (revoke a anon y authenticated).
+-- panel_pedidos y marcar_estado ignoran los pedidos 'pendiente_pago'.
+-- El SQL completo de estas funciones está en las migraciones del proyecto de Supabase
+-- (pago_con_mercado_pago y marcar_estado_solo_pagados).

@@ -134,7 +134,7 @@ function tarjeta(p, recien) {
     ? `pedido ${hora(p.creado_at)} · hace ${minutos(p.creado_at, ahora)} min`
     : `listo ${hora(p.listo_at)} · hace ${minutos(p.listo_at, ahora)} min`;
   el.querySelector(".detalle").textContent = p.detalle;
-  el.querySelector(".total").textContent = `${pesos(p.total)} · controlar el comprobante de Mercado Pago`;
+  el.querySelector(".total").textContent = `${pesos(p.total)} · pagado con Mercado Pago`;
   const acc = el.querySelector(".acciones");
   const boton = (texto, clase, estado) => {
     const b = document.createElement("button");

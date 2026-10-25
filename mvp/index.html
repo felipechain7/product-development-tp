@@ -120,6 +120,10 @@
   body.listo .seguimiento .codigo { color: #fff; }
   body.listo .seguimiento .etiqueta, body.listo .detalle-ped { color: rgba(255,255,255,.8); }
   .otro { margin-top: 6px; }
+  .otro.secundario { background: transparent; border: 2px solid var(--linea); color: var(--gris); box-shadow: none; font-size: .95rem; }
+  .estado.pendiente_pago { background: var(--azul-suave); color: var(--celeste); }
+  .estado.pendiente_pago::before { animation: latido 1.4s ease-in-out infinite; }
+  .estado.rechazado { background: var(--alerta-bg); color: var(--alerta); }
   @media (prefers-reduced-motion: reduce) { .estado.nuevo::before { animation: none; } .item { transition: none; } }
 </style>
 </head>
@@ -158,12 +162,11 @@
         <ul class="resumen" id="resumen"></ul>
       </div>
       <div class="tarjeta">
-        <div class="etiqueta">Alias de Mercado Pago</div>
-        <div class="alias"><code id="alias"></code><button class="btn-sec" id="copiar" type="button">Copiar</button></div>
+        <div class="etiqueta">Cómo sigue</div>
         <ol class="pasos-pago">
-          <li><b>1</b><span>Abrí Mercado Pago o tu banco.</span></li>
-          <li><b>2</b><span>Transferí el total exacto a ese alias.</span></li>
-          <li><b>3</b><span>Volvé acá y tocá <strong>Ya pagué</strong>.</span></li>
+          <li><b>1</b><span>Tocá <strong>Pagar con Mercado Pago</strong>: te lleva a pagar con dinero en cuenta o tarjeta.</span></li>
+          <li><b>2</b><span>Cuando termines, volvés solo a esta página.</span></li>
+          <li><b>3</b><span>El buffet recibe tu pedido y te avisamos acá cuando esté listo.</span></li>
         </ol>
       </div>
       <div id="error-pago" class="error" hidden></div>
@@ -203,8 +206,8 @@
 const SUPABASE_URL = "https://pqzobcbsqecsnidkdxxu.supabase.co";
 const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBxem9iY2JzcWVjc25pZGtkeHh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI5NTU2MDQsImV4cCI6MjEwODUzMTYwNH0.3MTeFl49yxBpPz2-a6Olvtnkrl5jkxGfPuFDhxEo8RE";
 
-// Alias de Mercado Pago que recibe los pagos.
-const ALIAS = "felipechain";
+// Funciones del servidor: crear-pago (arma el cobro en Mercado Pago) y mp-webhook (confirma el pago).
+const FUNCIONES = SUPABASE_URL + "/functions/v1";
 
 // Menú real del buffet del SIC.
 // plato: true    -> habilita una bebida en combo por cada unidad.
@@ -247,6 +250,18 @@ async function rpc(fn, args) {
     throw new Error(msg);
   }
   return r.json();
+}
+
+async function funcion(nombre, datos) {
+  const r = await fetch(`${FUNCIONES}/${nombre}`, {
+    method: "POST",
+    headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}`, "Content-Type": "application/json" },
+    body: JSON.stringify(datos),
+  });
+  let res = {};
+  try { res = await r.json(); } catch (e) {}
+  if (!r.ok) throw new Error(res.error || "No se pudo conectar.");
+  return res;
 }
 
 function platos() {
@@ -318,14 +333,16 @@ function mostrar(nombre) {
   document.getElementById("barra").hidden = nombre === "estado";
   document.querySelector(".tapa").hidden = nombre !== "menu";
   const accion = document.getElementById("accion");
-  if (nombre === "pago") { accion.textContent = "Ya pagué"; accion.disabled = false; document.getElementById("hint").textContent = ""; }
+  if (nombre === "pago") { accion.textContent = "Pagar con Mercado Pago"; accion.disabled = false; document.getElementById("hint").textContent = ""; }
   if (nombre === "menu") actualizar();
   window.scrollTo(0, 0);
 }
 
 const TEXTOS = {
-  nuevo:     { pill: "En preparación", titulo: n => `¡Gracias, ${n}!`, texto: "El buffet ya tiene tu pedido. Te avisamos acá cuando esté listo: seguí mirando el partido." },
-  listo:     { pill: "¡Listo! Andá a retirar", titulo: n => `¡${n}, está listo!`, texto: "Andá al mostrador, decí tu nombre y este código, y mostrá el comprobante de Mercado Pago." },
+  pendiente_pago: { pill: "Confirmando el pago…", titulo: n => `Un momento, ${n}`, texto: "Estamos esperando la confirmación de Mercado Pago. Apenas llegue, el buffet recibe tu pedido." },
+  rechazado: { pill: "El pago no se completó", titulo: () => "El pago no se completó", texto: "Mercado Pago no aprobó el pago, así que el pedido no se mandó. Podés volver al menú e intentarlo de nuevo." },
+  nuevo:    { pill: "En preparación", titulo: n => `¡Gracias, ${n}!`, texto: "El buffet ya tiene tu pedido. Te avisamos acá cuando esté listo: seguí mirando el partido." },
+  listo:     { pill: "¡Listo! Andá a retirar", titulo: n => `¡${n}, está listo!`, texto: "Andá al mostrador y decí tu nombre y este código. Ya está pagado." },
   entregado: { pill: "Entregado", titulo: n => `¡Que lo disfrutes, ${n}!`, texto: "Tu pedido ya fue entregado." },
 };
 
@@ -338,7 +355,10 @@ function pintarEstado(p) {
   pill.className = "estado " + (p.estado || "nuevo");
   document.getElementById("estado-texto").textContent = t.texto;
   document.getElementById("estado-detalle").textContent = p.detalle ? `${p.detalle} · ${pesos(p.total)}` : "";
-  document.getElementById("otro").hidden = p.estado !== "entregado";
+  const otro = document.getElementById("otro");
+  otro.hidden = !["entregado", "rechazado", "pendiente_pago"].includes(p.estado);
+  otro.textContent = p.estado === "entregado" ? "Hacer otro pedido" : "Volver al menú";
+  otro.classList.toggle("secundario", p.estado === "pendiente_pago");
   document.body.classList.toggle("listo", p.estado === "listo");
   document.title = p.estado === "listo" ? "¡Listo para retirar! · Buffet SIC" : "Pedí sin fila · Buffet SIC";
 }
@@ -362,28 +382,19 @@ async function consultar() {
   }
 }
 
-function seguir(datos) {
-  seguimiento = { estado: "nuevo", ...datos };
-  try { localStorage.setItem(GUARDADO, JSON.stringify({ token: datos.token })); } catch (e) {}
-  mostrar("estado");
-  pintarEstado(seguimiento);
-  detener();
-  consultar();
-  timer = setInterval(consultar, 5000);
-}
-
 document.addEventListener("visibilitychange", () => { if (!document.hidden) consultar(); });
 document.getElementById("nombre").addEventListener("input", actualizar);
 document.getElementById("volver").onclick = () => mostrar("menu");
-document.getElementById("otro").onclick = () => { seguimiento = null; document.body.classList.remove("listo"); for (const k in cant) cant[k] = 0; mostrar("menu"); };
-document.getElementById("copiar").onclick = async (e) => {
-  try { await navigator.clipboard.writeText(ALIAS); e.target.textContent = "¡Copiado!"; } catch (err) {}
+document.getElementById("otro").onclick = () => {
+  detener(); olvidar(); seguimiento = null;
+  document.body.classList.remove("listo");
+  for (const k in cant) cant[k] = 0;
+  mostrar("menu");
 };
 
 document.getElementById("accion").onclick = async () => {
   if (pantalla === "menu") {
     document.getElementById("monto").textContent = pesos(total());
-    document.getElementById("alias").textContent = ALIAS;
     const ul = document.getElementById("resumen");
     ul.innerHTML = "";
     for (const linea of detalle()) { const li = document.createElement("li"); li.textContent = linea; ul.appendChild(li); }
@@ -392,33 +403,46 @@ document.getElementById("accion").onclick = async () => {
   } else if (pantalla === "pago") {
     const accion = document.getElementById("accion");
     const error = document.getElementById("error-pago");
-    accion.disabled = true; accion.textContent = "Enviando…"; error.hidden = true;
+    accion.disabled = true; accion.textContent = "Abriendo Mercado Pago…"; error.hidden = true;
     const nombre = document.getElementById("nombre").value.trim();
-    const texto = detalle().join(", ");
+    const items = Object.fromEntries(Object.entries(cant).filter(([, n]) => n > 0));
     try {
-      const filas = await rpc("crear_pedido", { p_nombre: nombre, p_detalle: texto, p_total: total() });
-      seguir({ token: filas[0].token, codigo: filas[0].codigo, nombre, detalle: texto, total: total() });
+      const r = await funcion("crear-pago", { nombre, items });
+      try { localStorage.setItem(GUARDADO, JSON.stringify({ token: r.token })); } catch (e) {}
+      window.location.href = r.init_point;
     } catch (e) {
-      error.textContent = `No pudimos mandar el pedido (${e.message}). Revisá la conexión y tocá "Ya pagué" de nuevo.`;
+      error.textContent = `No pudimos abrir el pago (${e.message}). Revisá la conexión y probá de nuevo.`;
       error.hidden = false;
-      accion.disabled = false; accion.textContent = "Ya pagué";
+      accion.disabled = false; accion.textContent = "Pagar con Mercado Pago";
     }
   }
 };
 
 armarMenu();
-// Si la persona recarga la página, retoma el pedido que estaba siguiendo.
-(function () {
-  let guardado = null;
-  try { guardado = JSON.parse(localStorage.getItem(GUARDADO) || "null"); } catch (e) {}
-  if (guardado && guardado.token) {
-    seguimiento = { token: guardado.token, estado: null };
-    mostrar("estado");
-    consultar();
-    timer = setInterval(consultar, 5000);
-  } else {
-    actualizar();
+// Al volver de Mercado Pago (?t=token&payment_id=...&status=...) o al recargar, retoma el pedido.
+(async function () {
+  const q = new URLSearchParams(location.search);
+  let token = q.get("t");
+  const pagoId = q.get("payment_id") || q.get("collection_id");
+  const estadoPago = q.get("status") || q.get("collection_status");
+  if (q.toString()) history.replaceState(null, "", location.pathname);
+  if (!token) {
+    try { token = (JSON.parse(localStorage.getItem(GUARDADO) || "null") || {}).token; } catch (e) {}
   }
+  if (!token) { actualizar(); return; }
+
+  seguimiento = { token, estado: null };
+  try { localStorage.setItem(GUARDADO, JSON.stringify({ token })); } catch (e) {}
+  mostrar("estado");
+  if (estadoPago === "rejected" || estadoPago === "null") {
+    pintarEstado({ estado: "rechazado", nombre: "" });
+    olvidar();
+    return;
+  }
+  // Pedirle al servidor que verifique el pago apenas vuelve, sin esperar el aviso de Mercado Pago.
+  if (pagoId && /^\d+$/.test(pagoId)) { try { await funcion("mp-webhook", { payment_id: pagoId }); } catch (e) {} }
+  consultar();
+  timer = setInterval(consultar, 5000);
 })();
 </script>
 </body>
