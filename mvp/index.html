@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedí sin fila · Buffet SIC</title>
+<style>
+  :root {
+    --bg: #f6f5f1;
+    --card: #ffffff;
+    --ink: #1d1d1b;
+    --muted: #6b6a66;
+    --line: #e3e1da;
+    --accent: #0f5c3a;
+    --accent-ink: #ffffff;
+    --warn-bg: #fff4d6;
+    --warn-ink: #6b4e00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151514;
+      --card: #20201e;
+      --ink: #f1f0ec;
+      --muted: #a5a39c;
+      --line: #34332f;
+      --accent: #3fae7a;
+      --accent-ink: #0d1a13;
+      --warn-bg: #3a3112;
+      --warn-ink: #f3dc93;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 520px; margin: 0 auto; padding: 16px 16px 120px; }
+  h1 { font-size: 1.5rem; margin: 8px 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 16px; }
+  .aviso {
+    background: var(--warn-bg); color: var(--warn-ink);
+    border-radius: 10px; padding: 10px 12px; margin-bottom: 16px; font-size: .9rem;
+  }
+  .item {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 12px; margin-bottom: 10px;
+  }
+  .item .nombre { font-weight: 600; }
+  .item .precio { color: var(--muted); font-size: .95rem; }
+  .cant { display: flex; align-items: center; gap: 10px; }
+  .cant button {
+    width: 40px; height: 40px; border-radius: 50%;
+    border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+    font-size: 1.3rem; line-height: 1; cursor: pointer;
+  }
+  .cant button:disabled { opacity: .35; cursor: not-allowed; }
+  .cant span { min-width: 1.5em; text-align: center; font-weight: 600; }
+  .item .nota { font-size: .8rem; }
+  label { display: block; font-weight: 600; margin: 18px 0 6px; }
+  input[type=text] {
+    width: 100%; padding: 12px; font-size: 1rem;
+    border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--ink);
+  }
+  .barra {
+    position: fixed; left: 0; right: 0; bottom: 0;
+    background: var(--card); border-top: 1px solid var(--line);
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  }
+  .barra .dentro { max-width: 520px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
+  .total { flex: 1; }
+  .total small { display: block; color: var(--muted); }
+  .total strong { font-size: 1.3rem; }
+  .btn {
+    border: 0; border-radius: 12px; padding: 14px 18px; font-size: 1rem; font-weight: 700;
+    background: var(--accent); color: var(--accent-ink); cursor: pointer;
+  }
+  .btn:disabled { opacity: .4; cursor: not-allowed; }
+  .btn.sec { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+  .monto { font-size: 2rem; font-weight: 800; margin: 4px 0 8px; }
+  .alias { display: flex; gap: 8px; align-items: center; }
+  .alias code { flex: 1; font-size: 1.1rem; padding: 10px; border-radius: 8px; background: var(--bg); overflow-wrap: anywhere; }
+  ol { padding-left: 1.2em; margin: 8px 0 0; }
+  .resumen { margin: 0; padding-left: 1.1em; color: var(--muted); }
+  .codigo { font-size: 2.4rem; font-weight: 800; letter-spacing: .06em; }
+  .pie { color: var(--muted); font-size: .8rem; margin-top: 24px; }
+  [hidden] { display: none !important; }
+  .estado { display: inline-block; font-weight: 800; padding: 8px 14px; border-radius: 99px; margin: 6px 0 2px; font-size: 1.05rem; }
+  .estado.nuevo { background: var(--warn-bg); color: var(--warn-ink); }
+  .estado.listo { background: var(--accent); color: var(--accent-ink); }
+  .estado.entregado { background: var(--bg); color: var(--muted); border: 1px solid var(--line); }
+  .error { background: var(--warn-bg); color: var(--warn-ink); border-radius: 10px; padding: 10px 12px; margin: 12px 0; }
+  .detalle-ped { color: var(--muted); margin: 6px 0 0; }
+</style>
+</head>
+<body>
+<main>
+
+  <!-- Pantalla 1: menú -->
+  <section id="p-menu">
+    <h1>Pedí sin perderte el partido</h1>
+    <p class="sub">Elegí, pagá con Mercado Pago y te avisamos acá cuando esté listo para retirar.</p>
+    <div id="lista"></div>
+    <label for="nombre">Tu nombre o apodo</label>
+    <input id="nombre" type="text" maxlength="30" autocomplete="off" placeholder="Para entregarte el pedido">
+    <p class="pie">Solo te pedimos un nombre o apodo para entregarte el pedido. Proyecto de estudiantes de la Universidad Austral.</p>
+  </section>
+
+  <!-- Pantalla 2: pago -->
+  <section id="p-pago" hidden>
+    <h1>Pagá tu pedido</h1>
+    <div class="panel">
+      <div>Total a transferir</div>
+      <div class="monto" id="monto"></div>
+      <ul class="resumen" id="resumen"></ul>
+    </div>
+    <div class="panel">
+      <div style="margin-bottom:8px">Alias de Mercado Pago</div>
+      <div class="alias"><code id="alias"></code><button class="btn sec" id="copiar" type="button">Copiar</button></div>
+      <ol>
+        <li>Abrí Mercado Pago o tu banco.</li>
+        <li>Transferí el total exacto a ese alias.</li>
+        <li>Volvé acá y tocá "Ya pagué".</li>
+      </ol>
+    </div>
+    <div id="error-pago" class="error" hidden></div>
+    <button class="btn sec" id="volver" type="button">Cambiar el pedido</button>
+  </section>
+
+  <!-- Pantalla 3: seguimiento del pedido -->
+  <section id="p-estado" hidden>
+    <h1 id="estado-titulo"></h1>
+    <div class="panel">
+      <div>Tu código de pedido</div>
+      <div class="codigo" id="estado-codigo"></div>
+      <div id="estado-pill" class="estado"></div>
+      <p id="estado-texto" style="margin:8px 0 0"></p>
+      <p id="estado-detalle" class="detalle-ped"></p>
+    </div>
+    <div id="error-estado" class="error" hidden>Sin conexión. Reintentamos solos en unos segundos.</div>
+    <button class="btn sec" id="otro" type="button" hidden>Hacer otro pedido</button>
+    <p class="pie">Dejá esta página abierta: se actualiza sola.</p>
+  </section>
+
+</main>
+
+<div class="barra" id="barra">
+  <div class="dentro">
+    <div class="total"><small>Total</small><strong id="total">$0</strong></div>
+    <button class="btn" id="accion" type="button" disabled>Ir a pagar</button>
+  </div>
+</div>
+
+<script>
+/* ===================== CONFIGURACIÓN ===================== */
+// Base de datos (Supabase). La clave es pública a propósito: la tabla no se puede leer
+// ni escribir directo, solo a través de las funciones de mvp/schema.sql.
+const SUPABASE_URL = "https://pqzobcbsqecsnidkdxxu.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBxem9iY2JzcWVjc25pZGtkeHh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI5NTU2MDQsImV4cCI6MjEwODUzMTYwNH0.3MTeFl49yxBpPz2-a6Olvtnkrl5jkxGfPuFDhxEo8RE";
+
+// Alias de Mercado Pago que recibe los pagos.
+const ALIAS = "felipechain";
+
+// Menú real del buffet del SIC.
+// plato: true    -> habilita una bebida en combo por cada unidad.
+// empanada: true -> todas las empanadas juntas habilitan una sola bebida en combo.
+// combo: true    -> no se puede pedir más que la cantidad de platos.
+const MENU = [
+  { id: "bondiola",   nombre: "Sándwich de bondiola",         precio: 17000, plato: true },
+  { id: "bife",       nombre: "Sándwich de bife de chorizo",  precio: 19000, plato: true },
+  { id: "choripan",   nombre: "Choripán",                     precio: 10000, plato: true },
+  { id: "hamb",       nombre: "Hamburguesa con queso",        precio: 8000,  plato: true },
+  { id: "hamb_papas", nombre: "Hamburguesa con queso y papas", precio: 10500, plato: true },
+  { id: "wrap_pollo", nombre: "Wrap de pollo",                precio: 18000, plato: true },
+  { id: "wrap_atun",  nombre: "Wrap de atún",                 precio: 18000, plato: true },
+  { id: "wrap_bond",  nombre: "Wrap de bondiola",             precio: 18000, plato: true },
+  { id: "tostado",    nombre: "Tostado",                      precio: 12000, plato: true },
+  { id: "emp_carne",  nombre: "Empanada de carne",            precio: 4000, empanada: true },
+  { id: "emp_jyq",    nombre: "Empanada de jamón y queso",    precio: 4000, empanada: true },
+  { id: "bebida",     nombre: "Bebida",                       precio: 4000 },
+  { id: "combo",      nombre: "Bebida en combo",              precio: 2000, combo: true, nota: "Una por cada plato y una con las empanadas" },
+];
+/* ========================================================= */
+
+const pesos = n => "$" + n.toLocaleString("es-AR");
+const cant = Object.fromEntries(MENU.map(p => [p.id, 0]));
+let pantalla = "menu";
+const GUARDADO = "pedido_actual";
+let seguimiento = null;
+let timer = null;
+
+async function rpc(fn, args) {
+  const r = await fetch(`${SUPABASE_URL}/rest/v1/rpc/${fn}`, {
+    method: "POST",
+    headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}`, "Content-Type": "application/json" },
+    body: JSON.stringify(args),
+  });
+  if (!r.ok) {
+    let msg = "No se pudo conectar.";
+    try { msg = (await r.json()).message || msg; } catch (e) {}
+    throw new Error(msg);
+  }
+  return r.json();
+}
+
+function platos() {
+  const sueltos = MENU.filter(p => p.plato).reduce((s, p) => s + cant[p.id], 0);
+  const hayEmpanadas = MENU.some(p => p.empanada && cant[p.id] > 0);
+  return sueltos + (hayEmpanadas ? 1 : 0);
+}
+function maximo(p) { return p.combo ? Math.min(9, platos()) : 9; }
+function ajustarCombos() { for (const p of MENU) if (p.combo) cant[p.id] = Math.min(cant[p.id], platos()); }
+function total() { return MENU.reduce((s, p) => s + p.precio * cant[p.id], 0); }
+function detalle() { return MENU.filter(p => cant[p.id] > 0).map(p => `${cant[p.id]} x ${p.nombre}`); }
+
+function dibujarMenu() {
+  const lista = document.getElementById("lista");
+  lista.innerHTML = "";
+  for (const p of MENU) {
+    const fila = document.createElement("div");
+    fila.className = "item";
+    const precio = p.combo ? "+" + pesos(p.precio) : pesos(p.precio);
+    fila.innerHTML = `<div><div class="nombre"></div><div class="precio">${precio}</div><div class="precio nota"></div></div>
+      <div class="cant"><button type="button" aria-label="Quitar">−</button><span>${cant[p.id]}</span><button type="button" aria-label="Agregar">+</button></div>`;
+    fila.querySelector(".nombre").textContent = p.nombre;
+    fila.querySelector(".nota").textContent = p.nota || "";
+    const [menos, mas] = fila.querySelectorAll("button");
+    mas.disabled = cant[p.id] >= maximo(p);
+    menos.onclick = () => { cant[p.id] = Math.max(0, cant[p.id] - 1); ajustarCombos(); actualizar(); };
+    mas.onclick = () => { cant[p.id] = Math.min(maximo(p), cant[p.id] + 1); actualizar(); };
+    lista.appendChild(fila);
+  }
+}
+
+function actualizar() {
+  dibujarMenu();
+  document.getElementById("total").textContent = pesos(total());
+  const nombre = document.getElementById("nombre").value.trim();
+  const accion = document.getElementById("accion");
+  if (pantalla === "menu") {
+    accion.textContent = "Ir a pagar";
+    accion.disabled = total() === 0 || nombre === "";
+  }
+}
+
+function mostrar(nombre) {
+  pantalla = nombre;
+  for (const id of ["menu", "pago", "estado"]) document.getElementById("p-" + id).hidden = id !== nombre;
+  document.getElementById("barra").hidden = nombre === "estado";
+  const accion = document.getElementById("accion");
+  if (nombre === "pago") { accion.textContent = "Ya pagué"; accion.disabled = false; }
+  if (nombre === "menu") actualizar();
+  window.scrollTo(0, 0);
+}
+
+const TEXTOS = {
+  nuevo:     { pill: "En preparación", titulo: n => `¡Gracias, ${n}!`, texto: "El buffet ya tiene tu pedido. Te avisamos acá cuando esté listo: no hace falta que vayas antes." },
+  listo:     { pill: "¡Listo! Andá a retirar", titulo: n => `¡${n}, tu pedido está listo!`, texto: "Andá al mostrador del buffet, decí tu nombre y este código, y mostrá el comprobante de Mercado Pago." },
+  entregado: { pill: "Entregado", titulo: n => `¡Que lo disfrutes, ${n}!`, texto: "Tu pedido ya fue entregado." },
+};
+
+function pintarEstado(p) {
+  const t = TEXTOS[p.estado] || TEXTOS.nuevo;
+  document.getElementById("estado-titulo").textContent = t.titulo(p.nombre || "");
+  document.getElementById("estado-codigo").textContent = p.codigo || "";
+  const pill = document.getElementById("estado-pill");
+  pill.textContent = t.pill;
+  pill.className = "estado " + (p.estado || "nuevo");
+  document.getElementById("estado-texto").textContent = t.texto;
+  document.getElementById("estado-detalle").textContent = p.detalle ? `${p.detalle} · ${pesos(p.total)}` : "";
+  document.getElementById("otro").hidden = p.estado !== "entregado";
+  document.title = p.estado === "listo" ? "¡Listo para retirar! · Buffet SIC" : "Pedí sin fila · Buffet SIC";
+}
+
+function detener() { if (timer) clearInterval(timer); timer = null; }
+function olvidar() { try { localStorage.removeItem(GUARDADO); } catch (e) {} }
+
+async function consultar() {
+  if (!seguimiento) return;
+  try {
+    const filas = await rpc("estado_pedido", { p_token: seguimiento.token });
+    document.getElementById("error-estado").hidden = true;
+    if (!filas.length) { olvidar(); detener(); seguimiento = null; mostrar("menu"); return; }
+    const p = filas[0];
+    if (p.estado === "listo" && seguimiento.estado !== "listo" && navigator.vibrate) navigator.vibrate([200, 100, 200]);
+    seguimiento.estado = p.estado;
+    pintarEstado(p);
+    if (p.estado === "entregado") { olvidar(); detener(); }
+  } catch (e) {
+    document.getElementById("error-estado").hidden = false;
+  }
+}
+
+function seguir(datos) {
+  seguimiento = { estado: "nuevo", ...datos };
+  try { localStorage.setItem(GUARDADO, JSON.stringify({ token: datos.token })); } catch (e) {}
+  mostrar("estado");
+  pintarEstado(seguimiento);
+  detener();
+  consultar();
+  timer = setInterval(consultar, 5000);
+}
+
+document.addEventListener("visibilitychange", () => { if (!document.hidden) consultar(); });
+document.getElementById("nombre").addEventListener("input", actualizar);
+document.getElementById("volver").onclick = () => mostrar("menu");
+document.getElementById("otro").onclick = () => { seguimiento = null; for (const k in cant) cant[k] = 0; mostrar("menu"); };
+document.getElementById("copiar").onclick = async () => {
+  try { await navigator.clipboard.writeText(ALIAS); document.getElementById("copiar").textContent = "Copiado"; } catch (e) {}
+};
+
+document.getElementById("accion").onclick = async () => {
+  if (pantalla === "menu") {
+    document.getElementById("monto").textContent = pesos(total());
+    document.getElementById("alias").textContent = ALIAS;
+    const ul = document.getElementById("resumen");
+    ul.innerHTML = "";
+    for (const linea of detalle()) { const li = document.createElement("li"); li.textContent = linea; ul.appendChild(li); }
+    document.getElementById("error-pago").hidden = true;
+    mostrar("pago");
+  } else if (pantalla === "pago") {
+    const accion = document.getElementById("accion");
+    const error = document.getElementById("error-pago");
+    accion.disabled = true; accion.textContent = "Enviando…"; error.hidden = true;
+    const nombre = document.getElementById("nombre").value.trim();
+    const texto = detalle().join(", ");
+    try {
+      const filas = await rpc("crear_pedido", { p_nombre: nombre, p_detalle: texto, p_total: total() });
+      seguir({ token: filas[0].token, codigo: filas[0].codigo, nombre, detalle: texto, total: total() });
+    } catch (e) {
+      error.textContent = `No pudimos mandar el pedido (${e.message}). Revisá la conexión y tocá "Ya pagué" de nuevo.`;
+      error.hidden = false;
+      accion.disabled = false; accion.textContent = "Ya pagué";
+    }
+  }
+};
+
+// Si la persona recarga la página, retoma el pedido que estaba siguiendo.
+(function () {
+  let guardado = null;
+  try { guardado = JSON.parse(localStorage.getItem(GUARDADO) || "null"); } catch (e) {}
+  if (guardado && guardado.token) {
+    seguimiento = { token: guardado.token, estado: null };
+    mostrar("estado");
+    consultar();
+    timer = setInterval(consultar, 5000);
+  } else {
+    actualizar();
+  }
+})();
+</script>
+</body>
+</html>
