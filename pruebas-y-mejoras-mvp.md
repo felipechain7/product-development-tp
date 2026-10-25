@@ -51,5 +51,10 @@ Además, el sistema guarda la hora del pago, de "Listo" y de "Entregado". Sirve 
 ## Próximo paso
 
 - Incertidumbre pendiente: si quien va al club completa el pedido sola y espera menos parada que en la fila, sin el equipo al lado.
-- Acción más barata, responsable y momento: [PENDIENTE: fecha de la prueba y roles de facilitación, observación y registro]
+- Acción más barata, responsable y momento: prueba en el SIC el **sábado 31/10**, con los mismos roles del 22/10:
+  - **Facilita y observa en la cancha (Felipe Servent):** lee la consigna, anota dónde duda la persona y cada ayuda, y le hace las dos preguntas del final.
+  - **Observa en el mostrador (Pedro Tailhade):** anota con segundos la hora en que llega cada persona y si pregunta algo.
+  - **Registra y mide la fila normal (Juan Ignacio Canabe):** completa el registro y mide de 3 a 5 personas de la fila normal (de entrar a la fila a recibir la comida).
+  - **Participantes y buffet (Felipe Chain):** consigue personas del club que no hayan usado la página y observa cómo usa el buffet el panel (dato aparte, no es métrica de esta tarea).
+  - Antes del sábado: un pago real chico (una bebida) hecho por un compañero, para confirmar que el cobro de producción llega al panel.
 - Qué observar y qué decisión tomar según el resultado: ver el plan de medición.
