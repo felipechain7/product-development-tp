@@ -106,7 +106,7 @@ Y hay riesgos que siguen abiertos, y los decimos de frente: no sabemos si la gen
 
 Para la temporada 2027, la meta es tener SinFila en 3 clubes, con 30 pedidos o más por día de partido en cada uno: unos 2.880 pedidos y alrededor de 5,2 millones de pesos de contribución. Es una estimación.
 
-Y les pedimos dos cosas: unos 560 dólares para el piloto, que cubren el servidor de la temporada y 36 carteles, y, sobre todo, que nos presenten a concesionarios de buffets de la URBA. Operarlo cuesta poco; lo difícil es sumar clubes.
+Y les pedimos dos cosas: unos 1.500 dólares para el piloto, que cubren el servidor de la temporada, 36 carteles, la marca y el dominio, y publicidad en las redes de los clubes y stickers con QR, y, sobre todo, que nos presenten a concesionarios de buffets de la URBA. Operarlo cuesta poco; lo difícil es sumar clubes.
 
 ## 13. Cierre · Felipe Chain · 15 s
 
@@ -130,5 +130,5 @@ En el rugby el partido no se pausa para ir al buffet. Con SinFila, ya no hace fa
 ## Para el ensayo
 
 - Practiquen con cronómetro: el que se pase de su tiempo recorta su parte, no la del siguiente.
-- Los números que no pueden fallar: **32 pedidos, 86 %, 2,4 contra 8,6 minutos, $1.800 por pedido, 560 dólares**.
+- Los números que no pueden fallar: **32 pedidos, 86 %, 2,4 contra 8,6 minutos, $1.800 por pedido, 1.500 dólares**.
 - Si no tienen el video para el ensayo, la diapositiva 5 tiene los pasos para contarlo.

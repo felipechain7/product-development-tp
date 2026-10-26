@@ -99,10 +99,13 @@ Detalle en `economia-del-producto.md`.
 - **Próxima prueba:** en el club, un día de partido, sin el equipo al lado: gente del club pide sola y se miden los minutos en el mostrador contra la fila normal.
 - **Después:** probar si la gente sigue pidiendo con el cargo del 10 % y ofrecerle la instalación al buffet del SIC y después al de Alumni.
 - **Meta para la temporada 2027 (decisión del equipo, 25/10):** SinFila funcionando en 3 clubes, con 30 pedidos o más por día de partido en cada uno (el 22/10 hubo 32). Son unos 2.880 pedidos en la temporada (3 clubes × 32 días de partido × 30) y unos $5.200.000 de contribución con el cargo del 10 % (≈ $1.800 por pedido). Estimación: supone 4 días de partido por mes de marzo a octubre. En el piloto también se miden las ventas del buffet en la hora pico con y sin SinFila (meta de la Caja 2 del canvas, sin línea de base todavía).
-- **Qué les pedimos a los inversores:** "Buscamos unos 560 dólares para un piloto en 3 clubes durante la temporada 2027 (servidor y cartelería), y que nos presenten a concesionarios de buffets de la URBA."
+- **Qué les pedimos a los inversores:** "Buscamos unos 1.500 dólares para un piloto en 3 clubes durante la temporada 2027 (servidor, cartelería, marca y publicidad), y que nos presenten a concesionarios de buffets de la URBA."
   - Servidor: 25 dólares × 8 meses (marzo a octubre) = 200 dólares (referencia: precio de Supabase Pro).
   - Carteles: 12 por club (entrada del buffet y alrededor de las canchas) × 3 clubes = 36, a unos 10 dólares cada uno = 360 dólares (estimación; referencia: A3 en foamboard a £7,50 en una lista de septiembre de 2026 de otro país; rango total de 380 a 740 dólares). [REEMPLAZAR si consiguen un presupuesto de imprenta antes del 02/11]
+  - Marca y dominio: sinfila.com.ar ≈ 10 dólares por año (nota de 2026 sin confirmar en NIC Argentina: unos $8.500) y logo con un diseñador freelance ≈ 150 dólares (estimación, rango de 100 a 200). Total ≈ 160 dólares.
+  - Publicidad: posteos pagos en Instagram, 30 dólares por club por mes × 3 clubes × 8 meses ≈ 720 dólares (estimación del equipo: presupuesto chico para medir si traen pedidos), y 120 stickers con QR para mesas y tribunas a unos 0,50 dólares ≈ 60 dólares. Total ≈ 780 dólares.
   - Traslados: $0, el equipo ya va a esos clubes. Las horas del equipo no se incluyen.
+  - **Total: 200 + 360 + 160 + 780 ≈ 1.500 dólares** (decisión del equipo, 26/10).
   - Por qué este pedido: operar cuesta poco; lo difícil es sumar clubes, y con uno solo no alcanza (Clase 9).
 
 ## 12. Cierre (15 s)
@@ -131,7 +134,7 @@ Detalle en `economia-del-producto.md`.
 - [x] Duración: entre 7 y 10 minutos.
 - [x] Modelo de ingresos (Clase 9).
 - [x] Nombre del producto: SinFila.
-- [x] Qué les pedimos a los inversores: unos 560 dólares y contactos con concesionarios.
+- [x] Qué les pedimos a los inversores: unos 1.500 dólares y contactos con concesionarios.
 - [x] Demo: video de 60 a 90 s. [PENDIENTE: grabarlo]
 - [x] Frase de cierre.
 - [x] Meta para la temporada 2027: 3 clubes con 30 pedidos o más por día de partido.
