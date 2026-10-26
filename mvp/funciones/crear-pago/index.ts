@@ -79,7 +79,7 @@ Deno.serve(async (req) => {
       body: JSON.stringify({
         items: [{
           id: `pedido-${pedido.id}`,
-          title: `Pedido ${pedido.codigo} · Buffet SIC`,
+          title: `Pedido ${pedido.codigo} · SinFila`,
           description: detalle.slice(0, 250),
           quantity: 1,
           unit_price: total,
@@ -89,7 +89,7 @@ Deno.serve(async (req) => {
         back_urls: { success: volver, failure: volver, pending: volver },
         auto_return: "approved",
         notification_url: `${SUPABASE_URL}/functions/v1/mp-webhook`,
-        statement_descriptor: "BUFFET SIC",
+        statement_descriptor: "SINFILA",
       }),
     });
     const pref = await r.json();
