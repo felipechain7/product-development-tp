@@ -106,7 +106,7 @@ Detalle en `economia-del-producto.md`.
 
 ## 12. Cierre (15 s)
 
-- Una frase que retome el problema: [COMPLETAR]. Idea de base: el 22/10, 32 personas no se perdieron el partido por ir a comprar.
+- "En el rugby el partido no se pausa para ir al buffet. Con SinFila, ya no hace falta elegir." (decisión del equipo, 25/10)
 
 ---
 
@@ -132,6 +132,6 @@ Detalle en `economia-del-producto.md`.
 - [x] Nombre del producto: SinFila.
 - [x] Qué les pedimos a los inversores: unos 560 dólares y contactos con concesionarios.
 - [x] Demo: video de 60 a 90 s. [PENDIENTE: grabarlo]
-- [ ] Frase de cierre.
+- [x] Frase de cierre.
 - [ ] Meta para la temporada 2027 (Caja 2 del canvas).
 - [ ] Resultados de la prueba del sábado 31/10.
