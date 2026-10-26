@@ -33,7 +33,14 @@
 - Un QR en el club abre una página con el menú y el total. La persona paga con Mercado Pago sin salir de la cancha y recibe un código.
 - El pedido aparece solo en una pantalla del buffet, con un sonido. Cuando está listo, el buffet lo marca y el celular de la persona cambia a "¡Listo! Andá a retirar".
 - El pedido llega al buffet solo si está pagado. Sin app para descargar, sin cuentas de usuario y sin mostrar comprobante.
-- **Demo en vivo:** escanear el QR del cartel (`mvp/cartel.html`) o abrir https://felipechain7.github.io/product-development-tp/mvp/, pagar y mostrar en el panel del buffet (`/mvp/buffet.html`) cómo entra el pedido y cómo cambia la pantalla al marcarlo "Listo". El MVP ya cobra de verdad (credenciales de producción): para la demo, que un compañero pague una bebida ($4.000) con su cuenta. Si falla internet, tener grabado un video del recorrido. [DECIDIR: demo en vivo o video]
+- **Demo en video (decisión del equipo, 25/10), de 60 a 90 s, grabado antes con un pago real:**
+  1. Alguien escanea el QR del cartel (`mvp/cartel.html`) desde la tribuna.
+  2. Elige del menú y paga con Mercado Pago (un compañero, con su cuenta; una bebida de $4.000).
+  3. Vuelve sola a la página: código del pedido y "En preparación".
+  4. En la pantalla del buffet (`/mvp/buffet.html`) el pedido entra con un sonido.
+  5. El buffet toca "Listo" y el celular cambia a "¡Listo! Andá a retirar".
+  6. Retira en el mostrador con el código.
+  - Grabar celular y panel lado a lado (o alternando), sin mostrar el PIN del buffet ni datos de la cuenta de Mercado Pago. Si se graba el sábado 31/10 en el SIC, sirve como imagen real del club.
 
 ## 5. Lo que probamos (90 s): la parte más fuerte del pitch
 
@@ -124,7 +131,7 @@ Detalle en `economia-del-producto.md`.
 - [x] Modelo de ingresos (Clase 9).
 - [x] Nombre del producto: SinFila.
 - [x] Qué les pedimos a los inversores: unos 560 dólares y contactos con concesionarios.
-- [ ] Demo en vivo o video.
+- [x] Demo: video de 60 a 90 s. [PENDIENTE: grabarlo]
 - [ ] Frase de cierre.
 - [ ] Meta para la temporada 2027 (Caja 2 del canvas).
 - [ ] Resultados de la prueba del sábado 31/10.
