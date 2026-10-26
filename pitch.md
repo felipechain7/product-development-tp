@@ -1,9 +1,12 @@
 # Pitch: pedidos por el celular en el buffet de clubes de rugby
 
-> Entrega final de Desarrollo de Productos: pitch ante profesores que actúan como inversores. Ensayo 26/10, entrega 02/11. Armado con `clase-02-descubrimiento.md`, `foda.md`, `registro-experimento.md`, `aprendizaje-y-mvp.md` y `mvp.md`. Lo que el equipo todavía no decidió o no tiene evidencia queda marcado; no se completa con supuestos.
+> Entrega final de Desarrollo de Productos: pitch ante profesores que actúan como inversores. Ensayo 26/10, entrega 02/11. Armado con `clase-02-descubrimiento.md`, `foda.md`, `registro-experimento.md`, `aprendizaje-y-mvp.md`, `mvp.md`, `pruebas-y-mejoras-mvp.md` y `economia-del-producto.md`. Lo que el equipo todavía no decidió o no tiene evidencia queda marcado; no se completa con supuestos.
 
-**Duración:** [CONFIRMAR cuántos minutos dura el pitch]. El reparto de abajo supone unos 7 minutos.
-**Hilo del pitch:** la fila del buffet hace perder partidos a la gente y ventas al buffet; lo lento es pagar; sacamos el pago de la fila, 32 personas pidieron desde el celular en una noche y ya hay un MVP que cobra solo y avisa cuándo retirar.
+**Duración:** entre 7 y 10 minutos (decisión del equipo; la consigna oficial no lo dice en los archivos de la materia). El reparto de abajo suma unos 8 minutos.
+- **Si hay que bajar a 7:** juntar Mercado (8) y Alternativas (9) en 30 s y acortar el Problema a 45 s.
+- **Si hay hasta 10:** demo completa con el panel (+60 s) y los resultados de la prueba del sábado 31/10 (+60 s).
+
+**Hilo del pitch:** la fila del buffet hace perder partidos a la gente y ventas al buffet; lo lento es pagar; sacamos el pago de la fila, 32 personas pidieron desde el celular en una noche, ya hay un MVP que cobra solo y avisa cuándo retirar, y cada pedido deja unos $1.800 con un cargo por servicio.
 
 ---
 
@@ -30,7 +33,7 @@
 - Un QR en el club abre una página con el menú y el total. La persona paga con Mercado Pago sin salir de la cancha y recibe un código.
 - El pedido aparece solo en una pantalla del buffet, con un sonido. Cuando está listo, el buffet lo marca y el celular de la persona cambia a "¡Listo! Andá a retirar".
 - El pedido llega al buffet solo si está pagado. Sin app para descargar, sin cuentas de usuario y sin mostrar comprobante.
-- **Demo en vivo:** escanear el QR del cartel (`mvp/cartel.html`) o abrir https://felipechain7.github.io/product-development-tp/mvp/, pagar y mostrar en el panel del buffet (`/mvp/buffet.html`) cómo entra el pedido y cómo cambia la pantalla al marcarlo "Listo". [DECIDIR: hacer la demo en modo prueba, con tarjeta de prueba, o con un pago real chico]
+- **Demo en vivo:** escanear el QR del cartel (`mvp/cartel.html`) o abrir https://felipechain7.github.io/product-development-tp/mvp/, pagar y mostrar en el panel del buffet (`/mvp/buffet.html`) cómo entra el pedido y cómo cambia la pantalla al marcarlo "Listo". El MVP ya cobra de verdad (credenciales de producción): para la demo, que un compañero pague una bebida ($4.000) con su cuenta. Si falla internet, tener grabado un video del recorrido. [DECIDIR: demo en vivo o video]
 
 ## 5. Lo que probamos (90 s): la parte más fuerte del pitch
 
@@ -54,11 +57,13 @@
 
 ## 7. Quién paga y cómo ganamos plata (45 s)
 
-- **Cliente que paga:** el buffet (concesionario o club). Primeros: SIC y Alumni.
-- **Por qué pagaría:** atiende más rápido en el pico y no pierde clientes contra la fila (por ejemplo, los que se van al McDonald's).
-- **Modelo de ingresos:** [PENDIENTE: el equipo tiene que definirlo; por ejemplo, comisión por pedido o abono por mes. No está validado].
-- **Quién decide la compra:** [PENDIENTE: el concesionario o el club].
-- Es la próxima incertidumbre: todavía no sabemos si el buffet pagaría ni cuánto.
+Detalle en `economia-del-producto.md`.
+
+- **Quién paga:** quien pide, con un **cargo por servicio del 10 %** sobre el pedido, por no perderse el partido. El buffet cobra la comida en su propia cuenta de Mercado Pago y no pierde nada de cada venta.
+- **Instalación:** gratis para los primeros buffets (SIC y Alumni) a cambio de usarlo; después, con precio. A futuro, un abono mensual para el buffet.
+- **Frase de la Clase 9:** "Nuestra unidad es un pedido pagado. Estimamos que ingresan $1.881 (10 % de un ticket promedio de $18.812) y que cuesta $81 de comisión de Mercado Pago: deja unos $1.800 por pedido. Si la gente solo acepta un 8 %, deja unos $1.440. Lo primero que necesitamos comprobar es si la gente sigue pidiendo con el cargo y si el buffet lo adopta."
+- **Por buffet:** con 4 días de partido como el 22/10, unos $230.000 por mes. Cubre el servidor (25 dólares por mes), pero no el tiempo del equipo: el negocio depende de sumar clubes.
+- **Todo es estimación:** el 22/10 la gente pidió sin cargo.
 
 ## 8. Mercado (30 s)
 
@@ -79,11 +84,12 @@
 - **El buffet no lo adopta o no paga:** sigue abierto. Aceptó la prueba, pero no sabemos si lo usaría solo ni si pagaría.
 - **Un sábado con la fila larga y sin conocidos:** sigue abierto. La prueba fue un jueves con una fila de 4 a 11 personas.
 - **La cocina se satura:** sigue abierto. Con 32 pedidos no se exigió como un sábado.
+- **La gente no acepta el cargo del 10 %:** sigue abierto. Todo el ingreso depende de eso; si no, se baja al 8 % o se suma el abono al buffet.
 
 ## 11. Próximos pasos y qué pedimos (45 s)
 
-- **Próxima prueba:** el buffet del SIC usa el MVP solo, sin el equipo, un sábado de partidos. Medimos cuántos pedidos entran sin nosotros, los minutos del pedido a "listo" y de "listo" a "entregado", y si lo vuelve a usar otro día.
-- **Después:** validar si el buffet pagaría y cuánto. [PENDIENTE: cómo lo va a preguntar o probar el equipo]
+- **Sábado 31/10 (Clase 8):** 3 a 5 personas del club piden con el MVP sin ayuda del equipo. Medimos cuántas lo completan, cuántas sin ayuda y los minutos parados en el mostrador contra la fila normal. [COMPLETAR con los resultados para la entrega del 02/11]
+- **Después:** probar si la gente sigue pidiendo con el cargo del 10 % y ofrecerle la instalación al buffet del SIC y después al de Alumni.
 - **Meta para la temporada 2027:** [COMPLETAR con los valores de la Caja 2 cuando estén definidos].
 - **Qué les pedimos a los inversores:** [COMPLETAR: plata, contactos con clubes o un piloto en otro club].
 
@@ -100,18 +106,21 @@
 | ¿Por qué no usan Mercado Pago QR en la caja y listo? | Con el QR en la caja igual hay que hacer la fila. El 22/10, la fila normal tardó 8,6 min (3 de 5 pagaron con QR); retirar un pedido de la página, 2,4 min. |
 | ¿Pero la comida no llega igual de rápido? | Sí: del pago a la comida pasan unos 8 minutos, casi lo mismo. La diferencia es que esos minutos los pasan mirando el partido. Es lo que más valor tiene. |
 | ¿No fueron todos amigos de ustedes? | 12 de 32 eran conocidos. Sin ellos, 20 pedidos: igual se alcanza el criterio. |
-| ¿Cuánto pagaría el buffet? | [PENDIENTE] No está validado; es lo próximo que queremos saber. |
+| ¿Quién les paga? | Quien pide, con un cargo por servicio del 10 %. Es una estimación: el 22/10 nadie pagó un cargo, y es lo próximo que queremos probar. |
+| ¿Con un buffet alcanza? | No: deja unos $230.000 por mes si hay 4 días como el 22/10. El negocio depende de sumar clubes (la URBA tiene 91). |
+| ¿Por qué el buffet cambiaría el QR de la caja? | No pierde nada de cada venta y atiende más rápido en el pico. Pero con Checkout paga más comisión que con débito por QR (3,55 % contra 1,41 %) y cobra a los 18 días: es un riesgo que tenemos anotado. |
 | ¿Qué pasa si la cocina se satura con los pedidos? | Con 32 pedidos no se saturó, pero no se exigió como un sábado. Lo mide la próxima prueba: el MVP guarda la hora de cada paso. |
-| ¿Cómo cobran y cómo le llega la plata al buffet? | Mercado Pago, con Checkout Pro. Hoy cobra la cuenta del equipo y al cierre se le transfiere al buffet. Mercado Pago cobra una comisión por pago. |
+| ¿Cómo cobran y cómo le llega la plata al buffet? | Mercado Pago, con Checkout Pro. Hoy cobra la cuenta del equipo y al cierre se le transfiere al buffet. Con un buffet cliente, cobra su propia cuenta y Mercado Pago separa solo nuestro cargo (modalidad marketplace). |
 | ¿Por qué ustedes? | Van a los clubes, tienen a los usuarios a mano y el buffet del SIC ya aceptó probar. |
 | ¿Qué tan grande es esto? | 91 clubes en la URBA (2026). No tenemos el dato de cuánto vende un buffet por día de partido. |
 
 ## Pendientes antes de armar las diapositivas
 
-- [ ] Duración exacta del pitch.
+- [x] Duración: entre 7 y 10 minutos.
+- [x] Modelo de ingresos (Clase 9).
 - [ ] Nombre del producto.
-- [ ] Modelo de ingresos y quién decide la compra.
 - [ ] Qué les pedimos a los inversores.
-- [ ] Demo en modo prueba o con un pago real.
+- [ ] Demo en vivo o video.
 - [ ] Frase de cierre.
 - [ ] Meta para la temporada 2027 (Caja 2 del canvas).
+- [ ] Resultados de la prueba del sábado 31/10.
