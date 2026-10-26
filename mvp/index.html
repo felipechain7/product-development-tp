@@ -58,6 +58,10 @@
   .items { display: grid; gap: 10px; }
   .item { display: flex; align-items: center; gap: 12px; background: var(--superficie); border: 2px solid transparent; border-radius: 16px; padding: 14px; box-shadow: var(--sombra); transition: border-color .15s, background .15s; }
   .item.elegido { border-color: var(--azul); background: var(--superficie-2); }
+  .creditos { color: var(--gris); font-size: .75rem; text-align: center; margin: 4px 0 8px; }
+  .creditos ul { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 4px; }
+  .creditos a { color: var(--gris); }
+  .item .foto { width: 64px; height: 64px; flex: none; border-radius: 12px; object-fit: cover; background: var(--superficie-2); }
   .item .info { flex: 1; min-width: 0; }
   .item .nombre { font-weight: 700; font-size: 1.02rem; }
   .item .precio { font-weight: 800; color: var(--azul-vivo); margin-top: 2px; }
@@ -149,6 +153,10 @@
         <small>Lo usamos solo para entregarte el pedido.</small>
       </div>
       <p class="pie">Proyecto de estudiantes de la Universidad Austral.</p>
+      <details class="creditos">
+        <summary>Las fotos son ilustrativas: créditos</summary>
+        <ul id="creditos"></ul>
+      </details>
     </div></div>
   </section>
 
@@ -215,20 +223,36 @@ const FUNCIONES = SUPABASE_URL + "/functions/v1";
 // combo: true    -> no se puede pedir más que la cantidad de platos.
 const CATEGORIAS = ["Sándwiches", "Hamburguesas", "Wraps", "Empanadas", "Bebidas"];
 const MENU = [
-  { id: "bondiola",   cat: "Sándwiches",   nombre: "Sándwich de bondiola",           precio: 17000, plato: true },
-  { id: "bife",       cat: "Sándwiches",   nombre: "Sándwich de bife de chorizo",    precio: 19000, plato: true },
-  { id: "choripan",   cat: "Sándwiches",   nombre: "Choripán",                       precio: 10000, plato: true },
-  { id: "tostado",    cat: "Sándwiches",   nombre: "Tostado",                        precio: 12000, plato: true },
-  { id: "hamb",       cat: "Hamburguesas", nombre: "Hamburguesa con queso",          precio: 8000,  plato: true },
-  { id: "hamb_papas", cat: "Hamburguesas", nombre: "Hamburguesa con queso y papas",  precio: 10500, plato: true },
-  { id: "wrap_pollo", cat: "Wraps",        nombre: "Wrap de pollo",                  precio: 18000, plato: true },
-  { id: "wrap_atun",  cat: "Wraps",        nombre: "Wrap de atún",                   precio: 18000, plato: true },
-  { id: "wrap_bond",  cat: "Wraps",        nombre: "Wrap de bondiola",               precio: 18000, plato: true },
-  { id: "emp_carne",  cat: "Empanadas",    nombre: "Empanada de carne",              precio: 4000, empanada: true },
-  { id: "emp_jyq",    cat: "Empanadas",    nombre: "Empanada de jamón y queso",      precio: 4000, empanada: true },
-  { id: "bebida",     cat: "Bebidas",      nombre: "Bebida",                         precio: 4000 },
-  { id: "combo",      cat: "Bebidas",      nombre: "Bebida en combo",                precio: 2000, combo: true, nota: "Una por cada plato y una con las empanadas" },
+  { id: "bondiola",   cat: "Sándwiches",   nombre: "Sándwich de bondiola",           precio: 17000, plato: true, foto: "bondiola" },
+  { id: "bife",       cat: "Sándwiches",   nombre: "Sándwich de bife de chorizo",    precio: 19000, plato: true, foto: "bife" },
+  { id: "choripan",   cat: "Sándwiches",   nombre: "Choripán",                       precio: 10000, plato: true, foto: "choripan" },
+  { id: "tostado",    cat: "Sándwiches",   nombre: "Tostado",                        precio: 12000, plato: true, foto: "tostado" },
+  { id: "hamb",       cat: "Hamburguesas", nombre: "Hamburguesa con queso",          precio: 8000,  plato: true, foto: "hamb" },
+  { id: "hamb_papas", cat: "Hamburguesas", nombre: "Hamburguesa con queso y papas",  precio: 10500, plato: true, foto: "hamb_papas" },
+  { id: "wrap_pollo", cat: "Wraps",        nombre: "Wrap de pollo",                  precio: 18000, plato: true, foto: "wrap" },
+  { id: "wrap_atun",  cat: "Wraps",        nombre: "Wrap de atún",                   precio: 18000, plato: true, foto: "wrap" },
+  { id: "wrap_bond",  cat: "Wraps",        nombre: "Wrap de bondiola",               precio: 18000, plato: true, foto: "wrap" },
+  { id: "emp_carne",  cat: "Empanadas",    nombre: "Empanada de carne",              precio: 4000, empanada: true, foto: "emp_carne" },
+  { id: "emp_jyq",    cat: "Empanadas",    nombre: "Empanada de jamón y queso",      precio: 4000, empanada: true, foto: "emp_jyq" },
+  { id: "bebida",     cat: "Bebidas",      nombre: "Bebida",                         precio: 4000, foto: "bebida" },
+  { id: "combo",      cat: "Bebidas",      nombre: "Bebida en combo",                precio: 2000, combo: true, nota: "Una por cada plato y una con las empanadas", foto: "bebida" },
 ];
+
+// Fotos ilustrativas con licencia libre de Wikimedia Commons (no son la comida del buffet).
+// Los créditos se muestran al pie del menú.
+const COMMONS = "https://thumb.wikimedia.org/wikipedia/commons/thumb/";
+const FOTOS = {
+  bondiola:   { titulo: "Sándwich de bondiola", autor: "travelwayoflife", licencia: "CC BY-SA 2.0", url: COMMONS + "0/0e/Bondiola_Sandwich_with_fixings.jpg/330px-Bondiola_Sandwich_with_fixings.jpg", pagina: "https://commons.wikimedia.org/wiki/File:Bondiola_Sandwich_with_fixings.jpg" },
+  bife:       { titulo: "Sándwich de bife", autor: "Horacio Cambeiro", licencia: "CC BY 3.0", url: COMMONS + "1/16/Lomito_Mendocino.jpg/330px-Lomito_Mendocino.jpg", pagina: "https://commons.wikimedia.org/wiki/File:Lomito_Mendocino.jpg" },
+  choripan:   { titulo: "Choripán", autor: "SimpleFoodie", licencia: "dominio público", url: COMMONS + "a/af/Choripan.jpg/330px-Choripan.jpg", pagina: "https://commons.wikimedia.org/wiki/File:Choripan.jpg" },
+  tostado:    { titulo: "Tostado", autor: "Andy Li", licencia: "CC0", url: COMMONS + "e/ef/Ham_%26_Cheese_Toastie_-_Costa_Coffee_2023-10-04.jpg/330px-Ham_%26_Cheese_Toastie_-_Costa_Coffee_2023-10-04.jpg", pagina: "https://commons.wikimedia.org/wiki/File:Ham_%26_Cheese_Toastie_-_Costa_Coffee_2023-10-04.jpg" },
+  hamb:       { titulo: "Hamburguesa", autor: "Kurtkaiser", licencia: "CC0", url: COMMONS + "a/ac/Cheeseburger_2.jpg/330px-Cheeseburger_2.jpg", pagina: "https://commons.wikimedia.org/wiki/File:Cheeseburger_2.jpg" },
+  hamb_papas: { titulo: "Hamburguesa con papas", autor: "Kurtkaiser", licencia: "CC0", url: COMMONS + "f/f5/Cheeseburger_and_fries_2.jpg/330px-Cheeseburger_and_fries_2.jpg", pagina: "https://commons.wikimedia.org/wiki/File:Cheeseburger_and_fries_2.jpg" },
+  wrap:       { titulo: "Wrap", autor: "Miansari66", licencia: "CC0", url: COMMONS + "4/4e/Fajitas_Wraps.JPG/330px-Fajitas_Wraps.JPG", pagina: "https://commons.wikimedia.org/wiki/File:Fajitas_Wraps.JPG" },
+  emp_carne:  { titulo: "Empanadas de carne", autor: "Horacio Cambeiro", licencia: "CC BY-SA 3.0", url: COMMONS + "f/ff/Fried_Argentine_beef_empanadas_served_on_a_tray.jpg/330px-Fried_Argentine_beef_empanadas_served_on_a_tray.jpg", pagina: "https://commons.wikimedia.org/wiki/File:Fried_Argentine_beef_empanadas_served_on_a_tray.jpg" },
+  emp_jyq:    { titulo: "Empanadas de jamón y queso", autor: "Horacio Cambeiro", licencia: "CC BY-SA 4.0", url: COMMONS + "6/6e/Empanadas_argentinas_de_jam%C3%B3n_y_queso_%28horneadas%29.jpg/330px-Empanadas_argentinas_de_jam%C3%B3n_y_queso_%28horneadas%29.jpg", pagina: "https://commons.wikimedia.org/wiki/File:Empanadas_argentinas_de_jam%C3%B3n_y_queso_(horneadas).jpg" },
+  bebida:     { titulo: "Bebida", autor: "Ralf Roletschek", licencia: "dominio público", url: COMMONS + "e/e8/15-09-26-RalfR-WLC-0098_-_Coca-Cola_glass_bottle_%28Germany%29.jpg/330px-15-09-26-RalfR-WLC-0098_-_Coca-Cola_glass_bottle_%28Germany%29.jpg", pagina: "https://commons.wikimedia.org/wiki/File:15-09-26-RalfR-WLC-0098_-_Coca-Cola_glass_bottle_(Germany).jpg" },
+};
 /* ========================================================= */
 
 const pesos = n => "$" + n.toLocaleString("es-AR");
@@ -291,8 +315,10 @@ function armarMenu() {
     for (const p of MENU.filter(x => x.cat === c)) {
       const fila = document.createElement("div");
       fila.className = "item"; fila.dataset.id = p.id;
-      fila.innerHTML = `<div class="info"><div class="nombre"></div><div class="precio"></div><div class="nota"></div></div>
+      fila.innerHTML = `<img class="foto" alt="" loading="lazy"><div class="info"><div class="nombre"></div><div class="precio"></div><div class="nota"></div></div>
         <div class="cant"><button type="button" class="menos" aria-label="Quitar">−</button><span>0</span><button type="button" class="mas" aria-label="Agregar">+</button></div>`;
+      const foto = fila.querySelector(".foto");
+      if (FOTOS[p.foto]) { foto.onerror = () => foto.remove(); foto.src = FOTOS[p.foto].url; } else foto.remove();
       fila.querySelector(".nombre").textContent = p.nombre;
       fila.querySelector(".precio").textContent = p.combo ? "+" + pesos(p.precio) : pesos(p.precio);
       const nota = fila.querySelector(".nota");
@@ -302,6 +328,15 @@ function armarMenu() {
       items.appendChild(fila);
     }
     lista.appendChild(sec);
+  }
+  const creditos = document.getElementById("creditos");
+  for (const f of Object.values(FOTOS)) {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = f.pagina; a.target = "_blank"; a.rel = "noopener";
+    a.textContent = `${f.titulo}: ${f.autor}, ${f.licencia}`;
+    li.appendChild(a);
+    creditos.appendChild(li);
   }
 }
 

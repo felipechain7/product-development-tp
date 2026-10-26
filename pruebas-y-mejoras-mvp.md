@@ -5,6 +5,7 @@
   - Para quien pide: https://felipechain7.github.io/product-development-tp/mvp/
   - Para el buffet: `/mvp/buffet.html`, con PIN.
   - **v1 (25/10):** cobro con Mercado Pago Checkout Pro y panel del buffet, ver `mvp.md`. Desde el 25/10 usa las credenciales de producción, así que los pagos son reales.
+  - **v2 (26/10):** igual que la v1, con una foto ilustrativa al lado de cada producto. La v1 se recupera con git (commit anterior a "Clase 8: fotos en el menú").
 - **Tarea:** "Estás mirando el partido y tenés ganas de comer o tomar algo. Conseguilo sin ir a hacer la fila." Se lee igual a cada persona, sin explicar la página ni cómo pagar.
   - **Dónde y quiénes:** en el aula, el 26/10 (día del ensayo), con 3 a 5 compañeros de otros equipos que no hayan usado la página. Son participantes **fuera del segmento** (salvo que alguno vaya a un club de rugby: se anota): sirven para encontrar problemas de uso, no demuestran valor ni demanda. *Cambio decidido por el equipo el 26/10: la prueba en el club deja de ser parte de esta clase.*
   - **Pago:** real, con las credenciales de producción: cada participante paga una bebida ($4.000) (decisión del equipo, 26/10).
@@ -44,7 +45,7 @@ Ronda del 26/10 en el aula, 4 participantes, pago real de una bebida cada uno. L
 - Hechos observados y posibles causas: los 4 completaron la tarea sin ayuda, así que no apareció ninguna dificultad que trabe el recorrido. 3 de 4 sugirieron poner una foto al lado de cada producto. *Posible causa:* con solo el nombre cuesta imaginarse el producto (por ejemplo, la diferencia entre un sándwich y un wrap). Es una sugerencia de los participantes, no un problema de uso observado.
 - Prioridad elegida y justificación: agregar una foto a cada producto (decisión del equipo, 26/10). Fue lo único que se repitió (3 de 4) y es un cambio chico que no toca el pago ni el panel.
 - Pedido a la IA y decisión del equipo: "Agregá las fotos sacadas de Google; para los wraps podés poner la misma foto." La IA propuso usar fotos con licencia libre (Wikimedia Commons) en vez de fotos cualquiera de Google, por los derechos de autor de una página pública, y marcarlas como imágenes ilustrativas, porque no son la comida del buffet del SIC.
-- Cambio realizado y verificación técnica: [PENDIENTE]
+- Cambio realizado y verificación técnica: **v2 (26/10):** cada producto del menú tiene una foto de 64 px a la izquierda; los tres wraps comparten foto y la bebida en combo usa la de la bebida. Las fotos son de Wikimedia Commons con licencia libre (CC0, dominio público, CC BY y CC BY-SA) y abajo del menú hay un desplegable "Las fotos son ilustrativas: créditos" con autor y licencia de cada una. Si una foto no carga, se oculta y el producto se ve como antes. No se tocó el pago, el panel ni los precios. Prueba técnica (IA, en celular de 375 px): cargan las 13 fotos, se ven los 10 créditos y el pedido (wrap de atún + bebida en combo = $20.000) se arma igual que en la v1. [PENDIENTE: prueba con personas]
 
 ## Comparación
 
