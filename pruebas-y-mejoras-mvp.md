@@ -32,22 +32,27 @@ Se cuenta el primer intento de cada persona; los reintentos van aparte y los aba
 
 | ID | Perfil/segmento | Versión | Intentó | Completó | Sin ayuda | Valor/unidad o no medido | Dificultad y ayuda |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| U1 | [PENDIENTE] | v1 | | | | | |
+| U1 | Compañero de otro equipo (fuera del segmento) | v1 | Sí | Sí | Sí | No medido (aula) | Ninguna; no necesitó ayuda |
+| U2 | Compañero de otro equipo (fuera del segmento) | v1 | Sí | Sí | Sí | No medido (aula) | Ninguna; no necesitó ayuda |
+| U3 | Compañero de otro equipo (fuera del segmento) | v1 | Sí | Sí | Sí | No medido (aula) | Ninguna; no necesitó ayuda |
+| U4 | Compañero de otro equipo (fuera del segmento) | v1 | Sí | Sí | Sí | No medido (aula) | Ninguna; no necesitó ayuda |
+
+Ronda del 26/10 en el aula, 4 participantes, pago real de una bebida cada uno. Los 4 llegaron a "Entregado". Al terminar, 3 de los 4 sugirieron agregar una foto al lado de cada producto. [CONFIRMAR: si alguno va a clubes de rugby, marcarlo como del segmento]
 
 ## Aprendizaje e iteración
 
-- Hechos observados y posibles causas: [PENDIENTE: después de la prueba]
-- Prioridad elegida y justificación: [PENDIENTE]
-- Pedido a la IA y decisión del equipo: [PENDIENTE]
+- Hechos observados y posibles causas: los 4 completaron la tarea sin ayuda, así que no apareció ninguna dificultad que trabe el recorrido. 3 de 4 sugirieron poner una foto al lado de cada producto. *Posible causa:* con solo el nombre cuesta imaginarse el producto (por ejemplo, la diferencia entre un sándwich y un wrap). Es una sugerencia de los participantes, no un problema de uso observado.
+- Prioridad elegida y justificación: agregar una foto a cada producto (decisión del equipo, 26/10). Fue lo único que se repitió (3 de 4) y es un cambio chico que no toca el pago ni el panel.
+- Pedido a la IA y decisión del equipo: "Agregá las fotos sacadas de Google; para los wraps podés poner la misma foto." La IA propuso usar fotos con licencia libre (Wikimedia Commons) en vez de fotos cualquiera de Google, por los derechos de autor de una página pública, y marcarlas como imágenes ilustrativas, porque no son la comida del buffet del SIC.
 - Cambio realizado y verificación técnica: [PENDIENTE]
 
 ## Comparación
 
 | Métrica | Antes (n y resultado) | Después (n y resultado) | Interpretación y límites |
 | --- | --- | --- | --- |
-| Éxito | [PENDIENTE] | [PENDIENTE] | |
-| Autonomía | [PENDIENTE] | [PENDIENTE] | |
-| Valor | [PENDIENTE] | [PENDIENTE] | |
+| Éxito | 4 de 4 (v1, compañeros, aula) | [PENDIENTE: segunda ronda con la v2] | |
+| Autonomía | 4 de 4 sin ayuda (v1) | [PENDIENTE] | |
+| Valor | No medido | No medido | No se puede medir en el aula |
 
 ## Próximo paso
 

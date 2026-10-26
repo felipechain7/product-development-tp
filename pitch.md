@@ -12,9 +12,9 @@
 
 ## 1. Portada (15 s)
 
-- Nombre del producto: **SinFila** (decisión del equipo, 25/10). Tagline: "Pedí desde la cancha". [CHEQUEAR que no exista una app o cuenta de Instagram con ese nombre]
+- Nombre del producto: **SinFila** (decisión del equipo, 25/10). Tagline: "Pedí desde la cancha". El equipo chequeó que no existe otra SinFila (26/10).
 - Una línea: pedí y pagá desde la cancha, retirá en el buffet sin hacer la fila.
-- Equipo: Felipe Chain, Felipe Servent, Juan Ignacio Canabe, Pedro Tailhade. [CONFIRMAR nombres completos]
+- Equipo: Felipe Chain, Felipe Servent, Juan Ignacio Canabe, Pedro Tailhade. (confirmados por el equipo, 26/10)
 
 ## 2. El problema (60 s)
 
@@ -95,8 +95,7 @@ Detalle en `economia-del-producto.md`.
 
 ## 11. Próximos pasos y qué pedimos (45 s)
 
-- **Prueba de uso (Clase 8, 26/10):** 3 a 5 compañeros de otros equipos piden con el MVP sin ayuda. Medimos cuántos lo completan y cuántos sin ayuda. [COMPLETAR con los resultados para la entrega del 02/11]
-- **Próxima prueba:** en el club, un día de partido, sin el equipo al lado: gente del club pide sola y se miden los minutos en el mostrador contra la fila normal.
+- **Prueba de uso (Clase 8, 26/10):** 4 compañeros de otros equipos hicieron el pedido completo, con pago real, sin ninguna ayuda (4 de 4).
 - **Después:** probar si la gente sigue pidiendo con el cargo del 10 % y ofrecerle la instalación al buffet del SIC y después al de Alumni.
 - **Meta para la temporada 2027 (decisión del equipo, 25/10):** SinFila funcionando en 3 clubes, con 30 pedidos o más por día de partido en cada uno (el 22/10 hubo 32). Son unos 2.880 pedidos en la temporada (3 clubes × 32 días de partido × 30) y unos $5.200.000 de contribución con el cargo del 10 % (≈ $1.800 por pedido). Estimación: supone 4 días de partido por mes de marzo a octubre. En el piloto también se miden las ventas del buffet en la hora pico con y sin SinFila (meta de la Caja 2 del canvas, sin línea de base todavía).
 - **Qué les pedimos a los inversores:** "Buscamos unos 1.500 dólares para un piloto en 3 clubes durante la temporada 2027 (servidor, cartelería, marca y publicidad), y que nos presenten a concesionarios de buffets de la URBA."
@@ -138,4 +137,5 @@ Detalle en `economia-del-producto.md`.
 - [x] Demo: video de 60 a 90 s. [PENDIENTE: grabarlo]
 - [x] Frase de cierre.
 - [x] Meta para la temporada 2027: 3 clubes con 30 pedidos o más por día de partido.
-- [ ] Resultados de la prueba con compañeros (Clase 8).
+- [x] Resultados de la prueba con compañeros (Clase 8): 4 de 4 sin ayuda.
+- [x] Nombres del equipo y nombre SinFila chequeados.
