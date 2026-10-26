@@ -37,31 +37,38 @@ Se cuenta el primer intento de cada persona; los reintentos van aparte y los aba
 | U2 | Compañero de otro equipo (fuera del segmento) | v1 | Sí | Sí | Sí | No medido (aula) | Ninguna; no necesitó ayuda |
 | U3 | Compañero de otro equipo (fuera del segmento) | v1 | Sí | Sí | Sí | No medido (aula) | Ninguna; no necesitó ayuda |
 | U4 | Compañero de otro equipo (fuera del segmento) | v1 | Sí | Sí | Sí | No medido (aula) | Ninguna; no necesitó ayuda |
+| U1 | Mismo participante de la ronda 1 (ya conocía el recorrido) | v2 | Sí | Sí | Sí | No medido (aula) | Ninguna |
+| U2 | Mismo participante de la ronda 1 (ya conocía el recorrido) | v2 | Sí | Sí | Sí | No medido (aula) | Ninguna |
+| U3 | Mismo participante de la ronda 1 (ya conocía el recorrido) | v2 | Sí | Sí | Sí | No medido (aula) | Ninguna |
+| U4 | Mismo participante de la ronda 1 (ya conocía el recorrido) | v2 | Sí | Sí | Sí | No medido (aula) | Ninguna |
+| U5 | Compañero de otro equipo, nuevo (fuera del segmento) | v2 | Sí | Sí | Sí | No medido (aula) | Ninguna |
 
 Ronda del 26/10 en el aula, 4 participantes, pago real de una bebida cada uno. Los 4 llegaron a "Entregado". Al terminar, 3 de los 4 sugirieron agregar una foto al lado de cada producto. [CONFIRMAR: si alguno va a clubes de rugby, marcarlo como del segmento]
+
+Ronda 2, 26/10 en el aula, con la v2: los mismos 4 de la ronda 1 y 1 compañero nuevo. Los 5 completaron el pedido sin ayuda ni inconvenientes y dijeron que la versión con fotos "quedó perfecta".
 
 ## Aprendizaje e iteración
 
 - Hechos observados y posibles causas: los 4 completaron la tarea sin ayuda, así que no apareció ninguna dificultad que trabe el recorrido. 3 de 4 sugirieron poner una foto al lado de cada producto. *Posible causa:* con solo el nombre cuesta imaginarse el producto (por ejemplo, la diferencia entre un sándwich y un wrap). Es una sugerencia de los participantes, no un problema de uso observado.
 - Prioridad elegida y justificación: agregar una foto a cada producto (decisión del equipo, 26/10). Fue lo único que se repitió (3 de 4) y es un cambio chico que no toca el pago ni el panel.
 - Pedido a la IA y decisión del equipo: "Agregá las fotos sacadas de Google; para los wraps podés poner la misma foto." La IA propuso usar fotos con licencia libre (Wikimedia Commons) en vez de fotos cualquiera de Google, por los derechos de autor de una página pública, y marcarlas como imágenes ilustrativas, porque no son la comida del buffet del SIC.
-- Cambio realizado y verificación técnica: **v2 (26/10):** cada producto del menú tiene una foto de 64 px a la izquierda. Primero se pusieron fotos de Wikimedia Commons con licencia libre; después el equipo eligió y pasó sus propias fotos ilustrativas para sándwiches, hamburguesas, wraps y empanadas (guardadas en `mvp/img/`, recortadas a 256 px), y la de la bebida quedó de Wikimedia Commons, con su crédito. Los tres wraps comparten foto, las dos empanadas también, y la bebida en combo usa la de la bebida. Abajo del menú dice "Las fotos son ilustrativas". Si una foto no carga, se oculta. No se tocó el pago, el panel ni los precios. Prueba técnica (IA, celular de 375 px): cargan las 13 fotos y el pedido se arma igual que en la v1. [PENDIENTE: prueba con personas]
+- Cambio realizado y verificación técnica: **v2 (26/10):** cada producto del menú tiene una foto de 64 px a la izquierda. Primero se pusieron fotos de Wikimedia Commons con licencia libre; después el equipo eligió y pasó sus propias fotos ilustrativas para sándwiches, hamburguesas, wraps y empanadas (guardadas en `mvp/img/`, recortadas a 256 px), y la de la bebida quedó de Wikimedia Commons, con su crédito. Los tres wraps comparten foto, las dos empanadas también, y la bebida en combo usa la de la bebida. Abajo del menú dice "Las fotos son ilustrativas". Si una foto no carga, se oculta. No se tocó el pago, el panel ni los precios. Prueba técnica (IA, celular de 375 px): cargan las 13 fotos y el pedido se arma igual que en la v1. Prueba con personas: ronda 2, ver registro.
 
 ## Comparación
 
 | Métrica | Antes (n y resultado) | Después (n y resultado) | Interpretación y límites |
 | --- | --- | --- | --- |
-| Éxito | 4 de 4 (v1, compañeros, aula) | [PENDIENTE: segunda ronda con la v2] | |
-| Autonomía | 4 de 4 sin ayuda (v1) | [PENDIENTE] | |
+| Éxito | 4 de 4 (v1, compañeros, aula) | 5 de 5 (v2: 4 repetidos y 1 nuevo) | Ya era 4 de 4: el cambio no buscaba mejorar el éxito, sino responder a la sugerencia de las fotos. Se mantuvo sin empeorar. |
+| Autonomía | 4 de 4 sin ayuda (v1) | 5 de 5 sin ayuda (v2) | Igual que antes. 4 de los 5 ya conocían el recorrido, así que solo el nuevo (1 de 1) es comparable con la ronda 1. |
 | Valor | No medido | No medido | No se puede medir en el aula |
 
 ## Próximo paso
 
 - Incertidumbre pendiente: si quien va al club completa el pedido sola y espera menos parada que en la fila, sin el equipo al lado.
+- Qué aprendimos: el recorrido se completa sin ayuda (9 de 9 intentos en dos rondas) y las fotos, que pidieron 3 de 4, fueron bien recibidas. Es una comparación exploratoria, con compañeros fuera del segmento y casi los mismos participantes: no demuestra que el cambio mejore el uso ni dice nada del valor en el club.
 - Roles de la ronda en el aula (26/10), como el 22/10:
   - **Facilita y observa (Felipe Servent):** lee la consigna, anota dónde duda la persona y cada ayuda, y le hace las dos preguntas del final.
   - **Hace de mostrador (Pedro Tailhade):** maneja el panel del buffet, marca "Listo" y "Entregado".
   - **Registra (Juan Ignacio Canabe):** completa el registro de pruebas.
   - **Participantes (Felipe Chain):** consigue 3 a 5 compañeros de otros equipos que no hayan usado la página.
-- Después: elegir una mejora con lo observado, implementarla y volver a probar con otros compañeros antes de la entrega del 02/11.
 - Acción más barata para medir el valor, responsable y momento: prueba en el club un día de partido, con gente del club, midiendo los minutos en el mostrador contra la fila normal. [Fecha y responsable a definir; queda fuera de esta clase]

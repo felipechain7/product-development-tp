@@ -39,5 +39,6 @@
 - **Prueba de pago en modo prueba (25/10):** con las credenciales de prueba cargadas, el equipo hizo un pedido desde una ventana de incógnito y lo pagó con una tarjeta de prueba de Mercado Pago. Volvió solo a la página, Mercado Pago confirmó el pago y el pedido (858, $59.000) apareció en el panel; el equipo lo marcó listo y entregado. La base guardó 3,6 min del pedido al pago (incluye completar los datos de la tarjeta). Un intento anterior quedó como "pendiente de pago" y no llegó al panel, como estaba previsto.
 - **Tercera devolución (26/10, Clase 8):** en la prueba con 4 compañeros, los 4 completaron el pedido sin ayuda y 3 de 4 sugirieron una foto al lado de cada producto. El equipo pidió "las fotos sacadas de Google; para los wraps la misma foto".
 - **Cambio realizado (v2):** una foto ilustrativa por producto; las eligió el equipo (la de la bebida es de Wikimedia Commons, con crédito al pie del menú). Detalle y verificación en `pruebas-y-mejoras-mvp.md`.
-- **Próximo ajuste:** [PENDIENTE: segunda ronda con compañeros sobre la v2]
+- **Resultado de la nueva prueba (26/10):** 5 de 5 completaron el pedido sin ayuda con la v2 (los mismos 4 y 1 nuevo); dijeron que quedó perfecta.
+- **Próximo ajuste:** ninguno por ahora; lo que falta comprobar es el valor en el club, un día de partido.
 - **Prueba con el buffet y con gente del club:** [PENDIENTE: registrar en `pruebas-y-mejoras-mvp.md`]
