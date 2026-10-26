@@ -6,26 +6,27 @@
   - Para el buffet: `/mvp/buffet.html`, con PIN.
   - **v1 (25/10):** cobro con Mercado Pago Checkout Pro y panel del buffet, ver `mvp.md`. Desde el 25/10 usa las credenciales de producción, así que los pagos son reales.
 - **Tarea:** "Estás mirando el partido y tenés ganas de comer o tomar algo. Conseguilo sin ir a hacer la fila." Se lee igual a cada persona, sin explicar la página ni cómo pagar.
-  - **Dónde y quiénes:** en el SIC, un día de partidos, con 3 a 5 personas del club que no hayan usado la página. Cada una paga su pedido de verdad.
+  - **Dónde y quiénes:** en el aula, el 26/10 (día del ensayo), con 3 a 5 compañeros de otros equipos que no hayan usado la página. Son participantes **fuera del segmento** (salvo que alguno vaya a un club de rugby: se anota): sirven para encontrar problemas de uso, no demuestran valor ni demanda. *Cambio decidido por el equipo el 26/10: la prueba en el club deja de ser parte de esta clase.*
+  - **Pago:** [DECIDIR: cada participante paga una bebida real ($4.000) o se usan por un rato las credenciales de prueba con una tarjeta de prueba que se da junto con la consigna (pago simulado; después se vuelve a las de producción)].
   - **Inicio:** cuando termina de escuchar la consigna, con el cartel del QR a la vista.
-  - **Finalización:** retira la comida en el mostrador (el pedido queda "Entregado" en el panel).
+  - **Finalización:** el celular muestra "¡Listo! Andá a retirar" y la persona va al "mostrador" (un integrante con el panel del buffet), dice su código y el pedido queda "Entregado".
   - **Cierre del intento:** la persona dice que deja, pasan 10 minutos sin que llegue a pagar, o el pago falla por un problema técnico (en ese caso se registra aparte, como falla técnica).
   - **Al terminar:** se le pregunta "¿Qué esperabas que pasara?" y "¿Qué te confundió?".
 - **Qué cuenta como ayuda:** cualquier explicación del equipo sobre cómo usar la página, cómo pagar, cuándo ir o dónde retirar, aunque sea contestar una pregunta. No cuenta leer la consigna ni lo que dice el cartel.
 - **Funcional / manual / simulado:**
   - *Funcional:* todo el recorrido (pedido, pago real, panel, aviso de "Listo" y entrega).
   - *Manual:* al cierre, Felipe Chain le transfiere al buffet lo cobrado.
-  - *Simulado:* nada en esta ronda. Una ronda con compañeros en el aula y credenciales de prueba sería solo para detectar problemas de uso, con el pago marcado como simulado.
+  - *Simulado:* el buffet (un integrante del equipo hace de mostrador) y, si se eligen credenciales de prueba, el pago.
 
 ## Plan de medición
 
 | Métrica | Fórmula/unidad | Fuente y momento | Criterio exploratorio | Decisión |
 | --- | --- | --- | --- | --- |
-| Éxito | Personas que retiran la comida / personas que intentan | Panel (pedido "Entregado") y planilla del observador, el día de la prueba | 4 de 5 o más | Si no se alcanza: qué paso traba el recorrido (pagar, volver de Mercado Pago, saber cuándo ir) |
-| Autonomía | Personas que retiran sin ninguna ayuda / personas que intentan | Observador: anota cada ayuda y en qué paso | 4 de 5 o más | Qué texto o pantalla hay que aclarar |
-| Valor | Minutos parado en el buffet: de la llegada al mostrador a recibir la comida | Observador: hora de llegada con segundos; hora de entrega en el panel. Referencia: la fila normal medida el mismo día con 3 a 5 personas (de entrar a la fila a recibir la comida) | Menos de 3 min y menos que la fila normal de ese día | Si el aviso de "Listo" evita esperar parado; si no, revisar cuándo y cómo avisa |
+| Éxito | Personas que llegan a "Entregado" / personas que intentan | Panel (pedido "Entregado") y planilla del observador, el 26/10 | 4 de 5 o más | Si no se alcanza: qué paso traba el recorrido (pagar, volver de Mercado Pago, saber cuándo ir) |
+| Autonomía | Personas que lo completan sin ninguna ayuda / personas que intentan | Observador: anota cada ayuda y en qué paso | 4 de 5 o más | Qué texto o pantalla hay que aclarar |
+| Valor | Minutos parado en el buffet: de la llegada al mostrador a recibir la comida, contra la fila normal | **No medido** en el aula: no hay partido, ni comida, ni fila | Menos de 3 min y menos que la fila normal (para la prueba en el club) | Si el aviso de "Listo" evita esperar parado |
 
-Además, el sistema guarda la hora del pago, de "Listo" y de "Entregado". Sirve para ver si la cocina aguanta, pero no se usa como métrica de valor. Se cuenta el primer intento de cada persona; los reintentos van aparte y los abandonos no se descartan.
+Se cuenta el primer intento de cada persona; los reintentos van aparte y los abandonos no se descartan.
 
 ## Registro de pruebas
 
@@ -51,10 +52,10 @@ Además, el sistema guarda la hora del pago, de "Listo" y de "Entregado". Sirve 
 ## Próximo paso
 
 - Incertidumbre pendiente: si quien va al club completa el pedido sola y espera menos parada que en la fila, sin el equipo al lado.
-- Acción más barata, responsable y momento: prueba en el SIC el **sábado 31/10**, con los mismos roles del 22/10:
-  - **Facilita y observa en la cancha (Felipe Servent):** lee la consigna, anota dónde duda la persona y cada ayuda, y le hace las dos preguntas del final.
-  - **Observa en el mostrador (Pedro Tailhade):** anota con segundos la hora en que llega cada persona y si pregunta algo.
-  - **Registra y mide la fila normal (Juan Ignacio Canabe):** completa el registro y mide de 3 a 5 personas de la fila normal (de entrar a la fila a recibir la comida).
-  - **Participantes y buffet (Felipe Chain):** consigue personas del club que no hayan usado la página y observa cómo usa el buffet el panel (dato aparte, no es métrica de esta tarea).
-  - Antes del sábado: un pago real chico (una bebida) hecho por un compañero, para confirmar que el cobro de producción llega al panel.
-- Qué observar y qué decisión tomar según el resultado: ver el plan de medición.
+- Roles de la ronda en el aula (26/10), como el 22/10:
+  - **Facilita y observa (Felipe Servent):** lee la consigna, anota dónde duda la persona y cada ayuda, y le hace las dos preguntas del final.
+  - **Hace de mostrador (Pedro Tailhade):** maneja el panel del buffet, marca "Listo" y "Entregado".
+  - **Registra (Juan Ignacio Canabe):** completa el registro de pruebas.
+  - **Participantes (Felipe Chain):** consigue 3 a 5 compañeros de otros equipos que no hayan usado la página.
+- Después: elegir una mejora con lo observado, implementarla y volver a probar con otros compañeros antes de la entrega del 02/11.
+- Acción más barata para medir el valor, responsable y momento: prueba en el club un día de partido, con gente del club, midiendo los minutos en el mostrador contra la fila normal. [Fecha y responsable a definir; queda fuera de esta clase]

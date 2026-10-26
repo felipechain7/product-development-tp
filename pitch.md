@@ -4,7 +4,7 @@
 
 **Duración:** entre 7 y 10 minutos (decisión del equipo; la consigna oficial no lo dice en los archivos de la materia). El reparto de abajo suma unos 8 minutos.
 - **Si hay que bajar a 7:** juntar Mercado (8) y Alternativas (9) en 30 s y acortar el Problema a 45 s.
-- **Si hay hasta 10:** demo completa con el panel (+60 s) y los resultados de la prueba del sábado 31/10 (+60 s).
+- **Si hay hasta 10:** demo completa con el panel (+60 s) y los resultados de la prueba con compañeros de la Clase 8 (+60 s).
 
 **Hilo del pitch:** la fila del buffet hace perder partidos a la gente y ventas al buffet; lo lento es pagar; sacamos el pago de la fila, 32 personas pidieron desde el celular en una noche, ya hay un MVP que cobra solo y avisa cuándo retirar, y cada pedido deja unos $1.800 con un cargo por servicio.
 
@@ -40,7 +40,7 @@
   4. En la pantalla del buffet (`/mvp/buffet.html`) el pedido entra con un sonido.
   5. El buffet toca "Listo" y el celular cambia a "¡Listo! Andá a retirar".
   6. Retira en el mostrador con el código.
-  - Grabar celular y panel lado a lado (o alternando), sin mostrar el PIN del buffet ni datos de la cuenta de Mercado Pago. Si se graba el sábado 31/10 en el SIC, sirve como imagen real del club.
+  - Grabar celular y panel lado a lado (o alternando), sin mostrar el PIN del buffet ni datos de la cuenta de Mercado Pago. Se graba antes de la entrega del 02/11.
 
 ## 5. Lo que probamos (90 s): la parte más fuerte del pitch
 
@@ -95,7 +95,8 @@ Detalle en `economia-del-producto.md`.
 
 ## 11. Próximos pasos y qué pedimos (45 s)
 
-- **Sábado 31/10 (Clase 8):** 3 a 5 personas del club piden con el MVP sin ayuda del equipo. Medimos cuántas lo completan, cuántas sin ayuda y los minutos parados en el mostrador contra la fila normal. [COMPLETAR con los resultados para la entrega del 02/11]
+- **Prueba de uso (Clase 8, 26/10):** 3 a 5 compañeros de otros equipos piden con el MVP sin ayuda. Medimos cuántos lo completan y cuántos sin ayuda. [COMPLETAR con los resultados para la entrega del 02/11]
+- **Próxima prueba:** en el club, un día de partido, sin el equipo al lado: gente del club pide sola y se miden los minutos en el mostrador contra la fila normal.
 - **Después:** probar si la gente sigue pidiendo con el cargo del 10 % y ofrecerle la instalación al buffet del SIC y después al de Alumni.
 - **Meta para la temporada 2027 (decisión del equipo, 25/10):** SinFila funcionando en 3 clubes, con 30 pedidos o más por día de partido en cada uno (el 22/10 hubo 32). Son unos 2.880 pedidos en la temporada (3 clubes × 32 días de partido × 30) y unos $5.200.000 de contribución con el cargo del 10 % (≈ $1.800 por pedido). Estimación: supone 4 días de partido por mes de marzo a octubre. En el piloto también se miden las ventas del buffet en la hora pico con y sin SinFila (meta de la Caja 2 del canvas, sin línea de base todavía).
 - **Qué les pedimos a los inversores:** "Buscamos unos 560 dólares para un piloto en 3 clubes durante la temporada 2027 (servidor y cartelería), y que nos presenten a concesionarios de buffets de la URBA."
@@ -134,4 +135,4 @@ Detalle en `economia-del-producto.md`.
 - [x] Demo: video de 60 a 90 s. [PENDIENTE: grabarlo]
 - [x] Frase de cierre.
 - [x] Meta para la temporada 2027: 3 clubes con 30 pedidos o más por día de partido.
-- [ ] Resultados de la prueba del sábado 31/10.
+- [ ] Resultados de la prueba con compañeros (Clase 8).

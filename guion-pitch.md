@@ -102,7 +102,7 @@ Y hay riesgos que siguen abiertos, y los decimos de frente: no sabemos si la gen
 
 ## 12. Próximos pasos · Felipe Chain · 45 s
 
-¿Qué viene? Este sábado 31/10 volvemos al SIC: entre tres y cinco personas van a pedir solas, sin que las ayudemos, y vamos a medir cuántas lo completan, cuántas sin ayuda y cuántos minutos esperan paradas en el mostrador. *(Para la entrega del 02/11: reemplazar por los resultados.)*
+¿Qué viene? Ya probamos el MVP con compañeros *(para la entrega del 02/11: decir el resultado de la prueba en el aula)*. La próxima prueba es en el club, un día de partido, sin nosotros al lado: gente del club pide sola y medimos cuántos lo completan y cuántos minutos esperan parados en el mostrador, contra la fila normal.
 
 Para la temporada 2027, la meta es tener SinFila en 3 clubes, con 30 pedidos o más por día de partido en cada uno: unos 2.880 pedidos y alrededor de 5,2 millones de pesos de contribución. Es una estimación.
 
