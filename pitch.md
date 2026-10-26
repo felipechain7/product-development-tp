@@ -12,7 +12,7 @@
 
 ## 1. Portada (15 s)
 
-- Nombre del producto: [COMPLETAR] (nombre de trabajo: "Pedí y retirá").
+- Nombre del producto: **SinFila** (decisión del equipo, 25/10). Tagline: "Pedí desde la cancha". [CHEQUEAR que no exista una app o cuenta de Instagram con ese nombre]
 - Una línea: pedí y pagá desde la cancha, retirá en el buffet sin hacer la fila.
 - Equipo: Felipe Chain, Felipe Servent, Juan Ignacio Canabe, Pedro Tailhade. [CONFIRMAR nombres completos]
 
@@ -118,7 +118,7 @@ Detalle en `economia-del-producto.md`.
 
 - [x] Duración: entre 7 y 10 minutos.
 - [x] Modelo de ingresos (Clase 9).
-- [ ] Nombre del producto.
+- [x] Nombre del producto: SinFila.
 - [ ] Qué les pedimos a los inversores.
 - [ ] Demo en vivo o video.
 - [ ] Frase de cierre.
