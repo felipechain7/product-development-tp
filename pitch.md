@@ -91,7 +91,11 @@ Detalle en `economia-del-producto.md`.
 - **Sábado 31/10 (Clase 8):** 3 a 5 personas del club piden con el MVP sin ayuda del equipo. Medimos cuántas lo completan, cuántas sin ayuda y los minutos parados en el mostrador contra la fila normal. [COMPLETAR con los resultados para la entrega del 02/11]
 - **Después:** probar si la gente sigue pidiendo con el cargo del 10 % y ofrecerle la instalación al buffet del SIC y después al de Alumni.
 - **Meta para la temporada 2027:** [COMPLETAR con los valores de la Caja 2 cuando estén definidos].
-- **Qué les pedimos a los inversores:** [COMPLETAR: plata, contactos con clubes o un piloto en otro club].
+- **Qué les pedimos a los inversores:** "Buscamos unos 560 dólares para un piloto en 3 clubes durante la temporada 2027 (servidor y cartelería), y que nos presenten a concesionarios de buffets de la URBA."
+  - Servidor: 25 dólares × 8 meses (marzo a octubre) = 200 dólares (referencia: precio de Supabase Pro).
+  - Carteles: 12 por club (entrada del buffet y alrededor de las canchas) × 3 clubes = 36, a unos 10 dólares cada uno = 360 dólares (estimación; referencia: A3 en foamboard a £7,50 en una lista de septiembre de 2026 de otro país; rango total de 380 a 740 dólares). [REEMPLAZAR si consiguen un presupuesto de imprenta antes del 02/11]
+  - Traslados: $0, el equipo ya va a esos clubes. Las horas del equipo no se incluyen.
+  - Por qué este pedido: operar cuesta poco; lo difícil es sumar clubes, y con uno solo no alcanza (Clase 9).
 
 ## 12. Cierre (15 s)
 
@@ -119,7 +123,7 @@ Detalle en `economia-del-producto.md`.
 - [x] Duración: entre 7 y 10 minutos.
 - [x] Modelo de ingresos (Clase 9).
 - [x] Nombre del producto: SinFila.
-- [ ] Qué les pedimos a los inversores.
+- [x] Qué les pedimos a los inversores: unos 560 dólares y contactos con concesionarios.
 - [ ] Demo en vivo o video.
 - [ ] Frase de cierre.
 - [ ] Meta para la temporada 2027 (Caja 2 del canvas).
