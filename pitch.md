@@ -97,7 +97,7 @@ Detalle en `economia-del-producto.md`.
 
 - **Sábado 31/10 (Clase 8):** 3 a 5 personas del club piden con el MVP sin ayuda del equipo. Medimos cuántas lo completan, cuántas sin ayuda y los minutos parados en el mostrador contra la fila normal. [COMPLETAR con los resultados para la entrega del 02/11]
 - **Después:** probar si la gente sigue pidiendo con el cargo del 10 % y ofrecerle la instalación al buffet del SIC y después al de Alumni.
-- **Meta para la temporada 2027:** [COMPLETAR con los valores de la Caja 2 cuando estén definidos].
+- **Meta para la temporada 2027 (decisión del equipo, 25/10):** SinFila funcionando en 3 clubes, con 30 pedidos o más por día de partido en cada uno (el 22/10 hubo 32). Son unos 2.880 pedidos en la temporada (3 clubes × 32 días de partido × 30) y unos $5.200.000 de contribución con el cargo del 10 % (≈ $1.800 por pedido). Estimación: supone 4 días de partido por mes de marzo a octubre. En el piloto también se miden las ventas del buffet en la hora pico con y sin SinFila (meta de la Caja 2 del canvas, sin línea de base todavía).
 - **Qué les pedimos a los inversores:** "Buscamos unos 560 dólares para un piloto en 3 clubes durante la temporada 2027 (servidor y cartelería), y que nos presenten a concesionarios de buffets de la URBA."
   - Servidor: 25 dólares × 8 meses (marzo a octubre) = 200 dólares (referencia: precio de Supabase Pro).
   - Carteles: 12 por club (entrada del buffet y alrededor de las canchas) × 3 clubes = 36, a unos 10 dólares cada uno = 360 dólares (estimación; referencia: A3 en foamboard a £7,50 en una lista de septiembre de 2026 de otro país; rango total de 380 a 740 dólares). [REEMPLAZAR si consiguen un presupuesto de imprenta antes del 02/11]
@@ -133,5 +133,5 @@ Detalle en `economia-del-producto.md`.
 - [x] Qué les pedimos a los inversores: unos 560 dólares y contactos con concesionarios.
 - [x] Demo: video de 60 a 90 s. [PENDIENTE: grabarlo]
 - [x] Frase de cierre.
-- [ ] Meta para la temporada 2027 (Caja 2 del canvas).
+- [x] Meta para la temporada 2027: 3 clubes con 30 pedidos o más por día de partido.
 - [ ] Resultados de la prueba del sábado 31/10.
