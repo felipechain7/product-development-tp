@@ -7,7 +7,7 @@
   - **v1 (25/10):** cobro con Mercado Pago Checkout Pro y panel del buffet, ver `mvp.md`. Desde el 25/10 usa las credenciales de producción, así que los pagos son reales.
 - **Tarea:** "Estás mirando el partido y tenés ganas de comer o tomar algo. Conseguilo sin ir a hacer la fila." Se lee igual a cada persona, sin explicar la página ni cómo pagar.
   - **Dónde y quiénes:** en el aula, el 26/10 (día del ensayo), con 3 a 5 compañeros de otros equipos que no hayan usado la página. Son participantes **fuera del segmento** (salvo que alguno vaya a un club de rugby: se anota): sirven para encontrar problemas de uso, no demuestran valor ni demanda. *Cambio decidido por el equipo el 26/10: la prueba en el club deja de ser parte de esta clase.*
-  - **Pago:** [DECIDIR: cada participante paga una bebida real ($4.000) o se usan por un rato las credenciales de prueba con una tarjeta de prueba que se da junto con la consigna (pago simulado; después se vuelve a las de producción)].
+  - **Pago:** real, con las credenciales de producción: cada participante paga una bebida ($4.000) (decisión del equipo, 26/10).
   - **Inicio:** cuando termina de escuchar la consigna, con el cartel del QR a la vista.
   - **Finalización:** el celular muestra "¡Listo! Andá a retirar" y la persona va al "mostrador" (un integrante con el panel del buffet), dice su código y el pedido queda "Entregado".
   - **Cierre del intento:** la persona dice que deja, pasan 10 minutos sin que llegue a pagar, o el pago falla por un problema técnico (en ese caso se registra aparte, como falla técnica).
@@ -16,7 +16,7 @@
 - **Funcional / manual / simulado:**
   - *Funcional:* todo el recorrido (pedido, pago real, panel, aviso de "Listo" y entrega).
   - *Manual:* al cierre, Felipe Chain le transfiere al buffet lo cobrado.
-  - *Simulado:* el buffet (un integrante del equipo hace de mostrador) y, si se eligen credenciales de prueba, el pago.
+  - *Simulado:* el buffet (un integrante del equipo hace de mostrador). El pago es real.
 
 ## Plan de medición
 
