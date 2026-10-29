@@ -3,64 +3,76 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Panel del buffet · SIC</title>
+<meta name="theme-color" content="#060a14">
+<title>Panel del buffet · SinFila</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+  /* Mismo tema que la página del cliente: fondo azul casi negro, superficies azul marino y acento azul. */
   :root {
-    --bg: #f3f4f1; --card: #ffffff; --ink: #1b1d1a; --muted: #62665e; --line: #dcdfd7;
-    --nuevo: #b45309; --nuevo-bg: #fff3dc; --listo: #0f5c3a; --listo-bg: #e1f2e8; --btn-ink: #ffffff;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #131512; --card: #1d201c; --ink: #eef0ea; --muted: #a3a89c; --line: #30342d;
-            --nuevo: #f59e0b; --nuevo-bg: #3a2c12; --listo: #3fae7a; --listo-bg: #16301f; --btn-ink: #0d1a13; }
+    --bg: #060a14; --card: #0f1830; --card-2: #15213f; --ink: #e9effc; --muted: #93a3c3; --line: #22314f;
+    --azul: #3b82f6; --azul-vivo: #60a5fa; --celeste: #93c5fd; --azul-suave: rgba(59, 130, 246, .14);
+    --nuevo: #60a5fa; --nuevo-bg: rgba(59, 130, 246, .22); --listo: #e9effc; --alerta: #fca5a5;
+    --sombra: 0 1px 0 rgba(255,255,255,.03) inset, 0 6px 18px rgba(0,0,0,.35);
+    --display: "Anton", Impact, "Arial Narrow", sans-serif;
+    --texto: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color-scheme: dark;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  header { position: sticky; top: 0; z-index: 2; background: var(--bg); border-bottom: 1px solid var(--line); padding: 10px 16px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
-  header h1 { font-size: 1.15rem; margin: 0; flex: 1; min-width: 160px; }
-  .contador { font-weight: 700; padding: 4px 10px; border-radius: 99px; background: var(--card); border: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.4 var(--texto); }
+  header { position: sticky; top: 0; z-index: 2; background: radial-gradient(120% 220% at 85% 0%, #1e3a8a 0%, #0c1733 55%, var(--bg) 100%); border-bottom: 1px solid var(--line); padding: 12px 16px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  header h1 { font-family: var(--display); font-weight: 400; text-transform: uppercase; letter-spacing: .02em; font-size: 1.6rem; line-height: 1; margin: 0; flex: 1; min-width: 160px; }
+  header h1 span { color: var(--azul-vivo); }
+  .contador { font-weight: 700; padding: 4px 12px; border-radius: 99px; background: var(--card); border: 1px solid var(--line); color: var(--celeste); font-variant-numeric: tabular-nums; }
   .conexion { font-size: .85rem; color: var(--muted); }
-  .conexion.mal { color: var(--nuevo); font-weight: 700; }
+  .conexion.mal { color: var(--alerta); font-weight: 700; }
   main { padding: 12px 16px 40px; display: grid; gap: 16px; grid-template-columns: 1fr 1fr; align-items: start; }
   @media (max-width: 720px) { main { grid-template-columns: 1fr; } }
-  h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: .06em; margin: 4px 0 8px; display: flex; gap: 8px; align-items: center; }
+  h2 { font-family: var(--display); font-weight: 400; font-size: 1.35rem; text-transform: uppercase; letter-spacing: .03em; margin: 4px 0 8px; display: flex; gap: 8px; align-items: center; }
   h2 .n { font-variant-numeric: tabular-nums; }
   .col.nuevos h2 { color: var(--nuevo); }
   .col.listos h2 { color: var(--listo); }
   .lista { display: grid; gap: 10px; }
-  .vacio { color: var(--muted); padding: 14px; border: 1px dashed var(--line); border-radius: 12px; text-align: center; }
-  .ped { background: var(--card); border: 1px solid var(--line); border-left: 6px solid var(--nuevo); border-radius: 12px; padding: 12px; display: grid; gap: 6px; }
-  .ped.listo { border-left-color: var(--listo); }
+  .vacio { color: var(--muted); padding: 14px; border: 1px dashed var(--line); border-radius: 14px; text-align: center; }
+  .ped { background: var(--card); border: 1px solid var(--line); border-left: 6px solid var(--nuevo); border-radius: 14px; padding: 14px; display: grid; gap: 6px; box-shadow: var(--sombra); }
+  .ped.listo { border-left-color: var(--listo); background: var(--card-2); }
   .ped.recien { animation: flash 1.2s ease-out 2; }
   @keyframes flash { 0% { background: var(--nuevo-bg); } 100% { background: var(--card); } }
   @media (prefers-reduced-motion: reduce) { .ped.recien { animation: none; background: var(--nuevo-bg); } }
   .arriba { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-  .codigo { font-size: 2rem; font-weight: 800; letter-spacing: .05em; font-variant-numeric: tabular-nums; }
+  .codigo { font-family: var(--display); font-size: 2.4rem; line-height: 1; letter-spacing: .06em; color: var(--azul-vivo); font-variant-numeric: tabular-nums; }
+  .ped.listo .codigo { color: var(--listo); }
   .nombre { font-size: 1.15rem; font-weight: 700; }
   .hace { margin-left: auto; color: var(--muted); font-size: .9rem; font-variant-numeric: tabular-nums; }
   .detalle { font-size: 1.05rem; }
   .total { color: var(--muted); }
   .acciones { display: flex; gap: 8px; margin-top: 4px; }
   button { font: inherit; cursor: pointer; }
-  .btn { flex: 1; border: 0; border-radius: 10px; padding: 14px; font-weight: 800; font-size: 1.05rem; color: var(--btn-ink); }
-  .btn.listo { background: var(--listo); }
-  .btn.entregar { background: var(--ink); color: var(--bg); }
-  .btn.deshacer { flex: 0 0 auto; background: transparent; color: var(--muted); border: 1px solid var(--line); font-weight: 600; font-size: .9rem; padding: 10px 12px; }
-  button:focus-visible, input:focus-visible { outline: 3px solid var(--nuevo); outline-offset: 2px; }
-  details.entregados { grid-column: 1 / -1; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; }
-  details.entregados summary { font-weight: 700; cursor: pointer; }
-  .fila-ent { display: flex; gap: 10px; padding: 6px 0; border-top: 1px solid var(--line); flex-wrap: wrap; font-variant-numeric: tabular-nums; }
+  .btn { flex: 1; border: 0; border-radius: 12px; padding: 14px; font-family: var(--display); font-weight: 400; font-size: 1.2rem; letter-spacing: .04em; text-transform: uppercase; color: #fff; }
+  .btn.listo { background: linear-gradient(180deg, var(--azul-vivo), var(--azul)); box-shadow: 0 6px 18px rgba(59,130,246,.35); }
+  .btn.entregar { background: #fff; color: #1e3a8a; }
+  .btn.deshacer { flex: 0 0 auto; background: transparent; color: var(--muted); border: 1px solid var(--line); font-family: var(--texto); font-weight: 600; font-size: .9rem; letter-spacing: 0; text-transform: none; padding: 10px 12px; }
+  button:focus-visible, input:focus-visible { outline: 3px solid var(--azul-vivo); outline-offset: 2px; }
+  details.entregados { grid-column: 1 / -1; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 10px 14px; }
+  details.entregados summary { font-weight: 700; cursor: pointer; color: var(--celeste); }
+  .fila-ent { display: flex; gap: 10px; padding: 6px 0; border-top: 1px solid var(--line); flex-wrap: wrap; color: var(--muted); font-variant-numeric: tabular-nums; }
   .fila-ent:first-of-type { border-top: 0; }
   #login { max-width: 360px; margin: 12vh auto 0; padding: 0 16px; display: grid; gap: 12px; }
-  #login input { font-size: 1.6rem; letter-spacing: .3em; text-align: center; padding: 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); }
-  #login .btn { background: var(--listo); }
-  .error { color: var(--nuevo); font-weight: 600; min-height: 1.4em; }
+  #login h1 { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: 2.4rem; line-height: 1; margin: 0; }
+  #login h1 span { color: var(--azul-vivo); }
+  #login label { color: var(--muted); font-weight: 600; }
+  #login input { font-size: 1.6rem; letter-spacing: .3em; text-align: center; padding: 12px; border-radius: 12px; border: 2px solid var(--line); background: #0a1224; color: var(--ink); }
+  #login input:focus { border-color: var(--azul); outline: none; }
+  #login .btn { background: linear-gradient(180deg, var(--azul-vivo), var(--azul)); box-shadow: 0 6px 18px rgba(59,130,246,.35); }
+  .error { color: var(--alerta); font-weight: 600; min-height: 1.4em; }
   [hidden] { display: none !important; }
 </style>
 </head>
 <body>
 
 <form id="login" autocomplete="off">
-  <h1 style="margin:0">Panel del buffet</h1>
+  <h1>Panel del <span>buffet</span></h1>
   <label for="pin">PIN del buffet</label>
   <input id="pin" type="password" inputmode="numeric" maxlength="8" required>
   <button class="btn" type="submit">Entrar</button>
@@ -69,7 +81,7 @@
 
 <div id="app" hidden>
   <header>
-    <h1>Pedidos · Buffet SIC</h1>
+    <h1>Pedidos · <span>Buffet SinFila</span></h1>
     <span class="contador" id="c-ent">0 entregados hoy</span>
     <span class="conexion" id="conexion">Conectando…</span>
     <button class="btn deshacer" id="salir" type="button">Salir</button>
