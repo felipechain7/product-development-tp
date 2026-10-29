@@ -2,7 +2,7 @@
 
 > Para practicar el ensayo del 26/10. Sale de `pitch.md` y es el mismo texto de las notas de las diapositivas (artifact "SinFila — Pitch"). El reparto de quién habla es una **propuesta**: cámbienlo como les quede cómodo.
 
-**Duración total:** unos 8 min 30 s, dentro del rango de 7 a 10.
+**Duración total:** unos 8 min 40 s, dentro del rango de 7 a 10.
 - **Para bajar a 7:** acortar el problema a 45 s y la demo a 60 s, y juntar mercado y riesgos en 45 s.
 - **Para llegar a 10:** usar el minuto y medio que sobra en las preguntas.
 
@@ -12,15 +12,15 @@
 | 2 | El problema | Felipe Chain | 60 s | 1:15 |
 | 3 | Por qué pasa | Felipe Chain | 30 s | 1:45 |
 | 4 | La solución | Felipe Servent | 30 s | 2:15 |
-| 5 | Demo (video) | Felipe Servent | 90 s | 3:45 |
-| 6 | Lo que probamos | Pedro Tailhade | 60 s | 4:45 |
-| 7 | Lo que aprendimos | Pedro Tailhade | 30 s | 5:15 |
-| 8 | Del experimento al MVP | Pedro Tailhade | 30 s | 5:45 |
-| 9 | Cómo ganamos plata | Juan Ignacio Canabe | 45 s | 6:30 |
-| 10 | Mercado y competencia | Juan Ignacio Canabe | 30 s | 7:00 |
-| 11 | Riesgos | Juan Ignacio Canabe | 30 s | 7:30 |
-| 12 | Próximos pasos | Felipe Chain | 45 s | 8:15 |
-| 13 | Cierre | Felipe Chain | 15 s | 8:30 |
+| 5 | Demo (video) | Felipe Servent | 100 s | 3:55 |
+| 6 | Lo que probamos | Pedro Tailhade | 60 s | 4:55 |
+| 7 | Lo que aprendimos | Pedro Tailhade | 30 s | 5:25 |
+| 8 | Del experimento al MVP | Pedro Tailhade | 30 s | 5:55 |
+| 9 | Cómo ganamos plata | Juan Ignacio Canabe | 45 s | 6:40 |
+| 10 | Mercado y competencia | Juan Ignacio Canabe | 30 s | 7:10 |
+| 11 | Riesgos | Juan Ignacio Canabe | 30 s | 7:40 |
+| 12 | Próximos pasos | Felipe Chain | 45 s | 8:25 |
+| 13 | Cierre | Felipe Chain | 15 s | 8:40 |
 
 ---
 
@@ -48,15 +48,17 @@ SinFila funciona en tres pasos. Escaneás el QR del cartel y ves el menú con pr
 
 Del otro lado, el buffet tiene un panel donde los pedidos entran solos, con un sonido. Lo vemos en la demo.
 
-## 5. Demo · Felipe Servent · 90 s (mientras corre el video)
+## 5. Demo · Felipe Servent · 100 s (mientras corre el video, sin sonido)
 
-Acá ven un pedido real, con un pago real. Escanea el QR del cartel desde la tribuna, elige del menú y paga con Mercado Pago. Cuando termina de pagar, vuelve sola a nuestra página y le aparece su código y "En preparación".
+Acá ven un pedido real, con un pago real. A la izquierda, el celular de quien pide; a la derecha, la pantalla del buffet, al mismo tiempo.
 
-Del lado del buffet, el pedido entra solo a la pantalla, con un sonido. No hay nadie pasando pedidos por WhatsApp ni revisando comprobantes: si llegó, está pagado.
+Elige del menú una empanada y una bebida en combo, pone su nombre y paga con Mercado Pago. Cuando termina de pagar, vuelve sola a nuestra página y le aparece su código, el 843, y "En preparación".
 
-Cuando el buffet lo tiene listo, toca "Listo", y en el celular aparece "¡Listo! Andá a retirar". Recién ahí se levanta de la tribuna, va al mostrador, dice su código y se lo lleva.
+En ese momento, del lado del buffet, el pedido entra solo a la pantalla, con un sonido. No hay nadie pasando pedidos por WhatsApp ni revisando comprobantes: si llegó, está pagado.
 
-*Si el video falla:* contar los pasos con la lista de la diapositiva.
+El buffet toca "Listo", y unos segundos después el celular cambia a "¡Listo! Andá a retirar". Recién ahí se levanta de la tribuna, va al mostrador, dice su código y el buffet lo marca como entregado.
+
+*Si el video no arranca:* hacer clic sobre la imagen.
 
 ## 6. Lo que probamos · Pedro Tailhade · 60 s
 

@@ -134,7 +134,7 @@ Detalle en `economia-del-producto.md`.
 - [x] Modelo de ingresos (Clase 9).
 - [x] Nombre del producto: SinFila.
 - [x] Qué les pedimos a los inversores: unos 1.500 dólares y contactos con concesionarios.
-- [x] Demo: video de 60 a 90 s. [PENDIENTE: grabarlo]
+- [x] Demo: video grabado el 29/10 (celular y panel lado a lado, 1 min 40 s), en la diapositiva 4.
 - [x] Frase de cierre.
 - [x] Meta para la temporada 2027: 3 clubes con 30 pedidos o más por día de partido.
 - [x] Resultados de la prueba con compañeros (Clase 8): 4 de 4 sin ayuda.
